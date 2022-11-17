@@ -1,0 +1,72 @@
+.portfolio-content {
+  max-width: 4000px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+
+}
+
+.uxui-h1 {
+  padding-left: 70px;
+  padding-top: 50px;
+  padding-right: 80px;
+  text-align: center;
+  color: #e4d1b9;
+  font-family: aktiv grotesk ex;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.uxui-h2 {
+  padding-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #e4d1b9;
+  font-family: aktiv grotesk ex;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.uxui-h3 {
+  padding-top: 50px;
+  text-align: center;
+  color: #e4d1b9;
+  font-family: aktiv grotesk ex;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+
+
+.uxui-p {
+  padding-left: 70px;
+  padding-bottom: 50px;
+  padding-right: 80px;
+  margin-top: 5px;
+  text-align: center;
+  color: white;
+  font-family: myriad-pro, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.uxui-hero{
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+
+.uxui-link {
+  text-decoration: none;
+  width: 100%;
+}
+
+.uxui-item {
+  margin: none;
+  padding: none;
+  border: none;
+  display: flex;
+  justify-content: left;
+}
+

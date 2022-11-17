@@ -1,0 +1,66 @@
+.h1-alegreya {
+  color: white;
+  font-family: alegreya SC;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.h2-alegreya {
+  color: #8b909f;
+  font-family: alegreya SC;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.h3-alegreya {
+  font-family: alegreya SC;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.h4-alegreya {
+  color: #8b909f;
+  font-family: alegreya SC;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.p-aktiv {
+  color: white;
+  font-family: aktiv grotesk ex;
+  font-size: 30px;
+  font-weight: lighter;
+  font-size: 18px;
+}
+
+
+.h1-broad {
+  color: white;
+  font-family: broadacre;
+  font-size: 40px;
+  font-weight: normal;
+}
+
+
+.h2-broad {
+  color: #8b909f;
+  font-family: broadacre;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.h4-broad {
+  color: white;
+  font-family: broadacre;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+
+.p-broad {
+   color: white;
+  font-family: broadacre-hairline-0, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  font-style: normal;
+}

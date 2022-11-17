@@ -1,0 +1,68 @@
+.book-hero{
+	padding-top: 50px;
+}
+
+
+.book-logo {
+  width: 200px;
+}
+
+.book-img {
+  width: 250px;
+}
+
+.book-persona-img {
+  width: 700px;
+}
+
+
+.book-content {
+  max-width: 4000px;
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+  padding: 0px;
+}
+
+.book-onboard {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.book-beauty {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+
+.book-task-desc {
+  background-color: #272d35;
+  margin: 30px;
+}
+
+.task {
+  text-align: center;
+}
+
+
+.book-beauty-h3 {
+  text-align: left;
+  padding-left: 100px;
+  color: white;
+  font-family: alegreya SC;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.book-image-beauty {
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  border-bottom-width: 2px;
+  border-top-style: solid;
+  border-top-color: white;
+  border-top-width: 2px;
+  padding-top: 0px;
+}
+
+
+

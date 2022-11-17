@@ -1,0 +1,48 @@
+body {
+  background-color: #1e2229;
+  /*background-color: black;*/
+}
+
+.content {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+
+
+.bio-h1{
+  padding-left: 70px;
+  padding-top: 50px;
+  padding-right: 80px;
+  text-align: center;
+  color: #e4d1b9;
+  font-family: aktiv grotesk ex;
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+
+
+.bio-h3{
+  text-decoration: none;
+  width: 100%;
+  text-align: left;
+  margin-left: 200px;
+  margin-right: 100px;
+  margin-top: 0px;
+  color: white;
+  font-family: myriad-pro, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
+
+.bio-p {
+  text-align: left;
+  margin-left: 200px;
+  margin-right: 100px;
+  margin-top: 0px;
+  color: white;
+  font-family: myriad-pro, sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+}
