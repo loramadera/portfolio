@@ -17,8 +17,8 @@
   "scripts": {
     "predeploy": "PUBLIC_URL=https://loragaloyan.github.io/portfolio/ BASENAME=/portfolio npm run build",
     "deploy": "BASNAME=/portfolio gh-pages -d build",
-    "start1": "react-scripts start",
-    "start": "PUBLIC_URL=http://localhost:3000/ react-scripts start",
+    "start": "react-scripts start",
+    "start1": "PUBLIC_URL=http://localhost:3000/ react-scripts start",
     "build": "react-scripts build",
     "build1": "react-scripts build && mv -v build/* ./",
     "build3": "react-scripts build && mv build docs",
