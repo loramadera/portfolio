@@ -56,7 +56,7 @@ function Portfolio() {
               <img src={imgWhite} width="100%"></img>
             </div>
             <div className="flex1">
-              <h1 className="portfolio-h1">Hi, I'm Lora!</h1>
+              <h1 className="portfolio-h1">Hi, I Lora!</h1>
               <p className="portfolio-p">I'm a UX/UI designer in the San Francisco Bay Area with experience in visual design, programming, 3D-modeling, and digital art.</p>
             </div>
           </div>
