@@ -16,4 +16,4 @@ workflows:
       - deploy_server:
           filters:
             branches:
-              only: gh-pages
+              only: main
