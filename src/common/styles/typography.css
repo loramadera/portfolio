@@ -43,7 +43,14 @@
 
 
 .h2-broad {
-  color: #8b909f;
+  color: #e0cdb5;
+  font-family: broadacre;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.h3-broad {
+  color: white;
   font-family: broadacre;
   font-size: 20px;
   font-weight: normal;
@@ -52,7 +59,7 @@
 .h4-broad {
   color: white;
   font-family: broadacre;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: normal;
 }
 
@@ -61,6 +68,6 @@
    color: white;
   font-family: broadacre-hairline-0, sans-serif;
   font-weight: 100;
-  font-size: 20px;
+  font-size: 17px;
   font-style: normal;
 }

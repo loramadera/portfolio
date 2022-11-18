@@ -19,6 +19,91 @@ import imgBook3 from './images/UXUI/Bestiary/book3.png';
 
 function Bestiary() {
 
+	const contentItems = [
+		{ 'title': 'Kristen, 26, Monterey, Communications Student', 'text': 'Immersion motivates replaying and revisiting interface (vs. avoiding). Retention depends on presentation - however, too much interface breaks immersion.', 'image': imgPerson1 },
+		{ 'title': 'Annie, 30, Washington DC, Graduate Student', 'text': 'Accessibility is overlooked in interfaces - they should cater to our shortening attention span and be short form, especially in mobile games. “Quick grab” information is most effective for retention.', 'image': imgPerson2 },
+		{ 'title': 'Jenny, 24, San Francisco, Law School Student', 'text': 'Emotional experiences tend to connect, regardless of interface. The more realistic the interface, the better. Retention depends on presentation, and overbearing “textual” information is no good - the more visual/artistic, the better.', 'image': imgPerson3 },
+	];
+
+	const mvpItems = [
+		{ 'title': 'MVP One: The Bio', 'text1': 'This is the accompanying page to the cryptid image. Interactive index for user to browse information in.', 'text2': 'Primary Feature: Descriptive index, will contain “secret” hints and clues for the player to work out while they are fighting monster.', 'text3': 'Primary Outcome: Engage the user and try to make them piece together what they can do to beat the monster.', 'image': imgBook3 },
+		{ 'title': 'MVP Two The Journal', 'text1': 'An interactive journal/entry log. Player will use this to document their personal notes about the cryptid they faced at lower levels.', 'text2': 'Primary Feature: Entry-making feature for later reference.', 'text3': 'Primary Outcome: Player feels immersed, has information to look back on when they face upper-level monster.', 'image': imgBook1 },
+		{ 'title': 'MVP Three: The Inventory', 'text1': 'Inventory map. Based on the hints and clues that the bio page gives them, the user can look at what they have in their inventory that will help them beat the monster.', 'text2': 'Primary Feature: Chart of ingredients that the user has to use against cryptid.', 'text3': 'Primary Outcome: Works like a puzzle for the user to figure out what to utilize.', 'image': imgBook2 },
+	];
+
+
+
+	const bestContent = contentItems.map((item, index) => {
+	if (index % 2) {
+		return <div className='best-item'>	
+			<div className='flexbox top-small margins-small'>	
+				<div className='flex2 box'>
+					<div className='small-border'>
+						<h4 className='h4-broad '>{item.title}</h4>
+					</div>
+					<p className='p-broad'>{item.text}</p>
+				</div>
+				<div className='flex1 padding-medium box'>
+					<img className='img-person' src= {item.image} width="100%"></img>
+				</div>
+			</div>
+		</div>
+	} else {
+		return <div className='best-item'>
+			<div className='flexbox top-small margins-small'>
+				<div className='flex1 padding-medium box'>
+					<img className='img-person' src= {item.image} width="100%"></img>
+				</div>
+				<div className='flex2 box'>
+					<div className='small-border'>
+						<h4 className='h4-broad '>{item.title}</h4>
+					</div>
+					<p className='p-broad'>{item.text}</p>
+				</div>
+			</div>
+		</div>
+		}
+	});
+
+
+
+	const mvpContent = mvpItems.map((item, index) => {
+	if (index % 2) {
+		return <div className='margins-extra top-large'>	
+			<div className='flexbox top-small'>	
+				<div className='flex1 box'>
+					<div className='margins-small'>	
+						<h4 className='h4-broad '>{item.title}</h4>
+						<p className='p-broad'>{item.text1}</p>
+						<p className='p-broad'>{item.text2}</p>
+						<p className='p-broad'>{item.text3}</p>
+					</div>
+				</div>
+				<div className='flex1 margins-small box'>
+					<img src= {item.image} width="100%"></img>
+				</div>
+			</div>
+		</div>
+	} else {
+		return <div className='margins-extra top-large'>
+			<div className='flexbox top-small'>
+				<div className='flex1 margins-small box'>
+					<img src= {item.image} width="100%"></img>
+				</div>
+				<div className='flex1 box'>
+					<div className='margins-small'>	
+						<h4 className='h4-broad '>{item.title}</h4>
+						<p className='p-broad'>{item.text1}</p>
+						<p className='p-broad'>{item.text2}</p>
+						<p className='p-broad'>{item.text3}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		}
+	});
+
+
 
 
 	return (
@@ -31,27 +116,495 @@ function Bestiary() {
 			<h2 className='h2-broad'>Mobile Game Design</h2>
 
 
-			<div className='big-border'></div>
+			<div className='big-border'>
+				<h3 className='h3-broad'>01 Overview</h3>
+			</div>
 			<div className='margins-large'>
 				<h4 className='h4-broad top-small'>The Bestiary - what is it?</h4>
 				<p className='p-broad'>The Bestiary, designed to be a component of a mobile fantasy game in which a player encounters different monsters. Each level’s monsters are more challenging than the last, and it is up to the player to study them (their weaknesses, strengths, etc.).  As they advince, they will build a reference guide of what they have learned - their own personal bestiary.</p>
 			</div>
 
 
-			<div className='big-border'></div>
-			<div className='flexbox'>
-				<div className='flex1'>
-					
+			<div className='big-border'>
+				<h3 className='h3-broad'>02 Target Audience & Market</h3>
+			</div>
+			<div className='flexbox margins-medium'>
+				<div className='flex1 box'>
+					<img className='img-big-swords margins-small' src= { imgSwords } width="100%"></img>
 				</div>
-				<div className='flex1'>
-
+				<div className='flex1 box'>
+					<div className='padding-small'>
+						<h4 className='h4-broad'>Hypothesis</h4>
+						<p className='p-broad'>The more immersive a gaming experience, the more likely a gamer is to consume and retain information from the interface conveying it.</p>
+					</div>
+					<div className='padding-small'>
+						<h4 className='h4-broad'>Demographic</h4>
+						<p className='p-broad'>Adults 20-35, videogame enthusiasts, college students/recent grads</p>
+					</div>
+					<div className='padding-small'>
+						<h4 className='h4-broad'>Research Objective</h4>
+						<p className='p-broad'>Determining whether immersion outweighs utility in the importance of interface design.</p>
+					</div>
+					<div className='padding-small'>
+						<h4 className='h4-broad'>User Needs</h4>
+						<p className='p-broad'>A game interface that is simple yet immersive, with clear relaying of information without blocks of text, with high entertainment value.</p>
+					</div>				
 				</div>
-
 			</div>
 
 
-		</div>
-		
+
+			<div className='big-border'>
+				<h3 className='h3-broad'>03 Interviews</h3>
+			</div>
+				<div className='flexbox margins-large'>
+					<div className='flex1 padding-medium'>
+						<div className='flexbox'>
+							<div className='flex box'>
+									<img className='img-small-swords' src= {imgSwords} width="100%"></img>
+							</div>	
+							<div className='flex2 box'>
+								<h4 className='h4-broad sword-title'>Questions for Audience</h4>
+							</div>						
+						</div>	
+							<div className='padding-small'>
+								<div className='flexbox'>
+									<div className='flex2 box'>
+										<p className='p-broad'>Would you enjoy an interface that takes time to navigate around, so long as it is immersive to you?</p>
+									</div>
+								</div>
+								<div className='flexbox'>
+									<div className='flex2 box'>
+										<p className='p-broad'>How much do you value worldbuilding immersion in your videogame experience, on a scale of one to ten?</p>
+									</div>
+								</div>
+								<div className='flexbox'>
+									<div className='flex2 box'>
+										<p className='p-broad'>Would you spend more time with an interface if it had many features and options, or would you be eager to return to the game?</p>
+									</div>
+								</div>
+								<div className='flexbox'>
+									<div className='flex2 box'>
+										<p className='p-broad'>Based on average videogame information presentation, how much of the information would you say you actually pay attention to? </p>
+									</div>
+								</div>
+								<div className='flexbox'>
+									<div className='flex2 box'>
+										<p className='p-broad'>How much of the information you pay attention to it videogame interfaces is carried back into the main game? </p>
+									</div>
+								</div>
+								<div className='flexbox'>
+									<div className='flex2 box'>
+										<p className='p-broad'>Do you ever retain any of the information? If so, do you recall more visual aspects of it or the texts you’ve read?</p>
+									</div>
+								</div>
+								<div className='flexbox'>
+									<div className='flex2 box'>
+										<p className='p-broad'>Would you rather have a complex interface with many interesting features, or minimalistic design with less features?</p>
+									</div>
+								</div>
+							</div>					
+					</div>	
+
+					<div className='flex1 padding-medium'>
+						<div className='flexbox'>
+							<div className='flex box'>
+									<img className='img-small-swords' src= {imgSwords} width="100%"></img>
+							</div>	
+							<div className='flex2 box'>
+								<h4 className='h4-broad sword-title'>Questions for Expert</h4>
+							</div>						
+						</div>	
+							<div className='padding-small'>	
+								<div className='flexbox'>
+									<div className='flex2 box'>
+										<p className='p-broad'>Would you rather have a complex interface with many interesting features, or minimalistic design with less features?</p>
+									</div>
+								</div>
+								<div className='flexbox'>
+									<div className='flex2 box'>
+										<p className='p-broad'>How often do you jump from the main game to the menu interface (in other words, how much utility do you find from the menus? How much value do they have to the gaming experience)?</p>
+									</div>
+								</div>
+								<div className='flexbox'>
+									<div className='flex2 box'>
+										<p className='p-broad'>Do you think it takes away from a gamer’s experience to be tempted to stay and explore a complex interface?</p>
+									</div>
+								</div>
+								<div className='flexbox'>
+									<div className='flex2 box'>
+										<p className='p-broad'>How much value would you assign to the artistic design of an interface, which would keep users in the interface and have them exploring?</p>
+									</div>
+								</div>
+								<div className='flexbox'>
+									<div className='flex2 box'>
+										<p className='p-broad'>Would you assign more importance to artistry or utility in interface design?</p>
+									</div>
+								</div>
+								<div className='flexbox'>
+									<div className='flex2 box'>
+										<p className='p-broad'>Would you respond more to visual aspects of a design or the content itself?</p>
+									</div>
+								</div>
+								<div className='flexbox'>
+									<div className='flex2 box'>
+										<p className='p-broad'>How willing would you be to sacrifice artistry for time spent in this particular interface?</p>
+									</div>
+								</div>
+							</div>
+						</div>					
+				</div>
+
+
+
+
+			<div className='big-border'>
+				<h3 className='h3-broad'>04 Interview Profiles & Feedback</h3>
+			</div>
+					<div className='flexbox margins-medium'>
+						<div className='flex box'>
+								<img className='img-small-swords' src= {imgSwords} width="100%"></img>
+						</div>	
+						<div className='flex2 box'>
+							<h4 className='h4-broad sword-title'>Interview Feedback from Audience</h4>
+						</div>						
+					</div>	
+					<div className='flexbox margins-medium'>
+						<div>
+							 { bestContent }
+						</div>
+					</div>
+				<div className='flexbox margins-medium top-medium'>
+						<div className='flex box'>
+								<img className='img-small-swords' src= {imgSwords} width="100%"></img>
+						</div>	
+						<div className='flex2 box'>
+							<h4 className='h4-broad sword-title'>Interview Feedback from Expert</h4>
+						</div>						
+					</div>
+					<div className='flexbox margins-medium'>
+						<div className='flex1 box'>
+							<img className='img-best-expert margins-large' src={ imgPerson4 } width="100%"></img>
+						</div>
+						<div className='flex1 box'>
+							<div className='flexbox box'>
+								<div className='padding-small'>
+									<p className='p-broad'>Benjamin Brown, 32</p>
+									<p className='p-broad'>Bay Area</p>
+									<p className='p-broad'>Ex-Videogame Livestreamer</p>
+								</div>
+							</div>
+							<div className='padding-small'>
+								<h4 className='h4-broad'>Key Feedback</h4>
+								<p className='p-broad'>The balance of utility versus artistry in the interface design is completely dependent on the type of game being played.</p>
+								<p className='p-broad'>Fast-paced games need to be quick and strategy based, therefore they need to convey information quickly.</p>
+								<p className='p-broad'>As long as the artistic theme fits the game, it won’t take away from the utility.</p>
+								<p className='p-broad'>There is a common mistake in many videogame designs where interface designers will attempt to create utility through complexity, but even for strategic players this can get exhausting.</p>
+								<p className='p-broad'>The story that you’re telling in an interface directly relates to how well the player will connect with it, and in what amount of time.</p> 
+							</div>	
+						</div>
+					</div>
+
+
+
+
+			<div className='big-border'>
+				<h3 className='h3-broad'>05 The Minimum Viable Product</h3>
+			</div>
+				<div className='flexbox margins-medium bottom-small'>
+						<div className='flex box'>
+								<img className='img-small-swords' src= {imgSwords} width="100%"></img>
+						</div>	
+						<div className='flex2 box'>
+							<h4 className='h4-broad sword-title'>Identifying the MVP</h4>
+						</div>						
+				</div>
+				<div className='flexbox margins-extra'>
+					<div className='flex1'>
+						<h4 className='h4-broad top-small'>Defining the Features</h4>
+						<p className='p-broad'>Inventory of ingredients</p>
+						<p className='p-broad'>Tabs leading to various pages on each cryptid</p>
+						<p className='p-broad'>Map of creature’s well-known whereabouts</p>
+						<p className='p-broad'>Strength tab, weakness tab</p>
+						<p className='p-broad'>Journal entry option</p>
+						<p className='p-broad'>Cryptid’s individual biography</p>
+					</div>
+					<div className='flex1'>
+						<h4 className='h4-broad top-small'>Defining the Outcome</h4>
+						<p className='p-broad'>Player will have option to log a journal entry</p>
+						<p className='p-broad'>Player will learn about the cryptid, gather information about how to defeat it</p>
+						<p className='p-broad'>Player will be able to identify where their chances are best for locating the cryptid</p>
+					</div>
+				</div>
+				<h4 className='h4-broad top-medium bottom-small margins-extra'>The bestiary can be broken down into three diagram pieces - the game itself, generated by the game engine, the interface content, and the content generated by the user.</h4>
+				<div className='flexbox top-medium margins-extra'>
+					<div className='flex1'>
+						<h4 className='h4-broad bottom-small center-align'>Data Content</h4>
+							<div className='best-box'>	
+								<div className='padding-medium'>
+									<div>
+										<h4 className='h4-broad'>Mythology Content</h4>
+										<p className='p-broad'>Pre-generated data set</p>
+									</div>
+									<div>
+										<h4 className='h4-broad'>Game Environment</h4>
+										<p className='p-broad'>Creates/generates outside game</p>
+									</div>
+								</div>
+							</div>					
+					</div>
+					<div className='flex1'>
+						<h4 className='h4-broad bottom-small center-align'>Generated Content</h4>
+							<div className='best-box'>	
+								<div className='padding-medium'>
+									<div>
+										<h4 className='h4-broad'>Cryptid Biography</h4>
+										<p className='p-broad'>Pre-set inputs for insight fields</p>
+									</div>
+									<div>
+										<h4 className='h4-broad'>Inventory</h4>
+										<p className='p-broad'>Inventory slots generated by user</p>
+									</div>
+								</div>
+							</div>					
+					</div>
+					<div className='flex1'>
+						<h4 className='h4-broad bottom-small center-align'>User Content</h4>
+							<div className='best-box'>	
+								<div className='padding-medium'>
+									<div>
+										<h4 className='h4-broad'>Journal Entries</h4>
+										<p className='p-broad'>Inputed by user</p>
+									</div>
+									<div>
+										<h4 className='h4-broad'>Account Info</h4>
+										<p className='p-broad'>Created by user</p>
+									</div>
+								</div>
+							</div>					
+					</div>
+				</div>
+
+				<div>
+					{ mvpContent }
+				</div>	
+
+
+
+
+			<div className='big-border'>
+				<h3 className='h3-broad'>06 User Testing</h3>
+			</div>
+				<div className='flexbox margins-medium bottom-medium'>
+						<div className='flex box'>
+								<img className='img-small-swords' src= {imgSwords} width="100%"></img>
+						</div>	
+						<div className='flex2 box'>
+							<h4 className='h4-broad sword-title'>User Flows</h4>
+						</div>						
+				</div>
+				<div className='margins-extra'>
+					<h4 className='h4-broad'>User Flow One: Document Your Battle</h4>
+					<p className='p-broad'>User will document the battle they just encountered and the monster they defeated. They will navigate to the journal entry in the bestiary and create a new entry documenting everything they learned.</p>
+				</div>	
+				<div className='margins-medium'>	
+							<div className='flexbox top-small'>
+								<div className='flex1 box'>
+									<div className='flexbox'>
+										<div className='flex1 box'>
+											<h4 className='h4-broad flex-number'>1</h4>
+										</div>
+										<div className='flex1 box margins-small'>
+											<h4 className='h4-broad flex-text'>Open journal.</h4>
+										</div>
+									</div>
+								</div>
+								<div className='flex1 box'>
+									<div className='flexbox'>
+										<div className='flex1 box'>
+											<h4 className='h4-broad flex-number'>2</h4>
+										</div>
+										<div className='flex1 box margins-small'>
+											<h4 className='h4-broad flex-text'>Inspect the monster you faced in the journal.</h4>
+										</div>
+									</div>
+								</div>
+								<div className='flex1 box'>
+									<div className='flexbox'>
+										<div className='flex1 box'>
+											<h4 className='h4-broad flex-number'>3</h4>
+										</div>
+										<div className='flex1 box margins-small'>
+											<h4 className='h4-broad flex-text'>Unlock new available entry based on level passed.</h4>
+										</div>
+									</div>
+								</div>
+
+								<div className='flex1 box'>
+									<div className='flexbox'>
+										<div className='flex1 box'>
+											<h4 className='h4-broad flex-number'>4</h4>
+										</div>
+										<div className='flex1 box margins-small'>
+											<h4 className='h4-broad flex-text'>Document the battle, noting hints and info.</h4>
+										</div>
+									</div>
+								</div>
+
+								<div className='flex1 box'>
+									<div className='flexbox'>
+										<div className='flex1 box'>
+											<h4 className='h4-broad flex-number'>5</h4>
+										</div>
+										<div className='flex1 box margins-small'>
+											<h4 className='h4-broad flex-text'>Save entry for later reference.</h4>
+										</div>
+									</div>
+								</div>
+							</div>
+				</div>
+
+
+				<div className='margins-extra top-medium'>
+					<h4 className='h4-broad'>User Flow Two: Learn About The Monster</h4>
+					<p className='p-broad'>In the cryptid biography, user will use the bestiary to learn more about the attributes and weaknesses of the monster they just faced. They will unlock new insights about the monster in preparation for the next confrontation on the following level. </p>
+				</div>	
+				<div className='margins-medium'>	
+							<div className='flexbox top-small'>
+								<div className='flex1 box'>
+									<div className='flexbox'>
+										<div className='flex1 box'>
+											<h4 className='h4-broad flex-number'>1</h4>
+										</div>
+										<div className='flex1 box margins-small'>
+											<h4 className='h4-broad flex-text'>Open journal.</h4>
+										</div>
+									</div>
+								</div>
+								<div className='flex1 box'>
+									<div className='flexbox'>
+										<div className='flex1 box'>
+											<h4 className='h4-broad flex-number'>2</h4>
+										</div>
+										<div className='flex1 box margins-small'>
+											<h4 className='h4-broad flex-text'>Inspect the monster you faced in the journal.</h4>
+										</div>
+									</div>
+								</div>
+								<div className='flex1 box'>
+									<div className='flexbox'>
+										<div className='flex1 box'>
+											<h4 className='h4-broad flex-number'>3</h4>
+										</div>
+										<div className='flex1 box margins-small'>
+											<h4 className='h4-broad flex-text'>Find monster’s attributes and weakness boxes.</h4>
+										</div>
+									</div>
+								</div>
+
+								<div className='flex1 box'>
+									<div className='flexbox'>
+										<div className='flex1 box'>
+											<h4 className='h4-broad flex-number'>4</h4>
+										</div>
+										<div className='flex1 box margins-small'>
+											<h4 className='h4-broad flex-text'>Select attribute or weakness box to unlock.</h4>
+										</div>
+									</div>
+								</div>
+
+								<div className='flex1 box'>
+									<div className='flexbox'>
+										<div className='flex1 box'>
+											<h4 className='h4-broad flex-number'>5</h4>
+										</div>
+										<div className='flex1 box margins-small'>
+											<h4 className='h4-broad flex-text'>Unlock weakness or attribute.</h4>
+										</div>
+									</div>
+								</div>
+							</div>			
+						</div>
+
+				
+				<div className='margins-extra top-medium'>
+					<h4 className='h4-broad'>User Flow Three: Pick Your Poison</h4>
+					<p className='p-broad'>User will select a poison from their inventory to use on the monster in the upper levels, with more knowledge on defeating the monster than they had before, based on the new unlcoked weakness/attributes they read about.</p>
+				</div>	
+				<div className='margins-medium'>	
+							<div className='flexbox top-small'>
+								<div className='flex1 box'>
+									<div className='flexbox'>
+										<div className='flex1 box'>
+											<h4 className='h4-broad flex-number'>1</h4>
+										</div>
+										<div className='flex1 box margins-small'>
+											<h4 className='h4-broad flex-text'>Open journal.</h4>
+										</div>
+									</div>
+								</div>
+								<div className='flex1 box'>
+									<div className='flexbox'>
+										<div className='flex1 box'>
+											<h4 className='h4-broad flex-number'>2</h4>
+										</div>
+										<div className='flex1 box margins-small'>
+											<h4 className='h4-broad flex-text'>Inspect the monster you faced in the journal.</h4>
+										</div>
+									</div>
+								</div>
+								<div className='flex1 box'>
+									<div className='flexbox'>
+										<div className='flex1 box'>
+											<h4 className='h4-broad flex-number'>3</h4>
+										</div>
+										<div className='flex1 box margins-small'>
+											<h4 className='h4-broad flex-text'>Find monster’s “weakness” panel to unlock.</h4>
+										</div>
+									</div>
+								</div>
+
+								<div className='flex1 box'>
+									<div className='flexbox'>
+										<div className='flex1 box'>
+											<h4 className='h4-broad flex-number'>4</h4>
+										</div>
+										<div className='flex1 box margins-small'>
+											<h4 className='h4-broad flex-text'>Navigate to inventory page in bestiary.</h4>
+										</div>
+									</div>
+								</div>
+
+								<div className='flex1 box'>
+									<div className='flexbox'>
+										<div className='flex1 box'>
+											<h4 className='h4-broad flex-number'>5</h4>
+										</div>
+										<div className='flex1 box margins-small'>
+											<h4 className='h4-broad flex-text'>Scroll through ingredients to find weakness.</h4>
+										</div>
+									</div>
+								</div>
+							</div>			
+						</div>
+
+
+
+
+				<div className='flexbox margins-medium bottom-medium top-medium'>
+						<div className='flex box'>
+								<img className='img-small-swords' src= {imgSwords} width="100%"></img>
+						</div>	
+						<div className='flex2 box'>
+							<h4 className='h4-broad sword-title'>Feedback</h4>
+						</div>						
+				</div>
+
+
+
+
+
+		</div>		
 		);
 	}
 

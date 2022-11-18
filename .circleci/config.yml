@@ -1,0 +1,19 @@
+version: 2.1
+orbs:
+  node: circleci/node@5.0.2
+  python: circleci/python@2.0.3
+jobs:
+  deploy_server:
+    executor: python/default
+    steps:
+      - checkout
+      - run:
+          name: Deploy
+          command: ssh -oStrictHostKeyChecking=no root@157.245.230.34 'cd /var/www/lora-portfolio && git checkout . && git pull origin main && npm run build && systemctl restart systemd_web_server_lora_portfolio.service'
+workflows:
+  deploy_app:
+    jobs:
+      - deploy_server:
+          filters:
+            branches:
+              only: gh-pages

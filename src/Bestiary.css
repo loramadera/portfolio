@@ -3,9 +3,49 @@
 }
 
 
+.img-big-swords {
+  width: 400px;
+}
 
+.swords-text {
+  text-align: center;
+}
 
+.img-small-swords {
+  width: 50px;
+  margin: 10px;
+}
 
+.img-person {
+  width: 200px;
+}
+
+.img-best-expert {
+  width: 400px;
+}
+
+.best-box {
+  border-style: solid;
+  border-color: white;
+}
+
+.img-book {
+  width: 500px;
+}
+
+.flex-number {
+  font-size: 60px;
+  text-align: right;
+  margin: 20px;
+}
+
+.flex-text {
+  font-size: 15px;
+}
+
+.sword-title {
+  text-align: left;
+}
 
 
 

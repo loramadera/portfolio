@@ -1,7 +1,7 @@
 {
   "name": "lora-portfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "https://loragaloyan.github.io/portfolio/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
@@ -15,9 +15,10 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
+    "predeploy": "PUBLIC_URL=https://loragaloyan.github.io/portfolio/ BASENAME=/portfolio npm run build",
+    "deploy": "BASNAME=/portfolio gh-pages -d build",
+    "start1": "react-scripts start",
+    "start": "PUBLIC_URL=http://localhost:3000/ react-scripts start",
     "build": "react-scripts build",
     "build1": "react-scripts build && mv -v build/* ./",
     "build3": "react-scripts build && mv build docs",
