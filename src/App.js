@@ -24,7 +24,7 @@ function App() {
         <Route path="/uxui" element={<UXUI />} />
         <Route path="/digitalart" element={<Digitalart />} />
         <Route path="/code" element={<Code />} />
-        <Route path="/3dmodeling" element={<Modeling />} />
+        <Route path="/modeling" element={<Modeling />} />
         <Route path="/vaca" element={<VACA />} />
         <Route path="/bookverse" element={<BookVerse />} />
         <Route path="/bestiary" element={<Bestiary />} />

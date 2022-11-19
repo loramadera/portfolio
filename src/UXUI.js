@@ -98,7 +98,7 @@ function UXUI() {
                         <h3 className='h3-broadacre center-align'>BookVerse</h3>
                         <p className='p-light center-align bottom-small'>Interactive book “universe” discovery app.</p>
                       </div>   
-                      <div className="flex1">
+                      <div className="flex1 darker-box padding-large">
                           <img src={imgBookVerse} width="100%"></img>
                       </div>
                     </a>
@@ -108,7 +108,7 @@ function UXUI() {
                           <h3 className='h3-broadacre center-align top-medium'>The Bestiary</h3>
                           <p className='p-light center-align bottom-small'>Game interface design.</p>
                         </div>
-                      <div className="flex1">
+                      <div className="flex1 darker-box padding-large">
                           <img src={imgBestiary} width="100%"></img>
                       </div>
                     </a>

@@ -33,6 +33,15 @@
   font-weight: lighter;
 }
 
+
+.h3-aktiv {
+  color: white;
+  font-family: aktiv grotesk ex;
+  font-size: 30px;
+  font-weight: normal;
+  font-size: 30px;
+}
+
 .p-aktiv {
   color: white;
   font-family: aktiv grotesk ex;
@@ -51,7 +60,7 @@
 
 
 .h2-broad {
-  color: #e0cdb5;
+  color: white;
   font-family: broadacre;
   font-size: 20px;
   font-weight: normal;

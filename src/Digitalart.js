@@ -1,7 +1,13 @@
 import React from "react";
 
 import { Navigation } from './Navigation.js';
+import { Footer } from './Footer.js';
+import './common/styles/spacing.css';
+import './common/styles/sitetypography.css';
 import './Digitalart.css';
+
+
+
 import imgESO from './images/Digital Art/eso.png';
 import imgCruelPrince  from './images/Digital Art/cruelprince.png';
 import imgFeyre  from './images/Digital Art/feyre.png';
@@ -45,10 +51,14 @@ function Digitalart() {
 
  
  const portfolioItems = contentItems.map((item) => {
-    return <div className="portfolio-item">
-      <a className="digital-link" href={item.link}>
-        <h2 className='digital-h2'>{item.title}</h2>
-        <div className='img'><img src={item.image} width="100%" /></div>
+    return <div>
+      <a className='a-none' href={item.link}> 
+        <div>
+          <h3 className='h3-broadacre center-align bottom-tiny top-small'>{item.title}</h3>
+        </div>   
+        <div className="flex1 darker-box padding-large">
+            <img src={item.image} width="100%"></img>
+        </div>
       </a>
     </div>;
   });
@@ -58,10 +68,13 @@ function Digitalart() {
   return (
     <div>
       <Navigation />
-        <h1 className="digital-h1">Digital Art</h1>
-        <div className="portfolio-content">
+      <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
+        <h1 className='h1-broadacre center-align top-large'>Digital Art</h1>
+        <div className='dark-box top-dark padding-large'>
+        <h3 className='h3-broadacre center-align opacity'>Procreate/Photoshop Projects</h3>
           { portfolioItems }
         </div>
+      <Footer />
     </div>
   );
 }

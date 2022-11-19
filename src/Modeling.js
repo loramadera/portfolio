@@ -1,6 +1,9 @@
 import React from "react";
 
 import { Navigation } from './Navigation.js';
+import { Footer } from './Footer.js';
+import './common/styles/spacing.css';
+import './common/styles/sitetypography.css';
 import './Modeling.css';
 
 import imgCastle from './images/Modeling/castle.png';
@@ -18,22 +21,22 @@ function Modeling() {
 
   const modelingItems = contentItems.map((item, index) => {
     if (index % 2) {
-      return <div className="modeling-item">
-        <a className="modeling-link flexbox" href={item.link}>
-          <div className='flex1'>
-            <h3 className='modeling-h3'>{item.title}</h3>
-            <p className='modeling-p'>{item.text}</p>
+      return <div>
+        <a className='a-none darker-box flexbox' href={item.link}>
+          <div className='flex1 box'>
+            <h3 className='h3-broadacre center-align'>{item.title}</h3>
+            <p className='p-light center-align'>{item.text}</p>
           </div>
-          <div className='img flex1'><img src={item.image} width="100%" /></div>
+          <div className='img flex1 box'><img src={item.image} width="100%" /></div>
         </a>
       </div>;
     } else {
-      return <div className="modeling-item">
-        <a className="modeling-link flexbox" href={item.link}>
-          <div className='img flex1'><img src={item.image} width="100%" /></div>
-          <div className='flex1'>
-            <h3 className='modeling-h3'>{item.title}</h3>
-            <p className='modeling-p'>{item.text}</p>
+      return <div className='bottom-medium'>
+        <a className='a-none darker-box flexbox' href={item.link}>
+          <div className='img flex1 box'><img src={item.image} width="100%" /></div>
+          <div className='flex1 box'>
+            <h3 className='h3-broadacre center-align'>{item.title}</h3>
+            <p className='p-light center-align'>{item.text}</p>
           </div>
         </a>
       </div>;
@@ -42,11 +45,13 @@ function Modeling() {
 
       return (
         <div>
-          <Navigation />   
-           <div className="modeling"> 
+          <Navigation /> 
+          <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>  
+           <div> 
             <div className="modeling-hero">
-              <h1 className='modeling-h1'>3D Modeling</h1>
-               <div className="modeling-content">
+              <h1 className='h1-broadacre center-align top-large'>3D Modeling</h1>
+               <div className='dark-box top-dark padding-large'>
+               <h3 className='h3-broadacre center-align bottom-small opacity'>Blender Projects</h3>
                 { modelingItems }
                 </div>
             </div>

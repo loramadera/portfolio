@@ -68,7 +68,7 @@ function Portfolio() {
         <div className='flex1 box'>
           <h1 className='h1-broadacre'>Nice to meet you! I'm Lora.</h1>
               <div className='flexbox top-small'>
-                  <div className='flex1'>
+                  <div className='flex1 box'>
                         <p className='p-bold'>Work</p>
                   </div>
                   <div className='flex2'>
@@ -80,7 +80,7 @@ function Portfolio() {
                   <div className='flex1'></div>
                </div>
                 <div className='flexbox'>
-                  <div className='flex1'>
+                  <div className='flex1 box'>
                         <p className='p-bold'>Life</p>
                   </div>
                   <div className='flex2'>
