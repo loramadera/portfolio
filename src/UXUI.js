@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Navigation } from './Navigation.js';
+import { Footer } from './Footer.js';
 import './UXUI.css';
 import './common/styles/spacing.css';
 import './common/styles/sitetypography.css';
@@ -33,8 +34,8 @@ function UXUI() {
   const visItems = visualItems.map((item, index) => {
     // 1st, 3rd, ...
     if (index % 2) {
-      return <div key={index}>
-        <a className='a-none flexbox' href={item.link}>
+      return <div key={index} className='margins-small bottom-medium'>
+        <a className='a-none flexbox darker-box' href={item.link}>
           <div className='flex1 box'>
             <h3 className='h3-broadacre center-align'>{item.title}</h3>
             <p className='p-light center-align'>{item.text}</p>
@@ -43,8 +44,8 @@ function UXUI() {
         </a>
       </div>;
     } else {
-      return <div key={index}>
-        <a className='a-none flexbox' href={item.link}>
+      return <div key={index} className='margins-small bottom-medium'>
+        <a className='a-none flexbox darker-box' href={item.link}>
           <div className='img flex1'><img src={item.image} width="100%" /></div>
           <div className='flex1 box'>
             <h3 className='h3-broadacre center-align'>{item.title}</h3>
@@ -58,8 +59,8 @@ function UXUI() {
   const intItems = interactItems.map((item, index) => {
     // 1st, 3rd, ...
     if (index % 2) {
-      return <div key={index}>
-        <a className='a-none flexbox' href={item.link}>
+      return <div key={index} className='margins-small bottom-medium'>
+        <a className='a-none flexbox darker-box' href={item.link}>
           <div className='flex1 box'>
             <h3 className='h3-broadacre center-align'>{item.title}</h3>
             <p className='p-light center-align'>{item.text}</p>
@@ -68,8 +69,8 @@ function UXUI() {
         </a>
       </div>;
     } else {
-      return <div key={index} className="uxui-item">
-        <a className='a-none flexbox' href={item.link}>
+      return <div key={index} className="margins-small bottom-medium">
+        <a className='a-none flexbox darker-box' href={item.link}>
           <div className='img flex1'><img src={item.image} width="100%" /></div>
           <div className='flex1 box'>
             <h3 className='h3-broadacre center-align'>{item.title}</h3>
@@ -95,7 +96,7 @@ function UXUI() {
                     <a className='a-none' href='/bookverse'> 
                       <div>
                         <h3 className='h3-broadacre center-align'>BookVerse</h3>
-                        <p className='p-light center-align'>Interactive book “universe” discovery app.</p>
+                        <p className='p-light center-align bottom-small'>Interactive book “universe” discovery app.</p>
                       </div>   
                       <div className="flex1">
                           <img src={imgBookVerse} width="100%"></img>
@@ -104,8 +105,8 @@ function UXUI() {
                    
                     <a className='a-none' href='/bestiary'> 
                         <div>  
-                          <h3 className='h3-broadacre center-align'>The Bestiary</h3>
-                          <p className='p-light center-align'>Game interface design.</p>
+                          <h3 className='h3-broadacre center-align top-medium'>The Bestiary</h3>
+                          <p className='p-light center-align bottom-small'>Game interface design.</p>
                         </div>
                       <div className="flex1">
                           <img src={imgBestiary} width="100%"></img>
@@ -117,17 +118,18 @@ function UXUI() {
 
           <div className='dark-box top-dark padding-large'>
             <h3 className='h3-broadacre center-align bottom-small opacity'>Visual Design & Branding Projects</h3>
-            <div className='darker-box'>
+            <div>
               { visItems }
             </div>
           </div>
 
           <div className='dark-box top-dark padding-large'>
             <h3 className='h3-broadacre center-align bottom-small opacity'>Interactive Design Projects</h3>
-            <div className='darker-box'>
+            <div>
               { intItems }
             </div>
           </div>
+    <Footer />
     </div>
   );
 }

@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Navigation } from './Navigation.js';
+import { Footer } from './Footer.js';
 import './VACA.css';
 
 import imgHero from './images/UXUI/VACA/vacahero.png';
@@ -89,6 +90,8 @@ return (
 	</div>
 
 </div>
+
+ <Footer />
 </div>
 );
 }

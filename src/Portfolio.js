@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Navigation } from './Navigation.js';
+import { Footer } from './Footer.js';
 import './Portfolio.css';
 import './common/styles/spacing.css';
 import './common/styles/sitetypography.css';
@@ -25,28 +26,32 @@ function Portfolio() {
 
   const portfolioItems = contentItems.map((item, index) => {
     if (index % 2) {
-      return <div className='flexbox darker-box'>
-          <a href={item.link} className='a-none flex1 box'>
-            <div className='margins-extra'>  
-              <h3 className='h3-broadacre center-align'>{item.title}</h3>
-              <p className='p-light center-align'>{item.text}</p>
-            </div>
-          </a>
-          <a href={item.link} className='a-none flex1 box'>
-            <img src= {item.image} width="100%"></img>
-          </a>
-      </div>
+      return <div className='margins-small bottom-medium'>
+        <div className='flexbox darker-box'>
+            <a href={item.link} className='a-none flex1 box'>
+              <div className='margins-extra'>  
+                <h3 className='h3-broadacre center-align'>{item.title}</h3>
+                <p className='p-light center-align'>{item.text}</p>
+              </div>
+            </a>
+            <a href={item.link} className='a-none flex1 box'>
+              <img src= {item.image} width="100%"></img>
+            </a>
+        </div>
+        </div>
     } else { 
-      return <div className='flexbox darker-box'>
-          <a href={item.link} className='a-none flex1 box'>
-            <img src= {item.image} width="100%"></img>
-          </a>
-          <a href={item.link} className='a-none flex1 box'>
-            <div className='margins-extra'>  
-              <h3 className='h3-broadacre center-align'>{item.title}</h3>
-              <p className='p-light center-align'>{item.text}</p>
-            </div>
-          </a>
+      return <div className='margins-small bottom-medium'>
+        <div className='flexbox darker-box'>
+            <a href={item.link} className='a-none flex1 box'>
+              <img src= {item.image} width="100%"></img>
+            </a>
+            <a href={item.link} className='a-none flex1 box'>
+              <div className='margins-extra'>  
+                <h3 className='h3-broadacre center-align'>{item.title}</h3>
+                <p className='p-light center-align'>{item.text}</p>
+              </div>
+            </a>
+        </div>
       </div>
     }
   });
@@ -98,6 +103,7 @@ function Portfolio() {
        <div>
     
       </div>  
+      <Footer />
     </div>
   );
 

@@ -1,6 +1,7 @@
 import React from "react";
 
 import { Navigation } from './Navigation.js';
+import { Footer } from './Footer.js';
 import './Bookverse.css';
 import './common/styles/typography.css';
 import './common/styles/spacing.css';
@@ -320,6 +321,9 @@ function BookVerse() {
 
 
 	</div>
+		<div className='top-medium'>
+	      <Footer />
+		</div>     
 	</div>
 	);
 }
