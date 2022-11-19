@@ -16,37 +16,37 @@ import imgArrows from './images/Portfolio/arrows.png';
 
 function Portfolio() {
   const contentItems = [
-    {'title': 'UX/UI & Design', 'text': 'UX/UI development, visual design & branding, and interactive design projects.', 'image': imgVaca },
-    {'title': 'Coding', 'text': 'Unity projects coded in C# as well as React, HTML, CSS, and PHP.', 'image': imgCode },
-    {'title': '3D-Modeling', 'text': '3D art projects created in Blender.', 'image': imgModel },
-    {'title': 'Digital Art', 'text': 'Digital portraits (and others).', 'image': imgESO },
+    {'title': 'UX/UI & Design', 'text': 'UX/UI development, visual design & branding, and interactive design projects.', 'image': imgVaca, 'link': '/uxui' },
+    {'title': 'Coding', 'text': 'Unity projects coded in C# as well as React, HTML, CSS, and PHP.', 'image': imgCode, 'link': '/code' },
+    {'title': '3D-Modeling', 'text': '3D art projects created in Blender.', 'image': imgModel, 'link': '/modeling' },
+    {'title': 'Digital Art', 'text': 'Digital portraits (and others).', 'image': imgESO, 'link': '/digitalart'},
 
   ];
 
   const portfolioItems = contentItems.map((item, index) => {
     if (index % 2) {
       return <div className='flexbox darker-box'>
-          <div className='flex1 box'>
+          <a href={item.link} className='a-none flex1 box'>
             <div className='margins-extra'>  
-              <h3 className='h3-broadacre align-center'>{item.title}</h3>
-              <p className='p-light align-center'>{item.text}</p>
+              <h3 className='h3-broadacre center-align'>{item.title}</h3>
+              <p className='p-light center-align'>{item.text}</p>
             </div>
-          </div>
-          <div className='flex1 box'>
+          </a>
+          <a href={item.link} className='a-none flex1 box'>
             <img src= {item.image} width="100%"></img>
-          </div>
+          </a>
       </div>
     } else { 
       return <div className='flexbox darker-box'>
-          <div className='flex1 box'>
+          <a href={item.link} className='a-none flex1 box'>
             <img src= {item.image} width="100%"></img>
-          </div>
-          <div className='flex1 box'>
+          </a>
+          <a href={item.link} className='a-none flex1 box'>
             <div className='margins-extra'>  
-              <h3 className='h3-broadacre align-center'>{item.title}</h3>
-              <p className='p-light align-center'>{item.text}</p>
+              <h3 className='h3-broadacre center-align'>{item.title}</h3>
+              <p className='p-light center-align'>{item.text}</p>
             </div>
-          </div>
+          </a>
       </div>
     }
   });
@@ -89,18 +89,15 @@ function Portfolio() {
                </div>
             </div>   
       </div>
-      <div className='align-center'> <img className='img-arrows' src= { imgArrows } ></img></div>  
+      <div className='center-align'> <img className='img-arrows' src= { imgArrows } ></img></div>  
 
       <div className='dark-box top-dark'>
         <h2 className='h2-broadacre top-medium bottom-medium box'>What I Do</h2>  
           { portfolioItems }
         </div>
        <div>
-      
-
-
-      </div>   
-      
+    
+      </div>  
     </div>
   );
 

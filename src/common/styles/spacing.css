@@ -1,7 +1,4 @@
-h1 {
-  padding-top: 100px;
-  margin-bottom: 20px;
-}
+
 
 h2 {
   text-align: center;
@@ -22,13 +19,13 @@ p {
 }
 
 
-.align-right {
+.right-align {
   text-align: right;
 }
-.align-center {
+.center-align {
   text-align: center;
 }
-.align-left {
+.left-align {
   text-align: left;
 }
 

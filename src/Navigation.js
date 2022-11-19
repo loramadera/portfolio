@@ -10,7 +10,7 @@ function Navigation() {
    
     <div className="flexbox">
           <div className="logo"> 
-                <img src={imgLogo} width="50px"></img>
+                <img src={imgLogo} width='50px'></img>
           </div>
           <div className="flex1">&nbsp;</div>
            <div>   
