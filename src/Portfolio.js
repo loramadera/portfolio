@@ -6,8 +6,6 @@ import './common/styles/spacing.css';
 import './common/styles/sitetypography.css';
 
 
-
-import imgWhite from './images/Portfolio/white.png';
 import imgProfile1 from './images/Portfolio/profilelarge.png';
 import imgVaca from './images/Portfolio/pp_vaca.png';
 import imgCode from './images/Portfolio/pp_code.png';
