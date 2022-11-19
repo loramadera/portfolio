@@ -1,3 +1,11 @@
+.portfolio-broad {
+  color: white;
+  font-family: broadacre;
+  font-size: 60px;
+  font-weight: normal;
+}
+
+
 .h1-alegreya {
   color: white;
   font-family: alegreya SC;
@@ -65,7 +73,7 @@
 
 
 .p-broad {
-   color: white;
+  color: white;
   font-family: broadacre-hairline-0, sans-serif;
   font-weight: 100;
   font-size: 17px;

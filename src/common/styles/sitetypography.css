@@ -1,0 +1,67 @@
+.h1-broadacre {
+  color: white;
+  font-family: broadacre;
+  font-size: 40px;
+  font-weight: normal;
+  text-align: left;
+  margin: 0px;
+  padding-top: 0px;
+}
+
+.h2-broadacre {
+  color: white;
+  font-family: broadacre;
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.h3-broadacre {
+  color: white;
+  font-family: broadacre;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.p-bold {
+  color: white;
+  font-family: broadacre;
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0px;
+
+}
+
+.p-light {
+  color: white;
+  font-family: broadacre-hairline-0, sans-serif;
+  font-weight: 100;
+  font-size: 17px;
+  font-style: normal;
+  margin: 0px;
+
+}
+
+
+.dark-box {
+  background-color: #1a1e23;
+}
+
+
+.darker-box {
+  background-color: #171a1e;
+}
+
+.bottom-dark {
+  border-bottom-style: solid;
+  border-bottom-color: #1a1e23;
+  border-bottom-width: 2px;
+  margin: 100px;
+}
+
+
+.top-dark {
+  border-top-style: solid;
+  border-top-color: #1a1e23;
+  border-top-width: 10px;
+  margin: 100px;
+}

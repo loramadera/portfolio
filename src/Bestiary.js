@@ -116,7 +116,7 @@ function Bestiary() {
 			<h2 className='h2-broad'>Mobile Game Design</h2>
 
 
-			<div className='big-border'>
+			<div className='bottom-border'>
 				<h3 className='h3-broad'>01 Overview</h3>
 			</div>
 			<div className='margins-large'>
@@ -125,12 +125,12 @@ function Bestiary() {
 			</div>
 
 
-			<div className='big-border'>
+			<div className='bottom-border'>
 				<h3 className='h3-broad'>02 Target Audience & Market</h3>
 			</div>
 			<div className='flexbox margins-medium'>
 				<div className='flex1 box'>
-					<img className='img-big-swords margins-small' src= { imgSwords } width="100%"></img>
+					<img className='img-bottom-swords margins-small' src= { imgSwords } width="100%"></img>
 				</div>
 				<div className='flex1 box'>
 					<div className='padding-small'>
@@ -154,7 +154,7 @@ function Bestiary() {
 
 
 
-			<div className='big-border'>
+			<div className='bottom-border'>
 				<h3 className='h3-broad'>03 Interviews</h3>
 			</div>
 				<div className='flexbox margins-large'>
@@ -258,7 +258,7 @@ function Bestiary() {
 
 
 
-			<div className='big-border'>
+			<div className='bottom-border'>
 				<h3 className='h3-broad'>04 Interview Profiles & Feedback</h3>
 			</div>
 					<div className='flexbox margins-medium'>
@@ -308,7 +308,7 @@ function Bestiary() {
 
 
 
-			<div className='big-border'>
+			<div className='bottom-border'>
 				<h3 className='h3-broad'>05 The Minimum Viable Product</h3>
 			</div>
 				<div className='flexbox margins-medium bottom-small'>
@@ -392,7 +392,7 @@ function Bestiary() {
 
 
 
-			<div className='big-border'>
+			<div className='bottom-border'>
 				<h3 className='h3-broad'>06 User Testing</h3>
 			</div>
 				<div className='flexbox margins-medium bottom-medium'>

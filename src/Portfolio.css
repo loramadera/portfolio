@@ -7,62 +7,11 @@
 
 }
 
-.portfolio-info {
-  margin-top: 100px;
-  margin-bottom: 100px;
-
+.img-profile {
+  width: 900px;
+  align-content: ;
 }
 
-.portfolio-h1 {
-  padding-left: 70px;
-  padding-top: 150px;
-  padding-right: 80px;
-  text-align: left;
-  color: #e4d1b9;
-  font-family: aktiv grotesk ex;
-  font-size: 50px;
-  font-weight: normal;
-}
-
-.portfolio-h2 {
-  padding-top: 50px;
-  margin-bottom: 60px;
-  text-align: center;
-  color: #e4d1b9;
-  font-family: aktiv grotesk ex;
-  font-size: 40px;
-  font-weight: normal;
-}
-
-.portfolio-h3 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  padding-top: 0px;
-  text-align: center;
-  color: #e4d1b9;
-  font-family: aktiv grotesk ex;
-  font-size: 30px;
-  font-weight: lighter;
-}
-
-
-.portfolio-p {
-  padding-left: 70px;
-  padding-bottom: 200px;
-  padding-right: 80px;
-  text-align: left;
-  color: white;
-  font-family: myriad-pro, sans-serif;
-  font-weight: 100;
-  font-size: 20px;
-}
-
-.portfolio-hero{
-  padding-top: 100px;
-  padding-bottom: 100px;
-}
-
-.portfolio-link {
-  text-decoration: none;
-  width: 100%;
+.img-arrows {
+  width: 40px;
 }

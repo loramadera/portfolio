@@ -109,7 +109,7 @@ function BookVerse() {
 		
 
 
-		<div className='big-border'>
+		<div className='bottom-border'>
 			<h3 className='h3-alegreya'>01 Overview</h3>
 		</div>
 		<div className='flexbox margins-medium'>
@@ -127,7 +127,7 @@ function BookVerse() {
 
 
 
-		<div className='big-border'>
+		<div className='bottom-border'>
 			<h3 className='h3-alegreya'>02 Methodology</h3>
 		</div>
 		<div className='flexbox margins-extra'>
@@ -151,7 +151,7 @@ function BookVerse() {
 
 
 
-		<div className='big-border'>
+		<div className='bottom-border'>
 			<h3 className='h3-alegreya'>03 Qualitative Research</h3>
 		</div>
 		<div className='margins-medium'>
@@ -203,7 +203,7 @@ function BookVerse() {
 
 
 
-		<div className='big-border'>
+		<div className='bottom-border'>
 			<h3 className='h3-alegreya'>04 Persona</h3>
 		</div>
 		<div className='flexbox margins-medium'>
@@ -247,7 +247,7 @@ function BookVerse() {
 
 
 
-		<div className='big-border'>
+		<div className='bottom-border'>
 			<h3 className='h3-alegreya'>05 User Testing</h3>
 		</div>
 		<div className='margins-medium bottom-medium'>
@@ -304,7 +304,7 @@ function BookVerse() {
 
 
 
-		<div className='big-border'>
+		<div className='bottom-border'>
 			<h3 className='h3-alegreya'>06 Styles & Logo</h3>
 		</div>
 		<div> { styleContent } </div>
