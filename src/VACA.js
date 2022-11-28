@@ -25,24 +25,24 @@ const vacaItems = contentItems.map((item, index) => {
 	if (index % 2) {
 		return <div className='vaca-item'>	
 			<div className='flexbox margins-large'>	
-				<div className='flex1 box'>
-					<h2 className='h2-broad left-align'>{item.title}</h2>
-					<p className='p-broad'>{item.text}</p>
-				</div>
 				<div className='img flex1 box'>
 					<img src= {item.image} width="100%"></img>
+				</div>
+				<div className='flex1 box'>
+					<h2 className='h2-broad left-align margins-small'>{item.title}</h2>
+					<p className='p-broad margins-small'>{item.text}</p>
 				</div>
 			</div>
 		</div>
 	} else {
 		return <div className='vaca-item'>
 			<div className='flexbox margins-large'>
+				<div className='flex1 box'>
+					<h2 className='h2-broad left-align margins-small'>{item.title}</h2>
+					<p className='p-broad margins-small'>{item.text}</p>
+				</div>
 				<div className='img flex1 box'>
 					<img src={item.image} width="100%"></img>
-				</div>
-				<div className='flex1 box'>
-					<h2 className='h2-broad left-align'>{item.title}</h2>
-					<p className='p-broad'>{item.text}</p>
 				</div>
 			</div>
 		</div>
@@ -62,6 +62,7 @@ return (
 	<div>
 		<h1 className='h1-broad center-align top-medium'>VACA</h1>
 		<h2 className='h3-broad'>The Travel App</h2>
+		<h2 className='h3-broad opacity bottom-medium'>Visual Design</h2>
 		<p className='p-broad center-align'>VACA allows the tracking and creation of a travel project, start to finish. Budgets, daily schedules, and weather forecasts are some of the features in this app.</p>
 	</div>
 	<div className='dark-box top-dark'>
@@ -70,14 +71,14 @@ return (
 					<img src= { imgColor } width="100%"></img>
 				</div>
 				<div className='flex1 box'>
-						<h3 className='h3-broad'>Tracking</h3>
-						<p className='p-broad'>Seasonal weather trends, regional site-seeing index, flight and hotel booking calendar</p>
-						<h3 className='h3-broad'>Target Audience</h3>
-						<p className='p-broad'>age 25-45
+						<h3 className='h3-broad margins-small'>Tracking</h3>
+						<p className='p-broad margins-small'>Seasonal weather trends, regional site-seeing index, flight and hotel booking calendar</p>
+						<h3 className='h3-broad margins-small'>Target Audience</h3>
+						<p className='p-broad margins-small'>age 25-45
 						married with children
 						working class</p>
-						<h3 className='h3-broad'>Word List</h3>
-						<p className='p-broad'>travel, booking, flights, country, abroad, nature, planning, trip, vacation, overseas, hotel, boarding, itinerary, schedule, check list</p>
+						<h3 className='h3-broad margins-small'>Word List</h3>
+						<p className='p-broad margins-small'>travel, booking, flights, country, abroad, nature, planning, trip, vacation, overseas, hotel, boarding, itinerary, schedule, check list</p>
 				</div>
 			</div>
 
@@ -85,7 +86,7 @@ return (
 				{ vacaItems }
 			</div>
 
-			<div className='vaca-onboard'>
+			<div className='vaca-onboard top-medium'>
 				<img src= {imgOnboard} width="100%"></img>
 			</div>
 

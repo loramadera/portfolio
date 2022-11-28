@@ -20,8 +20,8 @@ function Bio() {
 
   const pageItems = bioItems.map((item, index) => {
     if (index % 2) {
-      return <div className="darker-box bio-item">
-        <a className='a-none flexbox' href={item.link}>
+      return <div>
+        <a className='a-none flexbox darker-box' href={item.link}>
           <div className='flex1 box'>
             <h3 className="h3-broadacre left-align margins-medium">{item.title}</h3>
             <p className='p-light left-align margins-medium'>{item.text}</p>
@@ -30,16 +30,15 @@ function Bio() {
         </a>
       </div>;
     } else {
-      return <div className="bio-item darker-box">
-        <div>
-          <a className='a-none flexbox' href={item.link}>
+      return <div>
+          <a className='a-none flexbox darker-box' href={item.link}>
             <div className='img flex1'><img src={item.image} width="100%" /></div>
             <div className='flex1 box'>
               <h3 className='h3-broadacre left-align margins-medium'>{item.title}</h3>
               <p className='p-light left-align margins-medium'>{item.text}</p>
             </div>
           </a>
-        </div> 
+         
       </div>;
       }
     });

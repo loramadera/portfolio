@@ -129,3 +129,7 @@ h4 {
   text-align: center;
 }
 
+.border-box {
+  box-sizing: border-box;
+}
+

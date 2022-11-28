@@ -22,11 +22,13 @@ function UXUI() {
   const visualItems = [
     { 'title': 'VACA', 'text': 'A luxurious travel app visual design.', 'image': imgVACA, 'link': '/vaca' },
     { 'title': 'Sadhan', 'text': 'Meditation app visual design.', 'image': imgSadhan, 'link': '/sadhan' },
-    { 'title': 'Moraga Country Club', 'text': 'Full branding redesign.', 'image': imgMCC, 'link': '/mcc'},
      ];
 
+  const brandItems = [
+    { 'title': 'Moraga Country Club', 'text': 'Full branding redesign.', 'image': imgMCC, 'link': '/mcc'},
+  ];
+
   const interactItems = [
-    { 'title': 'Space Exploration', 'text': 'Timeline of major space exploration events.', 'image': imgSpace, 'link': '/spacexploration'},
     { 'title': 'Project Gaia', 'text': 'Educational interface on environmental sustainability.', 'image': imgGaia, 'link': '/gaia'},
   ];
 
@@ -91,7 +93,7 @@ function UXUI() {
           <h1 className='h1-broadacre center-align top-large'>UX/UI & Design</h1>
           <div className='dark-box top-dark'>
                 <div className='padding-large'> 
-                <div><h3 className='h3-broadacre center-align bottom-small opacity'>UX/UI Projects</h3></div> 
+                <div><h3 className='h3-broadacre center-align bottom-small opacity'>UX/UI</h3></div> 
                   <div>
                     <a className='a-none' href='/bookverse'> 
                       <div>
@@ -116,19 +118,40 @@ function UXUI() {
               </div>         
           </div>
 
+          <div className='dark-box top-dark'>
+                <div className='padding-large'> 
+                <div><h3 className='h3-broadacre center-align bottom-small opacity'>Branding & Visual Design</h3></div> 
+                  <div>
+                    <a className='a-none' href='/mcc'> 
+                      <div>
+                        <h3 className='h3-broadacre center-align'>Moraga Country Club</h3>
+                        <p className='p-light center-align bottom-small'>Full re-branding of East Bay county club establishment.</p>
+                      </div>   
+                      <div className="flex1 darker-box padding-large">
+                          <img src={imgMCC} width="100%"></img>
+                      </div>
+                    </a>
+                </div>
+              </div>         
+          </div>
+
+
+           <div className='dark-box top-dark padding-large'>
+            <h3 className='h3-broadacre center-align bottom-small opacity'>Interactive Design</h3>
+            <div>
+              { intItems }
+            </div>
+          </div>
+
           <div className='dark-box top-dark padding-large'>
-            <h3 className='h3-broadacre center-align bottom-small opacity'>Visual Design & Branding Projects</h3>
+            <h3 className='h3-broadacre center-align bottom-small opacity'>App & Visual Design</h3>
             <div>
               { visItems }
             </div>
           </div>
 
-          <div className='dark-box top-dark padding-large'>
-            <h3 className='h3-broadacre center-align bottom-small opacity'>Interactive Design Projects</h3>
-            <div>
-              { intItems }
-            </div>
-          </div>
+
+
     <Footer />
     </div>
   );

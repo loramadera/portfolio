@@ -21,6 +21,7 @@
 }
 
 .h3-alegreya {
+  color: white;
   font-family: alegreya SC;
   font-size: 30px;
   font-weight: lighter;
@@ -28,6 +29,35 @@
 
 .h4-alegreya {
   color: #8b909f;
+  font-family: alegreya SC;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+
+
+.h1-aleg-b {
+  color: #f8e8dc;
+  font-family: alegreya SC;
+  font-size: 50px;
+  font-weight: normal;
+}
+
+.h2-aleg-b {
+  color: white;
+  font-family: alegreya SC;
+  font-size: 25px;
+  font-weight: lighter;
+}
+
+.h3-aleg-b {
+  font-family: alegreya SC;
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.h4-aleg-b {
+  color: #f8e8dc;
   font-family: alegreya SC;
   font-size: 25px;
   font-weight: lighter;

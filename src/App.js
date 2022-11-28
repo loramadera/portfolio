@@ -12,6 +12,9 @@ import { Code } from './Code.js';
 import { VACA } from './VACA.js';
 import { BookVerse } from './Bookverse.js';
 import { Bestiary } from './Bestiary.js';
+import { Sadhan } from './Sadhan.js';
+import { Gaia } from './Gaia.js';
+import { MCC } from './MCC.js';
 
 
 
@@ -28,6 +31,9 @@ function App() {
         <Route path="/vaca" element={<VACA />} />
         <Route path="/bookverse" element={<BookVerse />} />
         <Route path="/bestiary" element={<Bestiary />} />
+        <Route path="/sadhan" element={<Sadhan />} />
+        <Route path="/gaia" element={<Gaia />} />
+        <Route path="/mcc" element={<MCC />} />
       </Routes>
     </div>
   );
