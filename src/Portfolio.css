@@ -8,10 +8,29 @@
 }
 
 .img-profile {
-  width: 800px;
-  align-content: ;
+  width: 300px;
+  justify-content: flex-end;
+
 }
 
 .img-arrows {
   width: 40px;
+}
+
+
+
+@media screen and (max-width: 1025px) {
+
+  .img-profile {
+    width: 150px;
+    justify-content: flex-end;
+
+  }
+
+  .img-arrows {
+    width: 20px;
+  }
+
+
+
 }

@@ -16,6 +16,16 @@ import imgBook1 from './images/UXUI/Bestiary/book1.png';
 import imgBook2 from './images/UXUI/Bestiary/book2.png';
 import imgBook3 from './images/UXUI/Bestiary/book3.png';
 
+function debounce(fn, ms) {
+  let timer
+  return _ => {
+    clearTimeout(timer)
+    timer = setTimeout(_ => {
+      timer = null
+      fn.apply(this, arguments)
+    }, ms)
+  };
+}
 
 
 function Bestiary() {
@@ -32,27 +42,69 @@ function Bestiary() {
 		{ 'title': 'MVP Three: The Inventory', 'text1': 'Inventory map. Based on the hints and clues that the bio page gives them, the user can look at what they have in their inventory that will help them beat the monster.', 'text2': 'Primary Feature: Chart of ingredients that the user has to use against cryptid.', 'text3': 'Primary Outcome: Works like a puzzle for the user to figure out what to utilize.', 'image': imgBook2 },
 	];
 
+	const [items, setItems] = React.useState(contentItems)
+ 	 React.useEffect(() => {
+    const debouncedHandleResize = debounce(function handleResize() {
+      setItems(contentItems)
+    }, 100)
 
+    window.addEventListener('resize', debouncedHandleResize)
 
-	const bestContent = contentItems.map((item, index) => {
-	if (index % 2) {
-		return <div className='best-item'>	
-			<div className='flexbox top-small margins-small'>	
+    return _ => {
+      window.removeEventListener('resize', debouncedHandleResize)
+    }
+  	})
+
+ 	 const [item, setItem] = React.useState(mvpItems)
+ 	 React.useEffect(() => {
+    const debouncedHandleResize = debounce(function handleResize() {
+      setItems(contentItems)
+    }, 100)
+
+    window.addEventListener('resize', debouncedHandleResize)
+
+    return _ => {
+      window.removeEventListener('resize', debouncedHandleResize)
+    }
+  	})
+
+ 	function Items() {
+    if (window.innerWidth < 1025) {
+      return contentItems.map((item, index) => {
+        return <div className='best-item'>
+			<div className='flexbox top-small'>
+				<div className='flex1 top-medium center-align box'>
+					<img className='img-person' src= {item.image} width="100%"></img>
+				</div>
 				<div className='flex2 box'>
 					<div className='small-border'>
 						<h4 className='h4-broad '>{item.title}</h4>
 					</div>
 					<p className='p-broad'>{item.text}</p>
 				</div>
-				<div className='flex1 padding-medium box'>
+			</div>
+		</div>
+      });
+    } else {
+      return contentItems.map((item, index) => {
+        if (index % 2) {
+          return <div className='best-item'>	
+			<div className='flexbox top-small'>	
+				<div className='flex2 box'>
+					<div className='small-border'>
+						<h4 className='h4-broad '>{item.title}</h4>
+					</div>
+					<p className='p-broad'>{item.text}</p>
+				</div>
+				<div className='flex1 top-medium center-align box'>
 					<img className='img-person' src= {item.image} width="100%"></img>
 				</div>
 			</div>
 		</div>
 	} else {
 		return <div className='best-item'>
-			<div className='flexbox top-small margins-small'>
-				<div className='flex1 padding-medium box'>
+			<div className='flexbox top-small'>
+				<div className='flex1 top-medium center-align box'>
 					<img className='img-person' src= {item.image} width="100%"></img>
 				</div>
 				<div className='flex2 box'>
@@ -63,14 +115,34 @@ function Bestiary() {
 				</div>
 			</div>
 		</div>
-		}
-	});
+        }
+      });
+    }
+  }
 
-
-
-	const mvpContent = mvpItems.map((item, index) => {
-	if (index % 2) {
-		return <div className='margins-extra top-large'>	
+  function Mvp() {
+    if (window.innerWidth < 1025) {
+      return mvpItems.map((item, index) => {
+        return <div className='margins-extra top-large'>	
+			<div className='flexbox top-small'>	
+				<div className='flex1 box'>
+					<div className='margins-small'>	
+						<h4 className='h4-broad '>{item.title}</h4>
+						<p className='p-broad'>{item.text1}</p>
+						<p className='p-broad'>{item.text2}</p>
+						<p className='p-broad'>{item.text3}</p>
+					</div>
+				</div>
+				<div className='flex1 margins-small box'>
+					<img src= {item.image} width="100%"></img>
+				</div>
+			</div>
+		</div>
+      });
+    } else {
+      return mvpItems.map((item, index) => {
+        if (index % 2) {
+          return <div className='margins-extra top-large'>	
 			<div className='flexbox top-small'>	
 				<div className='flex1 box'>
 					<div className='margins-small'>	
@@ -101,24 +173,23 @@ function Bestiary() {
 				</div>
 			</div>
 		</div>
-		}
-	});
-
-
-
+        }
+      });
+    }
+  }
 
 	return (
 		<div>
 			<link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
 			<Navigation />
 			<img className='best-hero' src={ imgHero } width="100%"></img>
-			<h1 className='h1-broad'>The Bestiary</h1>
-			<h2 className='h2-broad'>UX/UI</h2>
-			<h2 className='h2-broad'>Mobile Game Design</h2>
+			<h1 className='h1-broad-g center-align top-medium'>The Bestiary</h1>
+			<h2 className='h2-broad center-align opacity'>UX/UI</h2>
+			<h2 className='h2-broad center-align opacity'>Mobile Game Design</h2>
 
 
-			<div className='bottom-border'>
-				<h3 className='h3-broad'>01 Overview</h3>
+			<div className='bottom-border top-medium'>
+				<h3 className='h3-broad-g'>01 Overview</h3>
 			</div>
 			<div className='margins-large'>
 				<h4 className='h4-broad top-small'>The Bestiary - what is it?</h4>
@@ -126,27 +197,27 @@ function Bestiary() {
 			</div>
 
 
-			<div className='bottom-border'>
-				<h3 className='h3-broad'>02 Target Audience & Market</h3>
+			<div className='bottom-border top-small mobile'>
+				<h3 className='h3-broad-g'>02 Target Audience & Market</h3>
 			</div>
 			<div className='flexbox margins-medium'>
-				<div className='flex1 box'>
-					<img className='img-bottom-swords margins-small' src= { imgSwords } width="100%"></img>
+				<div className='flex1 box center-align top-medium bottom-medium'>
+					<img className='img-big-swords margins-small' src= { imgSwords } width="100%"></img>
 				</div>
 				<div className='flex1 box'>
-					<div className='padding-small'>
+					<div>
 						<h4 className='h4-broad'>Hypothesis</h4>
 						<p className='p-broad'>The more immersive a gaming experience, the more likely a gamer is to consume and retain information from the interface conveying it.</p>
 					</div>
-					<div className='padding-small'>
+					<div>
 						<h4 className='h4-broad'>Demographic</h4>
 						<p className='p-broad'>Adults 20-35, videogame enthusiasts, college students/recent grads</p>
 					</div>
-					<div className='padding-small'>
+					<div>
 						<h4 className='h4-broad'>Research Objective</h4>
 						<p className='p-broad'>Determining whether immersion outweighs utility in the importance of interface design.</p>
 					</div>
-					<div className='padding-small'>
+					<div>
 						<h4 className='h4-broad'>User Needs</h4>
 						<p className='p-broad'>A game interface that is simple yet immersive, with clear relaying of information without blocks of text, with high entertainment value.</p>
 					</div>				
@@ -155,20 +226,20 @@ function Bestiary() {
 
 
 
-			<div className='bottom-border'>
-				<h3 className='h3-broad'>03 Interviews</h3>
+			<div className='bottom-border top-small mobile'>
+				<h3 className='h3-broad-g'>03 Interviews</h3>
 			</div>
 				<div className='flexbox margins-large'>
-					<div className='flex1 padding-medium'>
+					<div className='flex1 mobile'>
 						<div className='flexbox'>
-							<div className='flex box'>
+							<div className='flex box center-align'>
 									<img className='img-small-swords' src= {imgSwords} width="100%"></img>
 							</div>	
 							<div className='flex2 box'>
-								<h4 className='h4-broad sword-title'>Questions for Audience</h4>
+								<h4 className='h4-broad center-align'>Questions for Audience</h4>
 							</div>						
 						</div>	
-							<div className='padding-small'>
+							<div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
 										<p className='p-broad'>Would you enjoy an interface that takes time to navigate around, so long as it is immersive to you?</p>
@@ -207,16 +278,16 @@ function Bestiary() {
 							</div>					
 					</div>	
 
-					<div className='flex1 padding-medium'>
+					<div className='flex1'>
 						<div className='flexbox'>
-							<div className='flex box'>
+							<div className='flex box  center-align'>
 									<img className='img-small-swords' src= {imgSwords} width="100%"></img>
 							</div>	
 							<div className='flex2 box'>
-								<h4 className='h4-broad sword-title'>Questions for Expert</h4>
+								<h4 className='h4-broad center-align'>Questions for Expert</h4>
 							</div>						
 						</div>	
-							<div className='padding-small'>	
+							<div>	
 								<div className='flexbox'>
 									<div className='flex2 box'>
 										<p className='p-broad'>Would you rather have a complex interface with many interesting features, or minimalistic design with less features?</p>
@@ -259,43 +330,43 @@ function Bestiary() {
 
 
 
-			<div className='bottom-border'>
-				<h3 className='h3-broad'>04 Interview Profiles & Feedback</h3>
+			<div className='bottom-border top-small mobile'>
+				<h3 className='h3-broad-g'>04 Interview Profiles & Feedback</h3>
 			</div>
-					<div className='flexbox margins-medium'>
-						<div className='flex box'>
+					<div className='flexbox margins-medium mobile'>
+						<div className='flex box center-align'>
 								<img className='img-small-swords' src= {imgSwords} width="100%"></img>
 						</div>	
 						<div className='flex2 box'>
-							<h4 className='h4-broad sword-title'>Interview Feedback from Audience</h4>
+							<h4 className='h4-broad center-align'>Interview Feedback from Audience</h4>
 						</div>						
 					</div>	
-					<div className='flexbox margins-medium'>
+					<div className='flexbox margins-extra'>
 						<div>
-							 { bestContent }
+							 <Items />
 						</div>
 					</div>
-				<div className='flexbox margins-medium top-medium'>
-						<div className='flex box'>
+				<div className='flexbox margins-medium mobile'>
+						<div className='flex box center-align'>
 								<img className='img-small-swords' src= {imgSwords} width="100%"></img>
 						</div>	
 						<div className='flex2 box'>
-							<h4 className='h4-broad sword-title'>Interview Feedback from Expert</h4>
+							<h4 className='h4-broad sword-title center-align'>Interview Feedback from Expert</h4>
 						</div>						
 					</div>
 					<div className='flexbox margins-medium'>
-						<div className='flex1 box'>
-							<img className='img-best-expert margins-large' src={ imgPerson4 } width="100%"></img>
+						<div className='flex1 box center-align'>
+							<img className='img-best-expert margins-large top-medium bottom-medium' src={ imgPerson4 } width="100%"></img>
 						</div>
 						<div className='flex1 box'>
 							<div className='flexbox box'>
-								<div className='padding-small'>
+								<div className='margins-small mobile'>
 									<p className='p-broad'>Benjamin Brown, 32</p>
 									<p className='p-broad'>Bay Area</p>
 									<p className='p-broad'>Ex-Videogame Livestreamer</p>
 								</div>
 							</div>
-							<div className='padding-small'>
+							<div className='margins-small mobile'>
 								<h4 className='h4-broad'>Key Feedback</h4>
 								<p className='p-broad'>The balance of utility versus artistry in the interface design is completely dependent on the type of game being played.</p>
 								<p className='p-broad'>Fast-paced games need to be quick and strategy based, therefore they need to convey information quickly.</p>
@@ -309,20 +380,20 @@ function Bestiary() {
 
 
 
-			<div className='bottom-border'>
-				<h3 className='h3-broad'>05 The Minimum Viable Product</h3>
+			<div className='bottom-border top-medium mobile'>
+				<h3 className='h3-broad-g'>05 The Minimum Viable Product</h3>
 			</div>
-				<div className='flexbox margins-medium bottom-small'>
-						<div className='flex box'>
+				<div className='flexbox margins-medium mobile'>
+						<div className='flex box center-align'>
 								<img className='img-small-swords' src= {imgSwords} width="100%"></img>
 						</div>	
 						<div className='flex2 box'>
-							<h4 className='h4-broad sword-title'>Identifying the MVP</h4>
+							<h4 className='h4-broad sword-title center-align'>Identifying the MVP</h4>
 						</div>						
 				</div>
 				<div className='flexbox margins-extra'>
-					<div className='flex1'>
-						<h4 className='h4-broad top-small'>Defining the Features</h4>
+					<div className='flex1 features'>
+						<h4 className='h4-broad top-medium'>Defining the Features</h4>
 						<p className='p-broad'>Inventory of ingredients</p>
 						<p className='p-broad'>Tabs leading to various pages on each cryptid</p>
 						<p className='p-broad'>Map of creature’s well-known whereabouts</p>
@@ -330,15 +401,15 @@ function Bestiary() {
 						<p className='p-broad'>Journal entry option</p>
 						<p className='p-broad'>Cryptid’s individual biography</p>
 					</div>
-					<div className='flex1'>
-						<h4 className='h4-broad top-small'>Defining the Outcome</h4>
+					<div className='flex1 features'>
+						<h4 className='h4-broad top-medium'>Defining the Outcome</h4>
 						<p className='p-broad'>Player will have option to log a journal entry</p>
 						<p className='p-broad'>Player will learn about the cryptid, gather information about how to defeat it</p>
 						<p className='p-broad'>Player will be able to identify where their chances are best for locating the cryptid</p>
 					</div>
 				</div>
-				<h4 className='h4-broad top-medium bottom-small margins-extra'>The bestiary can be broken down into three diagram pieces - the game itself, generated by the game engine, the interface content, and the content generated by the user.</h4>
-				<div className='flexbox top-medium margins-extra'>
+				<h4 className='h4-broad top-medium bottom-medium margins-extra'>The bestiary can be broken down into three diagram pieces - the game itself, generated by the game engine, the interface content, and the content generated by the user.</h4>
+				<div className='flexbox margins-extra'>
 					<div className='flex1'>
 						<h4 className='h4-broad bottom-small center-align'>Data Content</h4>
 							<div className='best-box'>	
@@ -387,32 +458,32 @@ function Bestiary() {
 				</div>
 
 				<div>
-					{ mvpContent }
+					<Mvp />
 				</div>	
 
 
 
 
-			<div className='bottom-border'>
-				<h3 className='h3-broad'>06 User Testing</h3>
+			<div className='bottom-border top-small'>
+				<h3 className='h3-broad-g'>06 User Testing</h3>
 			</div>
 				<div className='flexbox margins-medium bottom-medium'>
-						<div className='flex box'>
+						<div className='flex box center-align top-medium'>
 								<img className='img-small-swords' src= {imgSwords} width="100%"></img>
 						</div>	
 						<div className='flex2 box'>
-							<h4 className='h4-broad sword-title'>User Flows</h4>
+							<h4 className='h4-broad sword-title center-align'>User Flows</h4>
 						</div>						
 				</div>
 				<div className='margins-extra'>
-					<h4 className='h4-broad'>User Flow One: Document Your Battle</h4>
-					<p className='p-broad'>User will document the battle they just encountered and the monster they defeated. They will navigate to the journal entry in the bestiary and create a new entry documenting everything they learned.</p>
+					<h4 className='h4-broad task-flex'>User Flow One: Document Your Battle</h4>
+					<p className='p-broad task-flex'>User will document the battle they just encountered and the monster they defeated. They will navigate to the journal entry in the bestiary and create a new entry documenting everything they learned.</p>
 				</div>	
 				<div className='margins-medium'>	
-							<div className='flexbox top-small'>
+							<div className='flexbox top-small center-align'>
 								<div className='flex1 box'>
 									<div className='flexbox'>
-										<div className='flex1 box'>
+										<div className='flex1 box center-align'>
 											<h4 className='h4-broad flex-number'>1</h4>
 										</div>
 										<div className='flex1 box margins-small'>
@@ -467,8 +538,8 @@ function Bestiary() {
 
 
 				<div className='margins-extra top-medium'>
-					<h4 className='h4-broad'>User Flow Two: Learn About The Monster</h4>
-					<p className='p-broad'>In the cryptid biography, user will use the bestiary to learn more about the attributes and weaknesses of the monster they just faced. They will unlock new insights about the monster in preparation for the next confrontation on the following level. </p>
+					<h4 className='h4-broad task-flex'>User Flow Two: Learn About The Monster</h4>
+					<p className='p-broad task-flex'>In the cryptid biography, user will use the bestiary to learn more about the attributes and weaknesses of the monster they just faced. They will unlock new insights about the monster in preparation for the next confrontation on the following level. </p>
 				</div>	
 				<div className='margins-medium'>	
 							<div className='flexbox top-small'>
@@ -529,8 +600,8 @@ function Bestiary() {
 
 				
 				<div className='margins-extra top-medium'>
-					<h4 className='h4-broad'>User Flow Three: Pick Your Poison</h4>
-					<p className='p-broad'>User will select a poison from their inventory to use on the monster in the upper levels, with more knowledge on defeating the monster than they had before, based on the new unlcoked weakness/attributes they read about.</p>
+					<h4 className='h4-broad task-flex'>User Flow Three: Pick Your Poison</h4>
+					<p className='p-broad task-flex'>User will select a poison from their inventory to use on the monster in the upper levels, with more knowledge on defeating the monster than they had before, based on the new unlcoked weakness/attributes they read about.</p>
 				</div>	
 				<div className='margins-medium'>	
 							<div className='flexbox top-small'>
@@ -603,7 +674,9 @@ function Bestiary() {
 
 
 
-		      <Footer />
+		     <div className='mobile'>
+				 <Footer />
+			</div>
 
 		</div>		
 		);

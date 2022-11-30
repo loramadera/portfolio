@@ -16,7 +16,16 @@ import imgMagazine from './images/UXUI/MCC/magazine.png';
 import imgFB from './images/UXUI/MCC/fb.png';
 import imgLaptop from './images/UXUI/MCC/laptop.png';
 
-
+function debounce(fn, ms) {
+  let timer
+  return _ => {
+    clearTimeout(timer)
+    timer = setTimeout(_ => {
+      timer = null
+      fn.apply(this, arguments)
+    }, ms)
+  };
+}
 
 
 function MCC() {
@@ -27,39 +36,71 @@ function MCC() {
 
 		];
 
+		const [items, setItems] = React.useState(logoItems)
+	  React.useEffect(() => {
+	    const debouncedHandleResize = debounce(function handleResize() {
+	      setItems(logoItems)
+	    }, 100)
 
-	const logoContent = logoItems.map((item, index) => {
-	if (index % 2) {
-		return <div className='margins-extra'>	
-			<div className='flexbox top-small'>	
-				<div className='flex1 box'>
-					<div className='margins-small'>	
-						<h4 className='h4-broad '>{item.title}</h4>
-						<p className='p-broad'>{item.text}</p>
-					</div>
-				</div>
-				<div className='flex1 margins-small box'>
-					<img src= {item.image} width="100%"></img>
-				</div>
-			</div>
-		</div>
-	} else {
-		return <div className='margins-extra'>
+	    window.addEventListener('resize', debouncedHandleResize)
+
+	    return _ => {
+	      window.removeEventListener('resize', debouncedHandleResize)
+	    }
+	  })
+
+
+	  function Items() {  
+	    if (window.innerWidth < 1025) {
+	      return logoItems.map((item, index) => {
+	        return <div className='margins-extra'>
 			<div className='flexbox top-small'>
-				<div className='flex1 margins-small box'>
-					<img src= {item.image} width="100%"></img>
-				</div>
 				<div className='flex1 box'>
 					<div className='margins-small'>	
-						<h4 className='h4-broad '>{item.title}</h4>
+						<h4 className='h4-broad mobile'>{item.title}</h4>
 						<p className='p-broad'>{item.text}</p>
 					</div>
 				</div>
+				<div className='flex1 margins-small box'>
+					<img src= {item.image} width="100%"></img>
+				</div>
 			</div>
 		</div>
-		}
-	});
-
+	      });
+	    } else {
+	      return logoItems.map((item, index) => {
+		       if (index % 2) {
+		          return <div className='margins-extra'>	
+				<div className='flexbox top-small'>	
+					<div className='flex1 box'>
+						<div className='margins-small'>	
+							<h4 className='h4-broad mobile'>{item.title}</h4>
+							<p className='p-broad'>{item.text}</p>
+						</div>
+					</div>
+					<div className='flex1 margins-small box'>
+						<img src= {item.image} width="100%"></img>
+					</div>
+				</div>
+			</div>
+		} else {
+			return <div className='margins-extra'>
+				<div className='flexbox top-small'>
+					<div className='flex1 margins-small box'>
+						<img src= {item.image} width="100%"></img>
+					</div>
+					<div className='flex1 box'>
+						<div className='margins-small'>	
+							<h4 className='h4-broad mobile'>{item.title}</h4>
+							<p className='p-broad'>{item.text}</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			}
+		   });
+	    }
+	  }
 
 
 
@@ -69,10 +110,10 @@ function MCC() {
 			<Navigation />
 			<img className='top-large' src={ imgHero } width="100%"></img>
 			<h1 className='h1-aleg-b top-medium center-align'>Moraga Country Club</h1>
-			<h2 className='h2-aleg-b'>Branding Re-Design</h2>
+			<h2 className='h2-aleg-b opacity center-align'>Branding Re-Design</h2>
 
 
-			<div className='bottom-border'>
+			<div className='bottom-border top-small'>
 				<h3 className='h3-alegreya'>About the Club</h3>
 			</div>
 			<div className='margins-large'>
@@ -84,7 +125,7 @@ function MCC() {
 				<h3 className='h3-alegreya'>Logos</h3>
 			</div>
 			<div>
-			 { logoContent }
+			 <Items />
 			</div>
 
 
@@ -101,7 +142,9 @@ function MCC() {
 
 
 
-		      <Footer />
+		      <div className='mobile'>
+					 <Footer />
+				</div>
 
 		</div>		
 		);

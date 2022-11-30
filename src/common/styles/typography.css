@@ -80,6 +80,20 @@
   font-size: 18px;
 }
 
+ .h1-broad-g {
+        color: #F3DBA6;
+        font-family: broadacre;
+        font-size: 40px;
+        font-weight: normal;
+      }
+      
+.h3-broad-g {
+        color: #F3DBA6;
+        font-family: broadacre;
+        font-size: 20px;
+        font-weight: normal;
+  }
+
 
 .h1-broad {
   color: white;
@@ -118,3 +132,211 @@
   font-size: 17px;
   font-style: normal;
 }
+
+
+.dark-box {
+  background-color: #1a1e23;
+}
+
+
+.darker-box {
+  background-color: #171a1e;
+}
+
+.bottom-border {
+  border-bottom-style: solid;
+  border-bottom-color: white;
+  border-bottom-width: 2px;
+  margin: 100px;
+}
+
+
+.top-border {
+  border-top-style: solid;
+  border-top-color: white;
+  border-top-width: 2px;
+  margin: 100px;
+}
+ .bottom-border-g {
+  border-bottom-style: solid;
+  border-bottom-color: #F3DBA6;
+  border-bottom-width: 2px;
+  margin: 100px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 900px) {
+
+      .mobile {
+         margin-top: 50px;
+      }
+
+      .mobile-text {
+        text-align: center;
+      }
+
+      .h1-alegreya {
+        color: white;
+        font-family: alegreya SC;
+        font-size: 30px;
+        font-weight: normal;
+      }
+
+      .h2-alegreya {
+        color: #8b909f;
+        font-family: alegreya SC;
+        font-size: 20px;
+        font-weight: lighter;
+      }
+
+      .h3-alegreya {
+        color: white;
+        font-family: alegreya SC;
+        font-size: 30px;
+        font-weight: lighter;
+      }
+
+      .h4-alegreya {
+        color: #8b909f;
+        font-family: alegreya SC;
+        font-size: 20px;
+        font-weight: lighter;
+      }
+
+
+
+      .h1-aleg-b {
+        color: #f8e8dc;
+        font-family: alegreya SC;
+        font-size: 30px;
+        font-weight: normal;
+      }
+
+      .h2-aleg-b {
+        color: white;
+        font-family: alegreya SC;
+        font-size: 20px;
+        font-weight: lighter;
+      }
+
+      .h3-aleg-b {
+        font-family: alegreya SC;
+        font-size: 15px;
+        font-weight: lighter;
+      }
+
+      .h4-aleg-b {
+        color: #f8e8dc;
+        font-family: alegreya SC;
+        font-size: 10px;
+        font-weight: lighter;
+      }
+
+
+      .h3-aktiv {
+        color: white;
+        font-family: aktiv grotesk ex;
+        font-size: 15px;
+        font-weight: normal;
+      }
+
+      .p-aktiv {
+        color: white;
+        font-family: aktiv grotesk ex;
+        font-size: 15px;
+        font-weight: lighter;
+      }
+
+
+       .h1-broad-g {
+        color: #F3DBA6;
+        font-family: broadacre;
+        font-size: 25px;
+        font-weight: normal;
+      }
+      
+      .h3-broad-g {
+        color: #F3DBA6;
+        font-family: broadacre;
+        font-size: 20px;
+        font-weight: normal;
+      }
+
+
+
+      .h1-broad {
+        color: white;
+        font-family: broadacre;
+        font-size: 25px;
+        font-weight: normal;
+      }
+
+
+      .h2-broad {
+        color: white;
+        font-family: broadacre;
+        font-size: 15px;
+        font-weight: normal;
+      }
+
+      .h3-broad {
+        color: white;
+        font-family: broadacre;
+        font-size: 20px;
+        font-weight: normal;
+      }
+
+      .h4-broad {
+        color: white;
+        font-family: broadacre;
+        font-size: 15px;
+        font-weight: normal;
+      }
+
+
+      .p-broad {
+        color: white;
+        font-family: broadacre-hairline-0, sans-serif;
+        font-weight: 100;
+        font-size: 13px;
+        font-style: normal;
+      }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

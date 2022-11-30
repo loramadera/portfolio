@@ -1,8 +1,16 @@
 .flexbox {
   display: flex;
+  flex-direction: row;
 }
 
 .flex1 {
   flex: 1;
 }
 
+@media screen and (max-width: 900px) {
+    .flexbox {
+      flex-direction: column;
+      width: 100%;
+    }
+
+}

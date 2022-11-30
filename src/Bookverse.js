@@ -17,6 +17,17 @@ import imgPersona from './images/UXUI/BookVerse/persona.png';
 import imgColors from './images/UXUI/BookVerse/colors.png';
 import imgBeauty from './images/UXUI/BookVerse/bookbeauty.png';
 
+function debounce(fn, ms) {
+  let timer
+  return _ => {
+    clearTimeout(timer)
+    timer = setTimeout(_ => {
+      timer = null
+      fn.apply(this, arguments)
+    }, ms)
+  };
+}
+
 
 function BookVerse() {
 	const contentItems = [
@@ -32,96 +43,163 @@ function BookVerse() {
 	]
 
 
-	const bookContent = contentItems.map((item, index) => {
-	if (index % 2) {
-		return <div className='book-item'>	
-			<div className='flexbox top-small'>	
-				<div className='flex2 box'>
-					<div>
-						<h4 className='h4-alegreya small-border margins-small'>{item.title}</h4>
-					</div>
-					<p className='p-aktiv margins-small'>{item.text}</p>
-				</div>
-				<div className='flex1 padding-medium box'>
-					<img className='book-img' src= {item.image} width="100%"></img>
-				</div>
-			</div>
-		</div>
-	} else {
-		return <div className='book-item'>
-			<div className='flexbox top-small'>
-				<div className='flex1 padding-medium box'>
-					<img className='book-img' src={item.image} width="100%"></img>
-				</div>
-				<div className='flex2 box'>
-					<div className=''>
-						<h4 className='h4-alegreya small-border margins-small'>{item.title}</h4>
-					</div>
-					<p className='p-aktiv margins-small'>{item.text}</p>
-				</div>
-			</div>
-		</div>
-		}
-	});
+	const [items, setItems] = React.useState(contentItems)
+  	React.useEffect(() => {
+    const debouncedHandleResize = debounce(function handleResize() {
+      setItems(contentItems)
+    }, 100)
 
-	const styleContent = styleItems.map((item, index) => {
-	if (index % 2) {
-		return <div className='book-item'>	
-			<div className='flexbox margins-large'>	
-				<div className='flex1 box'>
-					<h4 className='h4-alegreya'>{item.title}</h4>
-					<p className='p-aktiv'>{item.text}</p>
-				</div>
-				<div className='img flex1 box'>
-					<img src= {item.image} width="100%"></img>
-				</div>
-			</div>
-		</div>
-	} else {
-		return <div className='book-item'>
-			<div className='flexbox margins-large'>
-				<div className='img flex1 box'>
-					<img src={item.image} width="100%"></img>
-				</div>
-				<div className='flex1 box'>
-					<h4 className='h4-alegreya'>{item.title}</h4>
-					<p className='p-aktiv'>{item.text}</p>
-				</div>
-			</div>
-		</div>
+    window.addEventListener('resize', debouncedHandleResize)
 
-		}
-	});
+    return _ => {
+      window.removeEventListener('resize', debouncedHandleResize)
+    }
+ 	 })
+
+  	const [item, setItem] = React.useState(styleItems)
+  	React.useEffect(() => {
+    const debouncedHandleResize = debounce(function handleResize() {
+      setItems(styleItems)
+    }, 100)
+
+    window.addEventListener('resize', debouncedHandleResize)
+
+    return _ => {
+      window.removeEventListener('resize', debouncedHandleResize)
+    }
+ 	 })
+
+  	function Items () {
+  		if (window.innerWidth < 1025) {
+		return contentItems.map((item, index) => {
+		        return <div className='book-item'>
+				<div className='flexbox top-small'>
+					<div className='flex1 padding-medium box'>
+						<img className='book-img' src={item.image} width="100%"></img>
+					</div>
+					<div className='flex2 box'>
+						<div className=''>
+							<h4 className='h4-alegreya small-border margins-small'>{item.title}</h4>
+						</div>
+						<p className='p-aktiv margins-small'>{item.text}</p>
+					</div>
+				</div>
+			</div>
+		      });
+		    } else {
+		      return contentItems.map((item, index) => {
+		        if (index % 2) {
+		          return <div className='book-item'>	
+					<div className='flexbox top-small'>	
+						<div className='flex2 box'>
+							<div>
+								<h4 className='h4-alegreya small-border margins-small'>{item.title}</h4>
+							</div>
+							<p className='p-aktiv margins-small'>{item.text}</p>
+						</div>
+						<div className='flex1 padding-medium box'>
+							<img className='book-img' src= {item.image} width="100%"></img>
+						</div>
+					</div>
+				</div>
+			} else {
+				return <div className='book-item'>
+					<div className='flexbox top-small'>
+						<div className='flex1 padding-medium box'>
+							<img className='book-img' src={item.image} width="100%"></img>
+						</div>
+						<div className='flex2 box'>
+							<div className=''>
+								<h4 className='h4-alegreya small-border margins-small'>{item.title}</h4>
+							</div>
+							<p className='p-aktiv margins-small'>{item.text}</p>
+						</div>
+					</div>
+				</div>
+		        }
+		      });
+		    }
+		  }
+
+		function Style () {
+  		if (window.innerWidth < 1025) {
+		return styleItems.map((item, index) => {
+		        return <div className='book-item'>	
+				<div className='flexbox margins-large'>	
+					<div className='flex1 box'>
+						<h4 className='h4-alegreya'>{item.title}</h4>
+						<p className='p-aktiv'>{item.text}</p>
+					</div>
+					<div className='img flex1 box'>
+						<img src= {item.image} width="100%"></img>
+					</div>
+				</div>
+			</div>
+		      });
+		    } else {
+		      return styleItems.map((item, index) => {
+		        if (index % 2) {
+		          return <div className='book-item'>	
+					<div className='flexbox margins-large'>	
+						<div className='flex1 box'>
+							<h4 className='h4-alegreya'>{item.title}</h4>
+							<p className='p-aktiv'>{item.text}</p>
+						</div>
+						<div className='img flex1 box'>
+							<img src= {item.image} width="100%"></img>
+						</div>
+					</div>
+					</div>
+				} else {
+					return <div className='book-item'>
+						<div className='flexbox margins-large'>
+							<div className='img flex1 box'>
+								<img src={item.image} width="100%"></img>
+							</div>
+							<div className='flex1 box'>
+								<h4 className='h4-alegreya'>{item.title}</h4>
+								<p className='p-aktiv'>{item.text}</p>
+							</div>
+						</div>
+					</div>
+
+					        }
+					      });
+					    }
+					  }
+			  		
+
 
 
 	return (
 	<div>
 	<Navigation />
+	<link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
 	<div className='book'>	
 		<div className="book-hero">
 			<img src={ imgBookVerse} width="100%"></img>
 		</div>
 		
 		<div>
-			<h1 className='h1-alegreya'>BookVerse</h1>
-			<h2 className='h2-alegreya'>UX/UI</h2>
-			<h2 className='h2-alegreya'>Curing the bookish blues.</h2>
+			<h1 className='h1-alegreya center-align'>BookVerse</h1>
+			<h2 className='h2-alegreya center-align'>Curing the bookish blues.</h2>
+			<h2 className='h2-alegreya center-align opacity'>UX/UI</h2>
 		</div>
 		
 
 
-		<div className='bottom-border'>
+		<div className='bottom-border top-large'>
 			<h3 className='h3-alegreya'>01 Overview</h3>
 		</div>
-		<div className='flexbox margins-medium'>
-			<div className='flex2 margins-small'>
+		<div className='flexbox margins-medium bottom-medium'>
+			<div className='flex2 margins-small center-align mobile'>
 				<img className='book-logo box' src={ imgLogo } width="100%"></img>
 			</div>
 			<div className='flex2 box'>
-				<h4 className='h4-alegreya margins-small'>Problem</h4>
-				<p className='p-aktiv margins-small'>In the age of technology, book publishers have moved from print books to e-Books. Various mediums have been developed to facilitate the reader-book matching process. But there are infinitely many good books to read, and readers just aren’t finding them.</p>
-				<h4 className='h4-alegreya margins-small'>Solution</h4>
-				<p className='p-aktiv margins-small'>A unique individual exploration process to maximize book matching to the right reader.</p>
+				<h4 className='h4-alegreya'>Problem</h4>
+				<p className='p-aktiv'>In the age of technology, book publishers have moved from print books to e-Books. Various mediums have been developed to facilitate the reader-book matching process. But there are infinitely many good books to read, and readers just aren’t finding them.</p>
+				<h4 className='h4-alegreya'>Solution</h4>
+				<p className='p-aktiv'>A unique individual exploration process to maximize book matching to the right reader.</p>
 			</div>
 		</div>
 
@@ -131,7 +209,7 @@ function BookVerse() {
 		<div className='bottom-border'>
 			<h3 className='h3-alegreya'>02 Methodology</h3>
 		</div>
-		<div className='flexbox margins-extra'>
+		<div className='flexbox margins-extra top-small'>
 			<div className='flex1 box'>
 				<h4 className='h4-alegreya'>Bodystorming</h4>
 				<p className='p-aktiv'>Gathering information about various platforms and using them with the purpose of discovering a book with several defining characteristics.</p>
@@ -140,7 +218,7 @@ function BookVerse() {
 				<h4 className='h4-alegreya'>Competitive Analysis</h4>
 				<p className='p-aktiv'>Analyzing competing products to see how they perform.</p>
 			</div>
-			<div className='flex1 box'>
+			<div className='flex1'>
 				<h4 className='h4-alegreya'>Goals</h4>
 				<p className='p-aktiv'>Get users reading and away from other distracting social media apps.</p>
 				<p className='p-aktiv'>Develop an interface that enhances the book searching process, rather than frustrates the reader.</p>
@@ -152,7 +230,7 @@ function BookVerse() {
 
 
 
-		<div className='bottom-border'>
+		<div className='bottom-border top-large'>
 			<h3 className='h3-alegreya'>03 Qualitative Research</h3>
 		</div>
 		<div className='margins-medium'>
@@ -169,22 +247,22 @@ function BookVerse() {
 
 		<div className='flexbox margins-medium'>
 			<div className='bottom medium'>
-				<h4 className='h4-alegreya top-small bottom-small'>03 Interviewer Screening</h4>
+				<h4 className='h4-alegreya top-small'>03 Interviewer Screening</h4>
 					<div className='flexbox top-small bottom-medium'>
 					<div className='flex1 margins-small'>
-						<h4 className='h4-alegreya'>Contexts</h4>
+						<h4 className='h4-alegreya top-small'>Contexts</h4>
 						<p className='p-aktiv'>High phone/reading device usage.</p>
 						<p className='p-aktiv'>Enjoys frequent recreational activites.</p>
 						<p className='p-aktiv'>Social media usage.</p>
 					</div>
 					<div className='flex1 margins-small'>
-						<h4 className='h4-alegreya'>Attitudes</h4>
+						<h4 className='h4-alegreya top-small'>Attitudes</h4>
 						<p className='p-aktiv'>Focused, but overall creative personality </p>
 						<p className='p-aktiv'>Open-minded to new experiences.</p>
 						<p className='p-aktiv'>Reading is a form of self-enrichment.</p>
 					</div>
 					<div className='flex1 margins-small'>
-						<h4 className='h4-alegreya'>Motivations</h4>
+						<h4 className='h4-alegreya top-small'>Motivations</h4>
 						<p className='p-aktiv'>Seeking escapism.</p>
 						<p className='p-aktiv'>Prefers passive activities.</p>
 						<p className='p-aktiv'>Desires positive impact on personal creativity & inspiration.</p>
@@ -196,7 +274,7 @@ function BookVerse() {
 		<div className='flexbox margins-medium'>
 			<div>
 				<h4 className='h4-alegreya top-small bottom-small'>03 Key Insights</h4>
-				 { bookContent }
+				 <Items />
 			</div>
 		</div>
 
@@ -204,17 +282,17 @@ function BookVerse() {
 
 
 
-		<div className='bottom-border'>
+		<div className='bottom-border top-large'>
 			<h3 className='h3-alegreya'>04 Persona</h3>
 		</div>
-		<div className='flexbox margins-medium'>
+		<div className='flexbox margins-medium bottom-medium top-medium'>
 			<div className='flex1 box'>
 				<img className='book-persona-img' src={ imgPersona } width="100%"></img>
 			</div>
 			<div className='flex1 box'>
 				<p className='p-aktiv'>Nadia is an undergraduate student. In her spare time, she either likes spending time with family or holing up with a good book or videogame. Social media tends to be a fun distraction from daily work, but she seeks more enriching fulfilment from books.</p> 
 				<div className='flexbox'>
-					<div className='flex1 box padding-small'>
+					<div className='flex1 box'>
 						<h4 className='h4-alegreya'>Age</h4>
 						<p className='p-aktiv'>23</p>
 						<h4 className='h4-alegreya'>Occupation</h4>
@@ -222,7 +300,7 @@ function BookVerse() {
 						<h4 className='h4-alegreya'>Income</h4>
 						<p className='p-aktiv'>Unemployed</p>
 					</div>
-					<div className='flex1 padding-small'>
+					<div className='flex1'>
 						<h4 className='h4-alegreya'>Location</h4>
 						<p className='p-aktiv'>Santa Barbara</p>
 						<h4 className='h4-alegreya'>Status</h4>
@@ -230,13 +308,13 @@ function BookVerse() {
 					</div>
 				</div>
 				<div className='flexbox'>
-					<div className='flex1 padding-small'>
+					<div className='flex1'>
 						<h4 className='h4-alegreya'>Goals</h4>
 						<p className='p-aktiv'>• To feel more productive</p>
 						<p className='p-aktiv'>• To use social media less and read more </p>
 						<p className='p-aktiv'>• To explore more books that aren’t in her immediate radar</p>
 					</div>
-					<div className='flex1 box padding-small'>
+					<div className='flex1 box'>
 						<h4 className='h4-alegreya'>Frustrations</h4>
 						<p className='p-aktiv'>• Book vendors aren’t always reliable in matching</p>
 						<p className='p-aktiv'>• Gets pushed toward social media </p>
@@ -305,10 +383,10 @@ function BookVerse() {
 
 
 
-		<div className='bottom-border'>
+		<div className='bottom-border top-large'>
 			<h3 className='h3-alegreya'>06 Styles & Logo</h3>
 		</div>
-		<div> { styleContent } </div>
+		<div> <Style /> </div>
 
 
 		<div>

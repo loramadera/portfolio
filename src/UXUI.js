@@ -15,7 +15,16 @@ import imgMCC from './images/UXUI/uxui_mcc.png';
 import imgSpace from './images/UXUI/uxui_spaceexploration.png';
 import imgGaia from './images/UXUI/uxui_gaia.png';
 
-
+function debounce(fn, ms) {
+  let timer
+  return _ => {
+    clearTimeout(timer)
+    timer = setTimeout(_ => {
+      timer = null
+      fn.apply(this, arguments)
+    }, ms)
+  };
+}
 
 
 function UXUI() {
@@ -33,10 +42,36 @@ function UXUI() {
   ];
 
 
-  const visItems = visualItems.map((item, index) => {
-    // 1st, 3rd, ...
-    if (index % 2) {
-      return <div key={index} className='margins-small bottom-medium'>
+const [items, setItems] = React.useState(visualItems)
+  React.useEffect(() => {
+    const debouncedHandleResize = debounce(function handleResize() {
+      setItems(visualItems)
+    }, 100)
+
+    window.addEventListener('resize', debouncedHandleResize)
+
+    return _ => {
+      window.removeEventListener('resize', debouncedHandleResize)
+    }
+  })
+
+  function Items() {
+    if (window.innerWidth < 1025) {
+      return visualItems.map((item, index) => {
+        return <div key={index} className='margins-small bottom-medium'>
+        <a className='a-none flexbox darker-box' href={item.link}>
+          <div className='img flex1'><img src={item.image} width="100%" /></div>
+          <div className='flex1 box'>
+            <h3 className='h3-broadacre center-align'>{item.title}</h3>
+            <p className='p-light center-align'>{item.text}</p>
+          </div>
+        </a>
+      </div>;
+      });
+    } else {
+      return visualItems.map((item, index) => {
+        if (index % 2) {
+          return <div key={index} className='margins-small bottom-medium'>
         <a className='a-none flexbox darker-box' href={item.link}>
           <div className='flex1 box'>
             <h3 className='h3-broadacre center-align'>{item.title}</h3>
@@ -55,8 +90,11 @@ function UXUI() {
           </div>
         </a>
       </div>;
+        }
+      });
     }
-  });
+  }
+
 
   const intItems = interactItems.map((item, index) => {
     // 1st, 3rd, ...
@@ -92,12 +130,12 @@ function UXUI() {
       <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
           <h1 className='h1-broadacre center-align top-large'>UX/UI & Design</h1>
           <div className='dark-box top-dark'>
-                <div className='padding-large'> 
-                <div><h3 className='h3-broadacre center-align bottom-small opacity'>UX/UI</h3></div> 
+                <div className='padding-large mobile'> 
+                <div><h3 className='h3-broadacre center-align bottom-small opacity mobile'>UX/UI</h3></div> 
                   <div>
                     <a className='a-none' href='/bookverse'> 
                       <div>
-                        <h3 className='h3-broadacre center-align'>BookVerse</h3>
+                        <h3 className='h3-broadacre center-align mobile'>BookVerse</h3>
                         <p className='p-light center-align bottom-small'>Interactive book “universe” discovery app.</p>
                       </div>   
                       <div className="flex1 darker-box padding-large">
@@ -119,12 +157,12 @@ function UXUI() {
           </div>
 
           <div className='dark-box top-dark'>
-                <div className='padding-large'> 
-                <div><h3 className='h3-broadacre center-align bottom-small opacity'>Branding & Visual Design</h3></div> 
+                <div className='padding-large mobile'> 
+                <div><h3 className='h3-broadacre center-align bottom-small mobile opacity'>Branding & Visual Design</h3></div> 
                   <div>
                     <a className='a-none' href='/mcc'> 
                       <div>
-                        <h3 className='h3-broadacre center-align'>Moraga Country Club</h3>
+                        <h3 className='h3-broadacre center-align mobile'>Moraga Country Club</h3>
                         <p className='p-light center-align bottom-small'>Full re-branding of East Bay county club establishment.</p>
                       </div>   
                       <div className="flex1 darker-box padding-large">
@@ -135,24 +173,25 @@ function UXUI() {
               </div>         
           </div>
 
-
-           <div className='dark-box top-dark padding-large'>
-            <h3 className='h3-broadacre center-align bottom-small opacity'>Interactive Design</h3>
-            <div>
-              { intItems }
+          <div className='mobile'>
+            <div className='dark-box top-dark padding-large'>
+              <h3 className='h3-broadacre center-align bottom-small mobile opacity'>Interactive Design</h3>
+              <div className='mobile'>
+                { intItems }
+              </div>
+            </div>
+          </div>
+          <div className='mobile'>
+            <div className='dark-box top-dark padding-large mobile'>
+              <h3 className='h3-broadacre center-align bottom-small mobile opacity'>App & Visual Design</h3>
+              <div className='mobile'>
+                <Items />
+              </div>
             </div>
           </div>
 
-          <div className='dark-box top-dark padding-large'>
-            <h3 className='h3-broadacre center-align bottom-small opacity'>App & Visual Design</h3>
-            <div>
-              { visItems }
-            </div>
-          </div>
-
-
-
-    <Footer />
+    <div className='mobile'><Footer /></div>
+    
     </div>
   );
 }

@@ -11,3 +11,15 @@
 .sadhan-img {
   width: 600px;
 }
+
+@media screen and (max-width: 1025px) {
+  .sadhan-img {
+      width: 350px;
+      margin-top: 30px;
+    }
+
+  .sadhan-beauty {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}

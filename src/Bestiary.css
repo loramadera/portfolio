@@ -42,11 +42,55 @@
 .flex-text {
   font-size: 15px;
 }
-
+/*
 .sword-title {
   text-align: left;
-}
+}*/
 
+
+
+@media screen and (max-width: 900px) {
+  
+   .img-big-swords {
+       width: 250px;
+    }
+
+
+    .img-best-expert {
+      width: 250px;
+    }
+
+    .img-person {
+      width: 200px;
+    }
+
+    .best-box {
+      border-style: solid;
+      border-color: white;
+      margin: 50px;
+      text-align: center;
+    }
+
+    .flex-number {
+      font-size: 35px;
+      text-align: center;
+      opacity: 20%;
+    }
+    .flex-text {
+      font-size: 15px;
+      opacity: 20%;
+      margin-left: 50px;
+      margin-right: 50px;
+      text-align: center;
+    }
+
+    .task-flex {
+      text-align: center;
+      /*margin-left:  50px;
+      margin-right:  50px;*/
+    }
+
+}
 
 
 
