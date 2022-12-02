@@ -106,7 +106,7 @@ return (
 		<h1 className='h1-broad center-align top-medium'>VACA</h1>
 		<h4 className='h4-broad center-align'>The Travel App</h4>
 		<h4 className='h4-broad opacity center-align'>Visual Design</h4>
-		<p className='p-broad left-align margins-small top-small'>VACA allows the tracking and creation of a travel project, start to finish. Budgets, daily schedules, and weather forecasts are some of the features that would be on display for the user.</p>
+		<p className='p-broad left-align margins-large top-small bottom-small'>VACA allows the tracking and creation of a travel project, start to finish. Budgets, daily schedules, and weather forecasts are some of the features that would be on display for the user.</p>
 	</div>
 	<div className='dark-box top-dark'>
 			<div className='flexbox margins-medium top-medium'>

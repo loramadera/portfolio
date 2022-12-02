@@ -10,13 +10,34 @@
 .img-profile {
   width: 300px;
   justify-content: flex-end;
+  z-index: 2;
+}
 
+.img-globe {
+  width: 800px;
+  opacity: 30%;
+}
+
+.container {
+  position: relative;
 }
 
 .img-arrows {
   width: 40px;
 }
 
+.portfolio-globe-bubble {
+  position: relative;
+}
+
+.portfolio-bubble {
+  position: absolute;
+  right: 0;
+  top: 180px;
+}
+.portfolio-globe {
+  /*position: absolute;*/
+}
 
 
 @media screen and (max-width: 1025px) {
@@ -30,6 +51,12 @@
   .img-arrows {
     width: 20px;
   }
+
+  .img-globe {
+  width: 300px;
+  opacity: 30%;
+}
+
 
 
 

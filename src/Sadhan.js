@@ -119,7 +119,7 @@ return (
 		<h1 className='h1-broad center-align top-medium'>Sadhan</h1>
 		<h4 className='h4-broad center-align'>Meditation App</h4>
 		<h4 className='h4-broad center-align opacity'>Visual Design</h4>
-		<p className='p-broad left-align margins-small top-small'>Sadhan is defined functionally by its meditation timer and connection with other members of a meditation community - the ability to see retreat schedules and other members.</p>
+		<p className='p-broad left-align margins-large top-small bottom-small'>Sadhan is defined functionally by its meditation timer and connection with other members of a meditation community - the ability to see retreat schedules and other members.</p>
 	</div>
 	<div className='dark-box top-dark'>
 			<div className='flexbox margins-medium top-medium'>

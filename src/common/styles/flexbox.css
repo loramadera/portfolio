@@ -6,11 +6,23 @@
 .flex1 {
   flex: 1;
 }
+.flex2 {
+  flex: 2;
+}
+.flex3 {
+  flex: 3;
+}
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1025px) {
     .flexbox {
       flex-direction: column;
       width: 100%;
+    }
+
+    .flexbox-row {
+      display: flex;
+      flex-direction: row;
+      text-align: right;
     }
 
 }

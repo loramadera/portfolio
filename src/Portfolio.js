@@ -8,6 +8,7 @@ import './common/styles/sitetypography.css';
 
 
 import imgBubble from './images/bubble.png';
+import imgGlobe from './images/globe.png';
 import imgVaca from './images/Portfolio/pp_vaca.png';
 import imgCode from './images/Portfolio/pp_code.png';
 import imgModel from './images/Portfolio/pp_modeling2.png';
@@ -55,7 +56,7 @@ function Portfolio() {
                 <img src= {item.image} width="100%"></img>
               </a>
               <a href={item.link} className='a-none flex1 box'>
-                <div className='margins-extra'>  
+                <div className='margins-small'>  
                   <h3 className='h3-broadacre left-align'>{item.title}</h3>
                   <p className='p-light left-align'>{item.text}</p>
                 </div>
@@ -69,7 +70,7 @@ function Portfolio() {
           return <div className='margins-small bottom-medium'>
             <div className='flexbox darker-box'>
                 <a href={item.link} className='a-none flex1 box'>
-                  <div className='margins-large'>  
+                  <div className='margins-small'>  
                     <h3 className='h3-broadacre left-align'>{item.title}</h3>
                     <p className='p-light left-align'>{item.text}</p>
                   </div>
@@ -86,7 +87,7 @@ function Portfolio() {
                   <img src= {item.image} width="100%"></img>
                 </a>
                 <a href={item.link} className='a-none flex1 box'>
-                  <div className='margins-extra'>  
+                  <div className='margins-small'>  
                     <h3 className='h3-broadacre left-align'>{item.title}</h3>
                     <p className='p-light left-align'>{item.text}</p>
                   </div>
@@ -103,14 +104,19 @@ function Portfolio() {
       <Navigation />
       <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
       <div className='flexbox'> 
-          <div className='flex1 box'>
+        <div className='flex1 box portfolio-globe-bubble'>
+          <div className='portfolio-globe'>
+            <img className='img-globe padding-medium' src= {imgGlobe} width="100%"></img>
+          </div>
+          <div className='portfolio-bubble'>
             <img className='img-profile padding-medium' src= {imgBubble} width="100%"></img>
           </div>
+        </div>  
         <div className='flex1 box'>
           <h1 className='h1-broadacre'>Nice to meet you! I'm Lora.</h1>
               <div className='flexbox top-small'>
                   <div className='flex2'>
-                        <p className='p-light'>WORK: UX/UI Designer, Developer, 3D Modeler, Visual Designer</p>
+                        <p className='p-light'>UX/UI Designer, Developer, 3D Modeler, Visual Designer</p>
                   </div>
                   <div className='flex1'></div>
                   <div className='flex1'></div>
@@ -138,7 +144,9 @@ function Portfolio() {
        <div>
     
       </div>  
+    <div className='mobile'>
       <Footer />
+    </div>  
     </div>
   );
 

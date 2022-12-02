@@ -37,9 +37,9 @@ function Bestiary() {
 	];
 
 	const mvpItems = [
-		{ 'title': 'MVP One: The Bio', 'text1': 'This is the accompanying page to the cryptid image. Interactive index for user to browse information in.', 'text2': 'Primary Feature: Descriptive index, will contain “secret” hints and clues for the player to work out while they are fighting monster.', 'text3': 'Primary Outcome: Engage the user and try to make them piece together what they can do to beat the monster.', 'image': imgBook3 },
-		{ 'title': 'MVP Two The Journal', 'text1': 'An interactive journal/entry log. Player will use this to document their personal notes about the cryptid they faced at lower levels.', 'text2': 'Primary Feature: Entry-making feature for later reference.', 'text3': 'Primary Outcome: Player feels immersed, has information to look back on when they face upper-level monster.', 'image': imgBook1 },
-		{ 'title': 'MVP Three: The Inventory', 'text1': 'Inventory map. Based on the hints and clues that the bio page gives them, the user can look at what they have in their inventory that will help them beat the monster.', 'text2': 'Primary Feature: Chart of ingredients that the user has to use against cryptid.', 'text3': 'Primary Outcome: Works like a puzzle for the user to figure out what to utilize.', 'image': imgBook2 },
+		{ 'title': 'MVP One: The Bio', 'text1': 'This is the accompanying page to the cryptid image. Interactive index for user to browse information in.', 'text2': 'Descriptive index, will contain “secret” hints and clues for the player to work out while they are fighting monster.', 'text3': 'Engage the user and try to make them piece together what they can do to beat the monster.', 'image': imgBook3 },
+		{ 'title': 'MVP Two The Journal', 'text1': 'An interactive journal/entry log. Player will use this to document their personal notes about the cryptid they faced at lower levels.', 'text2': 'Entry-making feature for later reference.', 'text3': 'Player feels immersed, has information to look back on when they face upper-level monster.', 'image': imgBook1 },
+		{ 'title': 'MVP Three: The Inventory', 'text1': 'Inventory map. Based on the hints and clues that the bio page gives them, the user can look at what they have in their inventory that will help them beat the monster.', 'text2': 'Chart of ingredients that the user has to use against cryptid.', 'text3': 'Works like a puzzle for the user to figure out what to utilize.', 'image': imgBook2 },
 	];
 
 	const [items, setItems] = React.useState(contentItems)
@@ -77,10 +77,10 @@ function Bestiary() {
 					<img className='img-person' src= {item.image} width="100%"></img>
 				</div>
 				<div className='flex2 box'>
-					<div className='small-border'>
-						<h4 className='h4-broad '>{item.title}</h4>
+					<div className='small-border margins-small'>
+						<h4 className='h4-broad'>{item.title}</h4>
 					</div>
-					<p className='p-broad'>{item.text}</p>
+					<p className='p-broad margins-small'>{item.text}</p>
 				</div>
 			</div>
 		</div>
@@ -91,10 +91,10 @@ function Bestiary() {
           return <div className='best-item'>	
 			<div className='flexbox top-small'>	
 				<div className='flex2 box'>
-					<div className='small-border'>
-						<h4 className='h4-broad '>{item.title}</h4>
+					<div className='small-border margins-small'>
+						<h4 className='h4-broad'>{item.title}</h4>
 					</div>
-					<p className='p-broad'>{item.text}</p>
+					<p className='p-broad margins-small'>{item.text}</p>
 				</div>
 				<div className='flex1 top-medium center-align box'>
 					<img className='img-person' src= {item.image} width="100%"></img>
@@ -108,10 +108,10 @@ function Bestiary() {
 					<img className='img-person' src= {item.image} width="100%"></img>
 				</div>
 				<div className='flex2 box'>
-					<div className='small-border'>
-						<h4 className='h4-broad '>{item.title}</h4>
+					<div className='small-border margins-small'>
+						<h4 className='h4-broad'>{item.title}</h4>
 					</div>
-					<p className='p-broad'>{item.text}</p>
+					<p className='p-broad margins-small'>{item.text}</p>
 				</div>
 			</div>
 		</div>
@@ -123,7 +123,7 @@ function Bestiary() {
   function Mvp() {
     if (window.innerWidth < 1025) {
       return mvpItems.map((item, index) => {
-        return <div className='margins-extra top-large'>	
+        return <div className='margins-extra'>	
 			<div className='flexbox top-small'>	
 				<div className='flex1 box'>
 					<div className='margins-small'>	
@@ -133,7 +133,7 @@ function Bestiary() {
 						<p className='p-broad'>{item.text3}</p>
 					</div>
 				</div>
-				<div className='flex1 margins-small box'>
+				<div className='flex1 margins-small top-medium box'>
 					<img src= {item.image} width="100%"></img>
 				</div>
 			</div>
@@ -152,7 +152,7 @@ function Bestiary() {
 						<p className='p-broad'>{item.text3}</p>
 					</div>
 				</div>
-				<div className='flex1 margins-small box'>
+				<div className='flex1 margins-small top-medium box'>
 					<img src= {item.image} width="100%"></img>
 				</div>
 			</div>
@@ -160,7 +160,7 @@ function Bestiary() {
 	} else {
 		return <div className='margins-extra top-large'>
 			<div className='flexbox top-small'>
-				<div className='flex1 margins-small box'>
+				<div className='flex1 margins-small top-medium box'>
 					<img src= {item.image} width="100%"></img>
 				</div>
 				<div className='flex1 box'>
@@ -192,8 +192,8 @@ function Bestiary() {
 				<h3 className='h3-broad-g'>01 Overview</h3>
 			</div>
 			<div className='margins-large'>
-				<h4 className='h4-broad top-small'>The Bestiary - what is it?</h4>
-				<p className='p-broad'>The Bestiary, designed to be a component of a mobile fantasy game in which a player encounters different monsters. Each level’s monsters are more challenging than the last, and it is up to the player to study them (their weaknesses, strengths, etc.).  As they advince, they will build a reference guide of what they have learned - their own personal bestiary.</p>
+				<h4 className='h4-broad top-small margins-small'>The Bestiary - what is it?</h4>
+				<p className='p-broad margins-small'>The Bestiary, designed to be a component of a mobile fantasy game in which a player encounters different monsters. Each level’s monsters are more challenging than the last, and it is up to the player to study them (their weaknesses, strengths, etc.).  As they advince, they will build a reference guide of what they have learned - their own personal bestiary.</p>
 			</div>
 
 
@@ -206,20 +206,20 @@ function Bestiary() {
 				</div>
 				<div className='flex1 box'>
 					<div>
-						<h4 className='h4-broad'>Hypothesis</h4>
-						<p className='p-broad'>The more immersive a gaming experience, the more likely a gamer is to consume and retain information from the interface conveying it.</p>
+						<h4 className='h4-broad margins-small'>Hypothesis</h4>
+						<p className='p-broad margins-small'>The more immersive a gaming experience, the more likely a gamer is to consume and retain information from the interface conveying it.</p>
 					</div>
 					<div>
-						<h4 className='h4-broad'>Demographic</h4>
-						<p className='p-broad'>Adults 20-35, videogame enthusiasts, college students/recent grads</p>
+						<h4 className='h4-broad margins-small'>Demographic</h4>
+						<p className='p-broad margins-small'>Adults 20-35, videogame enthusiasts, college students/recent grads</p>
 					</div>
 					<div>
-						<h4 className='h4-broad'>Research Objective</h4>
-						<p className='p-broad'>Determining whether immersion outweighs utility in the importance of interface design.</p>
+						<h4 className='h4-broad margins-small'>Research Objective</h4>
+						<p className='p-broad margins-small'>Determining whether immersion outweighs utility in the importance of interface design.</p>
 					</div>
 					<div>
-						<h4 className='h4-broad'>User Needs</h4>
-						<p className='p-broad'>A game interface that is simple yet immersive, with clear relaying of information without blocks of text, with high entertainment value.</p>
+						<h4 className='h4-broad margins-small'>User Needs</h4>
+						<p className='p-broad margins-small'>A game interface that is simple yet immersive, with clear relaying of information without blocks of text, with high entertainment value.</p>
 					</div>				
 				</div>
 			</div>
@@ -236,43 +236,43 @@ function Bestiary() {
 									<img className='img-small-swords' src= {imgSwords} width="100%"></img>
 							</div>	
 							<div className='flex2 box'>
-								<h4 className='h4-broad center-align'>Questions for Audience</h4>
+								<h4 className='h4-broad center-align margins-small'>Questions for Audience</h4>
 							</div>						
 						</div>	
 							<div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-broad'>Would you enjoy an interface that takes time to navigate around, so long as it is immersive to you?</p>
+										<p className='p-broad margins-small'>Would you enjoy an interface that takes time to navigate around, so long as it is immersive to you?</p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-broad'>How much do you value worldbuilding immersion in your videogame experience, on a scale of one to ten?</p>
+										<p className='p-broad margins-small'>How much do you value worldbuilding immersion in your videogame experience, on a scale of one to ten?</p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-broad'>Would you spend more time with an interface if it had many features and options, or would you be eager to return to the game?</p>
+										<p className='p-broad margins-small'>Would you spend more time with an interface if it had many features and options, or would you be eager to return to the game?</p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-broad'>Based on average videogame information presentation, how much of the information would you say you actually pay attention to? </p>
+										<p className='p-broad margins-small'>Based on average videogame information presentation, how much of the information would you say you actually pay attention to? </p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-broad'>How much of the information you pay attention to it videogame interfaces is carried back into the main game? </p>
+										<p className='p-broad margins-small'>How much of the information you pay attention to it videogame interfaces is carried back into the main game? </p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-broad'>Do you ever retain any of the information? If so, do you recall more visual aspects of it or the texts you’ve read?</p>
+										<p className='p-broad margins-small'>Do you ever retain any of the information? If so, do you recall more visual aspects of it or the texts you’ve read?</p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-broad'>Would you rather have a complex interface with many interesting features, or minimalistic design with less features?</p>
+										<p className='p-broad margins-small'>Would you rather have a complex interface with many interesting features, or minimalistic design with less features?</p>
 									</div>
 								</div>
 							</div>					
@@ -280,47 +280,47 @@ function Bestiary() {
 
 					<div className='flex1'>
 						<div className='flexbox'>
-							<div className='flex box  center-align'>
+							<div className='flex box  center-align margins-small'>
 									<img className='img-small-swords' src= {imgSwords} width="100%"></img>
 							</div>	
 							<div className='flex2 box'>
-								<h4 className='h4-broad center-align'>Questions for Expert</h4>
+								<h4 className='h4-broad center-align margins-small'>Questions for Expert</h4>
 							</div>						
 						</div>	
 							<div>	
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-broad'>Would you rather have a complex interface with many interesting features, or minimalistic design with less features?</p>
+										<p className='p-broad margins-small'>Would you rather have a complex interface with many interesting features, or minimalistic design with less features?</p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-broad'>How often do you jump from the main game to the menu interface (in other words, how much utility do you find from the menus? How much value do they have to the gaming experience)?</p>
+										<p className='p-broad margins-small'>How often do you jump from the main game to the menu interface (in other words, how much utility do you find from the menus? How much value do they have to the gaming experience)?</p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-broad'>Do you think it takes away from a gamer’s experience to be tempted to stay and explore a complex interface?</p>
+										<p className='p-broad margins-small'>Do you think it takes away from a gamer’s experience to be tempted to stay and explore a complex interface?</p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-broad'>How much value would you assign to the artistic design of an interface, which would keep users in the interface and have them exploring?</p>
+										<p className='p-broad margins-small'>How much value would you assign to the artistic design of an interface, which would keep users in the interface and have them exploring?</p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-broad'>Would you assign more importance to artistry or utility in interface design?</p>
+										<p className='p-broad margins-small'>Would you assign more importance to artistry or utility in interface design?</p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-broad'>Would you respond more to visual aspects of a design or the content itself?</p>
+										<p className='p-broad margins-small'>Would you respond more to visual aspects of a design or the content itself?</p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-broad'>How willing would you be to sacrifice artistry for time spent in this particular interface?</p>
+										<p className='p-broad margins-small'>How willing would you be to sacrifice artistry for time spent in this particular interface?</p>
 									</div>
 								</div>
 							</div>
@@ -346,7 +346,7 @@ function Bestiary() {
 							 <Items />
 						</div>
 					</div>
-				<div className='flexbox margins-medium mobile'>
+				<div className='flexbox margins-medium top-medium mobile'>
 						<div className='flex box center-align'>
 								<img className='img-small-swords' src= {imgSwords} width="100%"></img>
 						</div>	
@@ -354,25 +354,25 @@ function Bestiary() {
 							<h4 className='h4-broad sword-title center-align'>Interview Feedback from Expert</h4>
 						</div>						
 					</div>
-					<div className='flexbox margins-medium'>
+					<div className='flexbox margins-medium top-medium'>
 						<div className='flex1 box center-align'>
-							<img className='img-best-expert margins-large top-medium bottom-medium' src={ imgPerson4 } width="100%"></img>
+							<img className='img-best-expert margins-large bottom-medium' src={ imgPerson4 } width="100%"></img>
 						</div>
 						<div className='flex1 box'>
 							<div className='flexbox box'>
-								<div className='margins-small mobile'>
-									<p className='p-broad'>Benjamin Brown, 32</p>
-									<p className='p-broad'>Bay Area</p>
-									<p className='p-broad'>Ex-Videogame Livestreamer</p>
+								<div className='margins-small'>
+									<h2 className='h2-broad'>Benjamin Brown, 32</h2>
+									<h2 className='h2-broad'>Bay Area</h2>
+									<h2 className='h2-broad'>Ex-Videogame Livestreamer</h2>
 								</div>
 							</div>
-							<div className='margins-small mobile'>
-								<h4 className='h4-broad'>Key Feedback</h4>
-								<p className='p-broad'>The balance of utility versus artistry in the interface design is completely dependent on the type of game being played.</p>
-								<p className='p-broad'>Fast-paced games need to be quick and strategy based, therefore they need to convey information quickly.</p>
-								<p className='p-broad'>As long as the artistic theme fits the game, it won’t take away from the utility.</p>
-								<p className='p-broad'>There is a common mistake in many videogame designs where interface designers will attempt to create utility through complexity, but even for strategic players this can get exhausting.</p>
-								<p className='p-broad'>The story that you’re telling in an interface directly relates to how well the player will connect with it, and in what amount of time.</p> 
+							<div className='margins-smallmobile'>
+								<h4 className='h4-broad margins-small'>Key Feedback</h4>
+								<p className='p-broad margins-small'>The balance of utility versus artistry in the interface design is completely dependent on the type of game being played.</p>
+								<p className='p-broad margins-small'>Fast-paced games need to be quick and strategy based, therefore they need to convey information quickly.</p>
+								<p className='p-broad margins-small'>As long as the artistic theme fits the game, it won’t take away from the utility.</p>
+								<p className='p-broad margins-small'>There is a common mistake in many videogame designs where interface designers will attempt to create utility through complexity, but even for strategic players this can get exhausting.</p>
+								<p className='p-broad margins-small'>The story that you’re telling in an interface directly relates to how well the player will connect with it, and in what amount of time.</p> 
 							</div>	
 						</div>
 					</div>
@@ -391,24 +391,28 @@ function Bestiary() {
 							<h4 className='h4-broad sword-title center-align'>Identifying the MVP</h4>
 						</div>						
 				</div>
-				<div className='flexbox margins-extra'>
-					<div className='flex1 features'>
-						<h4 className='h4-broad top-medium'>Defining the Features</h4>
-						<p className='p-broad'>Inventory of ingredients</p>
-						<p className='p-broad'>Tabs leading to various pages on each cryptid</p>
-						<p className='p-broad'>Map of creature’s well-known whereabouts</p>
-						<p className='p-broad'>Strength tab, weakness tab</p>
-						<p className='p-broad'>Journal entry option</p>
-						<p className='p-broad'>Cryptid’s individual biography</p>
-					</div>
-					<div className='flex1 features'>
-						<h4 className='h4-broad top-medium'>Defining the Outcome</h4>
-						<p className='p-broad'>Player will have option to log a journal entry</p>
-						<p className='p-broad'>Player will learn about the cryptid, gather information about how to defeat it</p>
-						<p className='p-broad'>Player will be able to identify where their chances are best for locating the cryptid</p>
-					</div>
+				<div className='flexbox margins-medium'>
+					<div className='margins-small'>
+						<div className='flex1 features'>
+							<h4 className='h4-broad'>Defining the Features</h4>
+							<p className='p-broad'>Inventory of ingredients</p>
+							<p className='p-broad'>Tabs leading to various pages on each cryptid</p>
+							<p className='p-broad'>Map of creature’s well-known whereabouts</p>
+							<p className='p-broad'>Strength tab, weakness tab</p>
+							<p className='p-broad'>Journal entry option</p>
+							<p className='p-broad'>Cryptid’s individual biography</p>
+						</div>
+						<div className='flex1 features'>
+							<h4 className='h4-broad'>Defining the Outcome</h4>
+							<p className='p-broad'>Player will have option to log a journal entry</p>
+							<p className='p-broad'>Player will learn about the cryptid, gather info about how to defeat it</p>
+							<p className='p-broad'>Player will be able to identify where their chances are best for locating the cryptid</p>
+						</div>
+					</div>	
 				</div>
-				<h4 className='h4-broad top-medium bottom-medium margins-extra'>The bestiary can be broken down into three diagram pieces - the game itself, generated by the game engine, the interface content, and the content generated by the user.</h4>
+				<div className='margins-small'>
+					<h4 className='h4-broad top-medium bottom-medium margins-medium'>The bestiary can be broken down into three diagram pieces - the game itself, generated by the game engine, the interface content, and the content generated by the user.</h4>
+				</div>
 				<div className='flexbox margins-extra'>
 					<div className='flex1'>
 						<h4 className='h4-broad bottom-small center-align'>Data Content</h4>
@@ -467,8 +471,8 @@ function Bestiary() {
 			<div className='bottom-border top-small'>
 				<h3 className='h3-broad-g'>06 User Testing</h3>
 			</div>
-				<div className='flexbox margins-medium bottom-medium'>
-						<div className='flex box center-align top-medium'>
+				<div className='flexbox margins-medium mobile'>
+						<div className='flex box center-align'>
 								<img className='img-small-swords' src= {imgSwords} width="100%"></img>
 						</div>	
 						<div className='flex2 box'>
@@ -537,7 +541,7 @@ function Bestiary() {
 				</div>
 
 
-				<div className='margins-extra top-medium'>
+				<div className='margins-extra'>
 					<h4 className='h4-broad task-flex'>User Flow Two: Learn About The Monster</h4>
 					<p className='p-broad task-flex'>In the cryptid biography, user will use the bestiary to learn more about the attributes and weaknesses of the monster they just faced. They will unlock new insights about the monster in preparation for the next confrontation on the following level. </p>
 				</div>	
@@ -599,7 +603,7 @@ function Bestiary() {
 						</div>
 
 				
-				<div className='margins-extra top-medium'>
+				<div className='margins-extra'>
 					<h4 className='h4-broad task-flex'>User Flow Three: Pick Your Poison</h4>
 					<p className='p-broad task-flex'>User will select a poison from their inventory to use on the monster in the upper levels, with more knowledge on defeating the monster than they had before, based on the new unlcoked weakness/attributes they read about.</p>
 				</div>	

@@ -114,6 +114,11 @@
     .mobile {
         margin-top: 50px;
     }
+    
+    .mobile-margins {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
 
     .mobile-text {
       text-align: center;
@@ -238,6 +243,8 @@
       border-bottom-style: solid;
       border-bottom-color: white;
       border-bottom-width: 2px;
+      margin-left: 10px;
+      margin-right: 10px;
     }
 
     .box {

@@ -127,8 +127,8 @@ function BookVerse() {
 		        return <div className='book-item'>	
 				<div className='flexbox margins-large'>	
 					<div className='flex1 box'>
-						<h4 className='h4-alegreya'>{item.title}</h4>
-						<p className='p-aktiv'>{item.text}</p>
+						<h4 className='h4-alegreya margins-small'>{item.title}</h4>
+						<p className='p-aktiv margins-small'>{item.text}</p>
 					</div>
 					<div className='img flex1 box'>
 						<img src= {item.image} width="100%"></img>
@@ -142,8 +142,8 @@ function BookVerse() {
 		          return <div className='book-item'>	
 					<div className='flexbox margins-large'>	
 						<div className='flex1 box'>
-							<h4 className='h4-alegreya'>{item.title}</h4>
-							<p className='p-aktiv'>{item.text}</p>
+							<h4 className='h4-alegreya margins-small'>{item.title}</h4>
+							<p className='p-aktiv margins-small'>{item.text}</p>
 						</div>
 						<div className='img flex1 box'>
 							<img src= {item.image} width="100%"></img>
@@ -157,8 +157,8 @@ function BookVerse() {
 								<img src={item.image} width="100%"></img>
 							</div>
 							<div className='flex1 box'>
-								<h4 className='h4-alegreya'>{item.title}</h4>
-								<p className='p-aktiv'>{item.text}</p>
+								<h4 className='h4-alegreya margins-small'>{item.title}</h4>
+								<p className='p-aktiv margins-small'>{item.text}</p>
 							</div>
 						</div>
 					</div>
@@ -196,10 +196,10 @@ function BookVerse() {
 				<img className='book-logo box' src={ imgLogo } width="100%"></img>
 			</div>
 			<div className='flex2 box'>
-				<h4 className='h4-alegreya'>Problem</h4>
-				<p className='p-aktiv'>In the age of technology, book publishers have moved from print books to e-Books. Various mediums have been developed to facilitate the reader-book matching process. But there are infinitely many good books to read, and readers just aren’t finding them.</p>
-				<h4 className='h4-alegreya'>Solution</h4>
-				<p className='p-aktiv'>A unique individual exploration process to maximize book matching to the right reader.</p>
+				<h4 className='h4-alegreya margins-small'>Problem</h4>
+				<p className='p-aktiv margins-small'>In the age of technology, book publishers have moved from print books to e-Books. Various mediums have been developed to facilitate the reader-book matching process. But there are infinitely many good books to read, and readers just aren’t finding them.</p>
+				<h4 className='h4-alegreya margins-small'>Solution</h4>
+				<p className='p-aktiv margins-small'>A unique individual exploration process to maximize book matching to the right reader.</p>
 			</div>
 		</div>
 
@@ -209,20 +209,20 @@ function BookVerse() {
 		<div className='bottom-border'>
 			<h3 className='h3-alegreya'>02 Methodology</h3>
 		</div>
-		<div className='flexbox margins-extra top-small'>
+		<div className='flexbox margins-medium top-small'>
 			<div className='flex1 box'>
-				<h4 className='h4-alegreya'>Bodystorming</h4>
-				<p className='p-aktiv'>Gathering information about various platforms and using them with the purpose of discovering a book with several defining characteristics.</p>
-				<h4 className='h4-alegreya'>Consumer Interviews</h4>
-				<p className='p-aktiv'>Will conduct interviews with individuals within the research group.</p>
-				<h4 className='h4-alegreya'>Competitive Analysis</h4>
-				<p className='p-aktiv'>Analyzing competing products to see how they perform.</p>
+				<h4 className='h4-alegreya margins-small'>Bodystorming</h4>
+				<p className='p-aktiv margins-small'>Gathering information about various platforms and using them with the purpose of discovering a book with several defining characteristics.</p>
+				<h4 className='h4-alegreya margins-small'>Consumer Interviews</h4>
+				<p className='p-aktiv margins-small'>Will conduct interviews with individuals within the research group.</p>
+				<h4 className='h4-alegreya margins-small'>Competitive Analysis</h4>
+				<p className='p-aktiv margins-small'>Analyzing competing products to see how they perform.</p>
 			</div>
 			<div className='flex1'>
-				<h4 className='h4-alegreya'>Goals</h4>
-				<p className='p-aktiv'>Get users reading and away from other distracting social media apps.</p>
-				<p className='p-aktiv'>Develop an interface that enhances the book searching process, rather than frustrates the reader.</p>
-				<p className='p-aktiv'>Match readers with the kinds of books they like, rather than ones that will push them further into a reading “slump.</p>
+				<h4 className='h4-alegreya margins-small'>Goals</h4>
+				<p className='p-aktiv margins-small'>Get users reading and away from other distracting social media apps.</p>
+				<p className='p-aktiv margins-small'>Develop an interface that enhances the book searching process, rather than frustrates the reader.</p>
+				<p className='p-aktiv margins-small'>Match readers with the kinds of books they like, rather than ones that will push them further into a reading “slump.</p>
 			</div>
 		</div>
 
@@ -285,40 +285,40 @@ function BookVerse() {
 		<div className='bottom-border top-large'>
 			<h3 className='h3-alegreya'>04 Persona</h3>
 		</div>
-		<div className='flexbox margins-medium bottom-medium top-medium'>
+		<div className='flexbox margins-medium'>
 			<div className='flex1 box'>
 				<img className='book-persona-img' src={ imgPersona } width="100%"></img>
 			</div>
 			<div className='flex1 box'>
-				<p className='p-aktiv'>Nadia is an undergraduate student. In her spare time, she either likes spending time with family or holing up with a good book or videogame. Social media tends to be a fun distraction from daily work, but she seeks more enriching fulfilment from books.</p> 
+				<p className='p-aktiv margins-small'>Nadia is an undergraduate student. In her spare time, she either likes spending time with family or holing up with a good book or videogame. Social media tends to be a fun distraction from daily work, but she seeks more enriching fulfilment from books.</p> 
 				<div className='flexbox'>
 					<div className='flex1 box'>
-						<h4 className='h4-alegreya'>Age</h4>
-						<p className='p-aktiv'>23</p>
-						<h4 className='h4-alegreya'>Occupation</h4>
-						<p className='p-aktiv'>Full-time student</p>
-						<h4 className='h4-alegreya'>Income</h4>
-						<p className='p-aktiv'>Unemployed</p>
+						<h4 className='h4-alegreya margins-small'>Age</h4>
+						<p className='p-aktiv margins-small'>23</p>
+						<h4 className='h4-alegreya margins-small'>Occupation</h4>
+						<p className='p-aktiv margins-small'>Full-time student</p>
+						<h4 className='h4-alegreya margins-small'>Income</h4>
+						<p className='p-aktiv margins-small'>Unemployed</p>
 					</div>
 					<div className='flex1'>
-						<h4 className='h4-alegreya'>Location</h4>
-						<p className='p-aktiv'>Santa Barbara</p>
-						<h4 className='h4-alegreya'>Status</h4>
-						<p className='p-aktiv'>Single</p>
+						<h4 className='h4-alegreya margins-small'>Location</h4>
+						<p className='p-aktiv margins-small'>Santa Barbara</p>
+						<h4 className='h4-alegreya margins-small'>Status</h4>
+						<p className='p-aktiv margins-small'>Single</p>
 					</div>
 				</div>
 				<div className='flexbox'>
 					<div className='flex1'>
-						<h4 className='h4-alegreya'>Goals</h4>
-						<p className='p-aktiv'>• To feel more productive</p>
-						<p className='p-aktiv'>• To use social media less and read more </p>
-						<p className='p-aktiv'>• To explore more books that aren’t in her immediate radar</p>
+						<h4 className='h4-alegreya margins-small'>Goals</h4>
+						<p className='p-aktiv margins-small'>• To feel more productive</p>
+						<p className='p-aktiv margins-small'>• To use social media less and read more </p>
+						<p className='p-aktiv margins-small'>• To explore more books that aren’t in her immediate radar</p>
 					</div>
 					<div className='flex1 box'>
-						<h4 className='h4-alegreya'>Frustrations</h4>
-						<p className='p-aktiv'>• Book vendors aren’t always reliable in matching</p>
-						<p className='p-aktiv'>• Gets pushed toward social media </p>
-						<p className='p-aktiv'>• Searching for new books is an unenjoyable time and effort commitment</p>
+						<h4 className='h4-alegreya margins-small'>Frustrations</h4>
+						<p className='p-aktiv margins-small'>• Book vendors aren’t always reliable in matching</p>
+						<p className='p-aktiv margins-small'>• Gets pushed toward social media </p>
+						<p className='p-aktiv margins-small'>• Searching for new books is an unenjoyable time and effort commitment</p>
 					</div>
 				</div>
 			</div>

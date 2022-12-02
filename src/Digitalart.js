@@ -69,12 +69,15 @@ function Digitalart() {
     <div>
       <Navigation />
       <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
-        <h1 className='h1-broadacre center-align top-large'>Digital Art</h1>
+        <h1 className='h1-broadacre center-align top-large bottom-medium'>Digital Art</h1>
         <div className='dark-box top-dark padding-large'>
         <h3 className='h3-broadacre center-align opacity'>Procreate/Photoshop Projects</h3>
           { portfolioItems }
         </div>
+      
+    <div className='mobile'>
       <Footer />
+    </div>
     </div>
   );
 }
