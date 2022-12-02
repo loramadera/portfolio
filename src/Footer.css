@@ -1,3 +1,11 @@
 .img-footer {
 	width: 30px;
 }
+
+
+@media screen and (max-width: 1025px) {
+	.img-footer {
+		width: 20px;
+		opacity: 80%;
+	}
+}

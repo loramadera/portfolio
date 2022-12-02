@@ -103,7 +103,7 @@ function Portfolio() {
     <div>
       <Navigation />
       <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
-      <div className='flexbox'> 
+      <div className='flexbox mobile'> 
         <div className='flex1 box portfolio-globe-bubble'>
           <div className='portfolio-globe'>
             <img className='img-globe padding-medium' src= {imgGlobe} width="100%"></img>
@@ -112,32 +112,26 @@ function Portfolio() {
             <img className='img-profile padding-medium' src= {imgBubble} width="100%"></img>
           </div>
         </div>  
-        <div className='flex1 box'>
-          <h1 className='h1-broadacre'>Nice to meet you! I'm Lora.</h1>
-              <div className='flexbox top-small'>
-                  <div className='flex2'>
-                        <p className='p-light'>UX/UI Designer, Developer, 3D Modeler, Visual Designer</p>
-                  </div>
-                  <div className='flex1'></div>
-                  <div className='flex1'></div>
-                  <div className='flex1'></div>
-                  <div className='flex1'></div>
-               </div>
-                <div className='flexbox'>
-                  <div className='flex2'>
-                        <p className='p-light'>LIFE: Digital Artist, Gamer, Bookworm, Ski Instructor, Writer</p>
-                  </div>
-                  <div className='flex1'></div>
-                  <div className='flex1'></div>
-                  <div className='flex1'></div>
-                  <div className='flex1'></div>
-                  <div className='flex1'></div>
-               </div>
+          <div className='flex1 box'>
+            <h1 className='h1-broadacre mobile-center'>Nice to meet you! I'm Lora.</h1>
+                <div className='flexbox top-small'>
+                    <div className='flex2'>
+                          <p className='p-light mobile-center'>UX/UI Designer, Visual Designer, Developer</p>
+                    </div>
+                    <div className='flex1'></div>
+                 </div>
+                  <div className='flexbox'>
+                    <div className='flex2'>
+                          <p className='p-light mobile-center'>Digital Artist,  3D Modeler, Gamer, Bookworm, Writer</p>
+                    </div>
+                    <div className='flex1'></div>
+                    <div className='flex1'></div>
+                 </div>
             </div>   
       </div>
-      <div className='center-align'> <img className='img-arrows' src= { imgArrows } ></img></div>  
+      <div className='center-align'> <img className='img-arrows top-small bottom-small mobile' src= { imgArrows } ></img></div>  
 
-      <div className='dark-box top-dark'>
+      <div className='dark-box top-dark mobile'>
         <h1 className='h1-broadacre top-medium bottom-medium box center-align'>What I Do</h1>
           <Items />
         </div>

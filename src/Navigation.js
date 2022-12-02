@@ -63,8 +63,8 @@ const [items, setItems] = React.useState(contentItems)
     } else {
       return (
         <div className="flexbox">
-              <div className="logo"> 
-                    <img className='nav-img' src={imgLogo} width='100%'></img>
+              <div> 
+                    <img className='logo' src={imgLogo} width='100%'></img>
               </div>
               <div className="flex1">&nbsp;</div>
                <div className='navigation-menu'>   

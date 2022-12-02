@@ -33,29 +33,42 @@
 .portfolio-bubble {
   position: absolute;
   right: 0;
-  top: 180px;
+  top: 230px;
 }
-.portfolio-globe {
-  /*position: absolute;*/
-}
+/*.portfolio-globe {
+  position: absolute;
+}*/
 
 
 @media screen and (max-width: 1025px) {
 
   .img-profile {
-    width: 150px;
+    width: 250px;
     justify-content: flex-end;
 
   }
 
   .img-arrows {
-    width: 20px;
+    width: 0px;
   }
 
   .img-globe {
-  width: 300px;
-  opacity: 30%;
-}
+    width: 300px;
+    margin-left: 20px;
+    margin-right: 20px;
+    opacity: 50%;
+  }
+
+  .portfolio-bubble {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    margin-right: 50px;
+  }
+
+  .mobile-center {
+    text-align: center;
+  }
 
 
 
