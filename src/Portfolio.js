@@ -9,11 +9,13 @@ import './common/styles/sitetypography.css';
 
 import imgBubble from './images/bubble.png';
 import imgGlobe from './images/globe.png';
+import imgMobile from './images/bubmobile.png';
 import imgVaca from './images/Portfolio/pp_vaca.png';
 import imgCode from './images/Portfolio/pp_code.png';
 import imgModel from './images/Portfolio/pp_modeling2.png';
 import imgESO from './images/Portfolio/pp_eso2.png';
 import imgArrows from './images/Portfolio/arrows.png';
+
 
 function debounce(fn, ms) {
   let timer
@@ -112,7 +114,7 @@ function Portfolio() {
             <img className='img-profile padding-medium' src= {imgBubble} width="100%"></img>
           </div>
         </div>  
-          <div className='flex1 box'>
+          <div className='flex1 box top-small'>
             <h1 className='h1-broadacre mobile-center'>Nice to meet you! I'm Lora.</h1>
                 <div className='flexbox top-small'>
                     <div className='flex2'>

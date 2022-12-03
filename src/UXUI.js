@@ -156,31 +156,34 @@ const [items, setItems] = React.useState(visualItems)
               </div>         
           </div>
 
-          <div className='dark-box top-dark'>
-                <div className='padding-large mobile'> 
-                <div><h3 className='h3-broadacre center-align bottom-small mobile opacity'>Branding & Visual Design</h3></div> 
-                  <div>
-                    <a className='a-none' href='/mcc'> 
-                      <div>
-                        <h3 className='h3-broadacre center-align mobile'>Moraga Country Club</h3>
-                        <p className='p-light center-align bottom-small'>Full re-branding of East Bay county club establishment.</p>
-                      </div>   
-                      <div className="flex1 darker-box padding-large">
-                          <img src={imgMCC} width="100%"></img>
-                      </div>
-                    </a>
-                </div>
-              </div>         
-          </div>
-
-          <div className='mobile'>
+         <div className='mobile'>
             <div className='dark-box top-dark padding-large'>
               <h3 className='h3-broadacre center-align bottom-small mobile opacity'>Interactive Design</h3>
+              <div className='mobile'>
+                <div className='margins-small bottom-medium'>
+                  <a className='a-none flexbox darker-box' href='/mcc'>
+                   <div className='img flex1'><img src={imgMCC} width="100%" /></div>
+                    <div className='flex1 box'>
+                      <h3 className='h3-broadacre center-align'>Moraga Country Club</h3>
+                      <p className='p-light center-align'>Full re-branding of East Bay county club establishment.</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+           <div className='mobile'>
+            <div className='dark-box top-dark padding-large'>
+              <h3 className='h3-broadacre center-align bottom-small mobile opacity'>Branding & Visual Design</h3>
               <div className='mobile'>
                 { intItems }
               </div>
             </div>
           </div>
+
+          
+
           <div className='mobile'>
             <div className='dark-box top-dark padding-large mobile'>
               <h3 className='h3-broadacre center-align bottom-small mobile opacity'>App & Visual Design</h3>

@@ -15,7 +15,7 @@
 
 .img-globe {
   width: 800px;
-  opacity: 30%;
+  opacity: 10%;
 }
 
 .container {
@@ -56,13 +56,13 @@
     width: 300px;
     margin-left: 20px;
     margin-right: 20px;
-    opacity: 50%;
+    opacity: 10%;
   }
 
   .portfolio-bubble {
     position: absolute;
     right: 0;
-    top: 50px;
+    top: 25px;
     margin-right: 50px;
   }
 
