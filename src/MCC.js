@@ -105,10 +105,24 @@ function MCC() {
 
 
 	return (
-		<div>
+		<div className='mobile'>
 			<link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
 			<Navigation />
 			<img className='top-large' src={ imgHero } width="100%"></img>
+			
+			<div className='flexbox top-small row'>
+				<div className='flex1 margins-small'>
+					<a className='a-none' href='/bestiary'>
+						<p className='p-broad'>Previous</p>
+					</a>
+				</div>
+				<div className='flex1 right-align margins-small'>
+					<a className='a-none' href='/gaia'>
+						<p className='p-broad'>Next</p>
+					</a>
+				</div>		
+			</div>
+
 			<h1 className='h1-aleg-b top-medium center-align'>Moraga Country Club</h1>
 			<h2 className='h2-aleg-b opacity center-align'>Branding Re-Design</h2>
 
@@ -141,10 +155,22 @@ function MCC() {
 			</div>
 
 
-
-		      <div className='mobile'>
-					 <Footer />
+			<div className='flexbox top-small row'>
+				<div className='flex1 margins-small'>
+					<a className='a-none' href='/bestiary'>
+						<p className='p-broad'>Previous</p>
+					</a>
 				</div>
+				<div className='flex1 right-align margins-small'>
+					<a className='a-none' href='/gaia'>
+						<p className='p-broad'>Next</p>
+					</a>
+				</div>		
+			</div>
+
+      <div className='mobile'>
+			 <Footer />
+			</div>
 
 		</div>		
 		);

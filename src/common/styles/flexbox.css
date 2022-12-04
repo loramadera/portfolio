@@ -19,10 +19,9 @@
       width: 100%;
     }
 
-    .flexbox-row {
+    .row {
       display: flex;
       flex-direction: row;
-      text-align: right;
     }
 
 }

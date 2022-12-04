@@ -23,12 +23,12 @@ function debounce(fn, ms) {
 
 function Navigation() {
 
-const contentItems = [
-  { 'title': 'Portfolio', 'image': imgPortfolio, 'link': '/portfolio'},
-  { 'title': 'About', 'image': imgAbout, 'link': '/about'},
-];
+  const contentItems = [
+    { 'title': 'Portfolio', 'image': imgPortfolio, 'link': '/portfolio'},
+    { 'title': 'About', 'image': imgAbout, 'link': '/about'},
+  ];
 
-const [items, setItems] = React.useState(contentItems)
+  const [items, setItems] = React.useState(contentItems)
   
   React.useEffect(() => {
     const debouncedHandleResize = debounce(function handleResize() {
@@ -42,46 +42,34 @@ const [items, setItems] = React.useState(contentItems)
     }
   })
 
-
   if (window.innerWidth < 1025) {
     return ( 
-    <div className='flexbox-row'>
-      <div> 
-            <img className='nav-logo padding-small' src={imgLogo} width='50px'></img>
+    <div className='flexbox row nav top-small'>
+      <div className='flex1'> 
+        <img className='nav-logo  padding-small' src={imgLogo} width='50px'></img>
       </div>
-      <div className='flex1'>       
-          <div className='flexbox-row'>    
-            <div className='flex1'>
-              <a href='/'><img className='nav-img padding-small' src={imgPortfolio} width='100%'></img></a>
-        
-              <a href='/about'><img className='nav-img padding-small' src={imgAbout} width='100%'></img></a>
-            </div>
-          </div>    
+      <div className='flex1 right-align'>          
+          <div>
+            <a href='/'><img className='nav-img  padding-small' src={imgPortfolio} width='100%'></img></a>
+            <a href='/about'><img className='nav-img-2  padding-small' src={imgAbout} width='100%'></img></a>
+          </div>  
       </div>
     </div>  
     );
-    } else {
-      return (
-        <div className="flexbox">
-              <div> 
-                    <img className='logo' src={imgLogo} width='100%'></img>
-              </div>
-              <div className="flex1">&nbsp;</div>
-               <div className='navigation-menu'>   
-                    <a href="/" className='p-broad nav-link'>Portfolio</a>
-                    <a href="/about" className='p-broad nav-link'>About</a>
-              </div>
+  } else {
+    return (
+      <div className="flexbox">
+        <div> 
+          <img className='logo' src={imgLogo} width='100%'></img>
         </div>
-      )
-    }
+        <div className="flex1">&nbsp;</div>
+        <div className='navigation-menu'>   
+          <a href="/" className='p-broad nav-link'>Portfolio</a>
+          <a href="/about" className='p-broad nav-link'>About</a>
+        </div>
+      </div>
+    )
+  }
 }
 
 export { Navigation }
-
-
-
-
-
-
-
-

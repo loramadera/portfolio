@@ -74,7 +74,7 @@ function BookVerse() {
 		return contentItems.map((item, index) => {
 		        return <div className='book-item'>
 				<div className='flexbox top-small'>
-					<div className='flex1 padding-medium box'>
+					<div className='flex1 top-medium center-align box'>
 						<img className='book-img' src={item.image} width="100%"></img>
 					</div>
 					<div className='flex2 box'>
@@ -89,30 +89,30 @@ function BookVerse() {
 		    } else {
 		      return contentItems.map((item, index) => {
 		        if (index % 2) {
-		          return <div className='book-item'>	
-					<div className='flexbox top-small'>	
-						<div className='flex2 box'>
-							<div>
-								<h4 className='h4-alegreya small-border margins-small'>{item.title}</h4>
+		          return <div>	
+					<div className='flexbox'>	
+						<div className='box padding-medium'>
+							<div className='small-border'>
+								<h4 className='h4-alegreya'>{item.title}</h4>
 							</div>
-							<p className='p-aktiv margins-small'>{item.text}</p>
+							<p className='p-aktiv'>{item.text}</p>
 						</div>
-						<div className='flex1 padding-medium box'>
+						<div className='center-align box'>
 							<img className='book-img' src= {item.image} width="100%"></img>
 						</div>
 					</div>
 				</div>
 			} else {
-				return <div className='book-item'>
-					<div className='flexbox top-small'>
-						<div className='flex1 padding-medium box'>
+				return <div>
+					<div className='flexbox'>
+						<div className='center-align box'>
 							<img className='book-img' src={item.image} width="100%"></img>
 						</div>
-						<div className='flex2 box'>
-							<div className=''>
-								<h4 className='h4-alegreya small-border margins-small'>{item.title}</h4>
+						<div className='box padding-medium'>
+							<div className='small-border'>
+								<h4 className='h4-alegreya'>{item.title}</h4>
 							</div>
-							<p className='p-aktiv margins-small'>{item.text}</p>
+							<p className='p-aktiv'>{item.text}</p>
 						</div>
 					</div>
 				</div>
@@ -139,21 +139,21 @@ function BookVerse() {
 		    } else {
 		      return styleItems.map((item, index) => {
 		        if (index % 2) {
-		          return <div className='book-item'>	
+		          return <div>	
 					<div className='flexbox margins-large'>	
 						<div className='flex1 box'>
 							<h4 className='h4-alegreya margins-small'>{item.title}</h4>
 							<p className='p-aktiv margins-small'>{item.text}</p>
 						</div>
-						<div className='img flex1 box'>
+						<div className='flex1 box'>
 							<img src= {item.image} width="100%"></img>
 						</div>
 					</div>
 					</div>
 				} else {
-					return <div className='book-item'>
+					return <div>
 						<div className='flexbox margins-large'>
-							<div className='img flex1 box'>
+							<div className='flex1 box'>
 								<img src={item.image} width="100%"></img>
 							</div>
 							<div className='flex1 box'>
@@ -172,27 +172,35 @@ function BookVerse() {
 
 
 	return (
-	<div>
+	<div className='mobile'>
 	<Navigation />
 	<link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
 	<div className='book'>	
 		<div className="book-hero">
 			<img src={ imgBookVerse} width="100%"></img>
 		</div>
+
+		<div className='flexbox top-small row'>
+				<div className='flex1 right-align margins-small'>
+					<a className='a-none' href='/bestiary'>
+						<p className='p-broad'>Next</p>
+					</a>
+				</div>		
+			</div>
 		
 		<div>
-			<h1 className='h1-alegreya center-align'>BookVerse</h1>
-			<h2 className='h2-alegreya center-align'>Curing the bookish blues.</h2>
-			<h2 className='h2-alegreya center-align opacity'>UX/UI</h2>
+			<h1 className='h1-alegreya center-align top-medium'>BookVerse</h1>
+			<h2 className='h2-alegreya center-align none'>Curing the bookish blues.</h2>
+			<h2 className='h2-alegreya center-align none bottom-small opacity'>UX/UI</h2>
 		</div>
 		
 
 
-		<div className='bottom-border top-large'>
+		<div className='bottom-border'>
 			<h3 className='h3-alegreya'>01 Overview</h3>
 		</div>
-		<div className='flexbox margins-medium bottom-medium'>
-			<div className='flex2 margins-small center-align mobile'>
+		<div className='flexbox'>
+			<div className='flex2 center-align mobile'>
 				<img className='book-logo box' src={ imgLogo } width="100%"></img>
 			</div>
 			<div className='flex2 box'>
@@ -209,7 +217,7 @@ function BookVerse() {
 		<div className='bottom-border'>
 			<h3 className='h3-alegreya'>02 Methodology</h3>
 		</div>
-		<div className='flexbox margins-medium top-small'>
+		<div className='flexbox margins-medium'>
 			<div className='flex1 box'>
 				<h4 className='h4-alegreya margins-small'>Bodystorming</h4>
 				<p className='p-aktiv margins-small'>Gathering information about various platforms and using them with the purpose of discovering a book with several defining characteristics.</p>
@@ -230,12 +238,12 @@ function BookVerse() {
 
 
 
-		<div className='bottom-border top-large'>
+		<div className='bottom-border'>
 			<h3 className='h3-alegreya'>03 Qualitative Research</h3>
 		</div>
 		<div className='margins-medium'>
-				<h4 className='h4-alegreya top-small bottom-small'>03 Interview Questions</h4>
-				<div className='margins-small bottom-medium'>
+				<h4 className='h4-alegreya top-small'>03 Interview Questions</h4>
+				<div className='margins-small'>
 					<p className='p-aktiv'>1. Describe a typical “book slump” for you.</p>
 					<p className='p-aktiv'>2. What tools do you use to find new books? Does their ease-of-use determine length of search before you give up?</p>
 					<p className='p-aktiv'>3. Do you deviate from your preferred genres?</p>
@@ -246,23 +254,23 @@ function BookVerse() {
 			</div>
 
 		<div className='flexbox margins-medium'>
-			<div className='bottom medium'>
-				<h4 className='h4-alegreya top-small'>03 Interviewer Screening</h4>
-					<div className='flexbox top-small bottom-medium'>
+			<div>
+				<h4 className='h4-alegreya'>03 Interviewer Screening</h4>
+					<div className='flexbox'>
 					<div className='flex1 margins-small'>
-						<h4 className='h4-alegreya top-small'>Contexts</h4>
+						<h4 className='h4-alegreya'>Contexts</h4>
 						<p className='p-aktiv'>High phone/reading device usage.</p>
 						<p className='p-aktiv'>Enjoys frequent recreational activites.</p>
 						<p className='p-aktiv'>Social media usage.</p>
 					</div>
 					<div className='flex1 margins-small'>
-						<h4 className='h4-alegreya top-small'>Attitudes</h4>
+						<h4 className='h4-alegreya'>Attitudes</h4>
 						<p className='p-aktiv'>Focused, but overall creative personality </p>
 						<p className='p-aktiv'>Open-minded to new experiences.</p>
 						<p className='p-aktiv'>Reading is a form of self-enrichment.</p>
 					</div>
 					<div className='flex1 margins-small'>
-						<h4 className='h4-alegreya top-small'>Motivations</h4>
+						<h4 className='h4-alegreya'>Motivations</h4>
 						<p className='p-aktiv'>Seeking escapism.</p>
 						<p className='p-aktiv'>Prefers passive activities.</p>
 						<p className='p-aktiv'>Desires positive impact on personal creativity & inspiration.</p>
@@ -273,7 +281,7 @@ function BookVerse() {
 
 		<div className='flexbox margins-medium'>
 			<div>
-				<h4 className='h4-alegreya top-small bottom-small'>03 Key Insights</h4>
+				<h4 className='h4-alegreya'>03 Key Insights</h4>
 				 <Items />
 			</div>
 		</div>
@@ -282,43 +290,43 @@ function BookVerse() {
 
 
 
-		<div className='bottom-border top-large'>
+		<div className='bottom-border'>
 			<h3 className='h3-alegreya'>04 Persona</h3>
 		</div>
 		<div className='flexbox margins-medium'>
 			<div className='flex1 box'>
-				<img className='book-persona-img' src={ imgPersona } width="100%"></img>
+				<img className='book-persona-img mobile' src={ imgPersona } width="100%"></img>
 			</div>
 			<div className='flex1 box'>
-				<p className='p-aktiv margins-small'>Nadia is an undergraduate student. In her spare time, she either likes spending time with family or holing up with a good book or videogame. Social media tends to be a fun distraction from daily work, but she seeks more enriching fulfilment from books.</p> 
+				<p className='p-aktiv'>Nadia is an undergraduate student. In her spare time, she either likes spending time with family or holing up with a good book or videogame. Social media tends to be a fun distraction from daily work, but she seeks more enriching fulfilment from books.</p> 
 				<div className='flexbox'>
 					<div className='flex1 box'>
-						<h4 className='h4-alegreya margins-small'>Age</h4>
-						<p className='p-aktiv margins-small'>23</p>
-						<h4 className='h4-alegreya margins-small'>Occupation</h4>
-						<p className='p-aktiv margins-small'>Full-time student</p>
-						<h4 className='h4-alegreya margins-small'>Income</h4>
-						<p className='p-aktiv margins-small'>Unemployed</p>
+						<h4 className='h4-alegreya'>Age</h4>
+						<p className='p-aktiv'>23</p>
+						<h4 className='h4-alegreya'>Occupation</h4>
+						<p className='p-aktiv'>Full-time student</p>
+						<h4 className='h4-alegreya'>Income</h4>
+						<p className='p-aktiv'>Unemployed</p>
 					</div>
 					<div className='flex1'>
-						<h4 className='h4-alegreya margins-small'>Location</h4>
-						<p className='p-aktiv margins-small'>Santa Barbara</p>
-						<h4 className='h4-alegreya margins-small'>Status</h4>
-						<p className='p-aktiv margins-small'>Single</p>
+						<h4 className='h4-alegreya'>Location</h4>
+						<p className='p-aktiv'>Santa Barbara</p>
+						<h4 className='h4-alegreya'>Status</h4>
+						<p className='p-aktiv'>Single</p>
 					</div>
 				</div>
 				<div className='flexbox'>
 					<div className='flex1'>
-						<h4 className='h4-alegreya margins-small'>Goals</h4>
-						<p className='p-aktiv margins-small'>• To feel more productive</p>
-						<p className='p-aktiv margins-small'>• To use social media less and read more </p>
-						<p className='p-aktiv margins-small'>• To explore more books that aren’t in her immediate radar</p>
+						<h4 className='h4-alegreya'>Goals</h4>
+						<p className='p-aktiv'>• To feel more productive</p>
+						<p className='p-aktiv'>• To use social media less and read more </p>
+						<p className='p-aktiv'>• To explore more books that aren’t in her immediate radar</p>
 					</div>
 					<div className='flex1 box'>
-						<h4 className='h4-alegreya margins-small'>Frustrations</h4>
-						<p className='p-aktiv margins-small'>• Book vendors aren’t always reliable in matching</p>
-						<p className='p-aktiv margins-small'>• Gets pushed toward social media </p>
-						<p className='p-aktiv margins-small'>• Searching for new books is an unenjoyable time and effort commitment</p>
+						<h4 className='h4-alegreya'>Frustrations</h4>
+						<p className='p-aktiv'>• Book vendors aren’t always reliable in matching</p>
+						<p className='p-aktiv'>• Gets pushed toward social media </p>
+						<p className='p-aktiv'>• Searching for new books is an unenjoyable time and effort commitment</p>
 					</div>
 				</div>
 			</div>
@@ -329,8 +337,8 @@ function BookVerse() {
 		<div className='bottom-border'>
 			<h3 className='h3-alegreya'>05 User Testing</h3>
 		</div>
-		<div className='margins-medium bottom-medium'>
-			<h4 className='h4-alegreya top-small bottom-small'>05 Task Flows</h4>
+		<div className='margins-medium'>
+			<h4 className='h4-alegreya'>05 Task Flows</h4>
 				<div className='margins-small'>
 				<p className='p-aktiv'>Task One: User will explore BookVerse for a new book recommendation, specifically by browsing forums for new books on the Discovery page.</p>
 					<div className='flexbox'>
@@ -358,8 +366,8 @@ function BookVerse() {
 					</div>
 				</div>			
 			</div>
-		<div className='margins-medium bottom-medium'>	
-			<h4 className='h4-alegreya top-small bottom-small'>05 Key Feedback</h4>
+		<div className='margins-medium'>	
+			<h4 className='h4-alegreya'>05 Key Feedback</h4>
 					<div className='flexbox'>
 					<div className='flex1 margins-small'>
 						<h4 className='h4-alegreya'>Task One</h4>
@@ -383,7 +391,7 @@ function BookVerse() {
 
 
 
-		<div className='bottom-border top-large'>
+		<div className='bottom-border'>
 			<h3 className='h3-alegreya'>06 Styles & Logo</h3>
 		</div>
 		<div> <Style /> </div>
@@ -398,7 +406,14 @@ function BookVerse() {
 		</div>
 
 
-	</div>
+		<div className='flexbox top-small row'>
+			<div className='flex1 right-align margins-small'>
+				<a className='a-none' href='/bestiary'>
+					<p className='p-broad'>Next</p>
+				</a>
+			</div>		
+		</div>
+		</div>
 		<div className='top-medium'>
 	      <Footer />
 		</div>     

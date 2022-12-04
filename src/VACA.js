@@ -95,13 +95,27 @@ const [items, setItems] = React.useState(contentItems)
 
 
 return (
-<div>
+<div className='mobile'>
 <Navigation />
 <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
 <div>
 	<div className="vaca-hero">
 		<img src={ imgHero } width="100%"></img>
 	</div>
+
+	<div className='flexbox top-small row'>
+		<div className='flex1 margins-small'>
+			<a className='a-none' href='/gaia'>
+				<p className='p-broad'>Previous</p>
+			</a>
+		</div>
+		<div className='flex1 right-align margins-small'>
+			<a className='a-none' href='/sadhan'>
+				<p className='p-broad'>Next</p>
+			</a>
+		</div>		
+	</div>
+
 	<div>
 		<h1 className='h1-broad center-align top-medium'>VACA</h1>
 		<h4 className='h4-broad center-align'>The Travel App</h4>
@@ -138,6 +152,19 @@ return (
 			</div>
 		</div>	
 </div>
+
+<div className='flexbox top-small row'>
+		<div className='flex1 margins-small'>
+			<a className='a-none' href='/gaia'>
+				<p className='p-broad'>Previous</p>
+			</a>
+		</div>
+		<div className='flex1 right-align margins-small'>
+			<a className='a-none' href='/sadhan'>
+				<p className='p-broad'>Next</p>
+			</a>
+		</div>		
+	</div>
 
 <div className='mobile'>
  	<Footer />

@@ -128,13 +128,27 @@ const gaiaItems = contentItems.map((item, index) => {
 
 
 return (
-<div>
+<div className='mobile'>
 <Navigation />
 <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
 <div>
 	<div className="gaia-hero top-large">
 		<img src={ imgHero } width="100%"></img>
 	</div>
+
+	<div className='flexbox top-small row'>
+		<div className='flex1 margins-small'>
+			<a className='a-none' href='/mcc'>
+				<p className='p-broad'>Previous</p>
+			</a>
+		</div>
+		<div className='flex1 right-align margins-small'>
+			<a className='a-none' href='/vaca'>
+				<p className='p-broad'>Next</p>
+			</a>
+		</div>		
+	</div>
+
 	<div>
 		<h1 className='h1-broad center-align top-medium'>Project Gaia</h1>
 		<h4 className='h4-broad center-align'>A learning & interactivity tool.</h4>
@@ -166,19 +180,28 @@ return (
 		</div>	
 
 		<div className='top-medium'>
-				<Items />
-			</div>
-
+			<Items />
+		</div>
 			
 
-			
+		<div className='gaia-beauty'>
+			<img className='darker-box' src= {imgBeauty} width="100%"></img>
+		</div>
+	</div>	
 
-			
+</div>
 
-			<div className='gaia-beauty'>
-				<img className='darker-box' src= {imgBeauty} width="100%"></img>
-			</div>
-		</div>	
+<div className='flexbox top-small row'>
+	<div className='flex1 margins-small'>
+		<a className='a-none' href='/mcc'>
+			<p className='p-broad'>Previous</p>
+		</a>
+	</div>
+	<div className='flex1 right-align margins-small'>
+		<a className='a-none' href='/vaca'>
+			<p className='p-broad'>Next</p>
+		</a>
+	</div>		
 </div>
 
 <div className='mobile'>

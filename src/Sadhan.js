@@ -56,10 +56,8 @@ function Items() {
 					<p className='p-broad margins-small'>{item.text}</p>
 				</div>
 				<div className='flex1 box'>
-					<div className='flexbox'>
-						<div className='flex1'></div>
+					<div className='flexbox center-align'>
 						<div className='flex1'><img className='sadhan-img center-align' src= {item.image} width="100%"></img></div>
-						<div className='flex1'></div>
 					</div>
 				</div>
 			</div>
@@ -70,11 +68,9 @@ function Items() {
         if (index % 2) {
           return <div className='sadhan-item mobile'>	
 			<div className='flexbox margins-large'>	
-				<div className='flex1 box'>
+				<div className='flex1 box center-align'>
 					<div className='flexbox'>
-						<div className='flex1'></div>
-						<div className='flex1'><img className='sadhan-img center-align' src= {item.image} width="100%"></img></div>
-						<div className='flex1'></div>
+						<div className='flex1'><img className='sadhan-img' src= {item.image} width="100%"></img></div>
 					</div>
 				</div>
 				<div className='flex1 box'>
@@ -90,11 +86,9 @@ function Items() {
 					<h2 className='h2-broad left-align margins-small'>{item.title}</h2>
 					<p className='p-broad margins-small'>{item.text}</p>
 				</div>
-				<div className='flex1 box'>
+				<div className='flex1 box center-align'>
 					<div className='flexbox'>
-						<div className='flex1'></div>
-						<div className='flex1'><img className='sadhan-img center-align' src= {item.image} width="100%"></img></div>
-						<div className='flex1'></div>
+						<div className='flex1'><img className='sadhan-img' src= {item.image} width="100%"></img></div>
 					</div>
 				</div>
 			</div>
@@ -108,13 +102,22 @@ function Items() {
 
 
 return (
-<div>
+<div className='mobile'>
 <Navigation />
 <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
 <div>
 	<div className="sadhan-hero">
 		<img src={ imgHero } width="100%"></img>
 	</div>
+
+	<div className='flexbox top-small row'>
+		<div className='flex1 margins-small'>
+			<a className='a-none' href='/vaca'>
+				<p className='p-broad'>Previous</p>
+			</a>
+		</div>	
+	</div>
+
 	<div>
 		<h1 className='h1-broad center-align top-medium'>Sadhan</h1>
 		<h4 className='h4-broad center-align'>Meditation App</h4>
@@ -130,7 +133,7 @@ return (
 						<p className='p-broad margins-small'>Displays group meditation schedules, charting meditators around the world.</p>
 				</div>
 				<div className='flex1 box'>
-					<img className='sadhan-img mobile' src= { imgColors } width="100%"></img>
+					<img className='sadhan-img' src= { imgColors } width="100%"></img>
 				</div>
 			</div>
 
@@ -143,6 +146,14 @@ return (
 			</div>
 		</div>	
 </div>
+
+<div className='flexbox top-small row'>
+		<div className='flex1 margins-small'>
+			<a className='a-none' href='/vaca'>
+				<p className='p-broad'>Previous</p>
+			</a>
+		</div>	
+	</div>
 
 <div className='mobile'>
 	 <Footer />

@@ -177,6 +177,11 @@
          margin-top: 50px;
       }
 
+      .none {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      }
+
       .mobile-text {
         text-align: center;
       }
@@ -184,7 +189,7 @@
       .h1-alegreya {
         color: white;
         font-family: alegreya SC;
-        font-size: 30px;
+        font-size: 40px;
         font-weight: normal;
       }
 

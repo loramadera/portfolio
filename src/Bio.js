@@ -96,7 +96,7 @@ function Bio() {
 
 
   return(
-    <div>
+    <div className='mobile'>
     <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
     <Navigation />
       <h1 className="h1-broadacre center-align top-large bottom-medium">About Me</h1>

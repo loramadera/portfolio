@@ -65,45 +65,52 @@ a.a-none {
 
 
 @media screen and (max-width: 1025px) {
-      .h1-broadacre {
-        color: white;
-        font-family: broadacre;
-        font-size: 20px;
-        font-weight: normal;
-        margin: 0px;
-      }
 
-      .h2-broadacre {
-        color: white;
-        font-family: broadacre;
-        font-size: 15px;
-        font-weight: normal;
-      }
+  .dark-box {
+    background-color: #1a1e23;
+    left: 0px;
+    right: 0px;
+  }
 
-      .h3-broadacre {
-        color: white;
-        font-family: broadacre;
-        font-size: 15px;
-        font-weight: normal;
-      }
+  .h1-broadacre {
+    color: white;
+    font-family: broadacre;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0px;
+  }
 
-      .p-bold {
-        color: white;
-        font-family: broadacre;
-        font-size: 10px;
-        font-weight: normal;
-        margin: 0px;
+  .h2-broadacre {
+    color: white;
+    font-family: broadacre;
+    font-size: 15px;
+    font-weight: normal;
+  }
 
-      }
+  .h3-broadacre {
+    color: white;
+    font-family: broadacre;
+    font-size: 15px;
+    font-weight: normal;
+  }
 
-      .p-light {
-        color: white;
-        font-family: broadacre-hairline-0, sans-serif;
-        font-weight: 100;
-        font-size: 15px;
-        font-style: normal;
+  .p-bold {
+    color: white;
+    font-family: broadacre;
+    font-size: 10px;
+    font-weight: normal;
+    margin: 0px;
 
-      }
+  }
+
+  .p-light {
+    color: white;
+    font-family: broadacre-hairline-0, sans-serif;
+    font-weight: 100;
+    font-size: 15px;
+    font-style: normal;
+
+  }
 
 
 }

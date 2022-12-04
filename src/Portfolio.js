@@ -36,6 +36,10 @@ function Portfolio() {
     {'title': 'Digital Art', 'text': 'Digital portraits (and others).', 'image': imgESO, 'link': '/digitalart'},
   ];
 
+  const bubbleItems = [
+    { 'image': imgMobile }
+  ];
+
   const [items, setItems] = React.useState(contentItems)
   React.useEffect(() => {
     const debouncedHandleResize = debounce(function handleResize() {
@@ -49,11 +53,32 @@ function Portfolio() {
     }
   })
 
+  function Top() {
+    if (window.innerWidth < 1025 ) {
+      return (
+        <div>
+          <img src= {imgMobile} width="100%"></img>
+        </div>
+      );
+    }
+    return (
+      <div className='flex1 box portfolio-globe-bubble'>
+        <div className='portfolio-globe'>
+          <img className='img-globe padding-medium' src= {imgGlobe} width="100%"></img>
+        </div>
+        <div className='portfolio-bubble'>
+          <img className='img-profile padding-medium' src= {imgBubble} width="100%"></img>
+        </div>
+      </div>
+    );
+  }
+
   function Items() {
     if (window.innerWidth < 1025) {
       return contentItems.map((item, index) => {
-        return <div className='margins-small bottom-medium'>
-          <div className='flexbox darker-box'>
+        return (
+          <div key={index} className='margins-small bottom-medium'>
+            <div className='flexbox darker-box'>
               <a href={item.link} className='a-none flex1 box'>
                 <img src= {item.image} width="100%"></img>
               </a>
@@ -63,13 +88,14 @@ function Portfolio() {
                   <p className='p-light left-align'>{item.text}</p>
                 </div>
               </a>
+            </div>
           </div>
-        </div>
+        );
       });
     } else {
       return contentItems.map((item, index) => {
         if (index % 2) {
-          return <div className='margins-small bottom-medium'>
+          return <div key={index} className='margins-small bottom-medium'>
             <div className='flexbox darker-box'>
                 <a href={item.link} className='a-none flex1 box'>
                   <div className='margins-small'>  
@@ -83,7 +109,7 @@ function Portfolio() {
             </div>
           </div>
         } else { 
-          return <div className='margins-small bottom-medium'>
+          return <div key={index} className='margins-small bottom-medium'>
             <div className='flexbox darker-box'>
                 <a href={item.link} className='a-none flex1 box'>
                   <img src= {item.image} width="100%"></img>
@@ -102,51 +128,41 @@ function Portfolio() {
   }
 
   return (
-    <div>
-      <Navigation />
+    <div className='mobile'>
+    <Navigation />
       <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
-      <div className='flexbox mobile'> 
-        <div className='flex1 box portfolio-globe-bubble'>
-          <div className='portfolio-globe'>
-            <img className='img-globe padding-medium' src= {imgGlobe} width="100%"></img>
+      <div className='flexbox mobile'>
+        <Top />
+        <div className='flex1 box top-small'>
+          <h1 className='h1-broadacre mobile-center'>Nice to meet you! I'm Lora.</h1>
+          <div className='flexbox top-small'>
+            <div className='flex2'><p className='p-light mobile-center'>UX/UI Designer, Visual Designer, Developer</p></div>
+            <div className='flex1'></div>
           </div>
-          <div className='portfolio-bubble'>
-            <img className='img-profile padding-medium' src= {imgBubble} width="100%"></img>
-          </div>
-        </div>  
-          <div className='flex1 box top-small'>
-            <h1 className='h1-broadacre mobile-center'>Nice to meet you! I'm Lora.</h1>
-                <div className='flexbox top-small'>
-                    <div className='flex2'>
-                          <p className='p-light mobile-center'>UX/UI Designer, Visual Designer, Developer</p>
-                    </div>
-                    <div className='flex1'></div>
-                 </div>
-                  <div className='flexbox'>
-                    <div className='flex2'>
-                          <p className='p-light mobile-center'>Digital Artist,  3D Modeler, Gamer, Bookworm, Writer</p>
-                    </div>
-                    <div className='flex1'></div>
-                    <div className='flex1'></div>
-                 </div>
-            </div>   
-      </div>
-      <div className='center-align'> <img className='img-arrows top-small bottom-small mobile' src= { imgArrows } ></img></div>  
-
+          <div className='flexbox'>
+            <div className='flex2'><p className='p-light mobile-center'>Digital Artist,  3D Modeler, Gamer, Bookworm, Writer</p></div>
+            <div className='flex1'></div>
+            <div className='flex1'></div>
+         </div>
+        </div>   
+      </div>     
+      
+      <div className='center-align'>
+        <img className='img-arrows top-small bottom-small mobile' src= { imgArrows } ></img>
+      </div>  
+      
       <div className='dark-box top-dark mobile'>
         <h1 className='h1-broadacre top-medium bottom-medium box center-align'>What I Do</h1>
-          <Items />
-        </div>
-       <div>
-    
+        <Items />
       </div>  
+
     <div className='mobile'>
       <Footer />
     </div>  
+
     </div>
   );
 
 }
-
 
 export { Portfolio }

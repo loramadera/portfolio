@@ -88,30 +88,30 @@ function Bestiary() {
     } else {
       return contentItems.map((item, index) => {
         if (index % 2) {
-          return <div className='best-item'>	
-			<div className='flexbox top-small'>	
-				<div className='flex2 box'>
-					<div className='small-border margins-small'>
+          return <div>	
+			<div className='flexbox'>	
+				<div className='box padding-medium'>
+					<div className='small-border'>
 						<h4 className='h4-broad'>{item.title}</h4>
 					</div>
-					<p className='p-broad margins-small'>{item.text}</p>
+					<p className='p-broad'>{item.text}</p>
 				</div>
-				<div className='flex1 top-medium center-align box'>
+				<div className='center-align box'>
 					<img className='img-person' src= {item.image} width="100%"></img>
 				</div>
 			</div>
 		</div>
 	} else {
-		return <div className='best-item'>
-			<div className='flexbox top-small'>
-				<div className='flex1 top-medium center-align box'>
+		return <div>
+			<div className='flexbox'>
+				<div className='center-align box'>
 					<img className='img-person' src= {item.image} width="100%"></img>
 				</div>
-				<div className='flex2 box'>
-					<div className='small-border margins-small'>
+				<div className='box padding-medium'>
+					<div className='small-border'>
 						<h4 className='h4-broad'>{item.title}</h4>
 					</div>
-					<p className='p-broad margins-small'>{item.text}</p>
+					<p className='p-broad'>{item.text}</p>
 				</div>
 			</div>
 		</div>
@@ -179,17 +179,31 @@ function Bestiary() {
   }
 
 	return (
-		<div>
+		<div className='mobile'>
 			<link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
 			<Navigation />
 			<img className='best-hero' src={ imgHero } width="100%"></img>
+
+			<div className='flexbox top-small row'>
+				<div className='flex1 margins-small'>
+					<a className='a-none' href='/bookverse'>
+						<p className='p-broad'>Previous</p>
+					</a>
+				</div>
+				<div className='flex1 right-align margins-small'>
+					<a className='a-none' href='/mcc'>
+						<p className='p-broad'>Next</p>
+					</a>
+				</div>		
+			</div>
+
 			<h1 className='h1-broad-g center-align top-medium'>The Bestiary</h1>
 			<h2 className='h2-broad center-align opacity'>UX/UI</h2>
 			<h2 className='h2-broad center-align opacity'>Mobile Game Design</h2>
 
 
-			<div className='bottom-border top-medium'>
-				<h3 className='h3-broad-g'>01 Overview</h3>
+			<div className='bottom-border'>
+				<h3 className='h3-broad-g mobile'>01 Overview</h3>
 			</div>
 			<div className='margins-large'>
 				<h4 className='h4-broad top-small margins-small'>The Bestiary - what is it?</h4>
@@ -333,27 +347,27 @@ function Bestiary() {
 			<div className='bottom-border top-small mobile'>
 				<h3 className='h3-broad-g'>04 Interview Profiles & Feedback</h3>
 			</div>
-					<div className='flexbox margins-medium mobile'>
-						<div className='flex box center-align'>
+					<div className='flexbox margins-medium mobile-center mobile'>
+						<div className='flex box'>
 								<img className='img-small-swords' src= {imgSwords} width="100%"></img>
 						</div>	
 						<div className='flex2 box'>
-							<h4 className='h4-broad center-align'>Interview Feedback from Audience</h4>
+							<h4 className='h4-broad sword-title'>Interview Feedback from Audience</h4>
 						</div>						
-					</div>	
+				</div>
 					<div className='flexbox margins-extra'>
 						<div>
 							 <Items />
 						</div>
 					</div>
-				<div className='flexbox margins-medium top-medium mobile'>
-						<div className='flex box center-align'>
-								<img className='img-small-swords' src= {imgSwords} width="100%"></img>
+				<div className='flexbox margins-medium top-medium mobile-center'>
+						<div className='flex box'>
+							<img className='img-small-swords' src= {imgSwords} width="100%"></img>
 						</div>	
 						<div className='flex2 box'>
-							<h4 className='h4-broad sword-title center-align'>Interview Feedback from Expert</h4>
+							<h4 className='h4-broad sword-title'>Key Feedback from Expert</h4>
 						</div>						
-					</div>
+				</div>
 					<div className='flexbox margins-medium top-medium'>
 						<div className='flex1 box center-align'>
 							<img className='img-best-expert margins-large bottom-medium' src={ imgPerson4 } width="100%"></img>
@@ -366,13 +380,13 @@ function Bestiary() {
 									<h2 className='h2-broad'>Ex-Videogame Livestreamer</h2>
 								</div>
 							</div>
-							<div className='margins-smallmobile'>
-								<h4 className='h4-broad margins-small'>Key Feedback</h4>
-								<p className='p-broad margins-small'>The balance of utility versus artistry in the interface design is completely dependent on the type of game being played.</p>
-								<p className='p-broad margins-small'>Fast-paced games need to be quick and strategy based, therefore they need to convey information quickly.</p>
-								<p className='p-broad margins-small'>As long as the artistic theme fits the game, it won’t take away from the utility.</p>
-								<p className='p-broad margins-small'>There is a common mistake in many videogame designs where interface designers will attempt to create utility through complexity, but even for strategic players this can get exhausting.</p>
-								<p className='p-broad margins-small'>The story that you’re telling in an interface directly relates to how well the player will connect with it, and in what amount of time.</p> 
+							<div className='margins-small mobile'>
+								<h4 className='h4-broad'>Key Feedback</h4>
+								<p className='p-broad'>The balance of utility versus artistry in the interface design is completely dependent on the type of game being played.</p>
+								<p className='p-broad'>Fast-paced games need to be quick and strategy based, therefore they need to convey information quickly.</p>
+								<p className='p-broad'>As long as the artistic theme fits the game, it won’t take away from the utility.</p>
+								<p className='p-broad'>There is a common mistake in many videogame designs where interface designers will attempt to create utility through complexity, but even for strategic players this can get exhausting.</p>
+								<p className='p-broad'>The story that you’re telling in an interface directly relates to how well the player will connect with it, and in what amount of time.</p> 
 							</div>	
 						</div>
 					</div>
@@ -383,12 +397,12 @@ function Bestiary() {
 			<div className='bottom-border top-medium mobile'>
 				<h3 className='h3-broad-g'>05 The Minimum Viable Product</h3>
 			</div>
-				<div className='flexbox margins-medium mobile'>
-						<div className='flex box center-align'>
+				<div className='flexbox margins-medium mobile-center mobile'>
+						<div className='flex box'>
 								<img className='img-small-swords' src= {imgSwords} width="100%"></img>
 						</div>	
 						<div className='flex2 box'>
-							<h4 className='h4-broad sword-title center-align'>Identifying the MVP</h4>
+							<h4 className='h4-broad sword-title'>Identifying The MVP</h4>
 						</div>						
 				</div>
 				<div className='flexbox margins-medium'>
@@ -471,12 +485,12 @@ function Bestiary() {
 			<div className='bottom-border top-small'>
 				<h3 className='h3-broad-g'>06 User Testing</h3>
 			</div>
-				<div className='flexbox margins-medium mobile'>
-						<div className='flex box center-align'>
+				<div className='flexbox margins-medium mobile-center mobile'>
+						<div className='flex box'>
 								<img className='img-small-swords' src= {imgSwords} width="100%"></img>
 						</div>	
 						<div className='flex2 box'>
-							<h4 className='h4-broad sword-title center-align'>User Flows</h4>
+							<h4 className='h4-broad sword-title'>User Flows</h4>
 						</div>						
 				</div>
 				<div className='margins-extra'>
@@ -667,7 +681,7 @@ function Bestiary() {
 
 
 
-				<div className='flexbox margins-medium bottom-medium top-medium'>
+				<div className='flexbox margins-medium top-medium mobile-center'>
 						<div className='flex box'>
 								<img className='img-small-swords' src= {imgSwords} width="100%"></img>
 						</div>	
@@ -675,11 +689,46 @@ function Bestiary() {
 							<h4 className='h4-broad sword-title'>Feedback</h4>
 						</div>						
 				</div>
+				<div className='flexbox margins-large'>
+								<div>
+										<div className='flexbox'>
+										<div className='flex1 padding-medium'>
+											<h4 className='h4-broad'>Round One</h4>
+											<p className='p-broad'>The “locked” icon should be unlocked, or otherwise swapped out for more icon variation.</p>
+											<p className='p-broad'>The journal interface seems pretty simplistic in terms of design - some “toggling” variation would feel more interactive.</p>
+											<p className='p-broad'>Some variation in the “locked” and “unlocked” journal entries would be helpful, visually.</p>
+										</div>
+										<div className='flex1 padding-medium'>
+											<h4 className='h4-broad'>Round Two</h4>
+											<p className='p-broad'>The first screen needs to have more narrative.</p>
+											<p className='p-broad'>For some who never plays games, the interface would be confusing as is.</p>
+											<p className='p-broad'>Is there a login? Do we need a username? What do we actually “search” for that the bestiary demands of the user? The monster’s name?</p>
+										</div>
+										<div className='flex1 padding-medium'>
+											<h4 className='h4-broad'>Round Three</h4>
+											<p className='p-broad'>There are multiple icons that are being used over and over again - there needs to be some variation.</p>
+											<p className='p-broad'>Once we’re far enough into the task, don’t know how to get back.</p>
+											<p className='p-broad'>There’s an inconsistency between the art style of the icons chosen.</p>
+										</div>
+										</div>
+								</div>
+							</div>
 
+			<div className='flexbox top-small row'>
+				<div className='flex1 margins-small'>
+					<a className='a-none' href='/bookverse'>
+						<p className='p-broad'>Previous</p>
+					</a>
+				</div>
+				<div className='flex1 right-align margins-small'>
+					<a className='a-none' href='/mcc'>
+						<p className='p-broad'>Next</p>
+					</a>
+				</div>		
+			</div>				
 
-
-		     <div className='mobile'>
-				 <Footer />
+		  <div className='mobile'>
+				<Footer />
 			</div>
 
 		</div>		

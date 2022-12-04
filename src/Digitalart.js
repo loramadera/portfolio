@@ -66,7 +66,7 @@ function Digitalart() {
 
 
   return (
-    <div>
+    <div className='mobile'>
       <Navigation />
       <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
         <h1 className='h1-broadacre center-align top-large bottom-medium'>Digital Art</h1>

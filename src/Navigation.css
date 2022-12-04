@@ -6,14 +6,7 @@
   padding: 0px;
 }
 
-/*.logo{
-  position: relative;
-  width: 100%;
-  margin-top:  40px;
-  margin-left: 40px;
-  align-content: left;
-}
-*/
+
 
 .logo {
   margin-top: 30px;
@@ -21,14 +14,6 @@
   width: 50px;
   opacity: 80%;
 }
-
-.nav{
-  min-width: 100%;
-  display: flex;
-  flex-flow: column wrap;
-  align-content: flex-end;
-}
-
 
 .nav-link {
   justify-content: right;
@@ -45,11 +30,25 @@
   .nav-img {
     width: 25px;
     opacity: 70%;
+    margin-right: 10px;
+  }
+  .nav-img-2 {
+    width: 25px;
+    opacity: 70%;
+    margin-right: 10px;
   }
 
   .nav-logo {
     width: 25px;
     opacity: 70%;
+    
+  }
+
+  .nav {
+    background-color: #1E2229;
+    position: fixed;
+    margin: 0px;
+    top: 0;
   }
  
 }

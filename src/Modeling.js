@@ -83,7 +83,7 @@ function Modeling() {
   }
 
   return (
-        <div>
+        <div className='mobile'>
           <Navigation /> 
           <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>  
            <div> 
