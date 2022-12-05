@@ -89,36 +89,36 @@ function BookVerse() {
 		    } else {
 		      return contentItems.map((item, index) => {
 		        if (index % 2) {
-		          return <div>	
-					<div className='flexbox'>	
-						<div className='box padding-medium'>
-							<div className='small-border'>
-								<h4 className='h4-alegreya'>{item.title}</h4>
+         	 return <div>	
+							<div className='flexbox'>	
+								<div className='box padding-medium'>
+									<div className='small-border'>
+										<h4 className='h4-alegreya'>{item.title}</h4>
+									</div>
+									<p className='p-aktiv'>{item.text}</p>
+								</div>
+								<div className='box padding-medium'>
+									<img className='book-img' src= {item.image} width="100%"></img>
+								</div>
 							</div>
-							<p className='p-aktiv'>{item.text}</p>
 						</div>
-						<div className='center-align box'>
-							<img className='book-img' src= {item.image} width="100%"></img>
-						</div>
-					</div>
-				</div>
-			} else {
-				return <div>
-					<div className='flexbox'>
-						<div className='center-align box'>
-							<img className='book-img' src={item.image} width="100%"></img>
-						</div>
-						<div className='box padding-medium'>
-							<div className='small-border'>
-								<h4 className='h4-alegreya'>{item.title}</h4>
+					} else {
+						return <div>
+							<div className='flexbox'>
+								<div className='box padding-medium'>
+									<img className='book-img' src={item.image} width="100%"></img>
+								</div>
+								<div className='box padding-medium'>
+									<div className='small-border'>
+										<h4 className='h4-alegreya'>{item.title}</h4>
+									</div>
+									<p className='p-aktiv'>{item.text}</p>
+								</div>
 							</div>
-							<p className='p-aktiv'>{item.text}</p>
 						</div>
-					</div>
-				</div>
-		        }
-		      });
-		    }
+				        }
+				      });
+				    }
 		  }
 
 		function Style () {
@@ -183,15 +183,15 @@ function BookVerse() {
 		<div className='flexbox top-small row'>
 				<div className='flex1 right-align margins-small'>
 					<a className='a-none' href='/bestiary'>
-						<p className='p-broad'>Next</p>
+						<p className='p-primary'>Next</p>
 					</a>
 				</div>		
 			</div>
 		
 		<div>
-			<h1 className='h1-alegreya center-align top-medium'>BookVerse</h1>
+			<h1 className='h1-alegreya center-align '>BookVerse</h1>
 			<h2 className='h2-alegreya center-align none'>Curing the bookish blues.</h2>
-			<h2 className='h2-alegreya center-align none bottom-small opacity'>UX/UI</h2>
+			<h2 className='h2-alegreya center-align none opacity'>UX/UI</h2>
 		</div>
 		
 
@@ -241,9 +241,9 @@ function BookVerse() {
 		<div className='bottom-border'>
 			<h3 className='h3-alegreya'>03 Qualitative Research</h3>
 		</div>
-		<div className='margins-medium'>
-				<h4 className='h4-alegreya top-small'>03 Interview Questions</h4>
-				<div className='margins-small'>
+		<div className='margins-medium bottom-small'>
+				<h4 className='h4-alegreya'>03 Interview Questions</h4>
+				<div>
 					<p className='p-aktiv'>1. Describe a typical “book slump” for you.</p>
 					<p className='p-aktiv'>2. What tools do you use to find new books? Does their ease-of-use determine length of search before you give up?</p>
 					<p className='p-aktiv'>3. Do you deviate from your preferred genres?</p>
@@ -253,30 +253,24 @@ function BookVerse() {
 				</div>
 			</div>
 
-		<div className='flexbox margins-medium'>
+		<div className='flexbox bottom-small'>
 			<div>
-				<h4 className='h4-alegreya'>03 Interviewer Screening</h4>
-					<div className='flexbox'>
-					<div className='flex1 margins-small'>
+				<h4 className='h4-alegreya margins-medium'>03 Interviewer Screening</h4>
+				<div className='flexbox margins-small'>
+					<div className='flex1 margins-tiny'>
 						<h4 className='h4-alegreya'>Contexts</h4>
-						<p className='p-aktiv'>High phone/reading device usage.</p>
-						<p className='p-aktiv'>Enjoys frequent recreational activites.</p>
-						<p className='p-aktiv'>Social media usage.</p>
+						<p className='p-aktiv'>High phone/reading device usage, enjoys frequent recreational activites, high social media usage.</p>
 					</div>
-					<div className='flex1 margins-small'>
+					<div className='flex1 margins-tiny'>
 						<h4 className='h4-alegreya'>Attitudes</h4>
-						<p className='p-aktiv'>Focused, but overall creative personality </p>
-						<p className='p-aktiv'>Open-minded to new experiences.</p>
-						<p className='p-aktiv'>Reading is a form of self-enrichment.</p>
+						<p className='p-aktiv'>Focused, but overall creative personality, open-minded to new experiences, reading is a form of self-enrichment.</p>
 					</div>
-					<div className='flex1 margins-small'>
+					<div className='flex1  margins-tiny'>
 						<h4 className='h4-alegreya'>Motivations</h4>
-						<p className='p-aktiv'>Seeking escapism.</p>
-						<p className='p-aktiv'>Prefers passive activities.</p>
-						<p className='p-aktiv'>Desires positive impact on personal creativity & inspiration.</p>
+						<p className='p-aktiv'>Seeking escapism, prefers passive activities, desires positive impact on personal creativity & inspiration.</p>
 					</div>
 					</div>
-			</div>
+				</div>
 		</div>
 
 		<div className='flexbox margins-medium'>
@@ -409,7 +403,7 @@ function BookVerse() {
 		<div className='flexbox top-small row'>
 			<div className='flex1 right-align margins-small'>
 				<a className='a-none' href='/bestiary'>
-					<p className='p-broad'>Next</p>
+					<p className='p-primary'>Next</p>
 				</a>
 			</div>		
 		</div>

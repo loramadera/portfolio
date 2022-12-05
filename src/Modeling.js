@@ -49,8 +49,8 @@ function Modeling() {
         <a className='a-none darker-box flexbox' href={item.link}>
           <div className='img flex1 box'><img src={item.image} width="100%" /></div>
           <div className='flex1 box'>
-            <h3 className='h3-broadacre center-align'>{item.title}</h3>
-            <p className='p-light center-align'>{item.text}</p>
+            <h3 className='h3-primary center-align'>{item.title}</h3>
+            <p className='p-primary center-align'>{item.text}</p>
           </div>
         </a>
       </div>
@@ -61,8 +61,8 @@ function Modeling() {
           return <div>
         <a className='a-none darker-box flexbox' href={item.link}>
           <div className='flex1 box'>
-            <h3 className='h3-broadacre center-align'>{item.title}</h3>
-            <p className='p-light center-align'>{item.text}</p>
+            <h3 className='h3-primary center-align'>{item.title}</h3>
+            <p className='p-primary center-align'>{item.text}</p>
           </div>
           <div className='img flex1 box'><img src={item.image} width="100%" /></div>
         </a>
@@ -72,8 +72,8 @@ function Modeling() {
         <a className='a-none darker-box flexbox' href={item.link}>
           <div className='img flex1 box'><img src={item.image} width="100%" /></div>
           <div className='flex1 box'>
-            <h3 className='h3-broadacre center-align'>{item.title}</h3>
-            <p className='p-light center-align'>{item.text}</p>
+            <h3 className='h3-primary center-align'>{item.title}</h3>
+            <p className='p-primary center-align'>{item.text}</p>
           </div>
         </a>
       </div>
@@ -86,15 +86,17 @@ function Modeling() {
         <div className='mobile'>
           <Navigation /> 
           <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>  
-           <div> 
+           <div className='mobile'> 
             <div className="modeling-hero">
-              <h1 className='h1-broadacre center-align top-large'>3D Modeling</h1>
-               <div className='dark-box top-dark padding-large'>
-               <h3 className='h3-broadacre center-align bottom-small opacity'>Blender Projects</h3>
-                <Items />
+            <h1 className='h1-primary center-align top-large'>3D Modeling</h1>
+              <div className='mobile'>
+                <div className='dark-box top-dark padding-large'>
+                  <h3 className='h3-primary center-align bottom-small opacity'>Blender Projects</h3>
+                  <Items />
                 </div>
+              </div>  
             </div>
-           </div>   
+          </div>   
         </div>
 
     );

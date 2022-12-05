@@ -62,8 +62,8 @@ const [items, setItems] = React.useState(visualItems)
         <a className='a-none flexbox darker-box' href={item.link}>
           <div className='img flex1'><img src={item.image} width="100%" /></div>
           <div className='flex1 box'>
-            <h3 className='h3-broadacre center-align'>{item.title}</h3>
-            <p className='p-light center-align'>{item.text}</p>
+            <h3 className='h3-primary center-align'>{item.title}</h3>
+            <p className='p-primary center-align'>{item.text}</p>
           </div>
         </a>
       </div>;
@@ -74,8 +74,8 @@ const [items, setItems] = React.useState(visualItems)
           return <div key={index} className='margins-small bottom-medium'>
         <a className='a-none flexbox darker-box' href={item.link}>
           <div className='flex1 box'>
-            <h3 className='h3-broadacre center-align'>{item.title}</h3>
-            <p className='p-light center-align'>{item.text}</p>
+            <h3 className='h3-primary center-align'>{item.title}</h3>
+            <p className='p-primary center-align'>{item.text}</p>
           </div>
           <div className='img flex1'><img src={item.image} width="100%" /></div>
         </a>
@@ -85,8 +85,8 @@ const [items, setItems] = React.useState(visualItems)
         <a className='a-none flexbox darker-box' href={item.link}>
           <div className='img flex1'><img src={item.image} width="100%" /></div>
           <div className='flex1 box'>
-            <h3 className='h3-broadacre center-align'>{item.title}</h3>
-            <p className='p-light center-align'>{item.text}</p>
+            <h3 className='h3-primary center-align'>{item.title}</h3>
+            <p className='p-primary center-align'>{item.text}</p>
           </div>
         </a>
       </div>;
@@ -102,8 +102,8 @@ const [items, setItems] = React.useState(visualItems)
       return <div key={index} className='margins-small bottom-medium'>
         <a className='a-none flexbox darker-box' href={item.link}>
           <div className='flex1 box'>
-            <h3 className='h3-broadacre center-align'>{item.title}</h3>
-            <p className='p-light center-align'>{item.text}</p>
+            <h3 className='h3-primary center-align'>{item.title}</h3>
+            <p className='p-primary center-align'>{item.text}</p>
           </div>
           <div className='img flex1'><img src={item.image} width="100%" /></div>
         </a>
@@ -113,8 +113,8 @@ const [items, setItems] = React.useState(visualItems)
         <a className='a-none flexbox darker-box' href={item.link}>
           <div className='img flex1'><img src={item.image} width="100%" /></div>
           <div className='flex1 box'>
-            <h3 className='h3-broadacre center-align'>{item.title}</h3>
-            <p className='p-light center-align'>{item.text}</p>
+            <h3 className='h3-primary center-align'>{item.title}</h3>
+            <p className='p-primary center-align'>{item.text}</p>
           </div>
         </a>
       </div>;
@@ -128,15 +128,15 @@ const [items, setItems] = React.useState(visualItems)
     <div className='mobile'>
       <Navigation />   
       <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
-          <h1 className='h1-broadacre center-align top-large'>UX/UI & Design</h1>
+          <h1 className='h1-primary center-align top-large'>UX/UI & Design</h1>
           <div className='dark-box top-dark'>
                 <div className='padding-large mobile'> 
-                <div><h3 className='h3-broadacre center-align bottom-small opacity mobile'>UX/UI</h3></div> 
+                <div><h3 className='h3-primary center-align bottom-small opacity mobile'>UX/UI</h3></div> 
                   <div>
                     <a className='a-none' href='/bookverse'> 
                       <div>
-                        <h3 className='h3-broadacre center-align mobile'>BookVerse</h3>
-                        <p className='p-light center-align bottom-small'>Interactive book “universe” discovery app.</p>
+                        <h3 className='h3-primary center-align mobile'>BookVerse</h3>
+                        <p className='p-primary center-align bottom-small'>Interactive book “universe” discovery app.</p>
                       </div>   
                       <div className="flex1 darker-box padding-large">
                           <img src={imgBookVerse} width="100%"></img>
@@ -145,8 +145,8 @@ const [items, setItems] = React.useState(visualItems)
                    
                     <a className='a-none' href='/bestiary'> 
                         <div>  
-                          <h3 className='h3-broadacre center-align top-medium'>The Bestiary</h3>
-                          <p className='p-light center-align bottom-small'>Game interface design.</p>
+                          <h3 className='h3-primary center-align top-medium'>The Bestiary</h3>
+                          <p className='p-primary center-align bottom-small'>Game interface design.</p>
                         </div>
                       <div className="flex1 darker-box padding-large">
                           <img src={imgBestiary} width="100%"></img>
@@ -158,14 +158,14 @@ const [items, setItems] = React.useState(visualItems)
 
          <div className='mobile'>
             <div className='dark-box top-dark padding-large'>
-              <h3 className='h3-broadacre center-align bottom-small mobile opacity'>Interactive Design</h3>
+              <h3 className='h3-primary center-align bottom-small mobile opacity'>Interactive Design</h3>
               <div className='mobile'>
                 <div className='margins-small bottom-medium'>
                   <a className='a-none flexbox darker-box' href='/mcc'>
                    <div className='img flex1'><img src={imgMCC} width="100%" /></div>
                     <div className='flex1 box'>
-                      <h3 className='h3-broadacre center-align'>Moraga Country Club</h3>
-                      <p className='p-light center-align'>Full re-branding of East Bay county club establishment.</p>
+                      <h3 className='h3-primary center-align'>Moraga Country Club</h3>
+                      <p className='p-primary center-align'>Full re-branding of East Bay county club establishment.</p>
                     </div>
                   </a>
                 </div>
@@ -175,7 +175,7 @@ const [items, setItems] = React.useState(visualItems)
 
            <div className='mobile'>
             <div className='dark-box top-dark padding-large'>
-              <h3 className='h3-broadacre center-align bottom-small mobile opacity'>Branding & Visual Design</h3>
+              <h3 className='h3-primary center-align bottom-small mobile opacity'>Branding & Visual Design</h3>
               <div className='mobile'>
                 { intItems }
               </div>
@@ -186,7 +186,7 @@ const [items, setItems] = React.useState(visualItems)
 
           <div className='mobile'>
             <div className='dark-box top-dark padding-large mobile'>
-              <h3 className='h3-broadacre center-align bottom-small mobile opacity'>App & Visual Design</h3>
+              <h3 className='h3-primary center-align bottom-small mobile opacity'>App & Visual Design</h3>
               <div className='mobile'>
                 <Items />
               </div>

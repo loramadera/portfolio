@@ -80,57 +80,48 @@
   font-size: 18px;
 }
 
- .h1-broad-g {
-        color: #F3DBA6;
-        font-family: broadacre;
-        font-size: 40px;
-        font-weight: normal;
-      }
-      
-.h3-broad-g {
-        color: #F3DBA6;
-        font-family: broadacre;
-        font-size: 20px;
-        font-weight: normal;
-  }
 
-
-.h1-broad {
+.h1-primary {
   color: white;
-  font-family: broadacre;
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
   font-size: 40px;
-  font-weight: normal;
+  margin: 0px;
 }
 
 
-.h2-broad {
-  color: white;
-  font-family: broadacre;
-  font-size: 20px;
-  font-weight: normal;
-}
-
-.h3-broad {
-  color: white;
-  font-family: broadacre;
-  font-size: 20px;
-  font-weight: normal;
-}
-
-.h4-broad {
-  color: white;
-  font-family: broadacre;
-  font-size: 18px;
-  font-weight: normal;
-}
-
-
-.p-broad {
-  color: white;
-  font-family: broadacre-hairline-0, sans-serif;
-  font-weight: 100;
-  font-size: 17px;
+.h2-primary {
+   color: white;
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
   font-style: normal;
+  font-size: 35px;
+  font-weight: normal;
+}
+
+.h3-primary {
+  color: white;
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 25px;
+}
+
+.h4-primary {
+  color: white;
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
+
+
+.p-primary {
+  color: white;
+  font-family: montserrat, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 18px;
 }
 
 
@@ -186,6 +177,55 @@
         text-align: center;
       }
 
+
+      .h1-primary {
+        color: white;
+        font-family: montserrat, sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        margin: 0px;
+      }
+
+
+      .h2-primary {
+        color: white;
+        font-family: montserrat, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 20px;
+        font-weight: normal;
+      }
+
+      .h3-primary {
+        color: white;
+        font-family: montserrat, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 25px;
+      }
+
+      .h4-primary {
+        color: white;
+        font-family: montserrat, sans-serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 18px;
+      }
+
+
+      .p-primary {
+        color: white;
+        font-family: montserrat, sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 15px;
+      }
+
+
+
+
+
+
       .h1-alegreya {
         color: white;
         font-family: alegreya SC;
@@ -203,7 +243,7 @@
       .h3-alegreya {
         color: white;
         font-family: alegreya SC;
-        font-size: 30px;
+        font-size: 25px;
         font-weight: lighter;
       }
 
@@ -259,59 +299,7 @@
       }
 
 
-       .h1-broad-g {
-        color: #F3DBA6;
-        font-family: broadacre;
-        font-size: 25px;
-        font-weight: normal;
-      }
-      
-      .h3-broad-g {
-        color: #F3DBA6;
-        font-family: broadacre;
-        font-size: 20px;
-        font-weight: normal;
-      }
-
-
-
-      .h1-broad {
-        color: white;
-        font-family: broadacre;
-        font-size: 25px;
-        font-weight: normal;
-      }
-
-
-      .h2-broad {
-        color: white;
-        font-family: broadacre;
-        font-size: 15px;
-        font-weight: normal;
-      }
-
-      .h3-broad {
-        color: white;
-        font-family: broadacre;
-        font-size: 20px;
-        font-weight: normal;
-      }
-
-      .h4-broad {
-        color: white;
-        font-family: broadacre;
-        font-size: 15px;
-        font-weight: normal;
-      }
-
-
-      .p-broad {
-        color: white;
-        font-family: broadacre-hairline-0, sans-serif;
-        font-weight: 100;
-        font-size: 13px;
-        font-style: normal;
-      }
+    
 
 
 

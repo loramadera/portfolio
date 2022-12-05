@@ -1,41 +1,44 @@
-.h1-broadacre {
+.h1-primary {
   color: white;
-  font-family: broadacre;
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
   font-size: 40px;
-  font-weight: normal;
   margin: 0px;
 }
 
-.h2-broadacre {
-  color: white;
-  font-family: broadacre;
+
+.h2-primary {
+   color: white;
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-style: normal;
   font-size: 35px;
   font-weight: normal;
 }
 
-.h3-broadacre {
+.h3-primary {
   color: white;
-  font-family: broadacre;
-  font-size: 30px;
-  font-weight: normal;
-}
-
-.p-bold {
-  color: white;
-  font-family: broadacre;
-  font-size: 20px;
-  font-weight: normal;
-  margin: 0px;
-
-}
-
-.p-light {
-  color: white;
-  font-family: broadacre-hairline-0, sans-serif;
-  font-weight: 100;
-  font-size: 17px;
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
   font-style: normal;
+  font-size: 25px;
+}
 
+.h4-primary {
+  color: white;
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
+
+
+.p-primary {
+  color: white;
+  font-family: montserrat, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 18px;
 }
 
 .opacity {
@@ -72,44 +75,47 @@ a.a-none {
     right: 0px;
   }
 
-  .h1-broadacre {
+ .h1-primary {
     color: white;
-    font-family: broadacre;
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    margin: 0px;
+  }
+
+
+  .h2-primary {
+    color: white;
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    font-style: normal;
     font-size: 20px;
     font-weight: normal;
-    margin: 0px;
   }
 
-  .h2-broadacre {
+  .h3-primary {
     color: white;
-    font-family: broadacre;
-    font-size: 15px;
-    font-weight: normal;
-  }
-
-  .h3-broadacre {
-    color: white;
-    font-family: broadacre;
-    font-size: 15px;
-    font-weight: normal;
-  }
-
-  .p-bold {
-    color: white;
-    font-family: broadacre;
-    font-size: 10px;
-    font-weight: normal;
-    margin: 0px;
-
-  }
-
-  .p-light {
-    color: white;
-    font-family: broadacre-hairline-0, sans-serif;
-    font-weight: 100;
-    font-size: 15px;
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
     font-style: normal;
+    font-size: 25px;
+  }
 
+  .h4-primary {
+    color: white;
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+  }
+
+
+  .p-primary {
+    color: white;
+    font-family: montserrat, sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 15px;
   }
 
 

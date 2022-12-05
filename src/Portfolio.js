@@ -84,8 +84,8 @@ function Portfolio() {
               </a>
               <a href={item.link} className='a-none flex1 box'>
                 <div className='margins-small'>  
-                  <h3 className='h3-broadacre left-align'>{item.title}</h3>
-                  <p className='p-light left-align'>{item.text}</p>
+                  <h3 className='h3-primary left-align'>{item.title}</h3>
+                  <p className='p-primary left-align'>{item.text}</p>
                 </div>
               </a>
             </div>
@@ -99,8 +99,8 @@ function Portfolio() {
             <div className='flexbox darker-box'>
                 <a href={item.link} className='a-none flex1 box'>
                   <div className='margins-small'>  
-                    <h3 className='h3-broadacre left-align'>{item.title}</h3>
-                    <p className='p-light left-align'>{item.text}</p>
+                    <h3 className='h3-primary center-align'>{item.title}</h3>
+                    <p className='p-primary center-align'>{item.text}</p>
                   </div>
                 </a>
                 <a href={item.link} className='a-none flex1 box'>
@@ -116,8 +116,8 @@ function Portfolio() {
                 </a>
                 <a href={item.link} className='a-none flex1 box'>
                   <div className='margins-small'>  
-                    <h3 className='h3-broadacre left-align'>{item.title}</h3>
-                    <p className='p-light left-align'>{item.text}</p>
+                    <h3 className='h3-primary center-align'>{item.title}</h3>
+                    <p className='p-primary center-align'>{item.text}</p>
                   </div>
                 </a>
             </div>
@@ -134,13 +134,13 @@ function Portfolio() {
       <div className='flexbox mobile'>
         <Top />
         <div className='flex1 box top-small'>
-          <h1 className='h1-broadacre mobile-center'>Nice to meet you! I'm Lora.</h1>
+          <h1 className='h1-primary mobile-center'>Nice to meet you! I'm Lora.</h1>
           <div className='flexbox top-small'>
-            <div className='flex2'><p className='p-light mobile-center'>UX/UI Designer, Visual Designer, Developer</p></div>
+            <div className='flex2'><p className='p-primary mobile-center'>UX/UI Designer, Visual Designer, Developer</p></div>
             <div className='flex1'></div>
           </div>
           <div className='flexbox'>
-            <div className='flex2'><p className='p-light mobile-center'>Digital Artist,  3D Modeler, Gamer, Bookworm, Writer</p></div>
+            <div className='flex2'><p className='p-primary mobile-center'>Digital Artist,  3D Modeler, Gamer, Bookworm, Writer</p></div>
             <div className='flex1'></div>
             <div className='flex1'></div>
          </div>
@@ -152,7 +152,7 @@ function Portfolio() {
       </div>  
       
       <div className='dark-box top-dark mobile'>
-        <h1 className='h1-broadacre top-medium bottom-medium box center-align'>What I Do</h1>
+        <h1 className='h1-primary top-medium bottom-medium box center-align'>What I Do</h1>
         <Items />
       </div>  
 

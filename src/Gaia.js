@@ -53,8 +53,8 @@ const [items, setItems] = React.useState(contentItems)
         return <div className='gaia-item bottom-medium'>	
 			<div className='flexbox margins-large'>	
 				<div className='flex1 box'>
-					<h2 className='h2-broad left-align margins-small'>{item.title}</h2>
-					<p className='p-broad margins-small'>{item.text}</p>
+					<h2 className='h2-primary left-align margins-small'>{item.title}</h2>
+					<p className='p-primary margins-small'>{item.text}</p>
 				</div>
 				<div className='img flex1 box'>
 					<img src= {item.image} width="100%"></img>
@@ -65,12 +65,12 @@ const [items, setItems] = React.useState(contentItems)
     } else {
       return contentItems.map((item, index) => {
         if (index % 2) {
-          return <div className='margins-small bottom-medium'>
+          return <div className='margins-medium'>
             <div className='flexbox'>
                 <a href={item.link} className='a-none flex1 box'>
                   <div >  
-                    <h3 className='h3-broadacre left-align'>{item.title}</h3>
-                    <p className='p-light left-align'>{item.text}</p>
+                    <h3 className='h3-primary left-align'>{item.title}</h3>
+                    <p className='p-primary left-align'>{item.text}</p>
                   </div>
                 </a>
                 <a href={item.link} className='a-none flex1 box'>
@@ -79,15 +79,15 @@ const [items, setItems] = React.useState(contentItems)
             </div>
           </div>
         } else { 
-          return <div className='margins-small bottom-medium'>
+          return <div className='margins-medium'>
             <div className='flexbox'>
                 <a href={item.link} className='a-none flex1 box'>
                   <img src= {item.image} width="100%"></img>
                 </a>
                 <a href={item.link} className='a-none flex1 box'>
                   <div>  
-                    <h3 className='h3-broadacre left-align'>{item.title}</h3>
-                    <p className='p-light left-align'>{item.text}</p>
+                    <h3 className='h3-primary left-align'>{item.title}</h3>
+                    <p className='p-primary left-align'>{item.text}</p>
                   </div>
                 </a>
             </div>
@@ -105,8 +105,8 @@ const gaiaItems = contentItems.map((item, index) => {
 					<img src= {item.image} width="100%"></img>
 				</div>
 				<div className='flex1 box'>
-					<h2 className='h2-broad left-align margins-small'>{item.title}</h2>
-					<p className='p-broad margins-small'>{item.text}</p>
+					<h2 className='h2-primary left-align margins-small'>{item.title}</h2>
+					<p className='p-primary margins-small'>{item.text}</p>
 				</div>
 			</div>
 		</div>
@@ -114,8 +114,8 @@ const gaiaItems = contentItems.map((item, index) => {
 		return <div className='gaia-item'>
 			<div className='flexbox margins-large'>
 				<div className='flex1 box'>
-					<h2 className='h2-broad left-align margins-small'>{item.title}</h2>
-					<p className='p-broad margins-small'>{item.text}</p>
+					<h2 className='h2-primary left-align margins-small'>{item.title}</h2>
+					<p className='p-primary margins-small'>{item.text}</p>
 				</div>
 				<div className='img flex1 box'>
 					<img src={item.image} width="100%"></img>
@@ -139,40 +139,40 @@ return (
 	<div className='flexbox top-small row'>
 		<div className='flex1 margins-small'>
 			<a className='a-none' href='/mcc'>
-				<p className='p-broad'>Previous</p>
+				<p className='p-primary'>Previous</p>
 			</a>
 		</div>
 		<div className='flex1 right-align margins-small'>
 			<a className='a-none' href='/vaca'>
-				<p className='p-broad'>Next</p>
+				<p className='p-primary'>Next</p>
 			</a>
 		</div>		
 	</div>
 
 	<div>
-		<h1 className='h1-broad center-align top-medium'>Project Gaia</h1>
-		<h4 className='h4-broad center-align'>A learning & interactivity tool.</h4>
-		<h4 className='h4-broad center-align opacity top-small'>Visual & Interactive Design</h4>
-		<p className='p-broad left-align margins-small top-small'>Gaia is an informational & interactivity tool that is inspired by the three pillars of sustainability - economy, environment, and society. It seeks to educate on these pillars in a fun and interactive way.</p>
+		<h1 className='h1-primary center-align top-medium'>Project Gaia</h1>
+		<h4 className='h4-primary center-align'>A learning & interactivity tool.</h4>
+		<h4 className='h4-primary center-align opacity top-small'>Visual & Interactive Design</h4>
+		<p className='p-primary left-align margins-small top-small'>Gaia is an informational & interactivity tool that is inspired by the three pillars of sustainability - economy, environment, and society. It seeks to educate on these pillars in a fun and interactive way.</p>
 	</div>
 	
 	<div className='dark-box top-dark'>
-			<div className='flexbox margins-large'>
+			<div className='flexbox margins-medium'>
 				<div className='top-medium'>
 				<div className='darker-box'>
-					<h3 className='h3-broad top-medium bottom-small center-align'>Pillars of Sustainability</h3>
+					<h3 className='h3-primary top-medium bottom-small center-align'>Pillars of Sustainability</h3>
 						<div className='flexbox top-small bottom-medium'>
 						<div className='flex1 margins-small'>
-							<h4 className='h4-broad'>Economy</h4>
-							<p className='p-broad'>The economy pillar refers to jobs, incentives to encourage sustainable practices, natural resource accounting, cost and price structures, cost-benefit analysis, and quantified ecosystem analysis.</p>
+							<h4 className='h4-primary'>Economy</h4>
+							<p className='p-primary'>The economy pillar refers to jobs, incentives to encourage sustainable practices, natural resource accounting, cost and price structures, cost-benefit analysis, and quantified ecosystem analysis.</p>
 						</div>
 						<div className='flex1 margins-small'>
-							<h4 className='h4-broad'>Environment</h4>
-							<p className='p-broad'>The environmental pillar comprises ecosystem services, green engineering & chemistry development, air/water quality, ecosystem stressors and resource integrity.</p>
+							<h4 className='h4-primary'>Environment</h4>
+							<p className='p-primary'>The environmental pillar comprises ecosystem services, green engineering & chemistry development, air/water quality, ecosystem stressors and resource integrity.</p>
 						</div>
 						<div className='flex1 margins-small'>
-							<h4 className='h4-broad'>Society</h4>
-							<p className='p-broad'>Environmental justice, human health and participation, education, resource security and sustainable developments fall within the societal pillar.</p>
+							<h4 className='h4-primary'>Society</h4>
+							<p className='p-primary'>Environmental justice, human health and participation, education, resource security and sustainable developments fall within the societal pillar.</p>
 						</div>
 						</div>
 					</div>
@@ -194,12 +194,12 @@ return (
 <div className='flexbox top-small row'>
 	<div className='flex1 margins-small'>
 		<a className='a-none' href='/mcc'>
-			<p className='p-broad'>Previous</p>
+			<p className='p-primary'>Previous</p>
 		</a>
 	</div>
 	<div className='flex1 right-align margins-small'>
 		<a className='a-none' href='/vaca'>
-			<p className='p-broad'>Next</p>
+			<p className='p-primary'>Next</p>
 		</a>
 	</div>		
 </div>

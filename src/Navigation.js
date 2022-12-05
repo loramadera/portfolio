@@ -46,7 +46,7 @@ function Navigation() {
     return ( 
     <div className='flexbox row nav top-small'>
       <div className='flex1'> 
-        <img className='nav-logo  padding-small' src={imgLogo} width='50px'></img>
+        <img className='nav-logo padding-small margins-small' src={imgLogo} width='50px'></img>
       </div>
       <div className='flex1 right-align'>          
           <div>
@@ -64,8 +64,8 @@ function Navigation() {
         </div>
         <div className="flex1">&nbsp;</div>
         <div className='navigation-menu'>   
-          <a href="/" className='p-broad nav-link'>Portfolio</a>
-          <a href="/about" className='p-broad nav-link'>About</a>
+          <a href="/" className='p-primary nav-link'>Portfolio</a>
+          <a href="/about" className='p-primary nav-link'>About</a>
         </div>
       </div>
     )

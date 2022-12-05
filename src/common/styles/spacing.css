@@ -41,6 +41,10 @@
 
 
 
+.margins-tiny {
+  margin-left: 50px;
+  margin-right: 50px;
+}
 
 .margins-small {
   margin-left: 100px;

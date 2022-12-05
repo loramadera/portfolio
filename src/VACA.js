@@ -52,8 +52,8 @@ const [items, setItems] = React.useState(contentItems)
         return <div className='vaca-item'>
 			<div className='flexbox margins-large'>
 				<div className='flex1 box'>
-					<h2 className='h2-broad left-align margins-small'>{item.title}</h2>
-					<p className='p-broad margins-small'>{item.text}</p>
+					<h2 className='h2-primary left-align margins-small'>{item.title}</h2>
+					<p className='p-primary margins-small'>{item.text}</p>
 				</div>
 				<div className='img flex1 box'>
 					<img src={item.image} width="100%"></img>
@@ -65,22 +65,22 @@ const [items, setItems] = React.useState(contentItems)
       return contentItems.map((item, index) => {
         if (index % 2) {
           return <div className='vaca-item'>	
-			<div className='flexbox margins-large'>	
+			<div className='flexbox margins-small'>	
 				<div className='img flex1 box'>
 					<img src= {item.image} width="100%"></img>
 				</div>
 				<div className='flex1 box'>
-					<h2 className='h2-broad left-align margins-small'>{item.title}</h2>
-					<p className='p-broad margins-small'>{item.text}</p>
+					<h2 className='h2-primary left-align margins-small'>{item.title}</h2>
+					<p className='p-primary margins-small'>{item.text}</p>
 				</div>
 			</div>
 		</div>
 	} else {
 		return <div className='vaca-item'>
-			<div className='flexbox margins-large'>
+			<div className='flexbox margins-small'>
 				<div className='flex1 box'>
-					<h2 className='h2-broad left-align margins-small'>{item.title}</h2>
-					<p className='p-broad margins-small'>{item.text}</p>
+					<h2 className='h2-primary left-align margins-small'>{item.title}</h2>
+					<p className='p-primary margins-small'>{item.text}</p>
 				</div>
 				<div className='img flex1 box'>
 					<img src={item.image} width="100%"></img>
@@ -106,33 +106,33 @@ return (
 	<div className='flexbox top-small row'>
 		<div className='flex1 margins-small'>
 			<a className='a-none' href='/gaia'>
-				<p className='p-broad'>Previous</p>
+				<p className='p-primary'>Previous</p>
 			</a>
 		</div>
 		<div className='flex1 right-align margins-small'>
 			<a className='a-none' href='/sadhan'>
-				<p className='p-broad'>Next</p>
+				<p className='p-primary'>Next</p>
 			</a>
 		</div>		
 	</div>
 
 	<div>
-		<h1 className='h1-broad center-align top-medium'>VACA</h1>
-		<h4 className='h4-broad center-align'>The Travel App</h4>
-		<h4 className='h4-broad opacity center-align'>Visual Design</h4>
-		<p className='p-broad left-align margins-large top-small bottom-small'>VACA allows the tracking and creation of a travel project, start to finish. Budgets, daily schedules, and weather forecasts are some of the features that would be on display for the user.</p>
+		<h1 className='h1-primary center-align top-medium'>VACA</h1>
+		<h4 className='h4-primary center-align'>The Travel App</h4>
+		<h4 className='h4-primary opacity center-align'>Visual Design</h4>
+		<p className='p-primary left-align margins-large top-small bottom-small'>VACA allows the tracking and creation of a travel project, start to finish. Budgets, daily schedules, and weather forecasts are some of the features that would be on display for the user.</p>
 	</div>
 	<div className='dark-box top-dark'>
-			<div className='flexbox margins-medium top-medium'>
+			<div className='flexbox margins-small top-medium'>
 				<div className='flex1 box'>
-						<h2 className='h2-broad margins-small'>Tracking</h2>
-						<p className='p-broad margins-small'>Seasonal weather trends, regional site-seeing index, flight and hotel booking calendar</p>
-						<h2 className='h2-broad margins-small'>Target Audience</h2>
-						<p className='p-broad margins-small'>age 25-45
+						<h2 className='h2-primary margins-small'>Tracking</h2>
+						<p className='p-primary margins-small'>Seasonal weather trends, regional site-seeing index, flight and hotel booking calendar</p>
+						<h2 className='h2-primary margins-small'>Target Audience</h2>
+						<p className='p-primary margins-small'>age 25-45
 						married with children
 						working class</p>
-						<h2 className='h2-broad margins-small'>Word List</h2>
-						<p className='p-broad margins-small'>travel, booking, flights, country, abroad, nature, planning, trip, vacation, overseas, hotel, boarding, itinerary, schedule, check list</p>
+						<h2 className='h2-primary margins-small'>Word List</h2>
+						<p className='p-primary margins-small'>travel, booking, flights, country, aprimary, nature, planning, trip, vacation, overseas, hotel, boarding, itinerary, schedule, check list</p>
 				</div>
 				<div className='flex1 box'>
 					<img src= { imgColor } width="100%"></img>
@@ -156,12 +156,12 @@ return (
 <div className='flexbox top-small row'>
 		<div className='flex1 margins-small'>
 			<a className='a-none' href='/gaia'>
-				<p className='p-broad'>Previous</p>
+				<p className='p-primary'>Previous</p>
 			</a>
 		</div>
 		<div className='flex1 right-align margins-small'>
 			<a className='a-none' href='/sadhan'>
-				<p className='p-broad'>Next</p>
+				<p className='p-primary'>Next</p>
 			</a>
 		</div>		
 	</div>

@@ -52,8 +52,8 @@ function Items() {
         return <div className='sadhan-item mobile'>
 			<div className='flexbox margins-large'>
 				<div className='flex1 box'>
-					<h2 className='h2-broad left-align margins-small'>{item.title}</h2>
-					<p className='p-broad margins-small'>{item.text}</p>
+					<h2 className='h2-primary left-align margins-small'>{item.title}</h2>
+					<p className='p-primary margins-small'>{item.text}</p>
 				</div>
 				<div className='flex1 box'>
 					<div className='flexbox center-align'>
@@ -74,8 +74,8 @@ function Items() {
 					</div>
 				</div>
 				<div className='flex1 box'>
-					<h2 className='h2-broad left-align margins-small'>{item.title}</h2>
-					<p className='p-broad margins-small'>{item.text}</p>
+					<h2 className='h2-primary left-align margins-small'>{item.title}</h2>
+					<p className='p-primary margins-small'>{item.text}</p>
 				</div>
 			</div>
 		</div>
@@ -83,8 +83,8 @@ function Items() {
 		return <div className='sadhan-item'>
 			<div className='flexbox margins-large'>
 				<div className='flex1 box'>
-					<h2 className='h2-broad left-align margins-small'>{item.title}</h2>
-					<p className='p-broad margins-small'>{item.text}</p>
+					<h2 className='h2-primary left-align margins-small'>{item.title}</h2>
+					<p className='p-primary margins-small'>{item.text}</p>
 				</div>
 				<div className='flex1 box center-align'>
 					<div className='flexbox'>
@@ -113,24 +113,24 @@ return (
 	<div className='flexbox top-small row'>
 		<div className='flex1 margins-small'>
 			<a className='a-none' href='/vaca'>
-				<p className='p-broad'>Previous</p>
+				<p className='p-primary'>Previous</p>
 			</a>
 		</div>	
 	</div>
 
 	<div>
-		<h1 className='h1-broad center-align top-medium'>Sadhan</h1>
-		<h4 className='h4-broad center-align'>Meditation App</h4>
-		<h4 className='h4-broad center-align opacity'>Visual Design</h4>
-		<p className='p-broad left-align margins-large top-small bottom-small'>Sadhan is defined functionally by its meditation timer and connection with other members of a meditation community - the ability to see retreat schedules and other members.</p>
+		<h1 className='h1-primary center-align top-medium'>Sadhan</h1>
+		<h4 className='h4-primary center-align'>Meditation App</h4>
+		<h4 className='h4-primary center-align opacity'>Visual Design</h4>
+		<p className='p-primary left-align margins-large top-small bottom-small'>Sadhan is defined functionally by its meditation timer and connection with other members of a meditation community - the ability to see retreat schedules and other members.</p>
 	</div>
 	<div className='dark-box top-dark'>
 			<div className='flexbox margins-medium top-medium'>
 				<div className='flex1 box'>
-						<h4 className='h4-broad margins-small'>Meditation Timer</h4>
-						<p className='p-broad margins-small'>Starts/stops timer, toggles chime and prayer.</p>
-						<h4 className='h4-broad margins-small'>Group Meditation</h4>
-						<p className='p-broad margins-small'>Displays group meditation schedules, charting meditators around the world.</p>
+						<h4 className='h4-primary margins-small'>Meditation Timer</h4>
+						<p className='p-primary margins-small'>Starts/stops timer, toggles chime and prayer.</p>
+						<h4 className='h4-primary margins-small'>Group Meditation</h4>
+						<p className='p-primary margins-small'>Displays group meditation schedules, charting meditators around the world.</p>
 				</div>
 				<div className='flex1 box'>
 					<img className='sadhan-img' src= { imgColors } width="100%"></img>
@@ -150,7 +150,7 @@ return (
 <div className='flexbox top-small row'>
 		<div className='flex1 margins-small'>
 			<a className='a-none' href='/vaca'>
-				<p className='p-broad'>Previous</p>
+				<p className='p-primary'>Previous</p>
 			</a>
 		</div>	
 	</div>

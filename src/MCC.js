@@ -57,8 +57,8 @@ function MCC() {
 			<div className='flexbox top-small'>
 				<div className='flex1 box'>
 					<div className='margins-small'>	
-						<h4 className='h4-broad mobile'>{item.title}</h4>
-						<p className='p-broad'>{item.text}</p>
+						<h4 className='h4-primary mobile'>{item.title}</h4>
+						<p className='p-primary'>{item.text}</p>
 					</div>
 				</div>
 				<div className='flex1 margins-small box'>
@@ -74,8 +74,8 @@ function MCC() {
 				<div className='flexbox top-small'>	
 					<div className='flex1 box'>
 						<div className='margins-small'>	
-							<h4 className='h4-broad mobile'>{item.title}</h4>
-							<p className='p-broad'>{item.text}</p>
+							<h4 className='h4-primary mobile'>{item.title}</h4>
+							<p className='p-primary'>{item.text}</p>
 						</div>
 					</div>
 					<div className='flex1 margins-small box'>
@@ -91,8 +91,8 @@ function MCC() {
 					</div>
 					<div className='flex1 box'>
 						<div className='margins-small'>	
-							<h4 className='h4-broad mobile'>{item.title}</h4>
-							<p className='p-broad'>{item.text}</p>
+							<h4 className='h4-primary mobile'>{item.title}</h4>
+							<p className='p-primary'>{item.text}</p>
 						</div>
 					</div>
 				</div>
@@ -113,25 +113,26 @@ function MCC() {
 			<div className='flexbox top-small row'>
 				<div className='flex1 margins-small'>
 					<a className='a-none' href='/bestiary'>
-						<p className='p-broad'>Previous</p>
+						<p className='p-primary'>Previous</p>
 					</a>
 				</div>
 				<div className='flex1 right-align margins-small'>
 					<a className='a-none' href='/gaia'>
-						<p className='p-broad'>Next</p>
+						<p className='p-primary'>Next</p>
 					</a>
 				</div>		
 			</div>
 
-			<h1 className='h1-aleg-b top-medium center-align'>Moraga Country Club</h1>
+			<h1 className='h1-aleg-b center-align'>Moraga Country Club</h1>
 			<h2 className='h2-aleg-b opacity center-align'>Branding Re-Design</h2>
 
-
-			<div className='bottom-border top-small'>
-				<h3 className='h3-alegreya'>About the Club</h3>
-			</div>
+			<div className='mobile'>
+				<div className='bottom-border'>
+					<h3 className='h3-alegreya'>About the Club</h3>
+				</div>
+			</div>	
 			<div className='margins-large'>
-				<p className='p-broad'>The new Moraga Country Club clubhouse opened in 2012 and was the final piece of an elaborate puzzle, making Moraga Country Club the outstanding facility it is today. The architecture of the building replicates the early Californian Mission Style with stucco exterior, tile roof and decorative iron and woodwork. The interior and exterior designs are one with its surroundings and is the jewel of the club. </p>
+				<p className='p-primary'>The new Moraga Country Club clubhouse opened in 2012 and was the final piece of an elaborate puzzle, making Moraga Country Club the outstanding facility it is today. The architecture of the building replicates the early Californian Mission Style with stucco exterior, tile roof and decorative iron and woodwork. The interior and exterior designs are one with its surroundings and is the jewel of the club. </p>
 			</div>
 
 
@@ -158,12 +159,12 @@ function MCC() {
 			<div className='flexbox top-small row'>
 				<div className='flex1 margins-small'>
 					<a className='a-none' href='/bestiary'>
-						<p className='p-broad'>Previous</p>
+						<p className='p-primary'>Previous</p>
 					</a>
 				</div>
 				<div className='flex1 right-align margins-small'>
 					<a className='a-none' href='/gaia'>
-						<p className='p-broad'>Next</p>
+						<p className='p-primary'>Next</p>
 					</a>
 				</div>		
 			</div>
