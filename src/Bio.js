@@ -51,8 +51,8 @@ function Bio() {
               </a>
               <a href={item.link} className='a-none flex1 box'>
                 <div className='margins-small'>  
-                  <h3 className='h3-broadacre left-align'>{item.title}</h3>
-                  <p className='p-light left-align'>{item.text}</p>
+                  <h3 className='h3-primary left-align'>{item.title}</h3>
+                  <p className='p-primary left-align'>{item.text}</p>
                 </div>
               </a>
           </div>
@@ -65,8 +65,8 @@ function Bio() {
             <div className='flexbox darker-box'>
                 <a href={item.link} className='a-none flex1 box'>
                   <div className='margins-small'>  
-                    <h3 className='h3-broadacre left-align'>{item.title}</h3>
-                    <p className='p-light left-align'>{item.text}</p>
+                    <h3 className='h3-primary left-align'>{item.title}</h3>
+                    <p className='p-primary left-align'>{item.text}</p>
                   </div>
                 </a>
                 <a href={item.link} className='a-none flex1 box'>
@@ -82,8 +82,8 @@ function Bio() {
                 </a>
                 <a href={item.link} className='a-none flex1 box'>
                   <div className='margins-small'>  
-                    <h3 className='h3-broadacre left-align'>{item.title}</h3>
-                    <p className='p-light left-align'>{item.text}</p>
+                    <h3 className='h3-primary left-align'>{item.title}</h3>
+                    <p className='p-primary left-align'>{item.text}</p>
                   </div>
                 </a>
             </div>
@@ -99,7 +99,7 @@ function Bio() {
     <div className='mobile'>
     <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
     <Navigation />
-      <h1 className="h1-broadacre center-align top-large bottom-medium">About Me</h1>
+      <h1 className="h1-primary center-align top-large bottom-medium">About Me</h1>
 
       <div className='dark-box margins-small top-large'>
             <div>

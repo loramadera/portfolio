@@ -243,9 +243,8 @@ function Bestiary() {
 			<div className='bottom-border top-small mobile'>
 				<h3 className='h3-primary'>03 Interviews</h3>
 			</div>
-				<div className='flexbox margins-large'>
-					<div className='flex1 mobile'>
-							
+				<div className='flexbox margins-medium'>
+						<div className='flex1 mobile'>	
 							<div className='flexbox mobile-center'>
 								<div className='flex box'>
 										<img className='img-small-swords' src= {imgSwords} width="100%"></img>
@@ -256,40 +255,40 @@ function Bestiary() {
 							</div>		
 
 
-							<div>
+							<div className='margins-tiny'>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-primary margins-small'>Would you enjoy an interface that takes time to navigate around, so long as it is immersive to you?</p>
+										<p className='p-primary'>Would you enjoy an interface that takes time to navigate around, so long as it is immersive to you?</p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-primary margins-small'>How much do you value worldbuilding immersion in your videogame experience, on a scale of one to ten?</p>
+										<p className='p-primary'>How much do you value worldbuilding immersion in your videogame experience, on a scale of one to ten?</p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-primary margins-small'>Would you spend more time with an interface if it had many features and options, or would you be eager to return to the game?</p>
+										<p className='p-primary'>Would you spend more time with an interface if it had many features and options, or would you be eager to return to the game?</p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-primary margins-small'>Based on average videogame information presentation, how much of the information would you say you actually pay attention to? </p>
+										<p className='p-primary'>Based on average videogame information presentation, how much of the information would you say you actually pay attention to? </p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-primary margins-small'>How much of the information you pay attention to it videogame interfaces is carried back into the main game? </p>
+										<p className='p-primary'>How much of the information you pay attention to it videogame interfaces is carried back into the main game? </p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-primary margins-small'>Do you ever retain any of the information? If so, do you recall more visual aspects of it or the texts you’ve read?</p>
+										<p className='p-primary'>Do you ever retain any of the information? If so, do you recall more visual aspects of it or the texts you’ve read?</p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-primary margins-small'>Would you rather have a complex interface with many interesting features, or minimalistic design with less features?</p>
+										<p className='p-primary'>Would you rather have a complex interface with many interesting features, or minimalistic design with less features?</p>
 									</div>
 								</div>
 							</div>					
@@ -297,49 +296,51 @@ function Bestiary() {
 
 					<div className='flex1'>
 						
-						<div className='flexbox mobile-center mobile'>
-							<div className='flex box'>
-									<img className='img-small-swords' src= {imgSwords} width="100%"></img>
+						<div className='flex1 mobile'>	
+							<div className='flexbox mobile-center'>
+								<div className='flex box'>
+										<img className='img-small-swords' src= {imgSwords} width="100%"></img>
+								</div>	
+								<div className='flex2 box'>
+									<h4 className='h4-primary sword-title'>Questions for Expert</h4>
+								</div>						
 							</div>	
-							<div className='flex2 box'>
-								<h4 className='h4-primary sword-title'>Questions for Expert</h4>
-							</div>						
-						</div>	
+						</div>
 
-							<div>	
+							<div className='margins-tiny'>	
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-primary margins-small'>Would you rather have a complex interface with many interesting features, or minimalistic design with less features?</p>
+										<p className='p-primary'>Would you rather have a complex interface with many interesting features, or minimalistic design with less features?</p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-primary margins-small'>How often do you jump from the main game to the menu interface (in other words, how much utility do you find from the menus? How much value do they have to the gaming experience)?</p>
+										<p className='p-primary'>How often do you jump from the main game to the menu interface (in other words, how much utility do you find from the menus? How much value do they have to the gaming experience)?</p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-primary margins-small'>Do you think it takes away from a gamer’s experience to be tempted to stay and explore a complex interface?</p>
+										<p className='p-primary'>Do you think it takes away from a gamer’s experience to be tempted to stay and explore a complex interface?</p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-primary margins-small'>How much value would you assign to the artistic design of an interface, which would keep users in the interface and have them exploring?</p>
+										<p className='p-primary'>How much value would you assign to the artistic design of an interface, which would keep users in the interface and have them exploring?</p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-primary margins-small'>Would you assign more importance to artistry or utility in interface design?</p>
+										<p className='p-primary'>Would you assign more importance to artistry or utility in interface design?</p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-primary margins-small'>Would you respond more to visual aspects of a design or the content itself?</p>
+										<p className='p-primary'>Would you respond more to visual aspects of a design or the content itself?</p>
 									</div>
 								</div>
 								<div className='flexbox'>
 									<div className='flex2 box'>
-										<p className='p-primary margins-small'>How willing would you be to sacrifice artistry for time spent in this particular interface?</p>
+										<p className='p-primary'>How willing would you be to sacrifice artistry for time spent in this particular interface?</p>
 									</div>
 								</div>
 							</div>
@@ -405,12 +406,9 @@ function Bestiary() {
 				<div className='flexbox margins-extra bottom-small'>
 					<div className='flex1 box'>
 						<h4 className='h4-primary'>Defining the Features</h4>
-						<p className='p-primary'>Inventory of ingredients</p>
-						<p className='p-primary'>Tabs leading to various pages on each cryptid</p>
-						<p className='p-primary'>Map of creature’s well-known whereabouts</p>
-						<p className='p-primary'>Strength tab, weakness tab</p>
-						<p className='p-primary'>Journal entry option</p>
-						<p className='p-primary'>Cryptid’s individual biography</p>
+						<p className='p-primary'>Inventory of ingredients, with tabs leading to various pages on each cryptid</p>
+						<p className='p-primary'>Map of creature’s well-known whereabouts, their strengths and weaknesses</p>
+						<p className='p-primary'>Journal entry option with cryptid’s individual biography</p>
 					</div>
 					<div className='flex1'>
 						<h4 className='h4-primary'>Defining the Outcome</h4>
@@ -419,7 +417,7 @@ function Bestiary() {
 						<p className='p-primary'>Player will be able to identify where their chances are best for locating the cryptid</p>
 					</div>
 				</div>
-				<div className='margins-medium'>
+				<div className='margins-extra'>
 					<h4 className='h4-primary top-small bottom-small'>The bestiary can be broken down into three diagram pieces - the game itself, generated by the game engine, the interface content, and the content generated by the user.</h4>
 				</div>
 				<div className='flexbox margins-extra bottom-medium mobile'>

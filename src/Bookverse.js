@@ -140,7 +140,7 @@ function BookVerse() {
 		      return styleItems.map((item, index) => {
 		        if (index % 2) {
 		          return <div>	
-					<div className='flexbox margins-large'>	
+					<div className='flexbox margins-medium'>	
 						<div className='flex1 box'>
 							<h4 className='h4-alegreya margins-small'>{item.title}</h4>
 							<p className='p-aktiv margins-small'>{item.text}</p>
@@ -152,7 +152,7 @@ function BookVerse() {
 					</div>
 				} else {
 					return <div>
-						<div className='flexbox margins-large'>
+						<div className='flexbox margins-medium'>
 							<div className='flex1 box'>
 								<img src={item.image} width="100%"></img>
 							</div>
@@ -219,12 +219,12 @@ function BookVerse() {
 		</div>
 		<div className='flexbox margins-medium'>
 			<div className='flex1 box'>
-				<h4 className='h4-alegreya margins-small'>Bodystorming</h4>
-				<p className='p-aktiv margins-small'>Gathering information about various platforms and using them with the purpose of discovering a book with several defining characteristics.</p>
-				<h4 className='h4-alegreya margins-small'>Consumer Interviews</h4>
-				<p className='p-aktiv margins-small'>Will conduct interviews with individuals within the research group.</p>
-				<h4 className='h4-alegreya margins-small'>Competitive Analysis</h4>
-				<p className='p-aktiv margins-small'>Analyzing competing products to see how they perform.</p>
+				<h4 className='h4-alegreya'>Bodystorming</h4>
+				<p className='p-aktiv'>Gathering information about various platforms and using them with the purpose of discovering a book with several defining characteristics.</p>
+				<h4 className='h4-alegreya'>Consumer Interviews</h4>
+				<p className='p-aktiv'>Will conduct interviews with individuals within the research group.</p>
+				<h4 className='h4-alegreya'>Competitive Analysis</h4>
+				<p className='p-aktiv'>Analyzing competing products to see how they perform.</p>
 			</div>
 			<div className='flex1'>
 				<h4 className='h4-alegreya margins-small'>Goals</h4>
