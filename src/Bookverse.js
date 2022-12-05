@@ -199,9 +199,9 @@ function BookVerse() {
 		<div className='bottom-border'>
 			<h3 className='h3-alegreya'>01 Overview</h3>
 		</div>
-		<div className='flexbox'>
-			<div className='flex2 center-align mobile'>
-				<img className='book-logo box' src={ imgLogo } width="100%"></img>
+		<div className='flexbox margins-medium mobile'>
+			<div className='box center-align'>
+				<img className='book-logo' src={ imgLogo } width="100%"></img>
 			</div>
 			<div className='flex2 box'>
 				<h4 className='h4-alegreya margins-small'>Problem</h4>
@@ -218,7 +218,7 @@ function BookVerse() {
 			<h3 className='h3-alegreya'>02 Methodology</h3>
 		</div>
 		<div className='flexbox margins-medium'>
-			<div className='flex1 box'>
+			<div className='flex1'>
 				<h4 className='h4-alegreya'>Bodystorming</h4>
 				<p className='p-aktiv'>Gathering information about various platforms and using them with the purpose of discovering a book with several defining characteristics.</p>
 				<h4 className='h4-alegreya'>Consumer Interviews</h4>
