@@ -64,19 +64,7 @@ const [items, setItems] = React.useState(contentItems)
     } else {
       return contentItems.map((item, index) => {
         if (index % 2) {
-          return <div className='vaca-item'>	
-			<div className='flexbox margins-small'>	
-				<div className='img flex1 box'>
-					<img src= {item.image} width="100%"></img>
-				</div>
-				<div className='flex1 box'>
-					<h2 className='h2-primary left-align margins-small'>{item.title}</h2>
-					<p className='p-primary margins-small'>{item.text}</p>
-				</div>
-			</div>
-		</div>
-	} else {
-		return <div className='vaca-item'>
+      return <div className='vaca-item'>
 			<div className='flexbox margins-small'>
 				<div className='flex1 box'>
 					<h2 className='h2-primary left-align margins-small'>{item.title}</h2>
@@ -84,6 +72,18 @@ const [items, setItems] = React.useState(contentItems)
 				</div>
 				<div className='img flex1 box'>
 					<img src={item.image} width="100%"></img>
+				</div>
+			</div>
+		</div>
+	} else {
+			return <div className='vaca-item'>	
+			<div className='flexbox margins-small'>	
+				<div className='img flex1 box'>
+					<img src= {item.image} width="100%"></img>
+				</div>
+				<div className='flex1 box'>
+					<h2 className='h2-primary left-align margins-small'>{item.title}</h2>
+					<p className='p-primary margins-small'>{item.text}</p>
 				</div>
 			</div>
 		</div>

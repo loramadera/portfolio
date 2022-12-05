@@ -31,7 +31,7 @@ function debounce(fn, ms) {
 function Portfolio() {
   const contentItems = [
     {'title': 'UX/UI & Design', 'text': 'UX/UI development, visual design & branding, and interactive design projects.', 'image': imgVaca, 'link': '/uxui' },
-    {'title': 'Coding', 'text': 'Unity projects coded in C# as well as React, HTML, CSS, and PHP.', 'image': imgCode, 'link': '/code' },
+    {'title': 'Coding', 'text': 'Unity projects coded in C# as well as React, Flutter, HTML, and CSS.', 'image': imgCode, 'link': '/code' },
     {'title': '3D-Modeling', 'text': '3D art projects created in Blender.', 'image': imgModel, 'link': '/modeling' },
     {'title': 'Digital Art', 'text': 'Digital portraits (and others).', 'image': imgESO, 'link': '/digitalart'},
   ];
@@ -56,8 +56,8 @@ function Portfolio() {
   function Top() {
     if (window.innerWidth < 1025 ) {
       return (
-        <div>
-          <img src= {imgMobile} width="100%"></img>
+        <div className='center-align mobile bottom-medium'>
+          <img className='bub-mobile' src= {imgMobile} width="100%"></img>
         </div>
       );
     }

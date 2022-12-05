@@ -243,7 +243,7 @@ function BookVerse() {
 		</div>
 		<div className='margins-medium bottom-small'>
 				<h4 className='h4-alegreya'>03 Interview Questions</h4>
-				<div>
+				<div className='mobile-margins'>
 					<p className='p-aktiv'>1. Describe a typical “book slump” for you.</p>
 					<p className='p-aktiv'>2. What tools do you use to find new books? Does their ease-of-use determine length of search before you give up?</p>
 					<p className='p-aktiv'>3. Do you deviate from your preferred genres?</p>
@@ -256,18 +256,18 @@ function BookVerse() {
 		<div className='flexbox bottom-small'>
 			<div>
 				<h4 className='h4-alegreya margins-medium'>03 Interviewer Screening</h4>
-				<div className='flexbox margins-small'>
-					<div className='flex1 margins-tiny'>
-						<h4 className='h4-alegreya'>Contexts</h4>
-						<p className='p-aktiv'>High phone/reading device usage, enjoys frequent recreational activites, high social media usage.</p>
+				<div className='flexbox margins-medium'>
+					<div className='flex1'>
+						<h4 className='h4-alegreya none mobile-margins'>Contexts</h4>
+						<p className='p-aktiv mobile-margins'>High phone/reading device usage, enjoys frequent recreational activites, high social media usage.</p>
 					</div>
-					<div className='flex1 margins-tiny'>
-						<h4 className='h4-alegreya'>Attitudes</h4>
-						<p className='p-aktiv'>Focused, but overall creative personality, open-minded to new experiences, reading is a form of self-enrichment.</p>
+					<div className='flex1'>
+						<h4 className='h4-alegreya none mobile-margins'>Attitudes</h4>
+						<p className='p-aktiv mobile-margins'>Focused, but overall creative personality, open to new experiences, reading is a form of self-enrichment.</p>
 					</div>
-					<div className='flex1  margins-tiny'>
-						<h4 className='h4-alegreya'>Motivations</h4>
-						<p className='p-aktiv'>Seeking escapism, prefers passive activities, desires positive impact on personal creativity & inspiration.</p>
+					<div className='flex1'>
+						<h4 className='h4-alegreya none mobile-margins'>Motivations</h4>
+						<p className='p-aktiv mobile-margins'>Seeking escapism, prefers passive activities, desires positive impact on personal creativity & inspiration.</p>
 					</div>
 					</div>
 				</div>

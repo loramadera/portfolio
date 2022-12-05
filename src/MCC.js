@@ -57,7 +57,7 @@ function MCC() {
 			<div className='flexbox top-small'>
 				<div className='flex1 box'>
 					<div className='margins-small'>	
-						<h4 className='h4-primary mobile'>{item.title}</h4>
+						<h4 className='h4-aleg-b mobile'>{item.title}</h4>
 						<p className='p-primary'>{item.text}</p>
 					</div>
 				</div>
@@ -74,7 +74,7 @@ function MCC() {
 				<div className='flexbox top-small'>	
 					<div className='flex1 box'>
 						<div className='margins-small'>	
-							<h4 className='h4-primary mobile'>{item.title}</h4>
+							<h4 className='h4-aleg-b mobile'>{item.title}</h4>
 							<p className='p-primary'>{item.text}</p>
 						</div>
 					</div>
@@ -91,7 +91,7 @@ function MCC() {
 					</div>
 					<div className='flex1 box'>
 						<div className='margins-small'>	
-							<h4 className='h4-primary mobile'>{item.title}</h4>
+							<h4 className='h4-aleg-b mobile'>{item.title}</h4>
 							<p className='p-primary'>{item.text}</p>
 						</div>
 					</div>

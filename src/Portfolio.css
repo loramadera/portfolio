@@ -14,7 +14,7 @@
 }
 
 .img-globe {
-  width: 800px;
+  width: 700px;
   opacity: 10%;
 }
 
@@ -33,7 +33,7 @@
 .portfolio-bubble {
   position: absolute;
   right: 0;
-  top: 230px;
+  top: 190px;
 }
 /*.portfolio-globe {
   position: absolute;
@@ -41,6 +41,10 @@
 
 
 @media screen and (max-width: 1025px) {
+
+  .bub-mobile {
+    width: 300px;
+  }
 
   .img-profile {
     width: 250px;
