@@ -144,7 +144,7 @@ return (
 			</div>
 
 			<div className='vaca-onboard top-medium'>
-				<img src= {imgOnboard} width="100%"></img>
+				<img className='vaca-onboard center-align' src= {imgOnboard} width="100%"></img>
 			</div>
 
 			<div className='vaca-desk center-align top-medium'>

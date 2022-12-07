@@ -29,7 +29,7 @@ function Sadhan() {
 const contentItems = [
 	{'title': 'Timer', 'text': 'True to its theme, the meditation timer has an original design featuring the Om symbol.', 'image': imgTimer },
 	{'title': 'Version: Artistry & Textures', 'text': 'Metallic and detailed features are  artistic demonstrations within visual design.', 'image': imgIcons1 },
-	{'title': 'Version: Design for Programming', 'text': 'For programming execution, iconography designs would be made mindful of the parameters of coding.', 'image': imgIcons2 },
+	{'title': 'Version: Design for Performance', 'text': 'For programming, iconography designs would be made mindful of the parameters of a coded execution & performance.', 'image': imgIcons2 },
 	
 ];
 

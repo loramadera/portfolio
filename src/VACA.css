@@ -6,11 +6,27 @@
   width: 1200px;
 }
 
-
+.vaca-onboard {
+  width: 1200px;
+  margin: 0 auto;
+}
 
 
 .vaca-beauty {
   padding-top: 100px;
   padding-bottom: 100px;
+}
+
+
+@media screen and (max-width: 1025px) {
+.vaca-desktop {
+  width: 400px;
+}
+
+.vaca-onboard {
+  width: 400px;
+  margin: 0 auto;
+}
+
 }
 
