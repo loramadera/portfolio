@@ -7,6 +7,10 @@ import './common/styles/sitetypography.css';
 import './Gaia.css';
 
 import imgHero from './images/UXUI/Gaia/gaiahero.png';
+import imgW1 from './images/UXUI/Gaia/wireframe1.png';
+import imgW2 from './images/UXUI/Gaia/wireframe2.png';
+import imgF1 from './images/UXUI/Gaia/final1.png';
+import imgF2 from './images/UXUI/Gaia/final2.png';
 import imgBeauty from './images/UXUI/Gaia/gaiabeauty.png';
 import imgColor from './images/UXUI/Gaia/colors.png';
 import imgLayout from './images/UXUI/Gaia/layout.png';
@@ -181,14 +185,36 @@ return (
 		<div className='top-medium'>
 			<Items />
 		</div>
-			
+
+		<h3 className='h3-primary left-align margins-medium bottom-medium'>Wireframes</h3>
+		<div className='flexbox bottom-large'>
+			<div className='flex1 center-align'>
+				<img className='gaia-w center-align' src={imgW1} width='100%'></img>
+			</div>
+			<div className='flex1 center-align mobile'>
+				<img className='gaia-w center-align' src={imgW2} width='100%'></img>
+			</div>
+		</div>
+
+
+		<h3 className='h3-primary left-align margins-medium bottom-medium'>Final Designs</h3>
+		<div className='flexbox bottom-large'>
+			<div className='flex1 center-align'>
+				<img className='gaia-f center-align' src={imgF1} width='100%'></img>
+			</div>
+			<div className='flex1 center-align'>
+				<img className='gaia-f center-align' src={imgF2} width='100%'></img>
+			</div>
+		</div>
+					
 
 		<div className='gaia-beauty'>
 			<img className='darker-box' src= {imgBeauty} width="100%"></img>
 		</div>
-	</div>	
+</div>	
 
 </div>
+
 
 <div className='flexbox top-small row'>
 	<div className='flex1 margins-small'>
