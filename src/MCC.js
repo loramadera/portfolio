@@ -6,7 +6,7 @@ import './MCC.css';
 import './common/styles/typography.css';
 import './common/styles/spacing.css';
 
-import imgHero from './images/UXUI/MCC/mcchero7.png';
+import imgHero from './images/UXUI/MCC/mcchero.png';
 import imgLC from './images/UXUI/MCC/logosincolor.png';
 import imgWhite from './images/UXUI/MCC/whitelogo.png';
 import imgExplorations from './images/UXUI/MCC/explorations.png';

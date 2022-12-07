@@ -120,7 +120,6 @@ return (
 
 	<div>
 		<h1 className='h1-primary center-align top-medium'>Sadhan</h1>
-		<h4 className='h4-primary center-align'>Meditation App</h4>
 		<h4 className='h4-primary center-align opacity'>Visual Design</h4>
 		<p className='p-primary left-align margins-large top-small bottom-small'>Sadhan is defined functionally by its meditation timer and connection with other members of a meditation community - the ability to see retreat schedules and other members.</p>
 	</div>

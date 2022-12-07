@@ -158,7 +158,7 @@ const [items, setItems] = React.useState(visualItems)
 
          <div className='mobile'>
             <div className='dark-box top-dark padding-large'>
-              <h3 className='h3-primary center-align bottom-small mobile opacity'>Interactive Design</h3>
+              <h3 className='h3-primary center-align bottom-small mobile opacity'>Branding & Visual Design</h3>
               <div className='mobile'>
                 <div className='margins-small bottom-medium'>
                   <a className='a-none flexbox darker-box' href='/mcc'>
@@ -175,7 +175,7 @@ const [items, setItems] = React.useState(visualItems)
 
            <div className='mobile'>
             <div className='dark-box top-dark padding-large'>
-              <h3 className='h3-primary center-align bottom-small mobile opacity'>Branding & Visual Design</h3>
+              <h3 className='h3-primary center-align bottom-small mobile opacity'>Interactive Design</h3>
               <div className='mobile'>
                 { intItems }
               </div>

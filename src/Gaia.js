@@ -151,7 +151,6 @@ return (
 
 	<div>
 		<h1 className='h1-primary center-align top-medium'>Project Gaia</h1>
-		<h4 className='h4-primary center-align'>A learning & interactivity tool.</h4>
 		<h4 className='h4-primary center-align opacity top-small'>Visual & Interactive Design</h4>
 		<p className='p-primary left-align margins-small top-small'>Gaia is an informational & interactivity tool that is inspired by the three pillars of sustainability - economy, environment, and society. It seeks to educate on these pillars in a fun and interactive way.</p>
 	</div>

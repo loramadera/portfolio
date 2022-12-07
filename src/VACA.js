@@ -30,7 +30,7 @@ function VACA() {
 const contentItems = [
 	{'title': 'Logo Creation', 'text': 'Following a series of sketches, the intended logo for this project would convey sophistication and subtly hint at multiple forms of travel - flight and voyage.', 'image': imgLogo },
 	{'title': 'Typography and Textures', 'text': 'A style tile demonstrates various color and texture explorations, finishign with type design choices.', 'image': imgStyle },
-	// {'title': 'Iconography & Data Visuals', 'text': 'It was important for the iconography and tools in this application to reflect the app’s atmosphere and luxurious intent.', 'image': imgIcon },
+	{'title': 'Iconography & Data Visualization', 'text': 'The iconography and tools in this application were designed with the intention of reflecting the app’s atmosphere and luxurious intent.', 'image': imgIcon },
 ];
 
 const [items, setItems] = React.useState(contentItems)
@@ -118,7 +118,6 @@ return (
 
 	<div>
 		<h1 className='h1-primary center-align top-medium'>VACA</h1>
-		<h4 className='h4-primary center-align'>The Travel App</h4>
 		<h4 className='h4-primary opacity center-align'>Visual Design</h4>
 		<p className='p-primary left-align margins-large top-small bottom-small'>VACA allows the tracking and creation of a travel project, start to finish. Budgets, daily schedules, and weather forecasts are some of the features that would be on display for the user.</p>
 	</div>
