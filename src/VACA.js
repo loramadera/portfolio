@@ -7,6 +7,7 @@ import './common/styles/sitetypography.css';
 import './VACA.css';
 
 import imgHero from './images/UXUI/VACA/vacahero.png';
+import imgDesktop from './images/UXUI/VACA/desktop.png';
 import imgBeau from './images/UXUI/VACA/beautyshot.png';
 import imgColor from './images/UXUI/VACA/colors.png';
 import imgIcon from './images/UXUI/VACA/icons.png';
@@ -144,6 +145,10 @@ return (
 
 			<div className='vaca-onboard top-medium'>
 				<img src= {imgOnboard} width="100%"></img>
+			</div>
+
+			<div className='vaca-desk center-align top-medium'>
+				<img className='vaca-desktop' src= {imgDesktop} width="100%"></img>
 			</div>
 
 			<div className='vaca-beauty'>
