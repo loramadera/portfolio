@@ -15,7 +15,7 @@
 
 .img-globe {
   width: 700px;
-  opacity: 10%;
+  opacity: 3%;
 }
 
 .container {
@@ -43,7 +43,7 @@
 @media screen and (max-width: 1025px) {
 
   .bub-mobile {
-    width: 300px;
+    width: 350px;
   }
 
   .img-profile {
@@ -59,7 +59,7 @@
   .img-globe {
     width: 300px;
     margin-left: 20px;
-    opacity: 10%;
+    opacity: 5%;
   }
 
   .portfolio-bubble {

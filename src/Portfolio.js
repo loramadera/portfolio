@@ -134,7 +134,7 @@ function Portfolio() {
       <div className='flexbox mobile'>
         <Top />
         <div className='flex1 box top-small'>
-          <h1 className='h1-primary mobile-center mobile-margins-2'>Nice to meet you! I'm Lora.</h1>
+          <h1 className='h1-primary mobile-center mobile-margins-2'>Hi! I'm Lora.</h1>
           <div className='flexbox top-small'>
             <div className='flex2'><p className='p-primary mobile-center mobile-margins-2'>UX/UI Designer, Visual Designer, Developer</p></div>
             <div className='flex1'></div>
