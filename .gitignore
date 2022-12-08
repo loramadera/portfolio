@@ -37,3 +37,5 @@ config-*.conf
 .env*
 
 uploads
+
+.python-version
