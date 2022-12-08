@@ -1,0 +1,8 @@
+.product {
+  display: inline-block;
+  width: 250px;
+  vertical-align: top;
+}
+.product-image {
+  width: 100%;
+}

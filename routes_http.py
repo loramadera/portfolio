@@ -6,6 +6,8 @@ import user_auth
 from image import file_upload as _file_upload
 import ml_config
 
+from product import products as _products
+
 config = ml_config.get_config()
 
 def Routes(app, cors):
@@ -19,6 +21,15 @@ def Routes(app, cors):
 
     resource = cors.add(app.router.add_resource('/web/fileUpload'))
     cors.add(resource.add_route("POST", fileUpload))
+
+    resource = cors.add(app.router.add_resource('/web/searchProducts'))
+    cors.add(resource.add_route("POST", SearchProducts))
+    resource = cors.add(app.router.add_resource('/web/getProductsByIds'))
+    cors.add(resource.add_route("POST", GetProductsByIds))
+    resource = cors.add(app.router.add_resource('/web/deleteProduct'))
+    cors.add(resource.add_route("POST", DeleteProduct))
+    resource = cors.add(app.router.add_resource('/web/saveProduct'))
+    cors.add(resource.add_route("POST", SaveProduct))
 
 def CIWebhookTesting(request):
     data = request.query
@@ -96,4 +107,24 @@ async def SaveFileData(request):
     fileData = data['fileData']
     ret = _file_upload.SaveFileData(
         fileData, config['web_server']['urls']['base_server'], filename=fileName)
+    return web.json_response(ret)
+
+async def SaveProduct(request):
+    data = await request.json()
+    ret = _products.SaveProduct(data['product'])
+    return web.json_response(ret)
+
+async def DeleteProduct(request):
+    data = await request.json()
+    ret = _products.DeleteProduct(data['productId'])
+    return web.json_response(ret)
+
+async def SearchProducts(request):
+    data = await request.json()
+    ret = _products.SearchProducts(data['searchText'])
+    return web.json_response(ret)
+
+async def GetProductsByIds(request):
+    data = await request.json()
+    ret = _products.GetProductsByIds(data['productIds'])
     return web.json_response(ret)

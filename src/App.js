@@ -16,6 +16,8 @@ import { Sadhan } from './Sadhan.js';
 import { Gaia } from './Gaia.js';
 import { MCC } from './MCC.js';
 
+import { ProductDemo } from './productDemo/ProductDemo.js';
+
 
 
 function App() {
@@ -34,6 +36,8 @@ function App() {
         <Route path="/sadhan" element={<Sadhan />} />
         <Route path="/gaia" element={<Gaia />} />
         <Route path="/mcc" element={<MCC />} />
+
+        <Route path="/product-demo" element={<ProductDemo />} />
       </Routes>
     </div>
   );
