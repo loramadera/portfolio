@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run:
           name: Deploy
-          command: ssh -oStrictHostKeyChecking=no root@157.245.230.34 'cd /var/www/lora-portfolio && git checkout . && git pull origin main && npm run build && systemctl restart systemd_web_server_lora_portfolio.service'
+          command: ssh -oStrictHostKeyChecking=no root@157.245.230.34 'cd /var/www/lora-portfolio && git checkout . && git pull origin main && pip3 install -r requirements.txt && npm run build && systemctl restart systemd_web_server_lora_portfolio.service'
 workflows:
   deploy_app:
     jobs:
