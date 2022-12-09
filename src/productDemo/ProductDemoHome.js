@@ -9,7 +9,7 @@ import '../common/styles/sitetypography.css';
 import Http from '../common/Http.js';
 import ProductCartService from './ProductCartService.js';
 
-function ProductDemo() {
+function ProductDemoHome() {
   const [products, setProducts] = useState([]);
   const [productIdsInCart, setProductIdsInCart] = useState([]);
   const [productsInCart, setProductsInCart] = useState([]);
@@ -148,4 +148,4 @@ function ProductDemo() {
 
 }
 
-export { ProductDemo }
+export { ProductDemoHome }

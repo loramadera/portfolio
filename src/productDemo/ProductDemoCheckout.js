@@ -100,6 +100,7 @@ function ProductDemoCheckout() {
     <div className='product-demo'>
       <div>
         <a href='/product-demo'>Products</a>
+        <a href='/product-demo-home'>Home</a>
         <a href='/product-demo-cart'>Cart</a>
         <a href='/product-demo-checkout'>Checkout</a>
       </div>

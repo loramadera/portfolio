@@ -19,6 +19,7 @@ import { MCC } from './MCC.js';
 import { ProductDemo } from './productDemo/ProductDemo.js';
 import { ProductDemoCart } from './productDemo/ProductDemoCart.js';
 import { ProductDemoCheckout } from './productDemo/ProductDemoCheckout.js';
+import { ProductDemoHome } from './productDemo/ProductDemoHome.js';
 
 
 
@@ -42,6 +43,7 @@ function App() {
         <Route path="/product-demo" element={<ProductDemo />} />
         <Route path="/product-demo-cart" element={<ProductDemoCart />} />
         <Route path="/product-demo-checkout" element={<ProductDemoCheckout />} />
+        <Route path="/product-demo-home" element={<ProductDemoHome />} />
       </Routes>
     </div>
   );
