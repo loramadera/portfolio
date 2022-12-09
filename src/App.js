@@ -17,6 +17,8 @@ import { Gaia } from './Gaia.js';
 import { MCC } from './MCC.js';
 
 import { ProductDemo } from './productDemo/ProductDemo.js';
+import { ProductDemoCart } from './productDemo/ProductDemoCart.js';
+import { ProductDemoCheckout } from './productDemo/ProductDemoCheckout.js';
 
 
 
@@ -38,6 +40,8 @@ function App() {
         <Route path="/mcc" element={<MCC />} />
 
         <Route path="/product-demo" element={<ProductDemo />} />
+        <Route path="/product-demo-cart" element={<ProductDemoCart />} />
+        <Route path="/product-demo-checkout" element={<ProductDemoCheckout />} />
       </Routes>
     </div>
   );

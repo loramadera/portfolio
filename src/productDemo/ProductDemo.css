@@ -1,8 +1,19 @@
+.product-demo {
+  color: white;
+}
 .product {
   display: inline-block;
   width: 250px;
   vertical-align: top;
+  color: white;
+}
+.product-image-div {
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
 }
 .product-image {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

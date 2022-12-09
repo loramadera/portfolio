@@ -3,9 +3,11 @@ import React, { useEffect, useState } from "react";
 import { Navigation } from '../Navigation.js';
 import { Footer } from '../Footer.js';
 import './ProductDemo.css';
+import '../common/styles/flexbox.css';
 import '../common/styles/spacing.css';
 import '../common/styles/sitetypography.css';
 import Http from '../common/Http.js';
+import ProductCartService from './ProductCartService.js';
 
 function ProductDemo() {
   const [products, setProducts] = useState([]);
@@ -59,66 +61,54 @@ function ProductDemo() {
       });
   }
 
-  function GetProductsInCart() {
-    Http.Go('POST', 'getProductsByIds', { 'productIds': productIdsInCart })
-      .then((res) => res.json())
-      .then((res) => {
-        setProductsInCart(res.products);
-      });
-  }
-
   function AddToCart(productId) {
-    // Do not add if already in cart.
-    let found = 0;
-    for (let ii = 0; ii < productIdsInCart.length; ii++) {
-      if (productId === productIdsInCart[ii]) {
-        found = 1;
-        break;
-      }
-    }
-    if (!found) {
-      productIdsInCart.push(productId);
-      setProductIdsInCart(productIdsInCart);
-    }
-    GetProductsInCart();
+    ProductCartService.AddProductIdToCart(productId);
+    setProductIdsInCart(ProductCartService.GetProductIdsInCart());
+    // // Do not add if already in cart.
+    // let found = 0;
+    // for (let ii = 0; ii < productIdsInCart.length; ii++) {
+    //   if (productId === productIdsInCart[ii]) {
+    //     found = 1;
+    //     break;
+    //   }
+    // }
+    // if (!found) {
+    //   productIdsInCart.push(productId);
+    //   setProductIdsInCart(productIdsInCart);
+    // }
+    // GetProductsInCart();
   }
 
   function RemoveFromCart(productId) {
-    for (let ii = 0; ii < productIdsInCart.length; ii++) {
-      if (productId === productIdsInCart[ii]) {
-        productIdsInCart.splice(ii, 1);
-        setProductIdsInCart(productIdsInCart);
-        GetProductsInCart();
-        break;
-      }
-    }
+    ProductCartService.RemoveProductIdFromCart(productId);
+    setProductIdsInCart(ProductCartService.GetProductIdsInCart());
+    // for (let ii = 0; ii < productIdsInCart.length; ii++) {
+    //   if (productId === productIdsInCart[ii]) {
+    //     productIdsInCart.splice(ii, 1);
+    //     setProductIdsInCart(productIdsInCart);
+    //     GetProductsInCart();
+    //     break;
+    //   }
+    // }
   }
 
   function Products() {
     return products.map((product, index) => {
+      const productInCart = ProductCartService.IsProductIdInCart(product._id);
+      const htmlCart = productInCart ? <button onClick={(e) => RemoveFromCart(product._id)}>Remove from Cart</button> :
+        <button onClick={(e) => AddToCart(product._id)}>Add to Cart</button>;
       return (
         <div key={index} className='product'>
           <div>{product.name} (${product.price})</div>
-          <div><img src={product.imageUrl} className='product-image' /></div>
-          <div>
-            <button onClick={(e) => DeleteProduct(product._id)}>Delete</button>
-          </div>
-          <div>
-            <button onClick={(e) => AddToCart(product._id)}>Add to Cart</button>
-          </div>
-        </div>
-      );
-    });
-  }
-
-  function ProductsInCart() {
-    return productsInCart.map((product, index) => {
-      return (
-        <div key={index} className='product'>
-          <div>{product.name} (${product.price})</div>
-          <div><img src={product.imageUrl} className='product-image' /></div>
-          <div>
-            <button onClick={(e) => RemoveFromCart(product._id)}>Remove from Cart</button>
+          <div className='product-image-div'><img src={product.imageUrl} className='product-image' /></div>
+          <div className='flexbox'>
+            <div>
+              { htmlCart }
+            </div>
+            <div className='flex1'>&nbsp;</div>
+            <div>
+              <button onClick={(e) => DeleteProduct(product._id)}>Delete</button>
+            </div>
           </div>
         </div>
       );
@@ -126,11 +116,18 @@ function ProductDemo() {
   }
 
   return (
-    <div>
+    <div className='product-demo'>
+      <div>
+        <a href='/product-demo'>Products</a>
+        <a href='/product-demo-cart'>Cart</a>
+        <a href='/product-demo-checkout'>Checkout</a>
+      </div>
+
       <div>
         <input type='text' name='searchText' placeholder='Search for products' onKeyUp={ OnChangeFormValsSearch } />
       </div>
       <Products />
+
       <div>
         <div>
           <input name='name' placeholder='Name' onBlur={ OnChangeFormVals } />
@@ -145,7 +142,6 @@ function ProductDemo() {
           <button onClick={SaveProduct}>Save Product</button>
         </div>
       </div>
-      <ProductsInCart />
     </div>
   );
 
