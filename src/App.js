@@ -20,6 +20,7 @@ import { ProductDemo } from './productDemo/ProductDemo.js';
 import { ProductDemoCart } from './productDemo/ProductDemoCart.js';
 import { ProductDemoCheckout } from './productDemo/ProductDemoCheckout.js';
 import { ProductDemoHome } from './productDemo/ProductDemoHome.js';
+import { ProductDemoFooter } from './productDemo/ProductDemoFooter.js';
 
 
 
@@ -44,6 +45,7 @@ function App() {
         <Route path="/product-demo-cart" element={<ProductDemoCart />} />
         <Route path="/product-demo-checkout" element={<ProductDemoCheckout />} />
         <Route path="/product-demo-home" element={<ProductDemoHome />} />
+        <Route path="/product-demo-footer" element={<ProductDemoFooter />} />
       </Routes>
     </div>
   );

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import { ProductDemoNav } from './ProductDemoNav.js';
+import { ProductDemoFooter } from './ProductDemoFooter.js';
 
 import './ProductDemo.css';
 import '../common/styles/flexbox.css';
@@ -8,6 +9,10 @@ import '../common/styles/spacing.css';
 import '../common/styles/sitetypography.css';
 import Http from '../common/Http.js';
 import ProductCartService from './ProductCartService.js';
+
+import imgOne from './Images/t7.jpg';
+import imgTwo from './Images/t8.jpg';
+import imgThree from './Images/t9.jpg';
 
 function ProductDemoHome() {
   const [products, setProducts] = useState([]);
@@ -121,10 +126,17 @@ function ProductDemoHome() {
       <ProductDemoNav />
       <div>
         <h1 className='product-logo top-medium center-align blue'>Azure Terrariums</h1>
-        <p className='product-secondary margins-extra blue'>Azure Terrarriums are a touch of fantasy decoration for your home, perfect for desks and bookshelves. All components are hand-crafted in unique or custom styles featuring a variety of biomes, cryptids, and containers.</p>
-      </div>  
+        <p className='product-secondary margins-extra blue'>Azure Terrarriums are a touch of custom fantasy for your home. Got a terrarium inspiration you’d love to bring to life? You’re in the right place! Browse our pre-selected terrariums or enter your inspiration for one. All terrariums are hand-crafted in unique or custom styles featuring a variety of biomes, cryptids, and containers. Just input your inspiration in the Creation page and the price you’d be willing to pay for it. Then check out - your order is submitted!</p>
+      </div>
+      <div className='flexbox margins-extra center-align top-medium'>  
+          <img className='img-azure flex1' src= {imgOne} width='100%'></img>
+          <img className='img-azure flex1' src= {imgTwo} width='100%'></img>
+          <img className='img-azure flex1' src= {imgThree} width='100%'></img>
+      </div>
       
-
+      <div className='mobile'>
+        <ProductDemoFooter />
+      </div>
     </div>
   );
 

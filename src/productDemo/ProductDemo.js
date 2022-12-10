@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import { ProductDemoNav } from './ProductDemoNav.js';
+import { ProductDemoFooter } from './ProductDemoFooter.js';
 
 import './ProductDemo.css';
 import '../common/styles/flexbox.css';
@@ -99,7 +100,7 @@ function ProductDemo() {
         <button onClick={(e) => AddToCart(product._id)}>Add to Cart</button>;
       return (
         <div key={index} className='product'>
-          <div>{product.name} (${product.price})</div>
+          <div className='product-secondary product-name blue padding-small'>{product.name} (${product.price})</div>
           <div className='product-image-div'><img src={product.imageUrl} className='product-image' /></div>
           <div className='flexbox'>
             <div>
@@ -118,27 +119,50 @@ function ProductDemo() {
   return (
    <div className='product-demo product-body'>
       <ProductDemoNav />
-        
-
+      
       <div>
-        <input type='text' name='searchText' placeholder='Search for products' onKeyUp={ OnChangeFormValsSearch } />
+        <h1 className='product-logo top-medium center-align blue'>Azure Terrariums</h1>
       </div>
-      <Products />
 
-      <div>
-        <div>
-          <input name='name' placeholder='Name' onBlur={ OnChangeFormVals } />
+      <div className='product-creation margins-extra'>
+        <h2 className='product-primary center-align blue top-medium'>Product & Creation Instructions</h2>
+        <p className='product-secondary margins-extra blue bottom-medium'>In the "Products" section, view the pre-added products. In the "Create Your Own" section below it, add one of your own! Be sure to include a terrarium example that inspires you. State your price when you add your item, then add to your cart to send your order to us.</p>
+      </div>
+
+       <div className='margins-large'>
+        <h2 className='product-primary-2 center-align blue top-medium'>Products</h2>
+      </div>
+
+      <div className='center-align'>
+        <input type='text' className='product-search product-secondary' name='searchText' placeholder='Search for products' onKeyUp={ OnChangeFormValsSearch } />
+      </div>
+      
+      <div className='products'>
+        <Products />
+      </div>
+      
+       <div className='margins-extra'>
+        <h2 className='product-primary-2 center-align blue top-medium'>Create Your Own</h2>
+      </div>
+
+      <div className='product-form center-align margins-extra'>
+        <div className='padding-small'>
+          <input name='name' className='product-search product-secondary padding-small' placeholder='Name' onBlur={ OnChangeFormVals } />
         </div>
-        <div>
-          <input name='imageUrl' placeholder='Image URL' onBlur={ OnChangeFormVals } />
+        <div className='padding-small'>
+          <input name='imageUrl' className='product-search product-secondary padding-small' placeholder='Image URL' onBlur={ OnChangeFormVals } />
         </div>
-        <div>
-          <input name='price' placeholder='Price' onBlur={ OnChangeFormVals } />
+        <div className='padding-small'>
+          <input name='price' className='product-search product-secondary padding-small' placeholder='Price' onBlur={ OnChangeFormVals } />
         </div>
-        <div>
-          <button onClick={SaveProduct}>Save Product</button>
+        <div className='padding-small'>
+          <button className='product-button product-secondary' onClick={SaveProduct}>Save Product</button>
         </div>
       </div>
+
+      <div className='mobile'>
+        <ProductDemoFooter />
+      </div>  
     </div>
   );
 
