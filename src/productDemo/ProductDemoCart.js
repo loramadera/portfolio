@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-import { Navigation } from '../Navigation.js';
-import { Footer } from '../Footer.js';
+import { ProductDemoNav } from './ProductDemoNav.js';
+
 import './ProductDemo.css';
 import '../common/styles/spacing.css';
 import '../common/styles/sitetypography.css';
@@ -57,13 +57,8 @@ function ProductDemoCart() {
   }
 
   return (
-    <div className='product-demo'>
-      <div>
-        <a href='/product-demo'>Products</a>
-        <a href='/product-demo-home'>Home</a>
-        <a href='/product-demo-cart'>Cart</a>
-        <a href='/product-demo-checkout'>Checkout</a>
-      </div>
+    <div className='product-demo product-body'>
+      <ProductDemoNav />
 
       <div>
         <ProductsInCart />

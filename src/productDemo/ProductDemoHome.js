@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 
-import { Navigation } from '../Navigation.js';
-import { Footer } from '../Footer.js';
+import { ProductDemoNav } from './ProductDemoNav.js';
+
 import './ProductDemo.css';
 import '../common/styles/flexbox.css';
 import '../common/styles/spacing.css';
@@ -116,33 +116,15 @@ function ProductDemoHome() {
   }
 
   return (
-    <div className='product-demo'>
+    <div className='product-demo product-body'>
+      <link rel="stylesheet" href="https://use.typekit.net/guv2awx.css"></link>
+      <ProductDemoNav />
       <div>
-        <a href='/product-demo-home'>Home</a>
-        <a href='/product-demo'>Products</a>
-        <a href='/product-demo-cart'>Cart</a>
-        <a href='/product-demo-checkout'>Checkout</a>
-      </div>
+        <h1 className='product-logo top-medium center-align blue'>Azure Terrariums</h1>
+        <p className='product-secondary margins-extra blue'>Azure Terrarriums are a touch of fantasy decoration for your home, perfect for desks and bookshelves. All components are hand-crafted in unique or custom styles featuring a variety of biomes, cryptids, and containers.</p>
+      </div>  
+      
 
-      <div>
-        <input type='text' name='searchText' placeholder='Search for products' onKeyUp={ OnChangeFormValsSearch } />
-      </div>
-      <Products />
-
-      <div>
-        <div>
-          <input name='name' placeholder='Name' onBlur={ OnChangeFormVals } />
-        </div>
-        <div>
-          <input name='imageUrl' placeholder='Image URL' onBlur={ OnChangeFormVals } />
-        </div>
-        <div>
-          <input name='price' placeholder='Price' onBlur={ OnChangeFormVals } />
-        </div>
-        <div>
-          <button onClick={SaveProduct}>Save Product</button>
-        </div>
-      </div>
     </div>
   );
 

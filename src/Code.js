@@ -6,11 +6,7 @@ import './common/styles/spacing.css';
 import './common/styles/sitetypography.css';
 import './Code.css';
 
-import imgCastle from './images/Modeling/castle.png';
-import imgHallway from './images/Modeling/hallway.png';
-
-import projCastle from './images/Modeling/Projects/castle.pdf';
-import projHallway from './images/Modeling/Projects/hallway.pdf';
+import imgAzure from './productDemo/Images/Azure.png';
 
 function debounce(fn, ms) {
   let timer
@@ -25,7 +21,7 @@ function debounce(fn, ms) {
 
 function Code() {
   const contentItems = [
-    { 'title': 'Creepy Hallway', 'text': 'A hallway you do not want to visit.', 'image': imgHallway, 'link': projHallway },
+    { 'title': 'Azure', 'text': 'A fantasy terrarium product site.', 'image': imgAzure, 'link': '/product-demo-home' },
   ];
 
   const [items, setItems] = React.useState(contentItems)
