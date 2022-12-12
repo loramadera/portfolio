@@ -59,8 +59,8 @@ const [items, setItems] = React.useState(visualItems)
     if (window.innerWidth < 1025) {
       return visualItems.map((item, index) => {
         return <div key={index} className='margins-small bottom-medium'>
-        <a className='a-none flexbox darker-box' href={item.link}>
-          <div className='img flex1'><img src={item.image} width="100%" /></div>
+        <a className='a-none flexbox darker-box shadow' href={item.link}>
+          <div className='img flex1'><img className='portfolio-img' src={item.image} width="100%" /></div>
           <div className='flex1 box'>
             <h3 className='h3-primary center-align'>{item.title}</h3>
             <p className='p-primary center-align'>{item.text}</p>
@@ -72,18 +72,18 @@ const [items, setItems] = React.useState(visualItems)
       return visualItems.map((item, index) => {
         if (index % 2) {
           return <div key={index} className='margins-small bottom-medium'>
-        <a className='a-none flexbox darker-box' href={item.link}>
+        <a className='a-none flexbox darker-box shadow' href={item.link}>
           <div className='flex1 box'>
             <h3 className='h3-primary center-align'>{item.title}</h3>
             <p className='p-primary center-align'>{item.text}</p>
           </div>
-          <div className='img flex1'><img src={item.image} width="100%" /></div>
+          <div className='img flex1'><img className='portfolio-img' src={item.image} width="100%" /></div>
         </a>
       </div>;
     } else {
       return <div key={index} className='margins-small bottom-medium'>
-        <a className='a-none flexbox darker-box' href={item.link}>
-          <div className='img flex1'><img src={item.image} width="100%" /></div>
+        <a className='a-none flexbox darker-box shadow' href={item.link}>
+          <div className='img flex1'><img className='portfolio-img' src={item.image} width="100%" /></div>
           <div className='flex1 box'>
             <h3 className='h3-primary center-align'>{item.title}</h3>
             <p className='p-primary center-align'>{item.text}</p>
@@ -100,18 +100,18 @@ const [items, setItems] = React.useState(visualItems)
     // 1st, 3rd, ...
     if (index % 2) {
       return <div key={index} className='margins-small bottom-medium'>
-        <a className='a-none flexbox darker-box' href={item.link}>
+        <a className='a-none flexbox darker-box shadow' href={item.link}>
           <div className='flex1 box'>
             <h3 className='h3-primary center-align'>{item.title}</h3>
             <p className='p-primary center-align'>{item.text}</p>
           </div>
-          <div className='img flex1'><img src={item.image} width="100%" /></div>
+          <div className='img flex1'><img className='portfolio-img' src={item.image} width="100%" /></div>
         </a>
       </div>;
     } else {
       return <div key={index} className="margins-small bottom-medium">
-        <a className='a-none flexbox darker-box' href={item.link}>
-          <div className='img flex1'><img src={item.image} width="100%" /></div>
+        <a className='a-none flexbox darker-box shadow' href={item.link}>
+          <div className='img flex1'><img className='portfolio-img' src={item.image} width="100%" /></div>
           <div className='flex1 box'>
             <h3 className='h3-primary center-align'>{item.title}</h3>
             <p className='p-primary center-align'>{item.text}</p>
@@ -138,8 +138,8 @@ const [items, setItems] = React.useState(visualItems)
                         <h3 className='h3-primary center-align mobile'>BookVerse</h3>
                         <p className='p-primary center-align bottom-small'>Interactive book “universe” discovery app.</p>
                       </div>   
-                      <div className="flex1 darker-box padding-large">
-                          <img src={imgBookVerse} width="100%"></img>
+                      <div className="flex1 darker-box padding-large shadow">
+                          <img className='portfolio-img' src={imgBookVerse} width="100%"></img>
                       </div>
                     </a>
                    
@@ -148,8 +148,8 @@ const [items, setItems] = React.useState(visualItems)
                           <h3 className='h3-primary center-align top-medium'>The Bestiary</h3>
                           <p className='p-primary center-align bottom-small'>Game interface design.</p>
                         </div>
-                      <div className="flex1 darker-box padding-large">
-                          <img src={imgBestiary} width="100%"></img>
+                      <div className="flex1 darker-box padding-large shadow">
+                          <img className='portfolio-img' src={imgBestiary} width="100%"></img>
                       </div>
                     </a>
                 </div>
@@ -161,11 +161,11 @@ const [items, setItems] = React.useState(visualItems)
               <h3 className='h3-primary center-align bottom-small mobile opacity'>Branding & Visual Design</h3>
               <div className='mobile'>
                 <div className='margins-small bottom-medium'>
-                  <a className='a-none flexbox darker-box' href='/mcc'>
-                   <div className='img flex1'><img src={imgMCC} width="100%" /></div>
+                  <a className='a-none flexbox darker-box shadow' href='/mcc'>
+                   <div className='img flex1'><img className='portfolio-img' src={imgMCC} width="100%" /></div>
                     <div className='flex1 box'>
                       <h3 className='h3-primary center-align'>Moraga Country Club</h3>
-                      <p className='p-primary center-align'>Full re-branding of East Bay county club establishment.</p>
+                      <p className='p-primary center-align'>Re-branding project of East Bay country club.</p>
                     </div>
                   </a>
                 </div>

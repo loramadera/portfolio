@@ -14,7 +14,7 @@
 }
 
 .img-globe {
-  width: 700px;
+  width: 850px;
   opacity: 3%;
 }
 
@@ -33,12 +33,16 @@
 .portfolio-bubble {
   position: absolute;
   right: 0;
-  top: 190px;
+  top: 270px;
 }
 /*.portfolio-globe {
   position: absolute;
 }*/
 
+.portfolio-img {
+  /*object-fit: cover;*/
+  display: block;
+}
 
 @media screen and (max-width: 1025px) {
 

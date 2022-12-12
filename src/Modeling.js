@@ -46,8 +46,8 @@ function Modeling() {
     if (window.innerWidth < 1025) {
       return contentItems.map((item, index) => {
         return <div className='bottom-medium'>
-        <a className='a-none darker-box flexbox' href={item.link}>
-          <div className='img flex1 box'><img src={item.image} width="100%" /></div>
+        <a className='a-none darker-box flexbox shadow' href={item.link}>
+          <div className='img flex1 box'><img className='portfolio-img' src={item.image} width="100%" /></div>
           <div className='flex1 box'>
             <h3 className='h3-primary center-align'>{item.title}</h3>
             <p className='p-primary center-align'>{item.text}</p>
@@ -59,18 +59,18 @@ function Modeling() {
       return contentItems.map((item, index) => {
         if (index % 2) {
           return <div>
-        <a className='a-none darker-box flexbox' href={item.link}>
+        <a className='a-none darker-box flexbox shadow' href={item.link}>
           <div className='flex1 box'>
             <h3 className='h3-primary center-align'>{item.title}</h3>
             <p className='p-primary center-align'>{item.text}</p>
           </div>
-          <div className='img flex1 box'><img src={item.image} width="100%" /></div>
+          <div className='img flex1 box'><img className='portfolio-img' src={item.image} width="100%" /></div>
         </a>
       </div>;
     } else {
       return <div className='bottom-medium'>
-        <a className='a-none darker-box flexbox' href={item.link}>
-          <div className='img flex1 box'><img src={item.image} width="100%" /></div>
+        <a className='a-none darker-box flexbox shadow' href={item.link}>
+          <div className='img flex1 box'><img className='portfolio-img' src={item.image} width="100%" /></div>
           <div className='flex1 box'>
             <h3 className='h3-primary center-align'>{item.title}</h3>
             <p className='p-primary center-align'>{item.text}</p>

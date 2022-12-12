@@ -96,8 +96,8 @@ function ProductDemo() {
   function Products() {
     return products.map((product, index) => {
       const productInCart = ProductCartService.IsProductIdInCart(product._id);
-      const htmlCart = productInCart ? <button onClick={(e) => RemoveFromCart(product._id)}>Remove from Cart</button> :
-        <button onClick={(e) => AddToCart(product._id)}>Add to Cart</button>;
+      const htmlCart = productInCart ? <button className='product-options' onClick={(e) => RemoveFromCart(product._id)}>Remove from Cart</button> :
+        <button className='product-options' onClick={(e) => AddToCart(product._id)}>Add to Cart</button>;
       return (
         <div key={index} className='product'>
           <div className='product-secondary product-name blue padding-small'>{product.name} (${product.price})</div>
@@ -108,7 +108,7 @@ function ProductDemo() {
             </div>
             <div className='flex1'>&nbsp;</div>
             <div>
-              <button onClick={(e) => DeleteProduct(product._id)}>Delete</button>
+              <button className='product-options' onClick={(e) => DeleteProduct(product._id)}>Delete</button>
             </div>
           </div>
         </div>
@@ -126,7 +126,7 @@ function ProductDemo() {
 
       <div className='product-creation margins-extra'>
         <h2 className='product-primary center-align blue top-medium'>Product & Creation Instructions</h2>
-        <p className='product-secondary margins-extra blue bottom-medium'>In the "Products" section, view the pre-added products. In the "Create Your Own" section below it, add one of your own! Be sure to include a terrarium example that inspires you. State your price when you add your item, then add to your cart to send your order to us.</p>
+        <p className='product-secondary margins-extra blue bottom-medium'>In the "Products" section, view the pre-added products. In the "Add Your Own" section below it, add one of your own! Be sure to include a terrarium example that inspires you. State your price when you add your item, then add to your cart to send your order to us.</p>
       </div>
 
        <div className='margins-large'>
@@ -142,7 +142,7 @@ function ProductDemo() {
       </div>
       
        <div className='margins-extra'>
-        <h2 className='product-primary-2 center-align blue top-medium'>Create Your Own</h2>
+        <h2 className='product-primary-2 center-align blue top-medium'>Add Your Own</h2>
       </div>
 
       <div className='product-form center-align margins-extra'>

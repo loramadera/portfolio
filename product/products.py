@@ -3,20 +3,17 @@ import mongo_db
 
 def SeedProducts():
     products = [
-        { 'name': 'Surfboard', 'price': '250',
-            'imageUrl': 'https://images.unsplash.com/photo-1531722569936-825d3dd91b15?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+        { 'name': 'Greenium', 'price': '8.00',
+            'imageUrl': 'https://images.unsplash.com/photo-1416339411116-62e1226aacd8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1335&q=80',
         },
-        { 'name': 'Towel', 'price': '13.45',
-            'imageUrl': 'https://images.unsplash.com/photo-1523471826770-c437b4636fe6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80',
+        { 'name': 'Mossy Fairy', 'price': '13.45',
+            'imageUrl': 'https://images.unsplash.com/photo-1646220461631-86848066dfe6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=971&q=80',
         },
-        { 'name': 'Blanket', 'price': '22.39',
-            'imageUrl': 'https://images.unsplash.com/photo-1601880348117-25c1127a95df?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80',
+        { 'name': 'Kelpie', 'price': '22.39',
+            'imageUrl': 'https://images.unsplash.com/photo-1646739035307-e1924c8b9d23?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1011&q=80',
         },
-        { 'name': 'Soccer Ball', 'price': '8.99',
-            'imageUrl': 'https://images.unsplash.com/photo-1575361204480-aadea25e6e68?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2071&q=80',
-        },
-        { 'name': 'Rose', 'price': '4.50',
-            'imageUrl': 'https://images.unsplash.com/photo-1496062031456-07b8f162a322?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1065&q=80',
+        { 'name': 'Fairy Glow', 'price': '8.99',
+            'imageUrl': 'https://images.unsplash.com/photo-1559657153-fdea6cd5ddf7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDR8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60',
         },
     ]
 

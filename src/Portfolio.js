@@ -77,10 +77,10 @@ function Portfolio() {
     if (window.innerWidth < 1025) {
       return contentItems.map((item, index) => {
         return (
-          <div key={index} className='margins-small bottom-medium'>
+          <div key={index} className='shadow margins-small bottom-medium'>
             <div className='flexbox darker-box'>
               <a href={item.link} className='a-none flex1 box'>
-                <img src= {item.image} width="100%"></img>
+                <img className="portfolio-img" src= {item.image} width="100%"></img>
               </a>
               <a href={item.link} className='a-none flex1 box'>
                 <div className='margins-small'>  
@@ -95,7 +95,7 @@ function Portfolio() {
     } else {
       return contentItems.map((item, index) => {
         if (index % 2) {
-          return <div key={index} className='margins-small bottom-medium'>
+          return <div key={index} className='margins-small bottom-medium shadow'>
             <div className='flexbox darker-box'>
                 <a href={item.link} className='a-none flex1 box'>
                   <div className='margins-small'>  
@@ -104,15 +104,15 @@ function Portfolio() {
                   </div>
                 </a>
                 <a href={item.link} className='a-none flex1 box'>
-                  <img src= {item.image} width="100%"></img>
+                  <img className="portfolio-img" src= {item.image} width="100%"></img>
                 </a>
             </div>
           </div>
         } else { 
-          return <div key={index} className='margins-small bottom-medium'>
+          return <div key={index} className='margins-small bottom-medium shadow'>
             <div className='flexbox darker-box'>
                 <a href={item.link} className='a-none flex1 box'>
-                  <img src= {item.image} width="100%"></img>
+                  <img className="portfolio-img" src= {item.image} width="100%"></img>
                 </a>
                 <a href={item.link} className='a-none flex1 box'>
                   <div className='margins-small'>  
@@ -134,7 +134,7 @@ function Portfolio() {
       <div className='flexbox mobile'>
         <Top />
         <div className='flex1 box top-small'>
-          <h1 className='h1-primary mobile-center mobile-margins-2'>Hi! I'm Lora.</h1>
+          <h1 className='h1-primary mobile-center mobile-margins-2'>Hi, I'm Lora!</h1>
           <div className='flexbox top-small'>
             <div className='flex2'><p className='p-primary mobile-center mobile-margins-2'>UX/UI Designer, Visual Designer, Developer</p></div>
             <div className='flex1'></div>

@@ -51,7 +51,7 @@ function Digitalart() {
 
  
  const portfolioItems = contentItems.map((item) => {
-    return <div>
+    return <div className='shadow'>
       <a className='a-none' href={item.link}> 
         <div>
           <h3 className='h3-primary center-align bottom-tiny top-small'>{item.title}</h3>
