@@ -15,6 +15,8 @@ import imgPerson4 from './images/UXUI/Bestiary/person4.png';
 import imgBook1 from './images/UXUI/Bestiary/book1.png';
 import imgBook2 from './images/UXUI/Bestiary/book2.png';
 import imgBook3 from './images/UXUI/Bestiary/book3.png';
+import imgStyle from './images/UXUI/Bestiary/style.png';
+import imgBeauty from './images/UXUI/Bestiary/bestiarymock.png';
 
 function debounce(fn, ms) {
   let timer
@@ -40,6 +42,10 @@ function Bestiary() {
 		{ 'title': 'MVP One: The Bio', 'text1': 'This is the accompanying page to the cryptid image. Interactive index for user to browse information in.', 'text2': 'Descriptive index, will contain “secret” hints and clues for the player to work out while they are fighting monster.', 'text3': 'Engage the user and try to make them piece together what they can do to beat the monster.', 'image': imgBook3 },
 		{ 'title': 'MVP Two The Journal', 'text1': 'An interactive journal/entry log. Player will use this to document their personal notes about the cryptid they faced at lower levels.', 'text2': 'Entry-making feature for later reference.', 'text3': 'Player feels immersed, has information to look back on when they face upper-level monster.', 'image': imgBook1 },
 		{ 'title': 'MVP Three: The Inventory', 'text1': 'Inventory map. Based on the hints and clues that the bio page gives them, the user can look at what they have in their inventory that will help them beat the monster.', 'text2': 'Chart of ingredients that the user has to use against cryptid.', 'text3': 'Works like a puzzle for the user to figure out what to utilize.', 'image': imgBook2 },
+	];
+
+	const styleItems = [
+		{ 'title': 'Style Guide', 'text': 'The final design and style choices reflect the overall fantasy "tone" of the project, with textures and icons created in the same spirit.', 'image': imgStyle },
 	];
 
 	const [items, setItems] = React.useState(contentItems)
@@ -169,6 +175,58 @@ function Bestiary() {
 						<p className='p-primary'>{item.text1}</p>
 						<p className='p-primary'>{item.text2}</p>
 						<p className='p-primary'>{item.text3}</p>
+					</div>
+				</div>
+			</div>
+		</div>
+        }
+      });
+    }
+  }
+
+  function Style() {
+    if (window.innerWidth < 1025) {
+      return styleItems.map((item, index) => {
+        return <div className='margins-extra'>	
+			<div className='flexbox'>	
+				<div className='flex1 box'>
+					<div className='margins-small'>	
+						<h4 className='h4-primary '>{item.title}</h4>
+						<p className='p-primary'>{item.text}</p>
+					</div>
+				</div>
+				<div className='flex1 margins-small box'>
+					<img className='mobile' src= {item.image} width="100%"></img>
+				</div>
+			</div>
+		</div>
+      });
+    } else {
+      return styleItems.map((item, index) => {
+        if (index % 2) {
+          return <div className='margins-extra top-small'>	
+			<div className='flexbox mobile'>	
+				<div className='flex1 box'>
+					<div className='margins-small'>	
+						<h4 className='h4-primary '>{item.title}</h4>
+						<p className='p-primary'>{item.text}</p>
+					</div>
+				</div>
+				<div className='flex1 margins-small box'>
+					<img src= {item.image} width="100%"></img>
+				</div>
+			</div>
+		</div>
+	} else {
+		return <div className='margins-extra top-small'>
+			<div className='flexbox mobile'>
+				<div className='flex1 margins-small box'>
+					<img src= {item.image} width="100%"></img>
+				</div>
+				<div className='flex1 box'>
+					<div className='margins-small'>	
+						<h4 className='h4-primary '>{item.title}</h4>
+						<p className='p-primary'>{item.text}</p>
 					</div>
 				</div>
 			</div>
@@ -675,29 +733,41 @@ function Bestiary() {
 						</div>						
 				</div>
 				<div className='flexbox margins-large'>
-								<div>
-										<div className='flexbox'>
-										<div className='flex1 padding-medium'>
-											<h4 className='h4-primary'>Round One</h4>
-											<p className='p-primary'>The “locked” icon should be unlocked, or otherwise swapped out for more icon variation.</p>
-											<p className='p-primary'>The journal interface seems pretty simplistic in terms of design - some “toggling” variation would feel more interactive.</p>
-											<p className='p-primary'>Some variation in the “locked” and “unlocked” journal entries would be helpful, visually.</p>
-										</div>
-										<div className='flex1 padding-medium'>
-											<h4 className='h4-primary'>Round Two</h4>
-											<p className='p-primary'>The first screen needs to have more narrative.</p>
-											<p className='p-primary'>For some who never plays games, the interface would be confusing as is.</p>
-											<p className='p-primary'>Is there a login? Do we need a username? What do we actually “search” for that the bestiary demands of the user? The monster’s name?</p>
-										</div>
-										<div className='flex1 padding-medium'>
-											<h4 className='h4-primary'>Round Three</h4>
-											<p className='p-primary'>There are multiple icons that are being used over and over again - there needs to be some variation.</p>
-											<p className='p-primary'>Once we’re far enough into the task, don’t know how to get back.</p>
-											<p className='p-primary'>There’s an inconsistency between the art style of the icons chosen.</p>
-										</div>
-										</div>
-								</div>
+					<div>
+							<div className='flexbox'>
+							<div className='flex1 padding-medium'>
+								<h4 className='h4-primary'>Round One</h4>
+								<p className='p-primary'>The “locked” icon should be unlocked, or otherwise swapped out for more icon variation.</p>
+								<p className='p-primary'>The journal interface seems pretty simplistic in terms of design - some “toggling” variation would feel more interactive.</p>
+								<p className='p-primary'>Some variation in the “locked” and “unlocked” journal entries would be helpful, visually.</p>
 							</div>
+							<div className='flex1 padding-medium'>
+								<h4 className='h4-primary'>Round Two</h4>
+								<p className='p-primary'>The first screen needs to have more narrative.</p>
+								<p className='p-primary'>For some who never plays games, the interface would be confusing as is.</p>
+								<p className='p-primary'>Is there a login? Do we need a username? What do we actually “search” for that the bestiary demands of the user? The monster’s name?</p>
+							</div>
+							<div className='flex1 padding-medium'>
+								<h4 className='h4-primary'>Round Three</h4>
+								<p className='p-primary'>There are multiple icons that are being used over and over again - there needs to be some variation.</p>
+								<p className='p-primary'>Once we’re far enough into the task, don’t know how to get back.</p>
+								<p className='p-primary'>There’s an inconsistency between the art style of the icons chosen.</p>
+							</div>
+							</div>
+					</div>
+				</div>
+
+			<div className='bottom-border mobile'>
+				<h3 className='h3-primary'>07 Style Guide</h3>
+			</div>
+			<div>
+				<Style />
+			</div>	
+
+			<div className='mobile top-medium bottom-medium'>
+				<img className='book-image-beauty' src={ imgBeauty } width="100%"></img>
+			</div>
+
 
 			<div className='flexbox top-small row'>
 				<div className='flex1 margins-small'>

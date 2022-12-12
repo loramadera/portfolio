@@ -390,12 +390,7 @@ function BookVerse() {
 		</div>
 		<div> <Style /> </div>
 
-
-		<div>
-			<h3 className='h3-alegreya margins-small'>07 Final Design</h3>
-		</div>
-
-		<div>
+		<div className='top-medium mobile'>
 			<img className='book-image-beauty' src={ imgBeauty } width="100%"></img>
 		</div>
 
