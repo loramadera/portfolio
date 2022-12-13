@@ -17,6 +17,8 @@ import imgPersona from './images/UXUI/BookVerse/persona.png';
 import imgColors from './images/UXUI/BookVerse/colors.png';
 import imgBeauty from './images/UXUI/BookVerse/bookbeauty.png';
 
+import projBookVerse from './images/UXUI/BookVerse/BookVerse.pdf';
+
 function debounce(fn, ms) {
   let timer
   return _ => {
@@ -193,6 +195,12 @@ function BookVerse() {
 			<h2 className='h2-alegreya center-align none'>Curing the bookish blues.</h2>
 			<h2 className='h2-alegreya center-align none opacity'>UX/UI</h2>
 		</div>
+
+		<div className='flex1 center-align margins-small  shadow'>
+			<a href= {projBookVerse}>
+				<button className='h2-alegreya case-study padding-ultra-s' href='/bestiary'>View Full Case-Study</button>;
+			</a>		
+		</div>	
 		
 
 
