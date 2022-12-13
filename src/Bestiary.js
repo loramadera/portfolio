@@ -260,11 +260,11 @@ function Bestiary() {
 			<h1 className='h1-primary center-align top-medium'>The Bestiary</h1>
 			<h2 className='h4-primary center-align opacity'>UX/UI</h2>
 			<h2 className='h4-primary center-align opacity'>Mobile Game Design</h2>
-				<div className='flex1 center-align margins-small  shadow'>
-			<a href= {projBestiary}>
-				<button className='p-primary dark-case-study padding-ultra-s'>View Full Case-Study</button>
-			</a>		
-		</div>	
+			<div className='flex1 center-align margins-small  shadow'>
+				<a href= {projBestiary}>
+					<button className='p-primary dark-case-study padding-ultra-s'>View Full Case-Study</button>
+				</a>		
+			</div>	
 
 
 			<div className='bottom-border'>

@@ -17,6 +17,8 @@ import imgLayout from './images/UXUI/Gaia/layout.png';
 import imgLogo from './images/UXUI/Gaia/logo.png';
 import imgFinal from './images/UXUI/Gaia/finallogo.png';
 
+import projGaia from './images/UXUI/Gaia/Gaia.pdf';
+
 function debounce(fn, ms) {
   let timer
   return _ => {
@@ -156,6 +158,11 @@ return (
 	<div>
 		<h1 className='h1-primary center-align top-medium'>Project Gaia</h1>
 		<h4 className='h4-primary center-align opacity top-small'>Visual & Interactive Design</h4>
+		<div className='flex1 center-align margins-small bottom-small shadow'>
+				<a href= {projGaia}>
+					<button className='p-primary dark-case-study padding-ultra-s'>View Full Case-Study</button>
+				</a>		
+			</div>	
 		<p className='p-primary left-align margins-small top-small'>Gaia is an informational & interactivity tool that is inspired by the three pillars of sustainability - economy, environment, and society. It seeks to educate on these pillars in a fun and interactive way.</p>
 	</div>
 	
