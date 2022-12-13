@@ -16,6 +16,8 @@ import imgMagazine from './images/UXUI/MCC/magazine.png';
 import imgFB from './images/UXUI/MCC/fb.png';
 import imgLaptop from './images/UXUI/MCC/laptop.png';
 
+import projMCC from './images/UXUI/MCC/MCC.pdf';
+
 function debounce(fn, ms) {
   let timer
   return _ => {
@@ -125,6 +127,11 @@ function MCC() {
 
 			<h1 className='h1-aleg-b center-align'>Moraga Country Club</h1>
 			<h2 className='h2-aleg-b opacity center-align'>Branding Re-Design</h2>
+			<div className='flex1 center-align margins-small  shadow'>
+			<a href= {projMCC}>
+				<button className='h2-alegreya case-study padding-ultra-s'>View Full Case-Study</button>;
+			</a>		
+		</div>	
 
 			<div className='mobile'>
 				<div className='bottom-border'>
