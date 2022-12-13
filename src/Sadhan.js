@@ -13,6 +13,8 @@ import imgColors from './images/UXUI/Sadhan/colors.png';
 import imgIcons1 from './images/UXUI/Sadhan/icons1.png';
 import imgIcons2 from './images/UXUI/Sadhan/icons2.png';
 
+import projSadhan from './images/UXUI/Sadhan/Sadhan.pdf';
+
 
 function debounce(fn, ms) {
   let timer
@@ -121,6 +123,11 @@ return (
 	<div>
 		<h1 className='h1-primary center-align top-medium'>Sadhan</h1>
 		<h4 className='h4-primary center-align opacity'>Visual Design</h4>
+		<div className='flex1 center-align margins-small bottom-small shadow'>
+				<a href= {projSadhan}>
+					<button className='p-primary dark-case-study padding-ultra-s'>View Full Case-Study</button>
+				</a>		
+			</div>	
 		<p className='p-primary left-align margins-large top-small bottom-small'>Sadhan is defined functionally by its meditation timer and connection with other members of a meditation community - the ability to see retreat schedules and other members.</p>
 	</div>
 	<div className='dark-box top-dark'>
