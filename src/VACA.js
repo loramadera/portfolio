@@ -15,6 +15,8 @@ import imgLogo from './images/UXUI/VACA/logo.png';
 import imgOnboard from './images/UXUI/VACA/onboarding.png';
 import imgStyle from './images/UXUI/VACA/styletile.png';
 
+import projVaca from './images/UXUI/VACA/VACA.pdf';
+
 function debounce(fn, ms) {
   let timer
   return _ => {
@@ -120,6 +122,11 @@ return (
 	<div>
 		<h1 className='h1-primary center-align top-medium'>VACA</h1>
 		<h4 className='h4-primary opacity center-align'>Visual Design</h4>
+		<div className='flex1 center-align margins-small bottom-small shadow'>
+				<a href= {projVaca}>
+					<button className='p-primary dark-case-study padding-ultra-s'>View Full Case-Study</button>
+				</a>		
+			</div>	
 		<p className='p-primary left-align margins-large top-small bottom-small'>VACA allows the tracking and creation of a travel project, start to finish. Budgets, daily schedules, and weather forecasts are some of the features that would be on display for the user.</p>
 	</div>
 	<div className='dark-box top-dark'>
