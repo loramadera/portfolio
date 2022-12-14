@@ -145,11 +145,14 @@ async def index(request):
 async def static_files(request):
     print ('static_files', request)
     # Does not actually work, but prevents error at least..
-    encoding = 'latin-1' if 'favicon' in request.path else None
+    # encoding = 'image/png' if 'favicon' in request.path else None
+    encoding = None
     contentType = mimetypes.guess_type(request.path)[0]
     # contentType = request.content_type
     path = paths_index['files'] + request.path
     if os.path.exists(path):
+        if 'favicon' in request.path:
+            return web.FileResponse(path)
         with open((path), encoding=encoding) as f:
             return web.Response(text=f.read(), content_type=contentType)
     else:
@@ -192,9 +195,9 @@ async def start_async_app():
                 # print ('static files list', paths_index['route'] + file, static_files)
                 app.router.add_get(paths_index['route'] + file, static_files)
                 app.add_routes([web.static(paths_static['route'] + '/' + file, paths_static['files'] + '/' + file)])
-            # else:
-            #     # print ('static FILE', paths_index['route'] + file, static_files)
-            #     app.router.add_get(paths_index['route'] + file, static_files)
+            else:
+                # print ('static FILE', paths_index['route'] + file, static_files)
+                app.router.add_get(paths_index['route'] + file, static_files)
 
         # app.add_routes([web.static('/assets', paths_static['files'] + '/assets')])
         # app.add_routes([web.static('/static/css', paths_static['files'] + '/css')])
