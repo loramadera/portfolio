@@ -54,7 +54,7 @@ function Items() {
         return <div className='sadhan-item mobile'>
 			<div className='flexbox margins-large'>
 				<div className='flex1 box'>
-					<h2 className='h2-primary left-align margins-small'>{item.title}</h2>
+					<h4 className='h4-primary left-align margins-small'>{item.title}</h4>
 					<p className='p-primary margins-small'>{item.text}</p>
 				</div>
 				<div className='flex1 box'>
@@ -68,30 +68,30 @@ function Items() {
     } else {
       return contentItems.map((item, index) => {
         if (index % 2) {
-          return <div className='sadhan-item mobile'>	
-			<div className='flexbox margins-large'>	
+          return <div className='margins-medium sadhan-item mobile'>	
+			<div className='flexbox'>	
+				<div className='flex1 box'>
+					<h4 className='h4-primary left-align'>{item.title}</h4>
+					<p className='p-primary'>{item.text}</p>
+				</div>
 				<div className='flex1 box center-align'>
 					<div className='flexbox'>
 						<div className='flex1'><img className='sadhan-img' src= {item.image} width="100%"></img></div>
 					</div>
-				</div>
-				<div className='flex1 box'>
-					<h2 className='h2-primary left-align margins-small'>{item.title}</h2>
-					<p className='p-primary margins-small'>{item.text}</p>
 				</div>
 			</div>
 		</div>
 	} else {
-		return <div className='sadhan-item'>
-			<div className='flexbox margins-large'>
-				<div className='flex1 box'>
-					<h2 className='h2-primary left-align margins-small'>{item.title}</h2>
-					<p className='p-primary margins-small'>{item.text}</p>
-				</div>
+		return <div className='margins-medium sadhan-item'>
+			<div className='flexbox'>
 				<div className='flex1 box center-align'>
 					<div className='flexbox'>
 						<div className='flex1'><img className='sadhan-img' src= {item.image} width="100%"></img></div>
 					</div>
+				</div>
+				<div className='flex1 box'>
+					<h4 className='h4-primary left-align'>{item.title}</h4>
+					<p className='p-primary '>{item.text}</p>
 				</div>
 			</div>
 		</div>
@@ -131,14 +131,16 @@ return (
 		<p className='p-primary left-align margins-large top-small bottom-small'>Sadhan is defined functionally by its meditation timer and connection with other members of a meditation community - the ability to see retreat schedules and other members.</p>
 	</div>
 	<div className='dark-box top-dark'>
-			<div className='flexbox margins-medium top-medium'>
+			<div className='flexbox margins-medium top-medium bottom-medium'>
 				<div className='flex1 box'>
-						<h4 className='h4-primary margins-small'>Meditation Timer</h4>
-						<p className='p-primary margins-small'>Starts/stops timer, toggles chime and prayer.</p>
-						<h4 className='h4-primary margins-small'>Group Meditation</h4>
-						<p className='p-primary margins-small'>Displays group meditation schedules, charting meditators around the world.</p>
+						<h4 className='h4-primary'>Color & Atmosphere</h4>
+						<p className='p-primary '>The color palette of thix app, featuring bright blues, yellows, and greens, reflects love for nature and a spirituality core.</p>
+						<h4 className='h4-primary'>Meditation Timer</h4>
+						<p className='p-primary'>Starts/stops timer, toggles chime and prayer.</p>
+						<h4 className='h4-primary'>Group Meditation</h4>
+						<p className='p-primary '>Displays group meditation schedules, charting meditators around the world.</p>
 				</div>
-				<div className='flex1 box'>
+				<div className='flex1 box center-align'>
 					<img className='sadhan-img' src= { imgColors } width="100%"></img>
 				</div>
 			</div>
