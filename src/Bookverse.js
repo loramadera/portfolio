@@ -198,7 +198,7 @@ function BookVerse() {
 
 		<div className='flex1 center-align margins-small  shadow'>
 			<a href= {projBookVerse}>
-				<button className='h2-alegreya case-study padding-ultra-s'>View Full Case-Study</button>;
+				<button className='h2-alegreya case-study padding-ultra-s'>View Full Case Study</button>
 			</a>		
 		</div>	
 		

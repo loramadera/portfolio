@@ -262,7 +262,7 @@ function Bestiary() {
 			<h2 className='h4-primary center-align opacity'>Mobile Game Design</h2>
 			<div className='flex1 center-align margins-small  shadow'>
 				<a href= {projBestiary}>
-					<button className='p-primary dark-case-study padding-ultra-s'>View Full Case-Study</button>
+					<button className='p-primary dark-case-study padding-ultra-s'>View Full Case Study</button>
 				</a>		
 			</div>	
 

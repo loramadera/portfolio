@@ -129,7 +129,7 @@ function MCC() {
 			<h2 className='h2-aleg-b opacity center-align'>Branding Re-Design</h2>
 			<div className='flex1 center-align margins-small  shadow'>
 			<a href= {projMCC}>
-				<button className='h2-alegreya case-study padding-ultra-s'>View Full Case-Study</button>;
+				<button className='h2-alegreya case-study padding-ultra-s'>View Full Case Study</button>
 			</a>		
 		</div>	
 
