@@ -21,7 +21,7 @@ function debounce(fn, ms) {
 
 function Code() {
   const contentItems = [
-    { 'title': 'Azure', 'text': 'A fantasy terrarium product site.', 'image': imgAzure, 'link': '/product-demo-home' },
+    { 'title': 'Azure', 'text': 'A fantasy terrarium product site that I designed and coded.', 'image': imgAzure, 'link': '/product-demo-home' },
   ];
 
   const [items, setItems] = React.useState(contentItems)
