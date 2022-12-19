@@ -156,6 +156,17 @@ const [items, setItems] = React.useState(visualItems)
               </div>         
           </div>
 
+
+        <div className='mobile'>
+          <div className='dark-box top-dark padding-large'>
+            <h3 className='h3-primary center-align bottom-small mobile opacity'>Interactive Design</h3>
+            <div className='mobile'>
+              { intItems }
+            </div>
+          </div>
+        </div>
+
+
          <div className='mobile'>
             <div className='dark-box top-dark padding-large'>
               <h3 className='h3-primary center-align bottom-small mobile opacity'>Branding & Visual Design</h3>
@@ -169,15 +180,6 @@ const [items, setItems] = React.useState(visualItems)
                     </div>
                   </a>
                 </div>
-              </div>
-            </div>
-          </div>
-
-           <div className='mobile'>
-            <div className='dark-box top-dark padding-large'>
-              <h3 className='h3-primary center-align bottom-small mobile opacity'>Interactive Design</h3>
-              <div className='mobile'>
-                { intItems }
               </div>
             </div>
           </div>
