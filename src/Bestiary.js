@@ -272,7 +272,7 @@ function Bestiary() {
 			</div>
 			<div className='margins-large'>
 				<h4 className='h4-primary top-small'>The Bestiary - what is it?</h4>
-				<p className='p-primary'>The Bestiary, designed to be a component of a mobile fantasy game in which a player encounters different monsters. Each level’s monsters are more challenging than the last, and it is up to the player to study them (their weaknesses, strengths, etc.).  As they advince, they will build a reference guide of what they have learned - their own personal bestiary.</p>
+				<p className='p-primary'>The Bestiary is designed to be a component of a mobile fantasy game in which a player encounters different monsters. Each level’s monsters are more challenging than the last, and it is up to the player to study them (their weaknesses, strengths, etc.). As they advance, they will build a reference guide - the Bestiary - of what they have learned.</p>
 			</div>
 
 
