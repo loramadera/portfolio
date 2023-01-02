@@ -230,7 +230,7 @@ function BookVerse() {
 		<div className='flexbox margins-medium'>
 			<div className='flex1'>
 				<h4 className='h4-alegreya'>Bodystorming</h4>
-				<p className='p-aktiv'>Gathered information about various platforms and used them with the purpose of discovering a book with several defining characteristics.</p>
+				<p className='p-aktiv'>Gathered information about various platforms that help consumers with discovering a book with several defining characteristics.</p>
 				<h4 className='h4-alegreya'>Consumer Interviews</h4>
 				<p className='p-aktiv'>Conducted interviews with individuals within the research group.</p>
 				<h4 className='h4-alegreya'>Competitive Analysis</h4>
