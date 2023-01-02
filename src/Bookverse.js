@@ -215,7 +215,9 @@ function BookVerse() {
 				<h4 className='h4-alegreya margins-small'>Problem</h4>
 				<p className='p-aktiv margins-small'>In the age of technology, book publishers have moved from print books to e-Books. Various mediums have been developed to facilitate the reader-book matching process. But there are infinitely many good books to read, and readers just aren’t finding them.</p>
 				<h4 className='h4-alegreya margins-small'>Solution</h4>
-				<p className='p-aktiv margins-small'>A unique individual exploration process to maximize book matching to the right reader.</p>
+				<p className='p-aktiv margins-small'>An app that combines various aspects of different social media & forum platforms in addition to book review features. BookVerse draws users away from other platforms while splotlighting books to explore and connecting fandoms.</p>
+				<h4 className='h4-alegreya margins-small'>Implementation</h4>
+				<p className='p-aktiv margins-small'>The UX/UI development of this app featured robust user testing & prototyping, competitive analysis, persona creation, and wireframing. During UX/UI development, I also researched visual design ideas and was ready to implement the final design once the UI was finished.</p>
 			</div>
 		</div>
 
@@ -228,17 +230,17 @@ function BookVerse() {
 		<div className='flexbox margins-medium'>
 			<div className='flex1'>
 				<h4 className='h4-alegreya'>Bodystorming</h4>
-				<p className='p-aktiv'>Gathering information about various platforms and using them with the purpose of discovering a book with several defining characteristics.</p>
+				<p className='p-aktiv'>Gathered information about various platforms and used them with the purpose of discovering a book with several defining characteristics.</p>
 				<h4 className='h4-alegreya'>Consumer Interviews</h4>
-				<p className='p-aktiv'>Will conduct interviews with individuals within the research group.</p>
+				<p className='p-aktiv'>Conducted interviews with individuals within the research group.</p>
 				<h4 className='h4-alegreya'>Competitive Analysis</h4>
-				<p className='p-aktiv'>Analyzing competing products to see how they perform.</p>
+				<p className='p-aktiv'>Analyzed competing products to see how they perform.</p>
 			</div>
 			<div className='flex1'>
 				<h4 className='h4-alegreya margins-small'>Goals</h4>
 				<p className='p-aktiv margins-small'>Get users reading and away from other distracting social media apps.</p>
-				<p className='p-aktiv margins-small'>Develop an interface that enhances the book searching process, rather than frustrates the reader.</p>
-				<p className='p-aktiv margins-small'>Match readers with the kinds of books they like, rather than ones that will push them further into a reading “slump.</p>
+				<p className='p-aktiv margins-small'>Develop an interface that enhances the book searching process with more precise filters.</p>
+				<p className='p-aktiv margins-small'>Spotlight books and their fandoms, and provide a focused location for readers to connect.</p>
 			</div>
 		</div>
 
