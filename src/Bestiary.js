@@ -258,8 +258,8 @@ function Bestiary() {
 			</div>
 
 			<h1 className='h1-primary center-align top-medium'>The Bestiary</h1>
-			<h2 className='h4-primary center-align opacity'>UX/UI</h2>
-			<h2 className='h4-primary center-align opacity'>Mobile Game Design</h2>
+			<h2 className='h4-primary center-align opacity mobile'>UX/UI Mobile Game Design</h2>
+			<p className='p-primary center-align top-small bottom-small margins-extra'>An interactive game database I conceptualized, researched, and designed with the intention of creating a more immersive gaming experience.</p>
 			<div className='flex1 center-align margins-small  shadow'>
 				<a href= {projBestiary}>
 					<button className='p-primary dark-case-study padding-ultra-s'>View Full Case Study</button>
@@ -272,7 +272,7 @@ function Bestiary() {
 			</div>
 			<div className='margins-large'>
 				<h4 className='h4-primary top-small'>The Bestiary - what is it?</h4>
-				<p className='p-primary'>The Bestiary is designed to be a component of a mobile fantasy game in which a player encounters different monsters. Each level’s monsters are more challenging than the last, and it is up to the player to study them (their weaknesses, strengths, etc.). As they advance, they will build a reference guide - the Bestiary - of what they have learned.</p>
+				<p className='p-primary'>The Bestiary is an interactive database designed to be a component of a mobile fantasy game in which a player encounters different monsters. Each level’s monsters are more challenging than the last, and it is up to the player to study them (their weaknesses, strengths, etc.). As they advance, they will build a reference guide - the Bestiary - of what they have learned.</p>
 			</div>
 
 

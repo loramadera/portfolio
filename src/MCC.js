@@ -127,6 +127,7 @@ function MCC() {
 
 			<h1 className='h1-aleg-b center-align'>Moraga Country Club</h1>
 			<h2 className='h2-aleg-b opacity center-align'>Branding Re-Design</h2>
+			<p className='p-primary margins-extra center-align margins-extra bottom-small'>A case study project featuring a complete brand reconstruction of logos, online & social media presence, letterhead, and advertising.</p>
 			<div className='flex1 center-align margins-small  shadow'>
 			<a href= {projMCC}>
 				<button className='h2-alegreya case-study padding-ultra-s'>View Full Case Study</button>

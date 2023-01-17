@@ -157,38 +157,37 @@ return (
 
 	<div>
 		<h1 className='h1-primary center-align top-medium'>Project Gaia</h1>
-		<h4 className='h4-primary center-align opacity top-small'>Visual & Interactive Design</h4>
-		<div className='flex1 center-align margins-small bottom-small shadow'>
-				<a href= {projGaia}>
-					<button className='p-primary dark-case-study padding-ultra-s'>View Full Case-Study</button>
-				</a>		
-			</div>	
-		<p className='p-primary left-align margins-small top-small'>Gaia is an informational & interactivity tool that is inspired by the three pillars of sustainability - economy, environment, and society. It seeks to educate on these pillars in a fun and interactive way.</p>
+		<h4 className='h4-primary center-align opacity'>Visual & Interactive Design</h4>
+		<p className='p-primary center-align margins-extra mobile'>Gaia is an informational & interactivity tool I designed, inspired by the three pillars of sustainability - economy, environment, and society. It seeks to educate on these pillars in a fun and interactive way.</p>
+		<div className='flex1 center-align margins-small top-small shadow'>
+			<a href= {projGaia}>
+				<button className='p-primary dark-case-study padding-ultra-s'>View Full Case-Study</button>
+			</a>		
+		</div>	
 	</div>
 	
-	<div className='dark-box top-dark'>
-			<div className='flexbox margins-medium'>
-				<div className='top-medium'>
-				<div>
-					<h3 className='h3-primary top-medium bottom-small center-align'>Pillars of Sustainability</h3>
-						<div className='flexbox top-small bottom-medium'>
-							<div className='flex1 margins-small'>
-								<h4 className='h4-primary'>Economy</h4>
-								<p className='p-primary'>The economy pillar refers to jobs, incentives to encourage sustainable practices, natural resource accounting, cost and price structures, cost-benefit analysis, and quantified ecosystem analysis.</p>
+	<div className='mobile'>
+		<div className='dark-box top-dark'>
+				<div className='flexbox margins-medium'>
+					<div>
+						<h3 className='h3-primary top-medium bottom-small center-align'>Pillars of Sustainability</h3>
+							<div className='flexbox bottom-medium'>
+								<div className='flex1 margins-small'>
+									<h4 className='h4-primary'>Economy</h4>
+									<p className='p-primary'>The economy pillar refers to jobs, incentives to encourage sustainable practices, natural resource accounting, cost and price structures, cost-benefit analysis, and quantified ecosystem analysis.</p>
+								</div>
+								<div className='flex1 margins-small'>
+									<h4 className='h4-primary'>Environment</h4>
+									<p className='p-primary'>The environmental pillar comprises ecosystem services, green engineering & chemistry development, air/water quality, ecosystem stressors and resource integrity.</p>
+								</div>
+								<div className='flex1 margins-small'>
+									<h4 className='h4-primary'>Society</h4>
+									<p className='p-primary'>Environmental justice, human health and participation, education, resource security and sustainable developments fall within the societal pillar.</p>
+								</div>
 							</div>
-							<div className='flex1 margins-small'>
-								<h4 className='h4-primary'>Environment</h4>
-								<p className='p-primary'>The environmental pillar comprises ecosystem services, green engineering & chemistry development, air/water quality, ecosystem stressors and resource integrity.</p>
-							</div>
-							<div className='flex1 margins-small'>
-								<h4 className='h4-primary'>Society</h4>
-								<p className='p-primary'>Environmental justice, human health and participation, education, resource security and sustainable developments fall within the societal pillar.</p>
-							</div>
-						</div>
 					</div>
-				</div>		
-		</div>	
-
+			</div>	
+		</div>
 		<div className='top-medium'>
 			<Items />
 		</div>

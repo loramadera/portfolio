@@ -122,48 +122,49 @@ return (
 	<div>
 		<h1 className='h1-primary center-align top-medium'>VACA</h1>
 		<h4 className='h4-primary opacity center-align'>Visual Design</h4>
-		<div className='flex1 center-align margins-small bottom-small shadow'>
-				<a href= {projVaca}>
-					<button className='p-primary dark-case-study padding-ultra-s'>View Full Case-Study</button>
-				</a>		
-			</div>	
-		<p className='p-primary left-align margins-large top-small bottom-small'>VACA allows the tracking and creation of a travel project, start to finish. Budgets, daily schedules, and weather forecasts are some of the features that would be on display for the user.</p>
+		<p className='p-primary center-align margins-extra'>A travel-tracking and creation app I conceptualized and designed featuring budgets, daily schedules, and weather forecasts.</p>
+		<div className='flex1 center-align top-small bottom-small shadow'>
+			<a href= {projVaca}>
+				<button className='p-primary dark-case-study padding-ultra-s'>View Full Case-Study</button>
+			</a>		
+		</div>
 	</div>
-	<div className='dark-box top-dark'>
-			<div className='flexbox margins-small top-medium'>
-				<div className='flex1 box'>
-						<h2 className='h2-primary margins-small'>Tracking</h2>
-						<p className='p-primary margins-small'>Seasonal weather trends, regional site-seeing index, flight and hotel booking calendar</p>
-						<h2 className='h2-primary margins-small'>Target Audience</h2>
-						<p className='p-primary margins-small'>age 25-45
-						married with children
-						working class</p>
-						<h2 className='h2-primary margins-small'>Word List</h2>
-						<p className='p-primary margins-small'>travel, booking, flights, country, aprimary, nature, planning, trip, vacation, overseas, hotel, boarding, itinerary, schedule, check list</p>
+	<div className='mobile'>
+		<div className='dark-box top-dark'>
+				<div className='flexbox margins-small top-medium'>
+					<div className='flex1 box'>
+							<h2 className='h2-primary margins-small'>Tracking</h2>
+							<p className='p-primary margins-small'>Seasonal weather trends, regional site-seeing index, flight and hotel booking calendar</p>
+							<h2 className='h2-primary margins-small'>Target Audience</h2>
+							<p className='p-primary margins-small'>age 25-45
+							married with children
+							working class</p>
+							<h2 className='h2-primary margins-small'>Word List</h2>
+							<p className='p-primary margins-small'>travel, booking, flights, country, aprimary, nature, planning, trip, vacation, overseas, hotel, boarding, itinerary, schedule, check list</p>
+					</div>
+					<div className='flex1 box'>
+						<img src= { imgColor } width="100%"></img>
+					</div>
 				</div>
-				<div className='flex1 box'>
-					<img src= { imgColor } width="100%"></img>
+
+				<div className='vaca-content'>
+					<Items />
 				</div>
-			</div>
 
-			<div className='vaca-content'>
-				<Items />
-			</div>
+				<div className='vaca-onboard top-medium'>
+					<img className='vaca-onboard center-align' src= {imgOnboard} width="100%"></img>
+				</div>
 
-			<div className='vaca-onboard top-medium'>
-				<img className='vaca-onboard center-align' src= {imgOnboard} width="100%"></img>
-			</div>
+				<div className='vaca-desk center-align top-medium'>
+					<img className='vaca-desktop' src= {imgDesktop} width="100%"></img>
+				</div>
 
-			<div className='vaca-desk center-align top-medium'>
-				<img className='vaca-desktop' src= {imgDesktop} width="100%"></img>
-			</div>
-
-			<div className='vaca-beauty'>
-				<img src= {imgBeau} width="100%"></img>
-			</div>
-		</div>	
-</div>
-
+				<div className='vaca-beauty'>
+					<img src= {imgBeau} width="100%"></img>
+				</div>
+			</div>	
+		</div>
+	</div>	
 <div className='flexbox top-small row'>
 		<div className='flex1 margins-small'>
 			<a className='a-none' href='/gaia'>

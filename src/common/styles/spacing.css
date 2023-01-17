@@ -158,6 +158,11 @@
       margin-right: 30px;
     }
 
+   .mobile-margins-3 {
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+
     .mobile-text {
       text-align: center;
     }

@@ -123,37 +123,39 @@ return (
 	<div>
 		<h1 className='h1-primary center-align top-medium'>Sadhan</h1>
 		<h4 className='h4-primary center-align opacity'>Visual Design</h4>
+		<p className='p-primary center-align margins-extra bottom-small'>A meditation app I designed and partially coded, defined functionally by its meditation timer and connection with other members of a meditation community - the ability to see retreat schedules and other members.</p>
 		<div className='flex1 center-align margins-small bottom-small shadow'>
-				<a href= {projSadhan}>
-					<button className='p-primary dark-case-study padding-ultra-s'>View Full Case-Study</button>
-				</a>		
-			</div>	
-		<p className='p-primary left-align margins-large top-small bottom-small'>Sadhan is defined functionally by its meditation timer and connection with other members of a meditation community - the ability to see retreat schedules and other members.</p>
+			<a href= {projSadhan}>
+				<button className='p-primary dark-case-study padding-ultra-s'>View Full Case-Study</button>
+			</a>		
+		</div>
 	</div>
-	<div className='dark-box top-dark'>
-			<div className='flexbox margins-medium top-medium bottom-medium'>
-				<div className='flex1 box'>
-						<h4 className='h4-primary'>Color & Atmosphere</h4>
-						<p className='p-primary '>The color palette of thix app, featuring bright blues, yellows, and greens, reflects love for nature and a spirituality core.</p>
-						<h4 className='h4-primary'>Meditation Timer</h4>
-						<p className='p-primary'>Starts/stops timer, toggles chime and prayer.</p>
-						<h4 className='h4-primary'>Group Meditation</h4>
-						<p className='p-primary '>Displays group meditation schedules, charting meditators around the world.</p>
+	<div className='mobile'>
+		<div className='dark-box top-dark'>
+				<div className='flexbox margins-medium top-medium bottom-medium'>
+					<div className='flex1 box'>
+							<h4 className='h4-primary mobile-margins-3'>Color & Atmosphere</h4>
+							<p className='p-primary  mobile-margins-3'>The color palette of thix app, featuring bright blues, yellows, and greens, reflects love for nature and a spirituality core.</p>
+							<h4 className='h4-primary mobile-margins-3'>Meditation Timer</h4>
+							<p className='p-primary mobile-margins-3'>Starts/stops timer, toggles chime and prayer.</p>
+							<h4 className='h4-primary mobile-margins-3'>Group Meditation</h4>
+							<p className='p-primary  mobile-margins-3'>Displays group meditation schedules, charting meditators around the world.</p>
+					</div>
+					<div className='flex1 box center-align'>
+						<img className='sadhan-img' src= { imgColors } width="100%"></img>
+					</div>
 				</div>
-				<div className='flex1 box center-align'>
-					<img className='sadhan-img' src= { imgColors } width="100%"></img>
+
+				<div className='sadhan-content'>
+					<Items />
 				</div>
-			</div>
 
-			<div className='sadhan-content'>
-				<Items />
-			</div>
-
-			<div className='sadhan-beauty mobile'>
-				<img src= {imgBeauty} width="100%"></img>
-			</div>
-		</div>	
-</div>
+				<div className='sadhan-beauty mobile'>
+					<img src= {imgBeauty} width="100%"></img>
+				</div>
+			</div>	
+		</div>
+	</div>	
 
 <div className='flexbox top-small row'>
 		<div className='flex1 margins-small'>
