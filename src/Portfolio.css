@@ -8,7 +8,7 @@
 }
 
 .img-profile {
-  width: 300px;
+  width: 800px;
   justify-content: flex-end;
   z-index: 2;
 }
@@ -32,9 +32,14 @@
 
 .portfolio-bubble {
   position: absolute;
-  right: 0;
+  right: 200;
   top: 270px;
 }
+
+.img-pic {
+  width: 1000px;
+}
+
 /*.portfolio-globe {
   position: absolute;
 }*/
