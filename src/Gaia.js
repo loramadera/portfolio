@@ -161,7 +161,7 @@ return (
 		<p className='p-primary center-align margins-extra mobile'>Gaia is an informational & interactivity tool I designed, inspired by the three pillars of sustainability - economy, environment, and society. It seeks to educate on these pillars in a fun and interactive way.</p>
 		<div className='flex1 center-align margins-small top-small shadow'>
 			<a href= {projGaia}>
-				<button className='p-primary dark-case-study padding-ultra-s'>View Full Case-Study</button>
+				<button className='p-primary dark-case-study padding-ultra-s'>View Project</button>
 			</a>		
 		</div>	
 	</div>

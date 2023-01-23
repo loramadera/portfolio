@@ -22,9 +22,9 @@ function debounce(fn, ms) {
 
 function Bio() {
   const contentItems = [
-    { 'title': 'My Bio', 'text': 'After graduating with a degree in economics from UC San Diego, I stumbled into design while pursuing a career in law, and it was the perfect intersection of my core passions and inclinations - art and storytelling. I got my start in UX/UI design and web development (React and Flutter) and am passionate about building 3D worlds, metaverse, and immersive experiences. ', 'image': imgMe },
+    { 'title': 'About Me', 'text': 'After graduating with a degree in economics from UC San Diego, I stumbled into design while pursuing another career and haven’t looked back, having discovered that design is the perfect intersection of my core passions and fascinations. I love working with people and thrive in collaborative, forward-thinking environments that lean into feedback, innovation, and growth.', 'image': imgMe },
     { 'title': 'My Hobbies', 'text': 'I love skiing and pride myself on my ability to teach anyone to ski in a day (bunnies to blues). Disc golf, tennis, fitness training and hiking are also some favorite pastimes. Fun fact: I also love writing and am a published author!', 'image': imgSki },
-    { 'title': 'Lets Call Them Quirks', 'text': 'I’m a voracious consumer of fantasy - if I find a book series I love, it’ll be hard to tear away and crawl out of my cave for sunlight. I’m a Tolkien loremaster and Harry Potter acolyte, and my annual Hogwarts parties are very serious business (people fly in for them).  ', 'image': imgFantasy },
+    { 'title': 'Lets Call Them Quirks', 'text': 'I am a voracious consumer of fantasy. If I find a book series I love, it’ll be hard to tear away and crawl out of my cave for sunlight. I’m a Tolkien loremaster and Harry Potter acolyte, and my annual Hogwarts parties are very serious business (people fly in for them).', 'image': imgFantasy },
  ];
 
 
@@ -102,14 +102,18 @@ function Bio() {
       <h1 className="h1-primary center-align top-large bottom-medium">About Me</h1>
 
       <div className='dark-box margins-small-2 top-large'>
-            <div>
-              <Items />
-            </div>
-          </div>
-  <div className='top-medium mobile'>
-     <Footer />
-  </div>
-
+        <div>
+          <Items />
+        </div>
+        <div className='bottom-medium'>
+          <h3 className='h3-primary center-align'>Contact</h3>
+          <p className='p-primary center-align'>Lora Galoyan</p>
+          <p className='p-primary center-align'>Email: lkgaloyan@gmail.com</p>
+        </div>
+      </div>
+    <div className='top-medium mobile'>
+       <Footer />
+    </div>
     </div>
   );
 
