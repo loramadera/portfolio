@@ -1,5 +1,5 @@
 .h1-primary {
-  color: white;
+  color: #1e2229;
   font-family: montserrat, sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -8,7 +8,7 @@
 
 
 .h2-primary {
-   color: white;
+   color: #1e2229;
   font-family: montserrat, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -17,7 +17,7 @@
 }
 
 .h3-primary {
-  color: white;
+  color: #1e2229;
   font-family: montserrat, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -25,7 +25,7 @@
 }
 
 .h4-primary {
-  color: white;
+  color: #1e2229;
   font-family: montserrat, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -34,11 +34,11 @@
 
 
 .p-primary {
-  color: white;
+  color: #1e2229;
   font-family: montserrat, sans-serif;
-  font-weight: 100;
+  font-weight: 350;
   font-style: normal;
-  font-size: 18px;
+  font-size: 19px;
 }
 
 .opacity {
@@ -59,7 +59,7 @@
 }
 
 .darker-box {
-  background-color: #171a1e;
+  background-color: #dfdfdf;
 }
 
 .bottom-dark {
@@ -84,7 +84,7 @@ a.a-none {
   }
 
  .h1-primary {
-    color: white;
+    color: #1e2229;
     font-family: montserrat, sans-serif;
     font-weight: 700;
     font-size: 30px;
@@ -93,16 +93,15 @@ a.a-none {
 
 
   .h2-primary {
-    color: white;
+    color: #1e2229;
     font-family: montserrat, sans-serif;
-    font-weight: 700;
     font-style: normal;
     font-size: 18px;
-    font-weight: normal;
+    font-weight: bold;
   }
 
   .h3-primary {
-    color: white;
+    color: #1e2229;
     font-family: montserrat, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -110,18 +109,18 @@ a.a-none {
   }
 
   .h4-primary {
-    color: white;
+    color: #1e2229;
     font-family: montserrat, sans-serif;
     font-weight: 700;
     font-style: normal;
-    font-size: 18px;
+    font-size: 25px;
   }
 
 
   .p-primary {
-    color: white;
+    color: #1e2229;
     font-family: montserrat, sans-serif;
-    font-weight: 100;
+    font-weight: 350;
     font-style: normal;
     font-size: 15px;
   }

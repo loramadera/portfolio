@@ -67,9 +67,10 @@
 }
 
 .margins-extra {
-  margin-left: 250px;
-  margin-right: 250px;
+  margin-left: 350px;
+  margin-right: 350px;
 }
+
 
 .right {
   margin-right: 20px;
@@ -91,6 +92,10 @@
 
 .padding-large {
   padding: 100px;
+}
+
+.cardbox {
+  width: 700px;
 }
 
 

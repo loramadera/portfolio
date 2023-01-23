@@ -259,7 +259,7 @@ function Bestiary() {
 
 			<h1 className='h1-primary center-align top-medium'>The Bestiary</h1>
 			<h2 className='h4-primary center-align opacity mobile'>UX/UI Mobile Game Design</h2>
-			<p className='p-primary center-align top-small bottom-small margins-extra'>An interactive game database I conceptualized, researched, and designed with the intention of creating a more immersive gaming experience.</p>
+			<p className='p-primary center-align top-small bottom-small margins-extra'>An interactive game design I conceptualized, researched, and designed with the intention of creating a more immersive gaming experience.</p>
 			<div className='flex1 center-align margins-small  shadow'>
 				<a href= {projBestiary}>
 					<button className='p-primary dark-case-study padding-ultra-s'>View Full Case Study</button>

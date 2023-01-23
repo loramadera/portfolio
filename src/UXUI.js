@@ -7,8 +7,8 @@ import './common/styles/spacing.css';
 import './common/styles/sitetypography.css';
 
 
-import imgBookVerse from './images/UXUI/BookVerse/bookversehero4.png';
-import imgBestiary from './images/UXUI/Bestiary/bestiaryhero.png';
+import imgBookVerse from './images/UXUI/uxui_bookverse.png';
+import imgBestiary from './images/UXUI/uxui_bestiary.png';
 import imgVACA from './images/UXUI/pp_vaca3.png';
 import imgSadhan from './images/UXUI/uxui_sadhan.png';
 import imgMCC from './images/UXUI/uxui_mcc.png';
@@ -33,6 +33,11 @@ function UXUI() {
     { 'title': 'Sadhan', 'text': 'Meditation app visual design.', 'image': imgSadhan, 'link': '/sadhan' },
      ];
 
+  const uxuiItems = [
+    { 'title': 'BookVerse', 'text': 'A book cataloguing database.', 'image': imgBookVerse, 'link': '/bookverse' },
+    { 'title': 'Bestiary', 'text': 'An interactive game design.', 'image': imgBestiary, 'link': '/bestiary' },
+     ];
+
   const brandItems = [
     { 'title': 'Moraga Country Club', 'text': 'Full branding redesign.', 'image': imgMCC, 'link': '/mcc'},
   ];
@@ -55,11 +60,11 @@ const [items, setItems] = React.useState(visualItems)
     }
   })
 
-  function Items() {
+  function UXUI() {
     if (window.innerWidth < 1025) {
-      return visualItems.map((item, index) => {
+      return uxuiItems.map((item, index) => {
         return <div key={index} className='margins-small bottom-medium'>
-        <a className='a-none flexbox darker-box shadow' href={item.link}>
+        <a className='a-none flexbox darker-box' href={item.link}>
           <div className='img flex1'><img className='portfolio-img' src={item.image} width="100%" /></div>
           <div className='flex1 box'>
             <h3 className='h3-primary center-align'>{item.title}</h3>
@@ -69,10 +74,10 @@ const [items, setItems] = React.useState(visualItems)
       </div>;
       });
     } else {
-      return visualItems.map((item, index) => {
+      return uxuiItems.map((item, index) => {
         if (index % 2) {
-          return <div key={index} className='margins-small bottom-medium'>
-        <a className='a-none flexbox darker-box shadow' href={item.link}>
+          return <div key={index} className='bottom-medium'>
+        <a className='a-none flexbox darker-box' href={item.link}>
           <div className='flex1 box'>
             <h3 className='h3-primary center-align'>{item.title}</h3>
             <p className='p-primary center-align'>{item.text}</p>
@@ -81,8 +86,8 @@ const [items, setItems] = React.useState(visualItems)
         </a>
       </div>;
     } else {
-      return <div key={index} className='margins-small bottom-medium'>
-        <a className='a-none flexbox darker-box shadow' href={item.link}>
+      return <div key={index} className='bottom-medium'>
+        <a className='a-none flexbox darker-box' href={item.link}>
           <div className='img flex1'><img className='portfolio-img' src={item.image} width="100%" /></div>
           <div className='flex1 box'>
             <h3 className='h3-primary center-align'>{item.title}</h3>
@@ -96,11 +101,52 @@ const [items, setItems] = React.useState(visualItems)
   }
 
 
+  function Items() {
+    if (window.innerWidth < 1025) {
+      return visualItems.map((item, index) => {
+        return <div key={index} className='margins-small bottom-medium'>
+        <a className='a-none flexbox darker-box' href={item.link}>
+          <div className='img flex1'><img className='portfolio-img' src={item.image} width="100%" /></div>
+          <div className='flex1 box'>
+            <h3 className='h3-primary center-align'>{item.title}</h3>
+            <p className='p-primary center-align'>{item.text}</p>
+          </div>
+        </a>
+      </div>;
+      });
+    } else {
+      return visualItems.map((item, index) => {
+        if (index % 2) {
+          return <div key={index} className='bottom-medium'>
+        <a className='a-none flexbox darker-box' href={item.link}>
+          <div className='img flex1'><img className='portfolio-img' src={item.image} width="100%" /></div>
+          <div className='flex1 box'>
+            <h3 className='h3-primary center-align'>{item.title}</h3>
+            <p className='p-primary center-align'>{item.text}</p>
+          </div>
+        </a>
+      </div>;
+    } else {
+      return <div key={index} className='bottom-medium'>
+        <a className='a-none flexbox darker-box' href={item.link}>
+          <div className='flex1 box'>
+            <h3 className='h3-primary center-align'>{item.title}</h3>
+            <p className='p-primary center-align'>{item.text}</p>
+          </div>
+          <div className='img flex1'><img className='portfolio-img' src={item.image} width="100%" /></div>
+        </a>
+      </div>;
+        }
+      });
+    }
+  }
+
+
   const intItems = interactItems.map((item, index) => {
     // 1st, 3rd, ...
     if (index % 2) {
-      return <div key={index} className='margins-small bottom-medium'>
-        <a className='a-none flexbox darker-box shadow' href={item.link}>
+      return <div key={index} className='bottom-medium'>
+        <a className='a-none flexbox darker-box' href={item.link}>
           <div className='flex1 box'>
             <h3 className='h3-primary center-align'>{item.title}</h3>
             <p className='p-primary center-align'>{item.text}</p>
@@ -109,8 +155,8 @@ const [items, setItems] = React.useState(visualItems)
         </a>
       </div>;
     } else {
-      return <div key={index} className="margins-small bottom-medium">
-        <a className='a-none flexbox darker-box shadow' href={item.link}>
+      return <div key={index} className="bottom-medium">
+        <a className='a-none flexbox darker-box' href={item.link}>
           <div className='img flex1'><img className='portfolio-img' src={item.image} width="100%" /></div>
           <div className='flex1 box'>
             <h3 className='h3-primary center-align'>{item.title}</h3>
@@ -128,37 +174,21 @@ const [items, setItems] = React.useState(visualItems)
     <div className='mobile'>
       <Navigation />   
       <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
-          <h1 className='h1-primary center-align top-large'>UX/UI & Design</h1>
-          <div className='dark-box top-dark'>
-                <div className='padding-large mobile'> 
-                <div><h3 className='h3-primary center-align bottom-small opacity mobile'>UX/UI</h3></div> 
-                  <div>
-                    <a className='a-none' href='/bookverse'> 
-                      <div>
-                        <h3 className='h3-primary center-align mobile'>BookVerse</h3>
-                        <p className='p-primary center-align bottom-small'>Interactive book “universe” discovery app.</p>
-                      </div>   
-                      <div className="flex1 darker-box padding-large shadow">
-                          <img className='portfolio-img' src={imgBookVerse} width="100%"></img>
-                      </div>
-                    </a>
-                   
-                    <a className='a-none' href='/bestiary'> 
-                        <div>  
-                          <h3 className='h3-primary center-align top-medium'>The Bestiary</h3>
-                          <p className='p-primary center-align bottom-small'>Game interface design.</p>
-                        </div>
-                      <div className="flex1 darker-box padding-large shadow">
-                          <img className='portfolio-img' src={imgBestiary} width="100%"></img>
-                      </div>
-                    </a>
-                </div>
-              </div>         
+        <h1 className='h1-primary center-align top-large'>UX/UI & Design</h1>
+
+        <div className='mobile'>
+          <div className='margins-extra mobile'>
+            <h3 className='h3-primary center-align bottom-small mobile opacity'>UX/UI Design</h3>
+            <div className='mobile'>
+              <UXUI />
+            </div>
           </div>
+        </div>
+            
 
 
         <div className='mobile'>
-          <div className='dark-box top-dark padding-large'>
+          <div className='margins-extra'>
             <h3 className='h3-primary center-align bottom-small mobile opacity'>Interactive Design</h3>
             <div className='mobile'>
               { intItems }
@@ -166,34 +196,33 @@ const [items, setItems] = React.useState(visualItems)
           </div>
         </div>
 
-
-         <div className='mobile'>
-            <div className='dark-box top-dark padding-large'>
-              <h3 className='h3-primary center-align bottom-small mobile opacity'>Branding & Visual Design</h3>
-              <div className='mobile'>
-                <div className='margins-small bottom-medium'>
-                  <a className='a-none flexbox darker-box shadow' href='/mcc'>
-                   <div className='img flex1'><img className='portfolio-img' src={imgMCC} width="100%" /></div>
-                    <div className='flex1 box'>
-                      <h3 className='h3-primary center-align'>Moraga Country Club</h3>
-                      <p className='p-primary center-align'>Re-branding project of East Bay country club.</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
           
 
-          <div className='mobile'>
-            <div className='dark-box top-dark padding-large mobile'>
-              <h3 className='h3-primary center-align bottom-small mobile opacity'>App & Visual Design</h3>
-              <div className='mobile'>
-                <Items />
+        <div className='mobile'>
+          <div className='margins-extra mobile'>
+            <h3 className='h3-primary center-align bottom-small mobile opacity'>App & Visual Design</h3>
+            <div className='mobile'>
+              <Items />
+            </div>
+          </div>
+        </div>
+
+        <div className='mobile'>
+          <div className='margins-extra'>
+            <h3 className='h3-primary center-align bottom-small mobile opacity'>Branding & Visual Design</h3>
+            <div className='mobile'>
+              <div className='bottom-medium'>
+                <a className='a-none flexbox darker-box' href='/mcc'>
+                  <div className='flex1 box'>
+                    <h3 className='h3-primary center-align'>Moraga Country Club</h3>
+                    <p className='p-primary center-align'>Re-branding project of East Bay country club.</p>
+                  </div>
+                  <div className='img flex1'><img className='portfolio-img' src={imgMCC} width="100%" /></div>
+                </a>
               </div>
             </div>
           </div>
+        </div>
 
     <div className='mobile'><Footer /></div>
     

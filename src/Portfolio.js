@@ -7,15 +7,13 @@ import './common/styles/spacing.css';
 import './common/styles/sitetypography.css';
 
 
-import imgBubble from './images/bubble.png';
-import imgGlobe from './images/globe.png';
-import imgMobile from './images/mobilepic.png';
+import imgMobile from './images/blackmobilepic.png';
 import imgVaca from './images/Portfolio/pp_vaca.png';
 import imgCode from './images/Portfolio/pp_code.png';
 import imgModel from './images/Portfolio/pp_modeling2.png';
 import imgESO from './images/Portfolio/pp_eso2.png';
 import imgArrows from './images/Portfolio/arrows.png';
-import imgPic from './images/pic.png';
+import imgPic from './images/blackpic.png';
 
 
 function debounce(fn, ms) {
@@ -78,7 +76,7 @@ function Portfolio() {
     if (window.innerWidth < 1025) {
       return contentItems.map((item, index) => {
         return (
-          <div key={index} className='shadow margins-small bottom-medium'>
+          <div key={index} className='margins-small bottom-medium'>
             <div className='flexbox darker-box'>
               <a href={item.link} className='a-none flex1 box'>
                 <img className="portfolio-img" src= {item.image} width="100%"></img>
@@ -96,10 +94,10 @@ function Portfolio() {
     } else {
       return contentItems.map((item, index) => {
         if (index % 2) {
-          return <div key={index} className='margins-small bottom-medium shadow'>
+          return <div key={index} className='bottom-medium'>
             <div className='flexbox darker-box'>
                 <a href={item.link} className='a-none flex1 box'>
-                  <div className='margins-small'>  
+                  <div>  
                     <h3 className='h3-primary center-align'>{item.title}</h3>
                     <p className='p-primary center-align'>{item.text}</p>
                   </div>
@@ -110,13 +108,13 @@ function Portfolio() {
             </div>
           </div>
         } else { 
-          return <div key={index} className='margins-small bottom-medium shadow'>
+          return <div key={index} className='bottom-medium'>
             <div className='flexbox darker-box'>
                 <a href={item.link} className='a-none flex1 box'>
                   <img className="portfolio-img" src= {item.image} width="100%"></img>
                 </a>
                 <a href={item.link} className='a-none flex1 box'>
-                  <div className='margins-small'>  
+                  <div>  
                     <h3 className='h3-primary center-align'>{item.title}</h3>
                     <p className='p-primary center-align'>{item.text}</p>
                   </div>
@@ -140,8 +138,8 @@ function Portfolio() {
         <img className='img-arrows top-small bottom-small mobile' src= { imgArrows } ></img>
       </div>  
       
-      <div className='dark-box top-dark mobile'>
-        <h1 className='h1-primary top-medium bottom-medium box center-align'>What I Do</h1>
+      <div className='mobile margins-extra'>
+        <h2 className='h2-primary top-medium bottom-medium box center-align'>What I Do</h2>
         <Items />
       </div>  
 

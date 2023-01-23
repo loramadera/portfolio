@@ -5,9 +5,9 @@ import './common/styles/typography.css';
 import './common/styles/spacing.css';
 
 import './Navigation.css';
-import imgLogo from './images/logo.png';
-import imgAbout from './images/about.png';
-import imgPortfolio from './images/portfolio.png';
+import imgLogo from './images/blacklogo.png';
+import imgAbout from './images/blackabout.png';
+import imgPortfolio from './images/blackportfolio.png';
 
 function debounce(fn, ms) {
   let timer
@@ -68,8 +68,8 @@ function Navigation() {
         </div>
         <div className="flex1">&nbsp;</div>
         <div className='navigation-menu'>   
-          <a href="/" className='p-primary nav-link'>Portfolio</a>
-          <a href="/about" className='p-primary nav-link'>About</a>
+          <a href="/" className='h4-primary nav-link'>Portfolio</a>
+          <a href="/about" className='h4-primary nav-link'>About</a>
         </div>
       </div>
     )
