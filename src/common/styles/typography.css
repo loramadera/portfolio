@@ -1,5 +1,5 @@
 .portfolio-broad {
-  color: white;
+  color: #1e2229;
   font-family: broadacre;
   font-size: 60px;
   font-weight: normal;
@@ -7,7 +7,7 @@
 
 
 .h1-alegreya {
-  color: white;
+  color: #1e2229;
   font-family: alegreya SC;
   font-size: 50px;
   font-weight: normal;
@@ -21,7 +21,7 @@
 }
 
 .h3-alegreya {
-  color: white;
+  color: #1e2229;
   font-family: alegreya SC;
   font-size: 30px;
   font-weight: lighter;
@@ -44,7 +44,7 @@
 }
 
 .h2-aleg-b {
-  color: white;
+  color: #1e2229;
   font-family: alegreya SC;
   font-size: 25px;
   font-weight: lighter;
@@ -65,7 +65,7 @@
 
 
 .h3-aktiv {
-  color: white;
+  color: #1e2229;
   font-family: aktiv grotesk ex;
   font-size: 30px;
   font-weight: normal;
@@ -73,7 +73,7 @@
 }
 
 .p-aktiv {
-  color: white;
+  color: #1e2229;
   font-family: aktiv grotesk ex;
   font-size: 30px;
   font-weight: lighter;
@@ -82,7 +82,7 @@
 
 
 .h1-primary {
-  color: white;
+  color: #1e2229;
   font-family: montserrat, sans-serif;
   font-weight: 700;
   font-size: 40px;
@@ -91,7 +91,7 @@
 
 
 .h2-primary {
-   color: white;
+   color: #1e2229;
   font-family: montserrat, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -100,7 +100,7 @@
 }
 
 .h3-primary {
-  color: white;
+  color: #1e2229;
   font-family: montserrat, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -108,7 +108,7 @@
 }
 
 .h4-primary {
-  color: white;
+  color: #1e2229;
   font-family: montserrat, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -117,7 +117,7 @@
 
 
 .p-primary {
-  color: white;
+  color: #1e2229;
   font-family: montserrat, sans-serif;
   font-weight: 100;
   font-style: normal;
@@ -136,7 +136,7 @@
 
 .bottom-border {
   border-bottom-style: solid;
-  border-bottom-color: white;
+  border-bottom-color: #1e2229;
   border-bottom-width: 2px;
   margin: 100px;
 }
@@ -144,7 +144,7 @@
 
 .top-border {
   border-top-style: solid;
-  border-top-color: white;
+  border-top-color: #1e2229;
   border-top-width: 2px;
   margin: 100px;
 }
@@ -179,7 +179,7 @@
 
 
       .h1-primary {
-        color: white;
+        color: #1e2229;
         font-family: montserrat, sans-serif;
         font-weight: 700;
         font-size: 30px;
@@ -188,7 +188,7 @@
 
 
       .h2-primary {
-        color: white;
+        color: #1e2229;
         font-family: montserrat, sans-serif;
         font-weight: 700;
         font-style: normal;
@@ -197,7 +197,7 @@
       }
 
       .h3-primary {
-        color: white;
+        color: #1e2229;
         font-family: montserrat, sans-serif;
         font-weight: 700;
         font-style: normal;
@@ -205,7 +205,7 @@
       }
 
       .h4-primary {
-        color: white;
+        color: #1e2229;
         font-family: montserrat, sans-serif;
         font-weight: 700;
         font-style: normal;
@@ -214,7 +214,7 @@
 
 
       .p-primary {
-        color: white;
+        color: #1e2229;
         font-family: montserrat, sans-serif;
         font-weight: 100;
         font-style: normal;
@@ -227,7 +227,7 @@
 
 
       .h1-alegreya {
-        color: white;
+        color: #1e2229;
         font-family: alegreya SC;
         font-size: 40px;
         font-weight: normal;
@@ -241,7 +241,7 @@
       }
 
       .h3-alegreya {
-        color: white;
+        color: #1e2229;
         font-family: alegreya SC;
         font-size: 25px;
         font-weight: lighter;
@@ -264,7 +264,7 @@
       }
 
       .h2-aleg-b {
-        color: white;
+        color: #1e2229;
         font-family: alegreya SC;
         font-size: 20px;
         font-weight: lighter;
@@ -285,14 +285,14 @@
 
 
       .h3-aktiv {
-        color: white;
+        color: #1e2229;
         font-family: aktiv grotesk ex;
         font-size: 15px;
         font-weight: normal;
       }
 
       .p-aktiv {
-        color: white;
+        color: #1e2229;
         font-family: aktiv grotesk ex;
         font-size: 15px;
         font-weight: lighter;

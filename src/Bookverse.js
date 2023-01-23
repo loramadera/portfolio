@@ -177,7 +177,7 @@ function BookVerse() {
 	<div className='mobile'>
 	<Navigation />
 	<link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
-	<div className='book'>	
+	<div className='book  margins-large'>	
 		<div className="book-hero">
 			<img src={ imgBookVerse} width="100%"></img>
 		</div>
@@ -192,11 +192,11 @@ function BookVerse() {
 		
 		<div>
 			<h1 className='h1-alegreya center-align '>BookVerse</h1>
-			<h2 className='h2-alegreya center-align none opacity'>UX/UI</h2>
-			<h2 className='p-aktiv center-align margins-extra top-small bottom-small none'>A book cataloguing database I conceptualized, researched, and designed, uniquely crossed with social media to match readers with their ideal book and connect them with other readers in that book's fandom.</h2>
+			<h2 className='h2-alegreya center-align none'>UX/UI</h2>
+			<h2 className='p-aktiv center-align margins-extra bottom-small none'>A book cataloguing database I conceptualized, researched, and designed, uniquely crossed with social media to match readers with their ideal book and connect them with other readers in that book's fandom.</h2>
 		</div>
 
-		<div className='flex1 center-align margins-small  shadow'>
+		<div className='flex1 center-align margins-small'>
 			<a href= {projBookVerse}>
 				<button className='h2-alegreya case-study padding-ultra-s mobile'>View Full Case Study</button>
 			</a>		
@@ -268,16 +268,16 @@ function BookVerse() {
 				<h4 className='h4-alegreya margins-medium'>03 Interviewer Screening</h4>
 				<div className='flexbox margins-medium'>
 					<div className='flex1'>
-						<h4 className='h4-alegreya none mobile-margins'>Contexts</h4>
-						<p className='p-aktiv mobile-margins'>High phone/reading device usage, enjoys frequent recreational activites, high social media usage.</p>
+						<h4 className='h4-alegreya none margins-tiny'>Contexts</h4>
+						<p className='p-aktiv margins-tiny'>High phone/reading device usage, enjoys frequent recreational activites, high social media usage.</p>
 					</div>
 					<div className='flex1'>
-						<h4 className='h4-alegreya none mobile-margins'>Attitudes</h4>
-						<p className='p-aktiv mobile-margins'>Focused, but overall creative personality, open to new experiences, reading is a form of self-enrichment.</p>
+						<h4 className='h4-alegreya none margins-tiny'>Attitudes</h4>
+						<p className='p-aktiv margins-tiny'>Focused, but overall creative personality, open to new experiences, reading is a form of self-enrichment.</p>
 					</div>
 					<div className='flex1'>
-						<h4 className='h4-alegreya none mobile-margins'>Motivations</h4>
-						<p className='p-aktiv mobile-margins'>Seeking escapism, prefers passive activities, desires positive impact on personal creativity & inspiration.</p>
+						<h4 className='h4-alegreya none margins-tiny'>Motivations</h4>
+						<p className='p-aktiv margins-tiny'>Seeking escapism, prefers passive activities, desires positive impact on personal creativity & inspiration.</p>
 					</div>
 					</div>
 				</div>
@@ -373,19 +373,19 @@ function BookVerse() {
 		<div className='margins-medium'>	
 			<h4 className='h4-alegreya'>05 Key Feedback</h4>
 					<div className='flexbox'>
-					<div className='flex1 margins-small'>
+					<div className='flex1 margins-tiny'>
 						<h4 className='h4-alegreya'>Task One</h4>
 						<p className='p-aktiv'>“I would expect the forum to have some user icons or something indicating that people made these posts.”</p>
 						<p className='p-aktiv'>“I was unsure whether the sample book in the prototype meant finding a sample of a book page.”</p>
 						<p className='p-aktiv'>“I like the home page because it’s very simple. The fewer buttons, the better.”</p>
 					</div>
-					<div className='flex1 margins-small'>
+					<div className='flex1 margins-tiny'>
 						<h4 className='h4-alegreya'>Task Two</h4>
 						<p className='p-aktiv'>“The interface is very consistent, so I don’t have to worry about learning too much across different pages.”</p>
 						<p className='p-aktiv'>“I’m not sure what the difference is between the filter icon in my bookshelf and the search tool in the discovery page.”</p>
 						<p className='p-aktiv'>"I was unsure of whether I should instinctually want to find books through the bookshelf or filter tool."</p>
 					</div>
-					<div className='flex1 margins-small'>
+					<div className='flex1 margins-tiny'>
 						<h4 className='h4-alegreya'>Task Three</h4>
 						<p className='p-aktiv'>“This task has the simplest set of pages/interfaces, they’re easy and straightforward.”</p>
 						<p className='p-aktiv'>“I was unsure of whether I needed to add a book to a certain shelf to be able to review it.”</p>
