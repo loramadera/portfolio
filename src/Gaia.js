@@ -34,7 +34,6 @@ function Gaia() {
 const contentItems = [
 	{'title': 'Basic Layout', 'text': 'The layout of this interactive tool would feature the three pillars of sustainability, each of them active in a one-at-a-time succession format.', 'image': imgLayout },
 	{'title': 'Digital Logo Explorations', 'text': 'After a series of hand-drawn sketches, the logos that emblemized Gaia were ones that emulated flowers or leaves. Further explorations drove it in a more angular direction - further away from resembling leaves and flowers directly.', 'image': imgLogo },
-	{'title': 'Colors & Textures', 'text': 'The final logo mimics a petal design and echoes the final layout.', 'image': imgColor },
 
 ];
 
@@ -137,7 +136,7 @@ return (
 <Navigation />
 <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
 <div className='margins-large'>
-	<div className="gaia-hero top-medium">
+	<div className="gaia-hero top-medium margins-small">
 		<img src={ imgHero } width="100%"></img>
 	</div>
 
@@ -154,21 +153,21 @@ return (
 		</div>		
 	</div>
 
-	<div className='bottom-medium'>
-		<h1 className='h1-primary center-align top-medium'>Project Gaia</h1>
+	<div className='bottom-small'>
+		<h1 className='h1-primary center-align top-small'>Gaia</h1>
 		<p className='p-primary center-align margins-extra mobile'>Gaia is an informational & interactivity tool I designed, inspired by the three pillars of sustainability - economy, environment, and society. It seeks to educate on these pillars in a fun and interactive way.</p>
 		<div className='flex1 center-align margins-small'>
 			<a href= {projGaia}>
-				<button className='best-case-study padding-ultra-s mobile-margins'>View Full Case Study</button>
+				<button className='best-case-study padding-ultra-s mobile-margins'>View Full Process</button>
 			</a>		
 		</div>		
 	</div>
 	
 	<div className='mobile'>
-		<div className='top-medium'>
+		<div className='top-small'>
 			<Items />
 		</div>
-		<div className='flexbox bottom-large'>
+		<div className='flexbox bottom-large top-medium'>
 			<div className='flex1 center-align'>
 				<img className='gaia-w center-align' src={imgW1} width='100%'></img>
 			</div>
@@ -179,7 +178,7 @@ return (
 
 					
 
-		<div className='gaia-beauty'>
+		<div className='gaia-beauty margins-small'>
 			<img className='darker-box' src= {imgBeauty} width="100%"></img>
 		</div>
 </div>	
@@ -187,7 +186,7 @@ return (
 </div>
 
 
-<div className='flexbox top-small row'>
+<div className='flexbox top-small row margins-large'>
 	<div className='flex1 margins-small'>
 		<a className='a-none' href='/mcc'>
 			<p className='p-primary'>Previous</p>

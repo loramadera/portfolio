@@ -46,7 +46,7 @@ function Modeling() {
     if (window.innerWidth < 1025) {
       return contentItems.map((item, index) => {
         return <div className='bottom-medium'>
-        <a className='a-none darker-box flexbox shadow' href={item.link}>
+        <a className='a-none darker-box flexbox' href={item.link}>
           <div className='img flex1 box'><img className='portfolio-img' src={item.image} width="100%" /></div>
           <div className='flex1 box'>
             <h3 className='h3-primary center-align'>{item.title}</h3>
@@ -59,7 +59,7 @@ function Modeling() {
       return contentItems.map((item, index) => {
         if (index % 2) {
           return <div>
-        <a className='a-none darker-box flexbox shadow' href={item.link}>
+        <a className='a-none darker-box flexbox' href={item.link}>
           <div className='flex1 box'>
             <h3 className='h3-primary center-align'>{item.title}</h3>
             <p className='p-primary center-align'>{item.text}</p>
@@ -69,7 +69,7 @@ function Modeling() {
       </div>;
     } else {
       return <div className='bottom-medium'>
-        <a className='a-none darker-box flexbox shadow' href={item.link}>
+        <a className='a-none darker-box flexbox' href={item.link}>
           <div className='img flex1 box'><img className='portfolio-img' src={item.image} width="100%" /></div>
           <div className='flex1 box'>
             <h3 className='h3-primary center-align'>{item.title}</h3>
@@ -90,13 +90,16 @@ function Modeling() {
             <div className="modeling-hero">
             <h1 className='h1-primary center-align top-large'>3D Modeling</h1>
               <div className='mobile'>
-                <div className='dark-box top-dark padding-large'>
-                  <h3 className='h3-primary center-align bottom-small opacity'>Blender Projects</h3>
+                <div className='margins-extra'>
+                  <h3 className='h3-primary center-align top-small bottom-small opacity'>Blender Projects</h3>
                   <Items />
                 </div>
               </div>  
             </div>
-          </div>   
+          </div>  
+        <div className='mobile top-medium'>
+          <Footer />
+        </div> 
         </div>
 
     );

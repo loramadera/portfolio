@@ -45,7 +45,7 @@ function Bio() {
     if (window.innerWidth < 1025) {
       return contentItems.map((item, index) => {
         return <div className='margins-small bottom-medium'>
-          <div className='flexbox darker-box shadow'>
+          <div className='flexbox darker-box'>
               <a href={item.link} className='a-none flex1 box'>
                 <img src= {item.image} width="100%"></img>
               </a>
@@ -62,7 +62,7 @@ function Bio() {
       return contentItems.map((item, index) => {
         if (index % 2) {
           return <div className='margins-small bottom-medium'>
-            <div className='flexbox darker-box shadow'>
+            <div className='flexbox darker-box'>
                 <a href={item.link} className='a-none flex1 box'>
                   <div className='margins-small'>  
                     <h3 className='h3-primary left-align'>{item.title}</h3>
@@ -76,7 +76,7 @@ function Bio() {
           </div>
         } else { 
           return <div className='margins-small bottom-medium'>
-            <div className='flexbox darker-box shadow'>
+            <div className='flexbox darker-box'>
                 <a href={item.link} className='a-none flex1 box'>
                   <img src= {item.image} width="100%"></img>
                 </a>
@@ -99,9 +99,9 @@ function Bio() {
     <div className='mobile'>
     <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
     <Navigation />
-      <h1 className="h1-primary center-align top-large bottom-medium">About Me</h1>
+      <h1 className="h1-primary center-align top-large bottom-medium">Lora Galoyan</h1>
 
-      <div className='dark-box margins-small-2 top-large'>
+      <div className='margins-large'>
         <div>
           <Items />
         </div>

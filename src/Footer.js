@@ -25,7 +25,7 @@ function Footer() {
             </a>
           </div>
     </div>
-    <p className='p-primary center-align bottom-small'> © Lora Galoyan 2022</p>
+    <p className='p-primary center-align bottom-small'> © designed & coded by Lora Galoyan 2023</p>
     </div>
   );
 }

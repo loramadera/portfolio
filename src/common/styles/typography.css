@@ -35,6 +35,23 @@
 }
 
 
+.s4-primary {
+  color: white;
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+}
+
+
+.s-primary {
+  color: white;
+  font-family: montserrat, sans-serif;
+  font-weight: 350;
+  font-style: normal;
+  font-size: 19px;
+}
+
 
 .h1-aleg-b {
   color: #f8e8dc;

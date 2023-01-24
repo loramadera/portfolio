@@ -55,7 +55,7 @@ function Code() {
         if (index % 2) {
           return <div>
         <a className='a-none darker-box flexbox' href={item.link}>
-          <div className='flex1 box shadow'>
+          <div className='flex1 box'>
             <h3 className='h3-primary center-align'>{item.title}</h3>
             <p className='p-primary center-align'>{item.text}</p>
           </div>
@@ -64,7 +64,7 @@ function Code() {
       </div>;
     } else {
       return <div className='bottom-medium'>
-        <a className='a-none darker-box flexbox shadow' href={item.link}>
+        <a className='a-none darker-box flexbox' href={item.link}>
           <div className='img flex1 box'><img className='portfolio-img' src={item.image} width="100%" /></div>
           <div className='flex1 box'>
             <h3 className='h3-primary center-align'>{item.title}</h3>
@@ -81,17 +81,20 @@ function Code() {
         <div className='mobile'>
           <Navigation /> 
           <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>  
-           <div className='mobile'> 
+           <div className='mobile margins-extra'> 
             <div className="modeling-hero">
-            <h1 className='h1-primary center-align top-large'>Code</h1>
+            <h1 className='h1-primary center-align top-medium'>Coding</h1>
               <div className='mobile'>
-                <div className='dark-box top-dark padding-large'>
+                <div className='top-small'>
                   <h3 className='h3-primary center-align bottom-small opacity'>Web Development</h3>
                   <Items />
                 </div>
               </div>  
             </div>
-          </div>   
+          </div>
+         <div className='mobile'>
+          <Footer />
+          </div> 
         </div>
 
     );

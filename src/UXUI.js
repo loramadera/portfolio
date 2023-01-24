@@ -29,8 +29,8 @@ function debounce(fn, ms) {
 
 function UXUI() {
   const visualItems = [
-    { 'title': 'VACA', 'text': 'A luxurious travel app visual design.', 'image': imgVACA, 'link': '/vaca' },
-    { 'title': 'Sadhan', 'text': 'Meditation app visual design.', 'image': imgSadhan, 'link': '/sadhan' },
+    { 'title': 'VACA', 'text': 'A luxurious travel app.', 'image': imgVACA, 'link': '/vaca' },
+    { 'title': 'Sadhan', 'text': 'A meditation app.', 'image': imgSadhan, 'link': '/sadhan' },
      ];
 
   const uxuiItems = [
@@ -176,7 +176,7 @@ const [items, setItems] = React.useState(visualItems)
       <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
         <h1 className='h1-primary center-align top-large'>UX/UI & Design</h1>
 
-        <div className='mobile'>
+        <div className='mobile top-medium'>
           <div className='margins-extra mobile'>
             <h3 className='h3-primary center-align bottom-small mobile opacity'>UX/UI Design</h3>
             <div className='mobile'>
@@ -185,6 +185,15 @@ const [items, setItems] = React.useState(visualItems)
           </div>
         </div>
             
+
+         <div className='mobile'>
+          <div className='margins-extra mobile'>
+            <h3 className='h3-primary center-align bottom-small mobile opacity'>App & Visual Design</h3>
+            <div className='mobile'>
+              <Items />
+            </div>
+          </div>
+        </div>
 
 
         <div className='mobile'>
@@ -197,15 +206,6 @@ const [items, setItems] = React.useState(visualItems)
         </div>
 
           
-
-        <div className='mobile'>
-          <div className='margins-extra mobile'>
-            <h3 className='h3-primary center-align bottom-small mobile opacity'>App & Visual Design</h3>
-            <div className='mobile'>
-              <Items />
-            </div>
-          </div>
-        </div>
 
         <div className='mobile'>
           <div className='margins-extra'>

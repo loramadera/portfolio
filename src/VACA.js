@@ -55,8 +55,8 @@ const [items, setItems] = React.useState(contentItems)
         return <div className='vaca-item'>
 			<div className='flexbox margins-large'>
 				<div className='flex1 box'>
-					<h2 className='h2-primary left-align margins-small'>{item.title}</h2>
-					<p className='p-primary margins-small'>{item.text}</p>
+					<h2 className='s4-primary left-align margins-small'>{item.title}</h2>
+					<p className='s-primary margins-small'>{item.text}</p>
 				</div>
 				<div className='img flex1 box'>
 					<img src={item.image} width="100%"></img>
@@ -70,8 +70,8 @@ const [items, setItems] = React.useState(contentItems)
       return <div className='vaca-item'>
 			<div className='flexbox margins-small'>
 				<div className='flex1 box'>
-					<h2 className='h2-primary left-align margins-small'>{item.title}</h2>
-					<p className='p-primary margins-small'>{item.text}</p>
+					<h2 className='s4-primary left-align margins-small'>{item.title}</h2>
+					<p className='s-primary margins-small'>{item.text}</p>
 				</div>
 				<div className='img flex1 box'>
 					<img src={item.image} width="100%"></img>
@@ -85,8 +85,8 @@ const [items, setItems] = React.useState(contentItems)
 					<img src= {item.image} width="100%"></img>
 				</div>
 				<div className='flex1 box'>
-					<h2 className='h2-primary left-align margins-small'>{item.title}</h2>
-					<p className='p-primary margins-small'>{item.text}</p>
+					<h2 className='s4-primary left-align margins-small'>{item.title}</h2>
+					<p className='s-primary margins-small'>{item.text}</p>
 				</div>
 			</div>
 		</div>
@@ -101,8 +101,8 @@ return (
 <div className='mobile'>
 <Navigation />
 <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
-<div>
-	<div className="vaca-hero">
+<div className='margins-large top-small'>
+	<div className="vaca-hero margins-small">
 		<img src={ imgHero } width="100%"></img>
 	</div>
 
@@ -119,28 +119,27 @@ return (
 		</div>		
 	</div>
 
-	<div>
-		<h1 className='h1-primary center-align top-medium'>VACA</h1>
-		<h4 className='h4-primary opacity center-align'>Visual Design</h4>
+	<div className='bottom-medium'>
+		<h1 className='h1-primary center-align top-small'>VACA</h1>
 		<p className='p-primary center-align margins-extra'>A travel-tracking and creation app I conceptualized and designed featuring budgets, daily schedules, and weather forecasts.</p>
-		<div className='flex1 center-align top-small bottom-small shadow'>
+		<div className='flex1 center-align margins-small'>
 			<a href= {projVaca}>
-				<button className='p-primary dark-case-study padding-ultra-s'>View Full Case-Study</button>
+				<button className='best-case-study padding-ultra-s mobile-margins'>View Full Process</button>
 			</a>		
-		</div>
+		</div>	
 	</div>
-	<div className='mobile'>
-		<div className='dark-box top-dark'>
+	<div className='mobile vaca-box margins-small top-small'>
+		<div>
 				<div className='flexbox margins-small top-medium'>
 					<div className='flex1 box'>
-							<h2 className='h2-primary margins-small'>Tracking</h2>
-							<p className='p-primary margins-small'>Seasonal weather trends, regional site-seeing index, flight and hotel booking calendar</p>
-							<h2 className='h2-primary margins-small'>Target Audience</h2>
-							<p className='p-primary margins-small'>age 25-45
+							<h2 className='s4-primary margins-small'>Tracking</h2>
+							<p className='s-primary margins-small'>Seasonal weather trends, regional site-seeing index, flight and hotel booking calendar</p>
+							<h2 className='s4-primary margins-small'>Target Audience</h2>
+							<p className='s-primary margins-small'>age 25-45
 							married with children
 							working class</p>
-							<h2 className='h2-primary margins-small'>Word List</h2>
-							<p className='p-primary margins-small'>travel, booking, flights, country, aprimary, nature, planning, trip, vacation, overseas, hotel, boarding, itinerary, schedule, check list</p>
+							<h2 className='s4-primary margins-small'>Word List</h2>
+							<p className='s-primary margins-small'>travel, booking, flights, country, aprimary, nature, planning, trip, vacation, overseas, hotel, boarding, itinerary, schedule, check list</p>
 					</div>
 					<div className='flex1 box'>
 						<img src= { imgColor } width="100%"></img>
@@ -165,7 +164,8 @@ return (
 			</div>	
 		</div>
 	</div>	
-<div className='flexbox top-small row'>
+
+<div className='flexbox top-small margins-large row'>
 		<div className='flex1 margins-small'>
 			<a className='a-none' href='/gaia'>
 				<p className='p-primary'>Previous</p>
@@ -181,6 +181,7 @@ return (
 <div className='mobile'>
  	<Footer />
 </div>	
+
 </div>
 );
 }

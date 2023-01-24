@@ -29,8 +29,8 @@ function debounce(fn, ms) {
 
 function Portfolio() {
   const contentItems = [
-    {'title': 'UX/UI, Interaction & Visual Design', 'text': 'UX/UI development, visual design & branding, and interactive design projects.', 'image': imgVaca, 'link': '/uxui' },
-    {'title': 'Coding', 'text': 'Unity projects coded in C# as well as React, Flutter, HTML, and CSS.', 'image': imgCode, 'link': '/code' },
+    {'title': 'UX/UI & Design', 'text': 'UX/UI development, visual design & branding, and interactive design projects.', 'image': imgVaca, 'link': '/uxui' },
+    {'title': 'Coding', 'text': 'C# projects as well as React, Flutter, HTML, CSS.', 'image': imgCode, 'link': '/code' },
     {'title': '3D-Modeling', 'text': '3D art projects created in Blender.', 'image': imgModel, 'link': '/modeling' },
     {'title': 'Digital Art', 'text': 'Digital portraits (and others).', 'image': imgESO, 'link': '/digitalart'},
   ];

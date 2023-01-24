@@ -49,9 +49,50 @@ function Digitalart() {
     { 'title': 'God of Terror', 'image': imgDeimos, 'link': artDeimos },
   ];
 
+  function Art() {
+    if (window.innerWidth < 1025) {
+      return contentItems.map((item, index) => {
+        return <div key={index} className='margins-small bottom-medium'>
+        <a className='a-none flexbox darker-box' href={item.link}>
+          <div className='img flex1'><img className='portfolio-img' src={item.image} width="100%" /></div>
+          <div className='flex1 box'>
+            <h3 className='h3-primary center-align'>{item.title}</h3>
+            <p className='p-primary center-align'>{item.text}</p>
+          </div>
+        </a>
+      </div>;
+      });
+    } else {
+      return contentItems.map((item, index) => {
+        if (index % 2) {
+          return <div key={index} className='bottom-medium'>
+        <a className='a-none flexbox darker-box' href={item.link}>
+          <div className='flex1 box'>
+            <h3 className='h3-primary center-align'>{item.title}</h3>
+            <p className='p-primary center-align'>{item.text}</p>
+          </div>
+          <div className='img flex1'><img className='portfolio-img' src={item.image} width="100%" /></div>
+        </a>
+      </div>;
+    } else {
+      return <div key={index} className='bottom-medium'>
+        <a className='a-none flexbox darker-box' href={item.link}>
+          <div className='img flex1'><img className='portfolio-img' src={item.image} width="100%" /></div>
+          <div className='flex1 box'>
+            <h3 className='h3-primary center-align'>{item.title}</h3>
+            <p className='p-primary center-align'>{item.text}</p>
+          </div>
+        </a>
+      </div>;
+        }
+      });
+    }
+  }
+
+
  
  const portfolioItems = contentItems.map((item) => {
-    return <div className='shadow'>
+    return <div>
       <a className='a-none' href={item.link}> 
         <div>
           <h3 className='h3-primary center-align bottom-tiny top-small'>{item.title}</h3>
@@ -69,10 +110,10 @@ function Digitalart() {
     <div className='mobile'>
       <Navigation />
       <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
-        <h1 className='h1-primary center-align top-large bottom-medium'>Digital Art</h1>
-        <div className='dark-box top-dark padding-large'>
+        <h1 className='h1-primary center-align top-medium bottom-small'>Digital Art</h1>
+        <div className='margins-extra'>
         <h3 className='h3-primary center-align opacity'>Procreate/Photoshop Projects</h3>
-          { portfolioItems }
+          < Art />
         </div>
       
     <div className='mobile'>

@@ -54,8 +54,8 @@ function Items() {
         return <div className='sadhan-item mobile'>
 			<div className='flexbox margins-large'>
 				<div className='flex1 box'>
-					<h4 className='h4-primary left-align margins-small'>{item.title}</h4>
-					<p className='p-primary margins-small'>{item.text}</p>
+					<h4 className='s4-primary left-align margins-small'>{item.title}</h4>
+					<p className='s-primary margins-small'>{item.text}</p>
 				</div>
 				<div className='flex1 box'>
 					<div className='flexbox center-align'>
@@ -71,8 +71,8 @@ function Items() {
           return <div className='margins-medium sadhan-item mobile'>	
 			<div className='flexbox'>	
 				<div className='flex1 box'>
-					<h4 className='h4-primary left-align'>{item.title}</h4>
-					<p className='p-primary'>{item.text}</p>
+					<h4 className='s4-primary left-align'>{item.title}</h4>
+					<p className='s-primary'>{item.text}</p>
 				</div>
 				<div className='flex1 box center-align'>
 					<div className='flexbox'>
@@ -90,8 +90,8 @@ function Items() {
 					</div>
 				</div>
 				<div className='flex1 box'>
-					<h4 className='h4-primary left-align'>{item.title}</h4>
-					<p className='p-primary '>{item.text}</p>
+					<h4 className='s4-primary left-align'>{item.title}</h4>
+					<p className='s-primary '>{item.text}</p>
 				</div>
 			</div>
 		</div>
@@ -107,39 +107,39 @@ return (
 <div className='mobile'>
 <Navigation />
 <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
-<div>
-	<div className="sadhan-hero">
+<div  className='margins-large'>
+	<div className="sadhan-hero margins-small">
 		<img src={ imgHero } width="100%"></img>
 	</div>
 
-	<div className='flexbox top-small row'>
-		<div className='flex1 margins-small'>
+	<div className='flexbox top-small row margins-small'>
+		<div className='flex1'>
 			<a className='a-none' href='/vaca'>
 				<p className='p-primary'>Previous</p>
 			</a>
 		</div>	
 	</div>
 
-	<div>
-		<h1 className='h1-primary center-align top-medium'>Sadhan</h1>
-		<h4 className='h4-primary center-align opacity'>Visual Design</h4>
-		<p className='p-primary center-align margins-extra bottom-small'>A meditation app I designed and partially coded, defined functionally by its meditation timer and connection with other members of a meditation community - the ability to see retreat schedules and other members.</p>
-		<div className='flex1 center-align margins-small bottom-small shadow'>
+	<div className='bottom-medium'>
+		<h1 className='h1-primary center-align top-small'>Sadhan</h1>
+		<p className='p-primary center-align margins-extra'>A meditation app I designed and partially coded, defined functionally by its meditation timer and connection with other members of a meditation community - the ability to see retreat schedules and other members.</p>
+		<div className='flex1 center-align margins-small'>
 			<a href= {projSadhan}>
-				<button className='p-primary dark-case-study padding-ultra-s'>View Full Case-Study</button>
+				<button className='best-case-study padding-ultra-s mobile-margins'>View Full Process</button>
 			</a>		
 		</div>
 	</div>
-	<div className='mobile'>
-		<div className='dark-box top-dark'>
+	
+	<div className='mobile sadhan-box bottom-large margins-small'>
+		<div>
 				<div className='flexbox margins-medium top-medium bottom-medium'>
 					<div className='flex1 box'>
-							<h4 className='h4-primary mobile-margins-3'>Color & Atmosphere</h4>
-							<p className='p-primary  mobile-margins-3'>The color palette of thix app, featuring bright blues, yellows, and greens, reflects love for nature and a spirituality core.</p>
-							<h4 className='h4-primary mobile-margins-3'>Meditation Timer</h4>
-							<p className='p-primary mobile-margins-3'>Starts/stops timer, toggles chime and prayer.</p>
-							<h4 className='h4-primary mobile-margins-3'>Group Meditation</h4>
-							<p className='p-primary  mobile-margins-3'>Displays group meditation schedules, charting meditators around the world.</p>
+							<h4 className='s4-primary mobile-margins-3'>Color & Atmosphere</h4>
+							<p className='s-primary  mobile-margins-3'>The color palette of thix app, featuring bright blues, yellows, and greens, reflects love for nature and a spirituality core.</p>
+							<h4 className='s4-primary mobile-margins-3'>Meditation Timer</h4>
+							<p className='s-primary mobile-margins-3'>Starts/stops timer, toggles chime and prayer.</p>
+							<h4 className='s4-primary mobile-margins-3'>Group Meditation</h4>
+							<p className='s-primary  mobile-margins-3'>Displays group meditation schedules, charting meditators around the world.</p>
 					</div>
 					<div className='flex1 box center-align'>
 						<img className='sadhan-img' src= { imgColors } width="100%"></img>
@@ -149,25 +149,25 @@ return (
 				<div className='sadhan-content'>
 					<Items />
 				</div>
-
-				<div className='sadhan-beauty mobile'>
-					<img src= {imgBeauty} width="100%"></img>
-				</div>
 			</div>	
 		</div>
 	</div>	
 
-<div className='flexbox top-small row'>
-		<div className='flex1 margins-small'>
+	<div className='sadhan-beauty mobile'>
+					<img src= {imgBeauty} width="100%"></img>
+				</div>
+
+	<div className='flexbox top-small margins-extra row'>
+		<div className='flex1'>
 			<a className='a-none' href='/vaca'>
 				<p className='p-primary'>Previous</p>
 			</a>
 		</div>	
 	</div>
 
-<div className='mobile'>
-	 <Footer />
-</div>
+	<div className='mobile top-small'>
+		 <Footer />
+	</div>
 </div>
 );
 }

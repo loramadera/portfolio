@@ -244,7 +244,9 @@ function Bestiary() {
 			<Navigation />
 
 			<div className='margins-large'>
-			<img className='best-hero' src={ imgHero } width="100%"></img>
+				<div className='margins-small top-small'>
+					<img src={ imgHero } width="100%"></img>
+				</div>	
 				<div className='flexbox top-small row'>
 					<div className='flex1 margins-small'>
 						<a className='a-none' href='/bookverse'>
@@ -259,7 +261,6 @@ function Bestiary() {
 				</div>
 
 				<h1 className='h1-primary center-align top-small'>The Bestiary</h1>
-				<h3 className='h3-primary center-align opacity top-small'>UX/UI</h3>
 				<p className='p-primary center-align margins-extra'>An interactive game design I conceptualized, researched, and designed with the intention of creating a more immersive gaming experience.</p>
 				<div className='flex1 center-align margins-small'>
 					<a href= {projBestiary}>

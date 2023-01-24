@@ -17,6 +17,9 @@
   padding-bottom: 100px;
 }
 
+.vaca-box {
+  background-color: #0c0f1c;
+}
 
 @media screen and (max-width: 1025px) {
 .vaca-desktop {
