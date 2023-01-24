@@ -130,6 +130,17 @@
 }
 
 
+.best-case-study {
+  border-radius: 10px;
+  color: #1e2229;
+  font-family: montserrat, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 20px;
+  opacity: 70%;
+}
+
+
 
 
 @media screen and (max-width: 1025px) {
@@ -307,6 +318,17 @@
     .border-box {
       box-sizing: border-box;
     }
+
+    .best-case-study {
+    border-radius: 10px;
+    color: #1e2229;
+    font-family: montserrat, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 15px;
+    opacity: 70%;
+  }
+
 
 
 

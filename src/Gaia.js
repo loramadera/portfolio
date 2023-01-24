@@ -34,7 +34,6 @@ function Gaia() {
 const contentItems = [
 	{'title': 'Basic Layout', 'text': 'The layout of this interactive tool would feature the three pillars of sustainability, each of them active in a one-at-a-time succession format.', 'image': imgLayout },
 	{'title': 'Digital Logo Explorations', 'text': 'After a series of hand-drawn sketches, the logos that emblemized Gaia were ones that emulated flowers or leaves. Further explorations drove it in a more angular direction - further away from resembling leaves and flowers directly.', 'image': imgLogo },
-	{'title': 'Final Logo', 'text': 'The final logo mimics a petal design and echoes the final layout.', 'image': imgFinal },
 	{'title': 'Colors & Textures', 'text': 'The final logo mimics a petal design and echoes the final layout.', 'image': imgColor },
 
 ];
@@ -137,8 +136,8 @@ return (
 <div className='mobile'>
 <Navigation />
 <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
-<div>
-	<div className="gaia-hero top-large">
+<div className='margins-large'>
+	<div className="gaia-hero top-medium">
 		<img src={ imgHero } width="100%"></img>
 	</div>
 
@@ -155,44 +154,20 @@ return (
 		</div>		
 	</div>
 
-	<div>
+	<div className='bottom-medium'>
 		<h1 className='h1-primary center-align top-medium'>Project Gaia</h1>
-		<h4 className='h4-primary center-align opacity'>Visual & Interactive Design</h4>
 		<p className='p-primary center-align margins-extra mobile'>Gaia is an informational & interactivity tool I designed, inspired by the three pillars of sustainability - economy, environment, and society. It seeks to educate on these pillars in a fun and interactive way.</p>
-		<div className='flex1 center-align margins-small top-small shadow'>
+		<div className='flex1 center-align margins-small'>
 			<a href= {projGaia}>
-				<button className='p-primary dark-case-study padding-ultra-s'>View Project</button>
+				<button className='best-case-study padding-ultra-s mobile-margins'>View Full Case Study</button>
 			</a>		
-		</div>	
+		</div>		
 	</div>
 	
 	<div className='mobile'>
-		<div className='dark-box top-dark'>
-				<div className='flexbox margins-medium'>
-					<div>
-						<h3 className='h3-primary top-medium bottom-small center-align'>Pillars of Sustainability</h3>
-							<div className='flexbox bottom-medium'>
-								<div className='flex1 margins-small'>
-									<h4 className='h4-primary'>Economy</h4>
-									<p className='p-primary'>The economy pillar refers to jobs, incentives to encourage sustainable practices, natural resource accounting, cost and price structures, cost-benefit analysis, and quantified ecosystem analysis.</p>
-								</div>
-								<div className='flex1 margins-small'>
-									<h4 className='h4-primary'>Environment</h4>
-									<p className='p-primary'>The environmental pillar comprises ecosystem services, green engineering & chemistry development, air/water quality, ecosystem stressors and resource integrity.</p>
-								</div>
-								<div className='flex1 margins-small'>
-									<h4 className='h4-primary'>Society</h4>
-									<p className='p-primary'>Environmental justice, human health and participation, education, resource security and sustainable developments fall within the societal pillar.</p>
-								</div>
-							</div>
-					</div>
-			</div>	
-		</div>
 		<div className='top-medium'>
 			<Items />
 		</div>
-
-		<h3 className='h3-primary left-align margins-medium bottom-medium'>Wireframes</h3>
 		<div className='flexbox bottom-large'>
 			<div className='flex1 center-align'>
 				<img className='gaia-w center-align' src={imgW1} width='100%'></img>
@@ -202,16 +177,6 @@ return (
 			</div>
 		</div>
 
-
-		<h3 className='h3-primary left-align margins-medium bottom-medium'>Final Designs</h3>
-		<div className='flexbox bottom-large'>
-			<div className='flex1 center-align'>
-				<img className='gaia-f center-align' src={imgF1} width='100%'></img>
-			</div>
-			<div className='flex1 center-align'>
-				<img className='gaia-f center-align' src={imgF2} width='100%'></img>
-			</div>
-		</div>
 					
 
 		<div className='gaia-beauty'>

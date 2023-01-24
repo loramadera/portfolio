@@ -193,12 +193,12 @@ function BookVerse() {
 		<div>
 			<h1 className='h1-alegreya center-align '>BookVerse</h1>
 			<h2 className='h2-alegreya center-align none'>UX/UI</h2>
-			<h2 className='p-aktiv center-align margins-extra bottom-small none'>A book cataloguing database I conceptualized, researched, and designed, uniquely crossed with social media to match readers with their ideal book and connect them with other readers in that book's fandom.</h2>
+			<h2 className='p-aktiv center-align margins-extra none'>A book cataloguing database I conceptualized, researched, and designed, uniquely crossed with social media to match readers with their ideal book and connect them with other readers in that book's fandom.</h2>
 		</div>
 
 		<div className='flex1 center-align margins-small'>
 			<a href= {projBookVerse}>
-				<button className='h2-alegreya case-study padding-ultra-s mobile'>View Full Case Study</button>
+				<button className='h2-alegreya case-study mobile'>View Full Case Study</button>
 			</a>		
 		</div>	
 		
