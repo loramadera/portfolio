@@ -108,7 +108,7 @@ return (
 
 	<div className='flexbox top-small row'>
 		<div className='flex1 margins-small'>
-			<a className='a-none' href='/gaia'>
+			<a className='a-none' href='/bestiary'>
 				<p className='p-primary'>Previous</p>
 			</a>
 		</div>
@@ -167,7 +167,7 @@ return (
 
 <div className='flexbox top-small margins-large row'>
 		<div className='flex1 margins-small'>
-			<a className='a-none' href='/gaia'>
+			<a className='a-none' href='/bestiary'>
 				<p className='p-primary'>Previous</p>
 			</a>
 		</div>

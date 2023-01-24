@@ -112,12 +112,17 @@ return (
 		<img src={ imgHero } width="100%"></img>
 	</div>
 
-	<div className='flexbox top-small row margins-small'>
-		<div className='flex1'>
+	<div className='flexbox top-small row'>
+		<div className='flex1 margins-small'>
 			<a className='a-none' href='/vaca'>
 				<p className='p-primary'>Previous</p>
 			</a>
-		</div>	
+		</div>
+		<div className='flex1 right-align margins-small'>
+			<a className='a-none' href='/gaia'>
+				<p className='p-primary'>Next</p>
+			</a>
+		</div>		
 	</div>
 
 	<div className='bottom-medium'>
@@ -151,19 +156,25 @@ return (
 				</div>
 			</div>	
 		</div>
-	</div>	
 
-	<div className='sadhan-beauty mobile'>
-					<img src= {imgBeauty} width="100%"></img>
-				</div>
+	<div className='margins-small mobile'>
+		<img src= {imgBeauty} width="100%"></img>
+	</div>
 
-	<div className='flexbox top-small margins-extra row'>
-		<div className='flex1'>
+	<div className='flexbox top-small row'>
+		<div className='flex1 margins-small'>
 			<a className='a-none' href='/vaca'>
 				<p className='p-primary'>Previous</p>
 			</a>
-		</div>	
+		</div>
+		<div className='flex1 right-align margins-small'>
+			<a className='a-none' href='/gaia'>
+				<p className='p-primary'>Next</p>
+			</a>
+		</div>		
 	</div>
+
+	</div>	
 
 	<div className='mobile top-small'>
 		 <Footer />

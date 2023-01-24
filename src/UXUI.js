@@ -119,21 +119,21 @@ const [items, setItems] = React.useState(visualItems)
         if (index % 2) {
           return <div key={index} className='bottom-medium'>
         <a className='a-none flexbox darker-box' href={item.link}>
-          <div className='img flex1'><img className='portfolio-img' src={item.image} width="100%" /></div>
-          <div className='flex1 box'>
+         <div className='flex1 box'>
             <h3 className='h3-primary center-align'>{item.title}</h3>
             <p className='p-primary center-align'>{item.text}</p>
           </div>
+          <div className='img flex1'><img className='portfolio-img' src={item.image} width="100%" /></div>
         </a>
       </div>;
     } else {
       return <div key={index} className='bottom-medium'>
         <a className='a-none flexbox darker-box' href={item.link}>
+          <div className='img flex1'><img className='portfolio-img' src={item.image} width="100%" /></div>
           <div className='flex1 box'>
             <h3 className='h3-primary center-align'>{item.title}</h3>
             <p className='p-primary center-align'>{item.text}</p>
           </div>
-          <div className='img flex1'><img className='portfolio-img' src={item.image} width="100%" /></div>
         </a>
       </div>;
         }

@@ -142,12 +142,12 @@ return (
 
 	<div className='flexbox top-small row'>
 		<div className='flex1 margins-small'>
-			<a className='a-none' href='/mcc'>
+			<a className='a-none' href='/sadhan'>
 				<p className='p-primary'>Previous</p>
 			</a>
 		</div>
 		<div className='flex1 right-align margins-small'>
-			<a className='a-none' href='/vaca'>
+			<a className='a-none' href='/mcc'>
 				<p className='p-primary'>Next</p>
 			</a>
 		</div>		
@@ -183,21 +183,21 @@ return (
 		</div>
 </div>	
 
-</div>
-
-
-<div className='flexbox top-small row margins-large'>
-	<div className='flex1 margins-small'>
-		<a className='a-none' href='/mcc'>
-			<p className='p-primary'>Previous</p>
-		</a>
+<div className='flexbox top-small row'>
+		<div className='flex1 margins-small'>
+			<a className='a-none' href='/sadhan'>
+				<p className='p-primary'>Previous</p>
+			</a>
+		</div>
+		<div className='flex1 right-align margins-small'>
+			<a className='a-none' href='/mcc'>
+				<p className='p-primary'>Next</p>
+			</a>
+		</div>		
 	</div>
-	<div className='flex1 right-align margins-small'>
-		<a className='a-none' href='/vaca'>
-			<p className='p-primary'>Next</p>
-		</a>
-	</div>		
+
 </div>
+
 
 <div className='mobile'>
 	 <Footer />

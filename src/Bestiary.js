@@ -254,7 +254,7 @@ function Bestiary() {
 						</a>
 					</div>
 					<div className='flex1 right-align margins-small'>
-						<a className='a-none' href='/mcc'>
+						<a className='a-none' href='/vaca'>
 							<p className='p-primary'>Next</p>
 						</a>
 					</div>		
