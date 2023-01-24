@@ -109,9 +109,10 @@ function Bio() {
           <h3 className='h3-primary center-align'>Contact</h3>
           <p className='p-primary center-align'>Lora Galoyan</p>
           <p className='p-primary center-align'>Email: lkgaloyan@gmail.com</p>
+          <p className='p-primary center-align'>PDF Resume</p>
         </div>
       </div>
-    <div className='top-medium mobile'>
+    <div className=''>
        <Footer />
     </div>
     </div>

@@ -748,7 +748,7 @@ function Bestiary() {
 
 				
 
-				<div className='mobile margins-small top-medium bottom-medium'>
+				<div className='margins-small top-medium'>
 					<img className='book-image-beauty' src={ imgBeauty } width="100%"></img>
 				</div>
 
