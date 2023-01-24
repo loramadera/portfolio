@@ -29,23 +29,23 @@
 
   .nav-img {
     width: 25px;
-    opacity: 70%;
+    opacity: 100%;
     margin-right: 10px;
   }
   .nav-img-2 {
     width: 25px;
-    opacity: 70%;
+    opacity: 100%;
     margin-right: 10px;
   }
 
   .nav-logo {
     width: 25px;
-    opacity: 70%;
+    opacity: 100%;
     
   }
 
   .nav {
-    background-color: #1E2229;
+    background-color: white;
     position: fixed;
     margin: 0px;
     top: 0;

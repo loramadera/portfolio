@@ -81,7 +81,7 @@ function BookVerse() {
 					</div>
 					<div className='flex2 box'>
 						<div className=''>
-							<h4 className='h4-alegreya small-border margins-small'>{item.title}</h4>
+							<h4 className='h4-alegreya small-border'>{item.title}</h4>
 						</div>
 						<p className='p-aktiv margins-small'>{item.text}</p>
 					</div>
@@ -93,7 +93,7 @@ function BookVerse() {
 		        if (index % 2) {
          	 return <div>	
 							<div className='flexbox'>	
-								<div className='box padding-medium'>
+								<div className='box'>
 									<div className='small-border'>
 										<h4 className='h4-alegreya'>{item.title}</h4>
 									</div>
@@ -107,7 +107,7 @@ function BookVerse() {
 					} else {
 						return <div>
 							<div className='flexbox'>
-								<div className='box padding-medium'>
+								<div className='box'>
 									<img className='book-img' src={item.image} width="100%"></img>
 								</div>
 								<div className='box padding-medium'>
@@ -127,7 +127,7 @@ function BookVerse() {
   		if (window.innerWidth < 1025) {
 		return styleItems.map((item, index) => {
 		        return <div className='book-item'>	
-				<div className='flexbox margins-large'>	
+				<div className='flexbox'>	
 					<div className='flex1 box'>
 						<h4 className='h4-alegreya margins-small'>{item.title}</h4>
 						<p className='p-aktiv margins-small'>{item.text}</p>
@@ -142,7 +142,7 @@ function BookVerse() {
 		      return styleItems.map((item, index) => {
 		        if (index % 2) {
 		          return <div>	
-					<div className='flexbox margins-medium'>	
+					<div className='flexbox margins-tiny'>	
 						<div className='flex1 box'>
 							<h4 className='h4-alegreya margins-small'>{item.title}</h4>
 							<p className='p-aktiv margins-small'>{item.text}</p>
@@ -154,7 +154,7 @@ function BookVerse() {
 					</div>
 				} else {
 					return <div>
-						<div className='flexbox margins-medium'>
+						<div className='flexbox margins-tiny'>
 							<div className='flex1 box'>
 								<img src={item.image} width="100%"></img>
 							</div>
@@ -227,7 +227,7 @@ function BookVerse() {
 		<div className='bottom-border'>
 			<h3 className='h3-alegreya'>02 Methodology</h3>
 		</div>
-		<div className='flexbox margins-medium'>
+		<div className='flexbox margins-small'>
 			<div className='flex1'>
 				<h4 className='h4-alegreya'>Bodystorming</h4>
 				<p className='p-aktiv'>Gathered information about various platforms that help consumers with discovering a book with several defining characteristics.</p>
@@ -237,10 +237,10 @@ function BookVerse() {
 				<p className='p-aktiv'>Analyzed competing products to see how they perform.</p>
 			</div>
 			<div className='flex1'>
-				<h4 className='h4-alegreya margins-small'>Goals</h4>
-				<p className='p-aktiv margins-small'>Get users reading and away from other distracting social media apps.</p>
-				<p className='p-aktiv margins-small'>Develop an interface that enhances the book searching process with more precise filters.</p>
-				<p className='p-aktiv margins-small'>Spotlight books and their fandoms, and provide a focused location for readers to connect.</p>
+				<h4 className='h4-alegreya'>Goals</h4>
+				<p className='p-aktiv'>Get users reading and away from other distracting social media apps.</p>
+				<p className='p-aktiv'>Develop an interface that enhances the book searching process with more precise filters.</p>
+				<p className='p-aktiv'>Spotlight books and their fandoms, and provide a focused location for readers to connect.</p>
 			</div>
 		</div>
 
@@ -251,9 +251,9 @@ function BookVerse() {
 		<div className='bottom-border'>
 			<h3 className='h3-alegreya'>03 Qualitative Research</h3>
 		</div>
-		<div className='margins-medium bottom-small'>
+		<div className='margins-small bottom-small'>
 				<h4 className='h4-alegreya'>03 Interview Questions</h4>
-				<div className='mobile-margins'>
+				<div>
 					<p className='p-aktiv'>1. Describe a typical “book slump” for you.</p>
 					<p className='p-aktiv'>2. What tools do you use to find new books? Does their ease-of-use determine length of search before you give up?</p>
 					<p className='p-aktiv'>3. Do you deviate from your preferred genres?</p>
@@ -263,27 +263,27 @@ function BookVerse() {
 				</div>
 			</div>
 
-		<div className='flexbox bottom-small'>
+		<div className='flexbox bottom-small '>
 			<div>
-				<h4 className='h4-alegreya margins-medium'>03 Interviewer Screening</h4>
-				<div className='flexbox margins-medium'>
+				<h4 className='h4-alegreya margins-small'>03 Interviewer Screening</h4>
+				<div className='flexbox margins-small'>
 					<div className='flex1'>
-						<h4 className='h4-alegreya none margins-tiny'>Contexts</h4>
-						<p className='p-aktiv margins-tiny'>High phone/reading device usage, enjoys frequent recreational activites, high social media usage.</p>
+						<h4 className='h4-alegreya none'>Contexts</h4>
+						<p className='p-aktiv'>High phone/reading device usage, enjoys frequent recreational activites, high social media usage.</p>
 					</div>
 					<div className='flex1'>
-						<h4 className='h4-alegreya none margins-tiny'>Attitudes</h4>
-						<p className='p-aktiv margins-tiny'>Focused, but overall creative personality, open to new experiences, reading is a form of self-enrichment.</p>
+						<h4 className='h4-alegreya none'>Attitudes</h4>
+						<p className='p-aktiv'>Focused, but overall creative personality, open to new experiences, reading is a form of self-enrichment.</p>
 					</div>
 					<div className='flex1'>
-						<h4 className='h4-alegreya none margins-tiny'>Motivations</h4>
-						<p className='p-aktiv margins-tiny'>Seeking escapism, prefers passive activities, desires positive impact on personal creativity & inspiration.</p>
+						<h4 className='h4-alegreya none'>Motivations</h4>
+						<p className='p-aktiv'>Seeking escapism, prefers passive activities, desires positive impact on personal creativity & inspiration.</p>
 					</div>
 					</div>
 				</div>
 		</div>
 
-		<div className='flexbox margins-medium'>
+		<div className='flexbox margins-small'>
 			<div>
 				<h4 className='h4-alegreya'>03 Key Insights</h4>
 				 <Items />
@@ -298,40 +298,23 @@ function BookVerse() {
 			<h3 className='h3-alegreya'>04 Persona</h3>
 		</div>
 		<div className='flexbox margins-medium'>
-			<div className='flex1 box'>
+			<div className='flex1 box center-align'>
 				<img className='book-persona-img mobile' src={ imgPersona } width="100%"></img>
+				<h4 className='h4-alegreya'>Nadia, 23, Full-time student</h4>
 			</div>
 			<div className='flex1 box'>
 				<p className='p-aktiv'>Nadia is an undergraduate student. In her spare time, she either likes spending time with family or holing up with a good book or videogame. Social media tends to be a fun distraction from daily work, but she seeks more enriching fulfilment from books.</p> 
-				<div className='flexbox'>
-					<div className='flex1 box'>
-						<h4 className='h4-alegreya'>Age</h4>
-						<p className='p-aktiv'>23</p>
-						<h4 className='h4-alegreya'>Occupation</h4>
-						<p className='p-aktiv'>Full-time student</p>
-						<h4 className='h4-alegreya'>Income</h4>
-						<p className='p-aktiv'>Unemployed</p>
-					</div>
-					<div className='flex1'>
-						<h4 className='h4-alegreya'>Location</h4>
-						<p className='p-aktiv'>Santa Barbara</p>
-						<h4 className='h4-alegreya'>Status</h4>
-						<p className='p-aktiv'>Single</p>
-					</div>
+				<div>
+					<h4 className='h4-alegreya'>Goals</h4>
+					<p className='p-aktiv'>• To feel more productive</p>
+					<p className='p-aktiv'>• To use social media less and read more </p>
+					<p className='p-aktiv'>• To explore more books that aren’t in her immediate radar</p>
 				</div>
-				<div className='flexbox'>
-					<div className='flex1'>
-						<h4 className='h4-alegreya'>Goals</h4>
-						<p className='p-aktiv'>• To feel more productive</p>
-						<p className='p-aktiv'>• To use social media less and read more </p>
-						<p className='p-aktiv'>• To explore more books that aren’t in her immediate radar</p>
-					</div>
-					<div className='flex1 box'>
-						<h4 className='h4-alegreya'>Frustrations</h4>
-						<p className='p-aktiv'>• Book vendors aren’t always reliable in matching</p>
-						<p className='p-aktiv'>• Gets pushed toward social media </p>
-						<p className='p-aktiv'>• Searching for new books is an unenjoyable time and effort commitment</p>
-					</div>
+				<div>
+					<h4 className='h4-alegreya'>Frustrations</h4>
+					<p className='p-aktiv'>• Book vendors aren’t always reliable in matching</p>
+					<p className='p-aktiv'>• Gets pushed toward social media </p>
+					<p className='p-aktiv'>• Searching for new books is an unenjoyable time and effort commitment</p>
 				</div>
 			</div>
 		</div>
@@ -341,9 +324,9 @@ function BookVerse() {
 		<div className='bottom-border'>
 			<h3 className='h3-alegreya'>05 User Testing</h3>
 		</div>
-		<div className='margins-medium'>
+		<div className='margins-small'>
 			<h4 className='h4-alegreya'>05 Task Flows</h4>
-				<div className='margins-small'>
+				<div>
 				<p className='p-aktiv'>Task One: User will explore BookVerse for a new book recommendation, specifically by browsing forums for new books on the Discovery page.</p>
 					<div className='flexbox'>
 						<div className='flex1 book-task-desc'><p className='p-aktiv padding-small task'>User enters Discovery & searches for book.</p></div>
@@ -370,22 +353,22 @@ function BookVerse() {
 					</div>
 				</div>			
 			</div>
-		<div className='margins-medium'>	
+		<div className='margins-small top-medium'>	
 			<h4 className='h4-alegreya'>05 Key Feedback</h4>
 					<div className='flexbox'>
-					<div className='flex1 margins-tiny'>
+					<div className='flex1 right'>
 						<h4 className='h4-alegreya'>Task One</h4>
 						<p className='p-aktiv'>“I would expect the forum to have some user icons or something indicating that people made these posts.”</p>
 						<p className='p-aktiv'>“I was unsure whether the sample book in the prototype meant finding a sample of a book page.”</p>
 						<p className='p-aktiv'>“I like the home page because it’s very simple. The fewer buttons, the better.”</p>
 					</div>
-					<div className='flex1 margins-tiny'>
+					<div className='flex1 right'>
 						<h4 className='h4-alegreya'>Task Two</h4>
 						<p className='p-aktiv'>“The interface is very consistent, so I don’t have to worry about learning too much across different pages.”</p>
 						<p className='p-aktiv'>“I’m not sure what the difference is between the filter icon in my bookshelf and the search tool in the discovery page.”</p>
 						<p className='p-aktiv'>"I was unsure of whether I should instinctually want to find books through the bookshelf or filter tool."</p>
 					</div>
-					<div className='flex1 margins-tiny'>
+					<div className='flex1 right'>
 						<h4 className='h4-alegreya'>Task Three</h4>
 						<p className='p-aktiv'>“This task has the simplest set of pages/interfaces, they’re easy and straightforward.”</p>
 						<p className='p-aktiv'>“I was unsure of whether I needed to add a book to a certain shelf to be able to review it.”</p>
@@ -406,7 +389,7 @@ function BookVerse() {
 
 
 		<div className='flexbox top-small row'>
-			<div className='flex1 right-align margins-small'>
+			<div className='flex1 right-align margins-medium'>
 				<a className='a-none' href='/bestiary'>
 					<p className='p-primary'>Next</p>
 				</a>
