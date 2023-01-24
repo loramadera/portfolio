@@ -322,7 +322,7 @@ function Bestiary() {
 								</div>		
 
 
-								<div className='margins-tiny'>
+								<div className='right'>
 									<div className='flexbox'>
 										<div className='flex2 box'>
 											<p className='p-primary'>Would you enjoy an interface that takes time to navigate around, so long as it is immersive to you?</p>
@@ -374,7 +374,7 @@ function Bestiary() {
 								</div>	
 							</div>
 
-								<div className='margins-tiny'>	
+								<div>	
 									<div className='flexbox'>
 										<div className='flex2 box'>
 											<p className='p-primary'>Would you rather have a complex interface with many interesting features, or minimalistic design with less features?</p>
@@ -420,19 +420,12 @@ function Bestiary() {
 				<div className='bottom-border top-small mobile'>
 					<h3 className='h3-primary'>04 Interview Profiles & Feedback</h3>
 				</div>
-						<div className='flexbox margins-small mobile-center mobile'>
-							<div className='flex box'>
-									<img className='img-small-swords' src= {imgSwords} width="100%"></img>
-							</div>	
-							<div className='flex2 box'>
-								<h3 className='h3-primary sword-title'>Interview Feedback from Audience</h3>
-							</div>						
-						</div>	
-						<div className='flexbox margins-medium'>
-							<div>
-								 <Items />
-							</div>
+						
+					<div className='flexbox margins-small mobile'>
+						<div>
+							 <Items />
 						</div>
+					</div>
 					<div className='flexbox margins-small top-medium mobile-center'>
 							<div className='flex box'>
 								<img className='img-small-swords' src= {imgSwords} width="100%"></img>
@@ -603,7 +596,7 @@ function Bestiary() {
 					</div>
 
 
-					<div className='margins-small'>
+					<div className='margins-small mobile'>
 						<h3 className='h3-primary task-flex'>User Flow Two: Learn About The Monster</h3>
 						<p className='p-primary task-flex'>In the cryptid biography, user will use the bestiary to learn more about the attributes and weaknesses of the monster they just faced. They will unlock new insights about the monster in preparation for the next confrontation on the following level. </p>
 					</div>	
@@ -665,7 +658,7 @@ function Bestiary() {
 							</div>
 
 					
-					<div className='margins-small'>
+					<div className='margins-small mobile'>
 						<h3 className='h3-primary task-flex'>User Flow Three: Pick Your Poison</h3>
 						<p className='p-primary task-flex'>User will select a poison from their inventory to use on the monster in the upper levels, with more knowledge on defeating the monster than they had before, based on the new unlcoked weakness/attributes they read about.</p>
 					</div>	
@@ -727,26 +720,22 @@ function Bestiary() {
 							</div>
 
 
-
-
-					<div className='flexbox margins-small top-medium mobile-center'>				
-					</div>
-					<div className='flexbox margins-tiny'>
+					<div className='flexbox margins-small top-medium'>
 						<div>
 								<div className='flexbox'>
-								<div className='flex1 padding-medium'>
+								<div className='flex1 right'>
 									<h3 className='h3-primary'>Feedback Round One</h3>
 									<p className='p-primary'>The “locked” icon should be unlocked, or otherwise swapped out for more icon variation.</p>
 									<p className='p-primary'>The journal interface seems pretty simplistic in terms of design - some “toggling” variation would feel more interactive.</p>
 									<p className='p-primary'>Some variation in the “locked” and “unlocked” journal entries would be helpful, visually.</p>
 								</div>
-								<div className='flex1 padding-medium'>
+								<div className='flex1 right'>
 									<h3 className='h3-primary'>Feedback Round Two</h3>
 									<p className='p-primary'>The first screen needs to have more narrative.</p>
 									<p className='p-primary'>For some who never plays games, the interface would be confusing as is.</p>
 									<p className='p-primary'>Is there a login? Do we need a username? What do we actually “search” for that the bestiary demands of the user? The monster’s name?</p>
 								</div>
-								<div className='flex1 padding-medium'>
+								<div className='flex1 right'>
 									<h3 className='h3-primary'>Feedback Round Three</h3>
 									<p className='p-primary'>There are multiple icons that are being used over and over again - there needs to be some variation.</p>
 									<p className='p-primary'>Once we’re far enough into the task, don’t know how to get back.</p>
