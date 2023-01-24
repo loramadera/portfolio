@@ -109,7 +109,7 @@ function MCC() {
 		<div className='mobile'>
 			<link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
 			<Navigation />
-			<div className='margins-mcc top-small'>
+			<div className='margins-larger img-mcc top-small'>
 				<img src={ imgHero } width="100%"></img>
 			</div>
 			<div className='flexbox top-small margins-large row'>

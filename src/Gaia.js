@@ -155,7 +155,7 @@ return (
 
 	<div className='bottom-small'>
 		<h1 className='h1-primary center-align top-small'>Gaia</h1>
-		<p className='p-primary center-align margins-extra mobile'>Gaia is an informational & interactivity tool I designed, inspired by the three pillars of sustainability - economy, environment, and society. It seeks to educate on these pillars in a fun and interactive way.</p>
+		<p className='p-primary center-align margins-extra'>Gaia is an informational & interactivity tool I designed, inspired by the three pillars of sustainability - economy, environment, and society. It seeks to educate on these pillars in a fun and interactive way.</p>
 		<div className='flex1 center-align margins-small'>
 			<a href= {projGaia}>
 				<button className='best-case-study padding-ultra-s mobile-margins'>View Full Process</button>
@@ -163,7 +163,7 @@ return (
 		</div>		
 	</div>
 	
-	<div className='mobile'>
+		<div>
 		<div className='top-small'>
 			<Items />
 		</div>

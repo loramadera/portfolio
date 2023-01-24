@@ -57,10 +57,8 @@ function Portfolio() {
       return (
         <div className='center-align top-medium bottom-small'>
           <img className='bub-mobile' src= {imgMobile} width="100%"></img>
-            <h1 className='h1-primary top-medium center-align'>Hi, I'm Lora!</h1>
-            <h3 className='h2-primary center-align'>Work</h3>
+            <h2 className='h3-primary top-medium center-align'>Hi, I'm Lora!</h2>
             <p className='p-primary center-align'>UX/UI & Visual Designer, Developer, 3D Modeler</p>
-            <h3 className='h2-primary center-align'>Play</h3>
             <p className='p-primary center-align'>Author, Bookworm, Gamer, Digital Artist</p>
         </div>
       );
@@ -139,7 +137,7 @@ function Portfolio() {
       </div>  
       
       <div className='mobile margins-extra'>
-        <h2 className='h2-primary top-medium bottom-medium box center-align'>What I Do</h2>
+        <h2 className='h3-primary bottom-medium box center-align'>What I Do</h2>
         <Items />
       </div>  
 

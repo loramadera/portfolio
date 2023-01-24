@@ -244,7 +244,7 @@ function Bestiary() {
 			<Navigation />
 
 			<div className='margins-large'>
-				<div className='margins-small top-small'>
+				<div className='margins-small top-small mobile'>
 					<img src={ imgHero } width="100%"></img>
 				</div>	
 				<div className='flexbox top-small row'>

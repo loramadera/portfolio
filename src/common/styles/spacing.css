@@ -66,6 +66,11 @@
   margin-right: 200px;
 }
 
+.margins-larger {
+  margin-left: 300px;
+  margin-right: 300px;
+}
+
 .margins-extra {
   margin-left: 350px;
   margin-right: 350px;

@@ -128,7 +128,7 @@ return (
 			</a>		
 		</div>	
 	</div>
-	<div className='mobile vaca-box margins-small top-small'>
+	<div className='vaca-box margins-small top-small'>
 		<div>
 				<div className='flexbox margins-small top-medium'>
 					<div className='flex1 box'>

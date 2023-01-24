@@ -135,7 +135,7 @@ return (
 		</div>
 	</div>
 	
-	<div className='mobile sadhan-box bottom-large margins-small'>
+	<div className='sadhan-box bottom-large margins-small'>
 		<div>
 				<div className='flexbox margins-medium top-medium bottom-medium'>
 					<div className='flex1 box'>

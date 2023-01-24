@@ -177,7 +177,7 @@ function BookVerse() {
 	<div className='mobile'>
 	<Navigation />
 	<link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
-	<div className='book  margins-large'>	
+	<div className='book margins-large'>	
 		<div className="book-hero margins-small">
 			<img src={ imgBookVerse} width="100%"></img>
 		</div>
@@ -195,7 +195,7 @@ function BookVerse() {
 			<h2 className='p-primary center-align margins-extra top-small none'>A book cataloguing database I conceptualized, researched, and designed, uniquely crossed with social media to match readers with their ideal book and connect them with other readers in that book's fandom.</h2>
 		</div>
 
-		<div className='flex1 center-align margins-small'>
+		<div className='flex1 center-align margins-small mobile'>
 			<a href= {projBookVerse}>
 				<button className='best-case-study padding-ultra-s mobile-margins'>View Full Case Study</button>
 			</a>		

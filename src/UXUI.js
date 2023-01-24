@@ -141,6 +141,46 @@ const [items, setItems] = React.useState(visualItems)
     }
   }
 
+  function Brand() {
+    if (window.innerWidth < 1025) {
+      return brandItems.map((item, index) => {
+        return <div key={index} className='margins-small bottom-medium'>
+        <a className='a-none flexbox darker-box' href={item.link}>
+          <div className='img flex1'><img className='portfolio-img' src={item.image} width="100%" /></div>
+          <div className='flex1 box'>
+            <h3 className='h3-primary center-align'>{item.title}</h3>
+            <p className='p-primary center-align'>{item.text}</p>
+          </div>
+        </a>
+      </div>;
+      });
+    } else {
+      return brandItems.map((item, index) => {
+        if (index % 2) {
+          return <div key={index} className='bottom-medium'>
+        <a className='a-none flexbox darker-box' href={item.link}>
+         <div className='flex1 box'>
+            <h3 className='h3-primary center-align'>{item.title}</h3>
+            <p className='p-primary center-align'>{item.text}</p>
+          </div>
+          <div className='img flex1'><img className='portfolio-img' src={item.image} width="100%" /></div>
+        </a>
+      </div>;
+    } else {
+      return <div key={index} className='bottom-medium'>
+        <a className='a-none flexbox darker-box' href={item.link}>
+          <div className='img flex1'><img className='portfolio-img' src={item.image} width="100%" /></div>
+          <div className='flex1 box'>
+            <h3 className='h3-primary center-align'>{item.title}</h3>
+            <p className='p-primary center-align'>{item.text}</p>
+          </div>
+        </a>
+      </div>;
+        }
+      });
+    }
+  }
+
 
   const intItems = interactItems.map((item, index) => {
     // 1st, 3rd, ...
@@ -205,24 +245,17 @@ const [items, setItems] = React.useState(visualItems)
           </div>
         </div>
 
-          
 
         <div className='mobile'>
           <div className='margins-extra'>
             <h3 className='h3-primary center-align bottom-small mobile opacity'>Branding & Visual Design</h3>
             <div className='mobile'>
-              <div className='bottom-medium'>
-                <a className='a-none flexbox darker-box' href='/mcc'>
-                  <div className='flex1 box'>
-                    <h3 className='h3-primary center-align'>Moraga Country Club</h3>
-                    <p className='p-primary center-align'>Re-branding project of East Bay country club.</p>
-                  </div>
-                  <div className='img flex1'><img className='portfolio-img' src={imgMCC} width="100%" /></div>
-                </a>
-              </div>
+              < Brand />
             </div>
           </div>
         </div>
+
+          
 
     <div className='mobile'><Footer /></div>
     
