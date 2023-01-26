@@ -32,7 +32,7 @@ function Portfolio() {
     {'title': 'UX/UI & Design', 'text': 'UX/UI development, visual design & branding, and interactive design projects.', 'image': imgVaca, 'link': '/uxui' },
     {'title': 'Coding', 'text': 'C# projects as well as React, Flutter, HTML, CSS.', 'image': imgCode, 'link': '/code' },
     {'title': '3D-Modeling', 'text': '3D art projects created in Blender.', 'image': imgModel, 'link': '/modeling' },
-    {'title': 'Digital Art', 'text': 'Digital portraits (and others).', 'image': imgESO, 'link': '/digitalart'},
+    {'title': 'Illustration', 'text': 'Portraits & other.', 'image': imgESO, 'link': '/digitalart'},
   ];
 
   const bubbleItems = [

@@ -110,9 +110,9 @@ function Digitalart() {
     <div className='mobile'>
       <Navigation />
       <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
-        <h1 className='h1-primary center-align top-medium bottom-small'>Digital Art</h1>
+        <h1 className='h1-primary center-align top-medium bottom-small'>Illustration</h1>
         <div className='margins-extra'>
-        <h3 className='h3-primary center-align opacity'>Procreate/Photoshop Projects</h3>
+        <h3 className='h3-primary center-align opacity'>Procreate/Photoshop Art Projects</h3>
           < Art />
         </div>
       
