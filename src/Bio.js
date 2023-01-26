@@ -9,6 +9,8 @@ import imgMe from './images/bio/me.png';
 import imgSki from './images/bio/snow.png';
 import imgFantasy from './images/bio/fantasy.png';
 
+import projLora from './images/bio/Galoyan_Resume.pdf';
+
 function debounce(fn, ms) {
   let timer
   return _ => {
@@ -22,7 +24,7 @@ function debounce(fn, ms) {
 
 function Bio() {
   const contentItems = [
-    { 'title': 'About Me', 'text': 'After graduating with a degree in economics from UC San Diego, I stumbled into design while pursuing another career and haven’t looked back, having discovered that design is the perfect intersection of my core passions and fascinations. I love working with people and thrive in collaborative, forward-thinking environments that lean into feedback, innovation, and growth.', 'image': imgMe },
+    { 'title': 'About Me', 'text': 'After graduating with a degree in economics from UC San Diego, I stumbled into design and fell in love. Patience and precision is the key to quality assurance, and I believe any design process must be approached with empathy, mindful deliberation, and always in the pursuit of depth and innovation. I value personal growth and problem solving, and I thrive in settings that challenge and help me grow by leaning into feedback and teamwork.', 'image': imgMe },
     { 'title': 'My Hobbies', 'text': 'I love skiing and pride myself on my ability to teach anyone to ski in a day (bunnies to blues). Disc golf, tennis, fitness training and hiking are also some favorite pastimes. Fun fact: I also love writing and am a published author!', 'image': imgSki },
     { 'title': 'Lets Call Them Quirks', 'text': 'I am a voracious consumer of fantasy. If I find a book series I love, it’ll be hard to tear away and crawl out of my cave for sunlight. I’m a Tolkien loremaster and Harry Potter acolyte, and my annual Hogwarts parties are very serious business (people fly in for them).', 'image': imgFantasy },
  ];
@@ -107,9 +109,11 @@ function Bio() {
         </div>
         <div className='bottom-medium'>
           <h3 className='h3-primary center-align'>Contact</h3>
+          <a href={ projLora } className='a-none flex1 box'>
+            <p className='p-primary center-align'>PDF Resume</p>
+          </a>
           <p className='p-primary center-align'>Lora Galoyan</p>
           <p className='p-primary center-align'>Email: lkgaloyan@gmail.com</p>
-          <p className='p-primary center-align'>PDF Resume</p>
         </div>
       </div>
     <div className=''>
