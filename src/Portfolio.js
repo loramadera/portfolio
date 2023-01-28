@@ -55,9 +55,9 @@ function Portfolio() {
   function Top() {
     if (window.innerWidth < 1025 ) {
       return (
-        <div className='center-align top-medium bottom-small'>
+        <div className='center-align top-medium'>
           <img className='bub-mobile' src= {imgMobile} width="100%"></img>
-            <h2 className='h3-primary top-medium center-align'>Hi, I'm Lora!</h2>
+            <h2 className='h3-primary top-small center-align'>Hi, I'm Lora!</h2>
             <p className='p-primary center-align'>UX/UI & Visual Designer, Developer, 3D Modeler</p>
             <p className='p-primary center-align'>Author, Bookworm, Gamer, Digital Artist</p>
         </div>
