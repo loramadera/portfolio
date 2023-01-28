@@ -6,6 +6,7 @@ import './common/styles/spacing.css';
 import './common/styles/sitetypography.css';
 import './Code.css';
 
+import imgCodeLogo  from './images/Code/logo.png';
 import imgAzure from './productDemo/Images/Azure.png';
 
 function debounce(fn, ms) {
@@ -21,6 +22,7 @@ function debounce(fn, ms) {
 
 function Code() {
   const contentItems = [
+    { 'title': 'My Portfolio Site', 'text': 'My portfolio site, coded from scratch in React.', 'image': imgCodeLogo, 'link': '/' },
     { 'title': 'Azure', 'text': 'A fantasy terrarium product site that I designed and coded.', 'image': imgAzure, 'link': '/product-demo-home' },
   ];
 
@@ -86,7 +88,7 @@ function Code() {
             <h1 className='h1-primary center-align top-medium'>Coding</h1>
               <div className='mobile'>
                 <div className='top-small'>
-                  <h3 className='h3-primary center-align bottom-small opacity'>Web Development</h3>
+                  <h3 className='h3-primary center-align bottom-small opacity'>React Web Development</h3>
                   <Items />
                 </div>
               </div>  
