@@ -44,7 +44,7 @@ function Bio() {
   })
 
   function Items() {
-    if (window.innerWidth < 1025) {
+    if (window.innerWidth < 1200) {
       return contentItems.map((item, index) => {
         return <div className='margins-small bottom-medium'>
           <div className='flexbox darker-box'>
@@ -103,7 +103,7 @@ function Bio() {
     <Navigation />
       <h1 className="h1-primary center-align top-large bottom-medium">Lora Galoyan</h1>
 
-      <div className='margins-large'>
+      <div className='bio-content'>
         <div>
           <Items />
         </div>
