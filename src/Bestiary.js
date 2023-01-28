@@ -284,9 +284,9 @@ function Bestiary() {
 				</div>
 				<div className='flexbox margins-small'>
 					<div className='flex1 box center-align top-medium bottom-medium'>
-						<img className='img-big-swords margins-small' src= { imgSwords } width="100%"></img>
+						<img className='img-big-swords' src= { imgSwords } width="100%"></img>
 					</div>
-					<div className='flex1 box'>
+					<div className='flex2 box'>
 						<div>
 							<h3 className='h3-primary margins-small'>Hypothesis</h3>
 							<p className='p-primary margins-small'>The more immersive a gaming experience, the more likely a gamer is to consume and retain information from the interface conveying it.</p>
@@ -438,7 +438,7 @@ function Bestiary() {
 						<div className='flexbox top-medium margins-small'>
 								<div className='flex1 box'>
 									<div className='center-align'>
-										<img className='img-best-expert bottom-small' src={ imgPerson4 } width="100%"></img>
+										<img className='img-best-expert' src={ imgPerson4 } width="100%"></img>
 										<h2 className='h3-primary'>Benjamin Brown, 32</h2>
 										<h2 className='h3-primary'>Bay Area</h2>
 										<h2 className='h3-primary'>Ex-Videogame Livestreamer</h2>
@@ -463,15 +463,15 @@ function Bestiary() {
 					<div className='flexbox margins-small bottom-small'>
 						<div className='flex1 box'>
 							<h3 className='h3-primary'>Defining the Features</h3>
-							<p className='p-primary'>Inventory of ingredients, with tabs leading to various pages on each cryptid</p>
-							<p className='p-primary'>Map of creature’s well-known whereabouts, their strengths and weaknesses</p>
-							<p className='p-primary'>Journal entry option with cryptid’s individual biography</p>
+							<p className='p-primary right'>Inventory of ingredients, with tabs leading to various pages on each cryptid</p>
+							<p className='p-primary right'>Map of creature’s well-known whereabouts, their strengths and weaknesses</p>
+							<p className='p-primary right'>Journal entry option with cryptid’s individual biography</p>
 						</div>
 						<div className='flex1'>
 							<h3 className='h3-primary'>Defining the Outcome</h3>
-							<p className='p-primary'>Player will have option to log a journal entry</p>
-							<p className='p-primary'>Player will learn about the cryptid, gather info about how to defeat it</p>
-							<p className='p-primary'>Player will be able to identify where their chances are best for locating the cryptid</p>
+							<p className='p-primary right'>Player will have option to log a journal entry</p>
+							<p className='p-primary right'>Player will learn about the cryptid, gather info about how to defeat it</p>
+							<p className='p-primary right'>Player will be able to identify where their chances are best for locating the cryptid</p>
 						</div>
 					</div>
 					<div className='margins-small'>

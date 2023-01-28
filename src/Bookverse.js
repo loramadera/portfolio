@@ -268,15 +268,15 @@ function BookVerse() {
 				<div className='flexbox margins-small'>
 					<div className='flex1'>
 						<h4 className='h4-primary none'>Contexts</h4>
-						<p className='p-primary'>High phone/reading device usage, enjoys frequent recreational activites, high social media usage.</p>
+						<p className='p-primary right'>High phone/reading device usage, enjoys frequent recreational activites, high social media usage.</p>
 					</div>
 					<div className='flex1'>
 						<h4 className='h4-primary none'>Attitudes</h4>
-						<p className='p-primary'>Focused, but overall creative personality, open to new experiences, reading is a form of self-enrichment.</p>
+						<p className='p-primary right'>Focused, but overall creative personality, open to new experiences, reading is a form of self-enrichment.</p>
 					</div>
 					<div className='flex1'>
 						<h4 className='h4-primary none'>Motivations</h4>
-						<p className='p-primary'>Seeking escapism, prefers passive activities, desires positive impact on personal creativity & inspiration.</p>
+						<p className='p-primary right'>Seeking escapism, prefers passive activities, desires positive impact on personal creativity & inspiration.</p>
 					</div>
 					</div>
 				</div>
