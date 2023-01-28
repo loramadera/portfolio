@@ -68,7 +68,7 @@ function Items() {
     } else {
       return contentItems.map((item, index) => {
         if (index % 2) {
-          return <div className='margins-medium sadhan-item mobile'>	
+          return <div className='margins-small sadhan-item mobile'>	
 			<div className='flexbox'>	
 				<div className='flex1 box'>
 					<h4 className='s4-primary left-align'>{item.title}</h4>
@@ -82,7 +82,7 @@ function Items() {
 			</div>
 		</div>
 	} else {
-		return <div className='margins-medium sadhan-item'>
+		return <div className='margins-small sadhan-item'>
 			<div className='flexbox'>
 				<div className='flex1 box center-align'>
 					<div className='flexbox'>
@@ -137,7 +137,7 @@ return (
 	
 	<div className='sadhan-box bottom-large margins-small'>
 		<div>
-				<div className='flexbox margins-medium top-medium bottom-medium'>
+				<div className='flexbox margins-small top-medium bottom-medium'>
 					<div className='flex1 box'>
 							<h4 className='s4-primary mobile-margins-3'>Color & Atmosphere</h4>
 							<p className='s-primary  mobile-margins-3'>The color palette of thix app, featuring bright blues, yellows, and greens, reflects love for nature and a spirituality core.</p>
