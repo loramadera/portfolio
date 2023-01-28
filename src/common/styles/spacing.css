@@ -106,7 +106,7 @@
 
 .small-border {
   border-bottom-style: solid;
-  border-bottom-color: white;
+  border-bottom-color: black;
   border-bottom-width: 2px;
 }
 
@@ -305,7 +305,7 @@
 
     .small-border {
       border-bottom-style: solid;
-      border-bottom-color: white;
+      border-bottom-color: black;
       border-bottom-width: 2px;
       margin-left: 10px;
       margin-right: 10px;
