@@ -128,7 +128,7 @@ function Portfolio() {
     <div className='mobile'>
     <Navigation />
       <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
-      <div className='center-align mobile bottom-medium'>
+      <div className='center-align mobile bottom-small'>
         <Top />
       </div>     
       
