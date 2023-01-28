@@ -128,13 +128,9 @@ function Portfolio() {
     <div className='mobile'>
     <Navigation />
       <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
-      <div className='center-align mobile'>
+      <div className='center-align mobile bottom-medium'>
         <Top />
       </div>     
-      
-      <div className='center-align'>
-        <img className='img-arrows top-small bottom-small mobile' src= { imgArrows } ></img>
-      </div>  
       
       <div className='mobile margins-extra'>
         <h2 className='h3-primary bottom-medium box center-align'>What I Do</h2>
