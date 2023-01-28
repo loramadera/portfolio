@@ -3,12 +3,13 @@
 }
 
 .vaca-desktop {
-  width: 1200px;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .vaca-onboard {
-  width: 1200px;
-  margin: 0 auto;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 

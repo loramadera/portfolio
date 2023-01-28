@@ -68,7 +68,7 @@ const [items, setItems] = React.useState(contentItems)
       return contentItems.map((item, index) => {
         if (index % 2) {
       return <div className='vaca-item'>
-			<div className='flexbox margins-small'>
+			<div className='flexbox'>
 				<div className='flex1 box'>
 					<h2 className='s4-primary left-align margins-small'>{item.title}</h2>
 					<p className='s-primary margins-small'>{item.text}</p>
@@ -80,7 +80,7 @@ const [items, setItems] = React.useState(contentItems)
 		</div>
 	} else {
 			return <div className='vaca-item'>	
-			<div className='flexbox margins-small'>	
+			<div className='flexbox'>	
 				<div className='img flex1 box'>
 					<img src= {item.image} width="100%"></img>
 				</div>
@@ -130,7 +130,7 @@ return (
 	</div>
 	<div className='vaca-box margins-small top-small'>
 		<div>
-				<div className='flexbox margins-small top-medium'>
+				<div className='flexbox top-medium'>
 					<div className='flex1 box'>
 							<h2 className='s4-primary margins-small'>Tracking</h2>
 							<p className='s-primary margins-small'>Seasonal weather trends, regional site-seeing index, flight and hotel booking calendar</p>
@@ -150,12 +150,12 @@ return (
 					<Items />
 				</div>
 
-				<div className='vaca-onboard top-medium'>
-					<img className='vaca-onboard center-align' src= {imgOnboard} width="100%"></img>
+				<div className='vaca-onboard'>
+					<img src= {imgOnboard} width="100%"></img>
 				</div>
 
-				<div className='vaca-desk center-align top-medium'>
-					<img className='vaca-desktop' src= {imgDesktop} width="100%"></img>
+				<div className='vaca-desktop'>
+					<img src= {imgDesktop} width="100%"></img>
 				</div>
 
 				<div className='vaca-beauty'>
