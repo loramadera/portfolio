@@ -133,7 +133,7 @@ function Portfolio() {
       </div>     
       
       <div className='mobile margins-extra'>
-        <h2 className='h3-primary bottom-medium box center-align'>What I Do</h2>
+        <h2 className='h3-primary bottom-small box center-align'>What I Do</h2>
         <Items />
       </div>  
 
