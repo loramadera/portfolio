@@ -94,7 +94,7 @@ function Code() {
               </div>  
             </div>
           </div>
-         <div className='mobile'>
+         <div className='mobile top-medium'>
           <Footer />
           </div> 
         </div>
