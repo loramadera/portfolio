@@ -34,7 +34,7 @@ function UXUI() {
      ];
 
   const uxuiItems = [
-    { 'title': 'BookVerse', 'text': 'A book cataloguing database.', 'image': imgBookVerse, 'link': '/bookverse' },
+    { 'title': 'BookVerse', 'text': 'A book cataloguing/social media hybrid application.', 'image': imgBookVerse, 'link': '/bookverse' },
     { 'title': 'Bestiary', 'text': 'An interactive game design.', 'image': imgBestiary, 'link': '/bestiary' },
      ];
 
