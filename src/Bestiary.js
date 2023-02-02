@@ -264,7 +264,7 @@ function Bestiary() {
 				<p className='p-primary center-align margins-extra'>An interactive game design I conceptualized, researched, and designed with the intention of creating a more immersive gaming experience.</p>
 				<div className='flex1 center-align margins-small'>
 					<a href= {projBestiary}>
-						<button className='best-case-study padding-ultra-s mobile-margins'>View Full Case Study</button>
+						<button className='best-case-study padding-ultra-s mobile-margins'>View Full Process</button>
 					</a>		
 				</div>	
 		

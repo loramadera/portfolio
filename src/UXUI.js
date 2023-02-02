@@ -228,7 +228,7 @@ const [items, setItems] = React.useState(visualItems)
 
          <div className='mobile'>
           <div className='margins-extra mobile'>
-            <h3 className='h3-primary center-align bottom-small mobile opacity'>App & Visual Design</h3>
+            <h3 className='h3-primary center-align bottom-small mobile opacity'>UX & Visual Design</h3>
             <div className='mobile'>
               <Items />
             </div>
