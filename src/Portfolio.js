@@ -58,8 +58,9 @@ function Portfolio() {
         <div className='center-align top-medium'>
           <img className='bub-mobile' src= {imgMobile} width="100%"></img>
             <h2 className='h3-primary top-small center-align'>Hi, I'm Lora!</h2>
-            <p className='p-primary center-align'>UX/UI & Visual Designer, Developer, 3D Modeler</p>
-            <p className='p-primary center-align'>Author, Bookworm, Gamer, Digital Artist</p>
+            <p className='p-primary center-align'>UX/UI Designer</p>
+            <p className='p-primary center-align'>Full-Stack Engineer</p>
+            <p className='p-primary center-align'>Visual Designer</p>
         </div>
       );
     }
