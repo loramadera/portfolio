@@ -12,6 +12,10 @@
 	display: block;
 }
 
+.arrow {
+	width: 50px;
+}
+
 .mob-us {
 	vertical-align: bottom;
 }

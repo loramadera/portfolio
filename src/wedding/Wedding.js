@@ -4,6 +4,7 @@ import './Wedding.css';
 import imgUs from './images/us.jpeg';
 import imgUs2 from './images/us2.jpeg';
 import imgUs3 from './images/us3.jpg';
+import imgUs4 from './images/us4.jpg';
 import imgFlower from './images/flowerborder.png';
 import imgArrow from './images/goldarrow.png';
 import imgForest from './images/forest.jpg';
@@ -36,14 +37,19 @@ function Wedding() {
             <img src= {imgFlower} width="100%"></img>
             <h1 className='w1-primary center-align top-large'>Luke & Lora</h1>
             <h2 className='w2-primary center-align top-small'>Welcome to our wedding!</h2>
-            <h2 className='w2-primary center-align top-tiny bottom-large'>04.10.2023</h2>
-            <img className='mob-us top-medium' src= {imgUs2} width='100%'></img>
+            <h2 className='w2-primary center-align top-tiny bottom-medium'>04.10.2023</h2>
+            <img className='mob-us' src= {imgUs2} width='100%'></img>
+
+            <div className='center-align top-medium bottom-medium'>
+              <h2 className='w2-primary center-align'>Details</h2>
+              <img className='arrow center-align top-small' src= { imgArrow } width='100%'></img>
+            </div>
 
 
             <div className='greenbox'>
              <div className='center-align'>
+                <img className='forest center-align' src= { imgForest } width='100%'></img>
                 <h1 className='w1-secondary top-med center-align'>The Couple</h1>
-                <img className='forest center-align top-med' src= { imgForest } width='100%'></img>
                 <div className='mobile-margins-3'>    
                   <h2 className='w2-secondary left-align top-med'>Long before they started dating, Lora worked at __ and Luke worked at __.</h2>
                   <p className='w-primary left-align top-tiny'>A. King’s Landing; Dragonstone</p>
@@ -77,19 +83,20 @@ function Wedding() {
 
               <div>
                 <img className='mob-us top-medium' src= {imgUs3} width='100%'></img>
-                <h1 className='w1-secondary top-large  center-align'>The Venue</h1>
-                <div className='mobile-margins-3 top-large'>
-                  <h2 className='w2-secondary center-align'>Jefferson Street Mansion</h2>
-                  <h2 className='w2-secondary center-align'>1063 Jefferson St</h2>
-                  <h2 className='w2-secondary center-align'>Benicia, CA 94510</h2>
+                <h1 className='w1-secondary top-large center-align'>The Venue</h1>
+                <div className='mobile-margins-3 top-small'>
+                  <h2 className='w-primary center-align'>Jefferson Street Mansion</h2>
+                  <h2 className='w-primary center-align'>1063 Jefferson St</h2>
+                  <h2 className='w-primary center-align'>Benicia, CA 94510</h2>
                 </div>
               </div>
 
 
-              <div>
-                <h1 className='w1-secondary top-large center-align'>Frequently Asked Questions</h1>
+              <div className='top-large'>
+                <img className='mob-us' src= {imgUs4} width='100%'></img>
+                <h1 className='w1-secondary top-large center-align'>FAQ</h1>
                 <div className='mobile-margins-3'>
-                  <h2 className='w2-secondary left-align top-med'>What time should I arrive?</h2>
+                  <h2 className='w2-secondary left-align top-medium'>What time should I arrive?</h2>
                   <p className='w-primary left-align top-tiny'>Please arrive at 4PM to park and find a seat, as the ceremony will begin promptly at 430. If you arrive at 430, be prepared to walk down the aisle and marry Luke!</p>
                   
                   <h2 className='w2-secondary left-align top-med'>Will there be free parking?</h2>
@@ -177,8 +184,8 @@ function Wedding() {
 
 
               <div className='center-align'>
+                <img className='forest center-align' src= { imgForest } width='100%'></img>
                 <h1 className='w1-secondary top-med center-align'>The Couple</h1>
-                <img className='forest center-align top-med' src= { imgForest } width='100%'></img>
                 <div className='margins-med'>    
                   <h2 className='w2-secondary left-align top-med'>Long before they started dating, Lora worked at __ and Luke worked at __.</h2>
                   <p className='w-primary left-align top-tiny'>A. King’s Landing; Dragonstone</p>
@@ -213,15 +220,16 @@ function Wedding() {
               <div>
                 <img className='mob-us top-medium' src= {imgUs3} width='100%'></img>
                 <h1 className='w1-secondary top-med center-align'>The Venue</h1>
-                <div className='margins-med top-med'>
-                  <h2 className='w2-secondary center-align'>Jefferson Street Mansion</h2>
-                  <h2 className='w2-secondary center-align'>1063 Jefferson St</h2>
-                  <h2 className='w2-secondary center-align'>Benicia, CA 94510</h2>
+                <div className='margins-med top-small'>
+                  <h2 className='w-primary center-align'>Jefferson Street Mansion</h2>
+                  <h2 className='w-primary center-align'>1063 Jefferson St</h2>
+                  <h2 className='w-primary center-align'>Benicia, CA 94510</h2>
                 </div>
               </div>
 
 
               <div>
+                <img className='center-align top-med' src= { imgUs4 } width='100%'></img>
                 <h1 className='w1-secondary top-medium center-align'>Frequently Asked Questions</h1>
                 <div className='margins-med'>
 
