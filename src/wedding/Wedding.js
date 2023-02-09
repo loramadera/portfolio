@@ -118,7 +118,7 @@ function Wedding() {
                   <p className='w-primary left-align top-tiny'>Heel lovers know the struggle of being a walking lawn aerator. While there will be grassy areas for photos, the majority of the event is on solid ground! </p> 
 
                   <h2 className='w2-secondary left-align top-med'>Can I take pictures/videos during the ceremony?</h2>
-                  <p className='w-primary left-align top-tiny'>Absolutely! And send them to us!  We only ask that you turn off your ringers and be mindful of the professional photographers—we don’t want framed photos of iPads obscuring our faces around the house!</p>
+                  <p className='w-primary left-align top-tiny'>Absolutely! We want all the photos! We encourage you to post or send them to us!  We only ask that you turn off your ringers and be mindful of the professional photographers—we don’t want framed photos of iPads obscuring our faces around the house!</p>
 
                   <h2 className='w2-secondary left-align top-med'>Can I bring guests, +1s, cats, dogs, my Uncle Bill, pet penguin?</h2>
                   <p className='w-primary left-align top-tiny'>The guest list is now finalized, so we request that you do not bring a guest that was not formally invited! Although, we won't be mad if you bring a penguin.</p>
@@ -255,7 +255,7 @@ function Wedding() {
                   <p className='w-primary left-align top-tiny'>Heel lovers know the struggle of being a walking lawn aerator. While there will be grassy areas for photos, the majority of the event is on solid ground! </p> 
 
                   <h2 className='w2-secondary left-align top-med'>Can I take pictures/videos during the ceremony?</h2>
-                  <p className='w-primary left-align top-tiny'>Absolutely! And send them to us!  We only ask that you turn off your ringers and be mindful of the professional photographers—we don’t want framed photos of iPads obscuring our faces around the house!</p>
+                  <p className='w-primary left-align top-tiny'>Absolutely! We want all the photos! We encourage you to post or send them to us!  We only ask that you turn off your ringers and be mindful of the professional photographers—we don’t want framed photos of iPads obscuring our faces around the house!</p>
 
                   <h2 className='w2-secondary left-align top-med'>Can I bring guests, +1s, cats, dogs, my Uncle Bill, pet penguin?</h2>
                   <p className='w-primary left-align top-tiny'>The guest list is now finalized, so we request that you do not bring a guest that was not formally invited! Although, we won't be mad if you bring a penguin.</p>
