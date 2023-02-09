@@ -70,7 +70,7 @@ function Wedding() {
                   <p className='w-primary left-align top-tiny'>D. By burning down the Iron Throne</p>
 
                   <h2 className='w2-secondary left-align top-med'>How did Luke propose?</h2>
-                  <p className='w-primary left-align top-tiny'>A. By whispering in her ear, “Hey how you doing lil mama wanna get married?</p>
+                  <p className='w-primary left-align top-tiny'>A. By whispering in her ear, “Hey how you doing lil mama wanna get married?"</p>
                   <p className='w-primary left-align top-tiny'>B. With a ring pop during their bi-weekly Costco trip</p>
                   <p className='w-primary left-align top-tiny'>C. He took Lora to the top of a mountain in Hawaii</p>
                   <p className='w-primary left-align top-tiny'>D. In the middle of battle on Davy Jones’ ship</p>
@@ -97,10 +97,10 @@ function Wedding() {
                 <h1 className='w1-secondary top-large center-align'>FAQ</h1>
                 <div className='mobile-margins-3'>
                   <h2 className='w2-secondary left-align top-medium'>What time should I arrive?</h2>
-                  <p className='w-primary left-align top-tiny'>Please arrive at 4PM to park and find a seat, as the ceremony will begin promptly at 430. If you arrive at 430, be prepared to walk down the aisle and marry Luke!</p>
+                  <p className='w-primary left-align top-tiny'>Please arrive at 4PM to park and find a seat, as the ceremony will begin promptly at 430! If you arrive at 430, be prepared to walk down the aisle and marry Luke.</p>
                   
                   <h2 className='w2-secondary left-align top-med'>Will there be free parking?</h2>
-                  <p className='w-primary left-align top-tiny'>Yes! Car, motorcycle, and dragon parking will be around back.</p>
+                  <p className='w-primary left-align top-tiny'>Yes! The car park, helicopter pad, and dragon coop will be around back.</p>
 
                   <h2 className='w2-secondary left-align top-med'>Is there a dress code? </h2>
                   <p className='w-primary left-align top-tiny'>We’re not too picky, but we request clothes! The dress code is formal attire and our colors are gold and sage green. Ladies, we respectfully request that you avoid shades of white/ivory.</p>
@@ -206,7 +206,7 @@ function Wedding() {
                   <p className='w-primary left-align top-tiny'>D. By burning down the Iron Throne</p>
 
                   <h2 className='w2-secondary left-align top-med'>How did Luke propose?</h2>
-                  <p className='w-primary left-align top-tiny'>A. By whispering in her ear, “Hey how you doing lil mama wanna get married?</p>
+                  <p className='w-primary left-align top-tiny'>A. By whispering in her ear, “Hey how you doing lil mama wanna get married?"</p>
                   <p className='w-primary left-align top-tiny'>B. With a ring pop during their bi-weekly Costco trip</p>
                   <p className='w-primary left-align top-tiny'>C. He took Lora to the top of a mountain in Hawaii</p>
                   <p className='w-primary left-align top-tiny'>D. In the middle of battle on Davy Jones’ ship</p>
