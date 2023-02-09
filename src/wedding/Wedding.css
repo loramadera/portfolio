@@ -17,10 +17,16 @@
 
 .content {
 	position: relative;
-	text-align: right;
 	margin-right: 0px;
 	width: 40%;
+}
 
+.arrow {
+	width: 50px;
+}
+
+.greenbox {
+	background-color: #99c4a6;
 }
 
 
@@ -40,13 +46,27 @@
   margin: 0px;
 }
 
+.h1-secondary {
+  color: white;
+  font-family: montserrat, sans-serif;
+  font-weight: 600;
+  font-size: 30px;
+  margin: 0px;
+}
 
-
+.h2-secondary {
+  color: white;
+  font-family: montserrat, sans-serif;
+  font-weight: 550;
+  font-size: 18px;
+  margin: 0px;
+}
 
 .p-primary {
-  color: #1e2229;
+  color: white;
   font-family: montserrat, sans-serif;
-  font-weight: 350;
-  font-style: normal;
-  font-size: 15px;
+  font-weight: 450;
+  font-size: 18px;
+  margin: 0px;
 }
+
