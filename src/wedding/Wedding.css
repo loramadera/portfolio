@@ -1,0 +1,52 @@
+.img-us {
+	position: fixed;
+	left: 0;
+	top: 0;
+	bottom: 0;
+	width: 60%;
+}
+.image-us-image {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.img-empty {
+	width: 60%;
+}
+
+.content {
+	position: relative;
+	text-align: right;
+	margin-right: 0px;
+	width: 40%;
+
+}
+
+
+.h1-primary {
+  color: #1e2229;
+  font-family: montserrat, sans-serif;
+  font-weight: 150;
+  font-size: 40px;
+  margin: 0px;
+}
+
+.h2-primary {
+  color: #1e2229;
+  font-family: montserrat, sans-serif;
+  font-weight: 150;
+  font-size: 20px;
+  margin: 0px;
+}
+
+
+
+
+.p-primary {
+  color: #1e2229;
+  font-family: montserrat, sans-serif;
+  font-weight: 350;
+  font-style: normal;
+  font-size: 15px;
+}
