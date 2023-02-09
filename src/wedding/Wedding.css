@@ -1,72 +1,156 @@
-.img-us {
-	position: fixed;
-	left: 0;
-	top: 0;
-	bottom: 0;
-	width: 60%;
-}
-.image-us-image {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.img-empty {
-	width: 60%;
-}
-
-.content {
-	position: relative;
-	margin-right: 0px;
-	width: 40%;
-}
-
-.arrow {
-	width: 50px;
-}
 
 .greenbox {
 	background-color: #99c4a6;
+}	
+.opacity2 {
+	opacity: 50%;
+}
+
+.image-us-image {
+	top: 0;
+	width: 75%;
+}
+
+.w1-primary {
+	color: #1e2229;
+	font-family: montserrat, sans-serif;
+	font-weight: 150;
+	font-size: 40px;
+	margin: 0px;
+}
+
+.w2-primary {
+	color: #1e2229;
+	font-family: montserrat, sans-serif;
+	font-weight: 150;
+	font-size: 20px;
+	margin: 0px;
+	}
+
+.w1-secondary {
+	color: white;
+	font-family: montserrat, sans-serif;
+	font-weight: 200;
+	font-size: 40px;
+	margin: 0px;
+}
+
+.w2-secondary {
+	color: white;
+	font-family: montserrat, sans-serif;
+	font-weight: 500;
+	font-size: 20px;
+	margin: 0px;
+}
+
+.w-primary {
+	color: white;
+	font-family: montserrat, sans-serif;
+	font-weight: 200;
+	font-size: 16px;
+	margin: 0px;
 }
 
 
-.h1-primary {
-  color: #1e2229;
-  font-family: montserrat, sans-serif;
-  font-weight: 150;
-  font-size: 40px;
-  margin: 0px;
+
+
+@media(min-width: 1025px) {
+	 .img-us {
+		position: fixed;
+		left: 0;
+		top: 0;
+		bottom: 0;
+		width: 60%;
+	}
+	.image-us-image {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+
+	.img-empty {
+		width: 60%;
+	}
+
+	.content {
+		position: relative;
+		margin-right: 0px;
+		width: 40%;
+	}
+
+	.arrow {
+		width: 50px;
+	}
+
+
+	.w1-primary {
+	  color: #1e2229;
+	  font-family: montserrat, sans-serif;
+	  font-weight: 150;
+	  font-size: 40px;
+	  margin: 0px;
+	}
+
+	.w2-primary {
+	  color: #1e2229;
+	  font-family: montserrat, sans-serif;
+	  font-weight: 150;
+	  font-size: 20px;
+	  margin: 0px;
+	}
+
+	.w1-secondary {
+	  color: white;
+	  font-family: montserrat, sans-serif;
+	  font-weight: 200;
+	  font-size: 35px;
+	  margin: 0px;
+	}
+
+	.w2-secondary {
+	  color: white;
+	  font-family: montserrat, sans-serif;
+	  font-weight: 450;
+	  font-size: 20px;
+	  margin: 0px;
+	}
+
+	.w-primary {
+	  color: white;
+	  font-family: montserrat, sans-serif;
+	  font-weight: 200;
+	  font-size: 16px;
+	  margin: 0px;
+	}
+
 }
 
-.h2-primary {
-  color: #1e2229;
-  font-family: montserrat, sans-serif;
-  font-weight: 150;
-  font-size: 20px;
-  margin: 0px;
-}
 
-.h1-secondary {
-  color: white;
-  font-family: montserrat, sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  margin: 0px;
-}
 
-.h2-secondary {
-  color: white;
-  font-family: montserrat, sans-serif;
-  font-weight: 550;
-  font-size: 18px;
-  margin: 0px;
-}
 
-.p-primary {
-  color: white;
-  font-family: montserrat, sans-serif;
-  font-weight: 450;
-  font-size: 18px;
-  margin: 0px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
