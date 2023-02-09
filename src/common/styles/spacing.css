@@ -11,6 +11,14 @@
 }
 
 
+.top-tiny {
+  padding-top: 10px;
+}
+
+.top-med {
+  padding-top: 75px;
+}
+
 .top-small {
   padding-top: 20px;
 }
