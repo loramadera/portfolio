@@ -103,7 +103,7 @@ function Wedding() {
                   <p className='w-primary left-align top-tiny'>Yes! The car park, helicopter pad, and dragon coop will be around back.</p>
 
                   <h2 className='w2-secondary left-align top-med'>Is there a dress code? </h2>
-                  <p className='w-primary left-align top-tiny'>We’re not too picky, but we request clothes! The dress code is formal attire and our colors are gold and sage green. Ladies, we respectfully request that you avoid shades of white/ivory.</p>
+                  <p className='w-primary left-align top-tiny'>We’re not too picky, but we request clothes! The dress code is formal attire and our colors are gold and sage green. Ladies, we respectfully request that you avoid shades of white/ivory traditionally reserved for the bride.</p>
 
                   <h2 className='w2-secondary left-align top-med'>Will the wedding be indoors or outdoors? </h2>
                   <p className='w-primary left-align top-tiny'>The ceremony will take place outdoors (fingers and toes crossed for a sunny day), and the reception area is in a well-heated tent. </p> 
@@ -234,13 +234,13 @@ function Wedding() {
                 <div className='margins-med'>
 
                   <h2 className='w2-secondary top-med left-align'>What time should I arrive?</h2>
-                  <p className='w-primary left-align top-tiny'>Please arrive at 4PM to park and find a seat, as the ceremony will begin promptly at 430. If you arrive at 430, be prepared to walk down the aisle and marry Luke!</p>
+                  <p className='w-primary left-align top-tiny'>Please arrive at 4PM to park and find a seat, as the ceremony will begin promptly at 430! If you arrive at 430, be prepared to walk down the aisle and marry Luke.</p>
                   
                   <h2 className='w2-secondary left-align top-med'>Will there be free parking?</h2>
-                  <p className='w-primary left-align top-tiny'>Yes! Car, motorcycle, and dragon parking will be around back.</p>
+                  <p className='w-primary left-align top-tiny'>Yes! The car park, helicopter pad, and dragon coop will be around back.</p>
 
                   <h2 className='w2-secondary left-align top-med'>Is there a dress code? </h2>
-                  <p className='w-primary left-align top-tiny'>We’re not too picky, but we request clothes! The dress code is formal attire and our colors are gold and sage green. Ladies, we respectfully request that you avoid shades of white/ivory.</p>
+                  <p className='w-primary left-align top-tiny'>We’re not too picky, but we request clothes! The dress code is formal attire and our colors are gold and sage green. Ladies, we respectfully request that you avoid shades of white/ivory traditionally reserved for the bride.</p>
 
                   <h2 className='w2-secondary left-align top-med'>Will the wedding be indoors or outdoors? </h2>
                   <p className='w-primary left-align top-tiny'>The ceremony will take place outdoors (fingers and toes crossed for a sunny day), and the reception area is in a well-heated tent. </p> 
