@@ -33,7 +33,7 @@ function Wedding() {
             <div className='margins-tiny'>
 
               <h2 className='h2-secondary left-align top-med'>What time should I arrive?</h2>
-              <p className='p-primary left-align top-tiny'>Please arrive at 4PM to park and find a seat, the ceremony will begin promptly at 4:30PM. If you arrive at 4:30PM, be prepared to walk down the aisle and marry Luke! :)</p>
+              <p className='p-primary left-align top-tiny'>Please arrive at 4PM to park and find a seat, the ceremony will begin promptly at 430PM. If you arrive at 430PM, be prepared to walk down the aisle and marry Luke!</p>
               
               <h2 className='h2-secondary left-align top-med'>Will there be parking?</h2>
               <p className='p-primary left-align top-tiny'>Yes! Car, motorcycle, and dragon parking will be around back.</p>
