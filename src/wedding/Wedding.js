@@ -133,7 +133,7 @@ function Wedding() {
                   <p className='w-primary left-align top-tiny'>Nope! If anyone approaches the cake with malicious intent, they will be tackled by Annie the Bridesmaid.</p> 
 
                   <h2 className='w2-secondary left-align top-med'>Will there be dancing?</h2>
-                  <p className='w-primary left-align top-tiny'>As the Mansion is a historic building, sudden movements are discouraged. Just kidding—bring your best dance moves, it’s going to be a party!</p> 
+                  <p className='w-primary left-align top-tiny'>As the Mansion is an aging, historic building, sudden movements are discouraged. Just kidding—bring your best dance moves, it’s going to be a party!</p> 
 
                   <h2 className='w2-secondary left-align top-med'>What if I have dietary restrictions? </h2>
                   <p className='w-primary left-align top-tiny'>We have tried to select multiple entree and appetizer options that will accommodate our guests with known dietary restrictions. If you have a specific concern, please reach out to us! </p> 
@@ -270,7 +270,7 @@ function Wedding() {
                   <p className='w-primary left-align top-tiny'>Nope! If anyone approaches the cake with malicious intent, they will be tackled by Annie the Bridesmaid.</p> 
 
                   <h2 className='w2-secondary left-align top-med'>Will there be dancing?</h2>
-                  <p className='w-primary left-align top-tiny'>As the Mansion is a historic building, sudden movements are discouraged. Just kidding—bring your best dance moves, it’s going to be a party!</p> 
+                  <p className='w-primary left-align top-tiny'>As the Mansion is an aging, historic building, sudden movements are discouraged. Just kidding—bring your best dance moves, it’s going to be a party!</p> 
 
                   <h2 className='w2-secondary left-align top-med'>What if I have dietary restrictions? </h2>
                   <p className='w-primary left-align top-tiny'>We have tried to select multiple entree and appetizer options that will accommodate our guests with known dietary restrictions. If you have a specific concern, please reach out to us! </p> 
