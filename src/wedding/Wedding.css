@@ -9,6 +9,11 @@
 .image-us-image {
 	top: 0;
 	width: 75%;
+	display: block;
+}
+
+.mob-us {
+	vertical-align: bottom;
 }
 
 .w1-primary {

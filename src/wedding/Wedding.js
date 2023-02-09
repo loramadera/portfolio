@@ -3,6 +3,7 @@ import React from "react";
 import './Wedding.css';
 import imgUs from './images/us.jpeg';
 import imgUs2 from './images/us2.jpeg';
+import imgUs3 from './images/us3.jpg';
 import imgFlower from './images/flowerborder.png';
 import imgArrow from './images/goldarrow.png';
 import imgForest from './images/forest.jpg';
@@ -33,13 +34,11 @@ function Wedding() {
           <div className='img-empty'></div>
           <div className='flex1 content'>
             <img src= {imgFlower} width="100%"></img>
-            <h1 className='w1-primary center-align'>Luke & Lora</h1>
+            <h1 className='w1-primary center-align top-large'>Luke & Lora</h1>
             <h2 className='w2-primary center-align top-small'>Welcome to our wedding!</h2>
             <h2 className='w2-primary center-align top-tiny bottom-large'>04.10.2023</h2>
+            <img className='mob-us top-medium' src= {imgUs2} width='100%'></img>
 
-            <div className='center-align'>
-              <img src= {imgUs2} width='100%'></img>
-            </div>
 
             <div className='greenbox'>
              <div className='center-align'>
@@ -74,6 +73,18 @@ function Wedding() {
                   <p className='w-primary left-align top-tiny'>A. Depends! Did you answer "C" for all of them?</p>
                 </div>
               </div>
+
+
+              <div>
+                <img className='mob-us top-medium' src= {imgUs3} width='100%'></img>
+                <h1 className='w1-secondary top-large  center-align'>The Venue</h1>
+                <div className='mobile-margins-3 top-large'>
+                  <h2 className='w2-secondary center-align'>Jefferson Street Mansion</h2>
+                  <h2 className='w2-secondary center-align'>1063 Jefferson St</h2>
+                  <h2 className='w2-secondary center-align'>Benicia, CA 94510</h2>
+                </div>
+              </div>
+
 
               <div>
                 <h1 className='w1-secondary top-large center-align'>Frequently Asked Questions</h1>
@@ -135,10 +146,13 @@ function Wedding() {
             </div> 
           </div>
         </div>
-
       </div>
       );
+
+
     } else {
+
+
       return ( 
       <div>
         <div className='img-us'>
@@ -157,10 +171,13 @@ function Wedding() {
               <img className='arrow center-align top-small' src= { imgArrow } width='100%'></img>
             </div>
            
+
             <div className='greenbox'>
-              
+
+
+
               <div className='center-align'>
-                <h1 className='w1-secondary top-large center-align'>The Couple</h1>
+                <h1 className='w1-secondary top-med center-align'>The Couple</h1>
                 <img className='forest center-align top-med' src= { imgForest } width='100%'></img>
                 <div className='margins-med'>    
                   <h2 className='w2-secondary left-align top-med'>Long before they started dating, Lora worked at __ and Luke worked at __.</h2>
@@ -192,6 +209,18 @@ function Wedding() {
                 </div>
               </div>
 
+
+              <div>
+                <img className='mob-us top-medium' src= {imgUs3} width='100%'></img>
+                <h1 className='w1-secondary top-med center-align'>The Venue</h1>
+                <div className='margins-med top-med'>
+                  <h2 className='w2-secondary center-align'>Jefferson Street Mansion</h2>
+                  <h2 className='w2-secondary center-align'>1063 Jefferson St</h2>
+                  <h2 className='w2-secondary center-align'>Benicia, CA 94510</h2>
+                </div>
+              </div>
+
+
               <div>
                 <h1 className='w1-secondary top-medium center-align'>Frequently Asked Questions</h1>
                 <div className='margins-med'>
@@ -201,7 +230,6 @@ function Wedding() {
                   
                   <h2 className='w2-secondary left-align top-med'>Will there be free parking?</h2>
                   <p className='w-primary left-align top-tiny'>Yes! Car, motorcycle, and dragon parking will be around back.</p>
-                  
 
                   <h2 className='w2-secondary left-align top-med'>Is there a dress code? </h2>
                   <p className='w-primary left-align top-tiny'>We’re not too picky, but we request clothes! The dress code is formal attire and our colors are gold and sage green. Ladies, we respectfully request that you avoid shades of white/ivory.</p>
@@ -257,7 +285,6 @@ function Wedding() {
       </div>
       );
     }
-
   }
 
 
