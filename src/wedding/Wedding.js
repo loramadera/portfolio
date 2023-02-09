@@ -35,7 +35,7 @@ function Wedding() {
           <div className='img-empty'></div>
           <div className='flex1 content'>
             <img src= {imgFlower} width="100%"></img>
-            <h1 className='w1-primary center-align top-large'>Luke & Lora</h1>
+            <h1 className='w1-primary center-align top-small'>Luke & Lora</h1>
             <h2 className='w2-primary center-align top-small'>Welcome to our wedding!</h2>
             <h2 className='w2-primary center-align top-tiny bottom-medium'>04.10.2023</h2>
             <img className='mob-us' src= {imgUs2} width='100%'></img>
@@ -230,10 +230,10 @@ function Wedding() {
 
               <div>
                 <img className='center-align top-med' src= { imgUs4 } width='100%'></img>
-                <h1 className='w1-secondary top-medium center-align'>Frequently Asked Questions</h1>
+                <h1 className='w1-secondary top-med center-align'>FAQ</h1>
                 <div className='margins-med'>
 
-                  <h2 className='w2-secondary left-align top-med'>What time should I arrive?</h2>
+                  <h2 className='w2-secondary top-med left-align'>What time should I arrive?</h2>
                   <p className='w-primary left-align top-tiny'>Please arrive at 4PM to park and find a seat, as the ceremony will begin promptly at 430. If you arrive at 430, be prepared to walk down the aisle and marry Luke!</p>
                   
                   <h2 className='w2-secondary left-align top-med'>Will there be free parking?</h2>
@@ -284,7 +284,7 @@ function Wedding() {
                   <h2 className='w2-secondary left-align top-med'>Do you have a wedding registry?</h2>
                   <p className='w-primary left-align top-tiny'>We love you, your presence at our wedding is a gift! We are also minimalists and request all physical and cash gifts be withheld, unless you’re making it rain on the dance floor.</p> 
        
-                  <h2 className='w2-secondary center-align top-med bottom-large'>Feel free to reach out if you have any questions! Please hesitate with any complaints!</h2>     
+                  <h2 className='w2-secondary center-align top-med bottom-medium'>Feel free to reach out if you have any questions! Please hesitate with any complaints!</h2>     
                 </div>           
               </div>
             </div>
