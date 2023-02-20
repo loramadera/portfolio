@@ -154,10 +154,6 @@ return (
 					<img src= {imgOnboard} width="100%"></img>
 				</div>
 
-				<div className='vaca-desktop'>
-					<img src= {imgDesktop} width="100%"></img>
-				</div>
-
 				<div className='vaca-beauty'>
 					<img src= {imgBeau} width="100%"></img>
 				</div>
