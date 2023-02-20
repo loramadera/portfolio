@@ -30,6 +30,7 @@ function debounce(fn, ms) {
 function UXUI() {
   const visualItems = [
     { 'title': 'VACA', 'text': 'A luxurious travel app.', 'image': imgVACA, 'link': '/vaca' },
+    { 'title': 'Project Gaia', 'text': 'Educational interface on environmental sustainability.', 'image': imgGaia, 'link': '/gaia'},
     { 'title': 'Sadhan', 'text': 'A meditation app.', 'image': imgSadhan, 'link': '/sadhan' },
      ];
 
@@ -231,16 +232,6 @@ const [items, setItems] = React.useState(visualItems)
             <h3 className='h3-primary center-align bottom-small mobile opacity'>UX & Visual Design</h3>
             <div className='mobile'>
               <Items />
-            </div>
-          </div>
-        </div>
-
-
-        <div className='mobile'>
-          <div className='margins-extra'>
-            <h3 className='h3-primary center-align bottom-small mobile opacity'>Interactive Design</h3>
-            <div className='mobile'>
-              { intItems }
             </div>
           </div>
         </div>
