@@ -7,13 +7,13 @@ import './common/styles/spacing.css';
 import './common/styles/sitetypography.css';
 
 
-import imgMobile from './images/blackmobile2.png';
+import imgMobile from './images/blackmobilepic.png';
 import imgVaca from './images/Portfolio/pp_vaca.png';
 import imgCode from './images/Portfolio/pp_code.png';
 import imgModel from './images/Portfolio/pp_modeling2.png';
 import imgESO from './images/Portfolio/pp_eso2.png';
 import imgArrows from './images/Portfolio/arrows.png';
-import imgPic from './images/blackpic2.png';
+import imgPic from './images/blackpic.png';
 
 
 function debounce(fn, ms) {
