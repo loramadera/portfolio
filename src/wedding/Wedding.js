@@ -141,9 +141,6 @@ function Wedding() {
                   <h2 className='w2-secondary left-align top-med'>Are children invited?</h2>
                   <p className='w-primary left-align top-tiny'>We ADORE your little ones! However, our ceremony and reception are an adult-only event—with the exception of the bride and groom—so please plan accordingly!</p>
 
-                  <h2 className='w2-secondary left-align top-med'>Can I give a speech?</h2>
-                  <p className='w-primary left-align top-tiny'>As terrified as we are to hand some of you the mic, speeches are welcome! Please let us know in advance so our DJ can mark you on the seating chart.</p>
-
                   <h2 className='w2-secondary left-align top-med'>Do you have a wedding registry?</h2>
                   <p className='w-primary left-align top-tiny'>We love you, your presence at our wedding is a gift! We are also minimalists and request all physical and cash gifts be withheld, unless you’re making it rain on the dance floor.</p> 
        
@@ -277,9 +274,6 @@ function Wedding() {
 
                   <h2 className='w2-secondary left-align top-med'>Are children invited?</h2>
                   <p className='w-primary left-align top-tiny'>We ADORE your little ones! However, our ceremony and reception are an adult-only event—with the exception of the bride and groom—so please plan accordingly!</p>
-
-                  <h2 className='w2-secondary left-align top-med'>Can I give a speech?</h2>
-                  <p className='w-primary left-align top-tiny'>As terrified as we are to hand some of you the mic, speeches are welcome! Please let us know in advance so our DJ can mark you on the seating chart.</p>
 
                   <h2 className='w2-secondary left-align top-med'>Do you have a wedding registry?</h2>
                   <p className='w-primary left-align top-tiny'>We love you, your presence at our wedding is a gift! We are also minimalists and request all physical and cash gifts be withheld, unless you’re making it rain on the dance floor.</p> 
