@@ -51,16 +51,14 @@ const [items, setItems] = React.useState(contentItems)
 function Items() {
     if (window.innerWidth < 1025) {
       return contentItems.map((item, index) => {
-        return <div className='sadhan-item mobile'>
+        return <div className='sadhan-box'>
 			<div className='flexbox margins-large'>
 				<div className='flex1 box'>
-					<h4 className='s4-primary left-align margins-small'>{item.title}</h4>
-					<p className='s-primary margins-small'>{item.text}</p>
+					<h2 className='s4-primary left-align margins-tiny'>{item.title}</h2>
+					<p className='s-primary margins-tiny'>{item.text}</p>
 				</div>
-				<div className='flex1 box'>
-					<div className='flexbox center-align'>
-						<div className='flex1'><img className='sadhan-img center-align' src= {item.image} width="100%"></img></div>
-					</div>
+				<div className='img flex1 box bottom-small'>
+					<img src={item.image} width="100%"></img>
 				</div>
 			</div>
 		</div>
@@ -68,30 +66,26 @@ function Items() {
     } else {
       return contentItems.map((item, index) => {
         if (index % 2) {
-          return <div className='margins-small sadhan-item mobile'>	
-			<div className='flexbox'>	
+      return <div className='sadhan-box'>
+			<div className='flexbox'>
 				<div className='flex1 box'>
-					<h4 className='s4-primary left-align'>{item.title}</h4>
-					<p className='s-primary'>{item.text}</p>
+					<h2 className='s4-primary left-align margins-tiny'>{item.title}</h2>
+					<p className='s-primary margins-tiny'>{item.text}</p>
 				</div>
-				<div className='flex1 box center-align'>
-					<div className='flexbox'>
-						<div className='flex1'><img className='sadhan-img' src= {item.image} width="100%"></img></div>
-					</div>
+				<div className='img flex1 box bottom-small'>
+					<img src={item.image} width="100%"></img>
 				</div>
 			</div>
 		</div>
 	} else {
-		return <div className='margins-small sadhan-item'>
-			<div className='flexbox'>
-				<div className='flex1 box center-align'>
-					<div className='flexbox'>
-						<div className='flex1'><img className='sadhan-img' src= {item.image} width="100%"></img></div>
-					</div>
+			return <div className='sadhan-box'>	
+			<div className='flexbox'>	
+				<div className='img flex1 box bottom-small'>
+					<img src= {item.image} width="100%"></img>
 				</div>
 				<div className='flex1 box'>
-					<h4 className='s4-primary left-align'>{item.title}</h4>
-					<p className='s-primary '>{item.text}</p>
+					<h2 className='s4-primary left-align margins-tiny'>{item.title}</h2>
+					<p className='s-primary margins-tiny'>{item.text}</p>
 				</div>
 			</div>
 		</div>
@@ -125,41 +119,40 @@ return (
 		</div>		
 	</div>
 
-	<div className='bottom-medium'>
-		<h1 className='h1-primary center-align top-small'>Sadhan</h1>
-		<p className='p-primary center-align margins-extra'>A meditation app I designed and partially coded, defined functionally by its meditation timer and connection with other members of a meditation community - the ability to see retreat schedules and other members.</p>
-		<div className='flex1 center-align margins-small'>
+	<div>
+		<h1 className='h1-primary center-align top-medium'>Sadhan</h1>
+		<div className='flex1 center-align margins-small top-small'>
 			<a href= {projSadhan}>
 				<button className='best-case-study padding-ultra-s mobile-margins'>View Full Process</button>
 			</a>		
 		</div>
 	</div>
-	
-	<div className='sadhan-box bottom-large margins-small'>
-		<div>
-				<div className='flexbox margins-small top-medium bottom-medium'>
-					<div className='flex1 box'>
-							<h4 className='s4-primary mobile-margins-3'>Color & Atmosphere</h4>
-							<p className='s-primary  mobile-margins-3'>The color palette of thix app, featuring bright blues, yellows, and greens, reflects love for nature and a spirituality core.</p>
-							<h4 className='s4-primary mobile-margins-3'>Meditation Timer</h4>
-							<p className='s-primary mobile-margins-3'>Starts/stops timer, toggles chime and prayer.</p>
-							<h4 className='s4-primary mobile-margins-3'>Group Meditation</h4>
-							<p className='s-primary  mobile-margins-3'>Displays group meditation schedules, charting meditators around the world.</p>
-					</div>
-					<div className='flex1 box center-align'>
-						<img className='sadhan-img' src= { imgColors } width="100%"></img>
-					</div>
-				</div>
 
-				<div className='sadhan-content'>
+	<div className='other-border mobile margins-small bottom-small'></div>
+	
+	<div className='bottom-large margins-small mobile'>
+		<div>
+				<div className='margins-tiny'>
+					<div className='flexbox top-small bottom-medium'>
+						<div className='flex1 box'>
+							<h4 className='h3-primary top-small'>Meditation App Timer</h4>
+							<p className='p-primary'>The meditation timer features a start/stop functionality. It includes a toggle option for a chime that starts and ends the meditation, as well as a toggle option for a short prayer before the meditation begins.</p>
+							<h4 className='h3-primary'>Group Meditation</h4>
+							<p className='p-primary '>The discovery page features a schedule for the meditation retreat group sessions, and also shows meditators all around the world. Each meditator's profile icon shows if/when they are actively meditating, and how far along they are in the session time they set.</p>
+							<h4 className='h3-primary'>Color & Atmosphere</h4>
+							<p className='p-primary '>The color palette of thix app, featuring bright blues, yellows, and greens, reflects love for nature and a spirituality core.</p>
+						</div>
+					</div>
+				</div>	
+			
+				<div className='sadhan-marg'>
 					<Items />
 				</div>
-			</div>	
+			</div>
+			<div className='mobile'>
+				<img src= {imgBeauty} width="100%"></img>
+			</div>
 		</div>
-
-	<div className='margins-small mobile'>
-		<img src= {imgBeauty} width="100%"></img>
-	</div>
 
 	<div className='flexbox top-small row'>
 		<div className='flex1 margins-small'>

@@ -154,9 +154,9 @@
 }
 
 
+
 .best-case-study {
-  border-radius: 10px;
-  color: #1e2229;
+  color: black;
   font-family: montserrat, sans-serif;
   font-weight: 700;
   font-style: normal;
@@ -164,6 +164,11 @@
   opacity: 70%;
 }
 
+ .other-border {
+      border-bottom-style: solid;
+      border-bottom-color: black;
+      border-bottom-width: 2px;
+    }
 
 
 
@@ -314,6 +319,12 @@
       margin: 10px;
     }
 
+    .other-border {
+      border-bottom-style: solid;
+      border-bottom-color: black;
+      border-bottom-width: 2px;
+    }
+
 
     .top-border {
       border-top-style: solid;
@@ -344,7 +355,6 @@
     }
 
     .best-case-study {
-    border-radius: 10px;
     color: #1e2229;
     font-family: montserrat, sans-serif;
     font-weight: 700;

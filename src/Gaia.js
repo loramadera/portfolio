@@ -32,7 +32,7 @@ function debounce(fn, ms) {
 
 function Gaia() {
 const contentItems = [
-	{'title': 'Basic Layout', 'text': 'The layout of this interactive tool would feature the three pillars of sustainability, each of them active in a one-at-a-time succession format.', 'image': imgLayout },
+	{'title': 'Basic Layout', 'text': 'The layout of this interactive informational tool features the three pillars of sustainability, each of them active in a one-at-a-time succession format.', 'image': imgLayout },
 	{'title': 'Digital Logo Explorations', 'text': 'After a series of hand-drawn sketches, the logos that emblemized Gaia were ones that emulated flowers or leaves. Further explorations drove it in a more angular direction - further away from resembling leaves and flowers directly.', 'image': imgLogo },
 
 ];
@@ -153,15 +153,16 @@ return (
 		</div>		
 	</div>
 
-	<div className='bottom-small'>
-		<h1 className='h1-primary center-align top-small'>Gaia</h1>
-		<p className='p-primary center-align margins-extra'>Gaia is an informational & interactivity tool I designed, inspired by the three pillars of sustainability - economy, environment, and society. It seeks to educate on these pillars in a fun and interactive way.</p>
-		<div className='flex1 center-align margins-small'>
+	<div>
+		<h1 className='h1-primary center-align top-medium'>Project Gaia</h1>
+		<div className='flex1 center-align top-small margins-small'>
 			<a href= {projGaia}>
 				<button className='best-case-study padding-ultra-s mobile-margins'>View Full Process</button>
 			</a>		
 		</div>		
 	</div>
+
+	<div className='other-border mobile margins-small bottom-small'></div>
 	
 		<div>
 		<div className='top-small'>

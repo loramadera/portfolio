@@ -30,7 +30,7 @@ function debounce(fn, ms) {
 function Portfolio() {
   const contentItems = [
     {'title': 'UX/UI & Design', 'text': 'UX/UI & Visual Design, Branding', 'image': imgVaca, 'link': '/uxui' },
-    {'title': 'Coding', 'text': 'C# projects as well as React, Flutter, HTML, CSS.', 'image': imgCode, 'link': '/code' },
+    {'title': 'Coding', 'text': 'Web/mobile projects in React & Flutter, Python, HTML, CSS.', 'image': imgCode, 'link': '/code' },
     {'title': '3D-Modeling', 'text': '3D art projects created in Blender.', 'image': imgModel, 'link': '/modeling' },
     {'title': 'Illustration', 'text': 'Portraits & other.', 'image': imgESO, 'link': '/digitalart'},
   ];

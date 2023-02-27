@@ -191,11 +191,11 @@ function BookVerse() {
 			</div>
 		
 		<div>
-			<h1 className='h1-primary center-align top-small'>BookVerse</h1>
-			<h2 className='p-primary center-align margins-extra top-small none'>A book cataloguing database I conceptualized, researched, and designed, uniquely crossed with social media to match readers with their ideal book and connect them with other readers in that book's fandom.</h2>
+			<h1 className='h1-primary center-align top-medium'>BookVerse</h1>
+			
 		</div>
 
-		<div className='flex1 center-align margins-small mobile'>
+		<div className='flex1 center-align margins-small top-small'>
 			<a href= {projBookVerse}>
 				<button className='best-case-study padding-ultra-s mobile-margins'>View Full Process</button>
 			</a>		
@@ -203,20 +203,20 @@ function BookVerse() {
 		
 
 
-		<div className='bottom-border'>
-			<h3 className='h3-primary mobile'>01 Overview</h3>
+		<div className='other-border margins-small'>
+			<h3 className='h3-primary mobile top-small'>01 Overview</h3>
 		</div>
 		<div className='flexbox margins-medium mobile'>
 			<div className='box center-align'>
-				<img className='book-logo' src={ imgLogo } width="100%"></img>
+				<img className='book-logo margins-tiny' src={ imgLogo } width="100%"></img>
 			</div>
 			<div className='flex2 box'>
-				<h4 className='h4-primary margins-small'>Problem</h4>
-				<p className='p-primary margins-small'>In the age of technology, book publishers have moved from print books to e-Books. Various mediums have been developed to facilitate the reader-book matching process. But there are infinitely many good books to read, and readers just aren’t finding them.</p>
-				<h4 className='h4-primary margins-small'>Solution</h4>
-				<p className='p-primary margins-small'>An app that combines various aspects of different social media & forum platforms in addition to book review features. BookVerse draws users away from other platforms while splotlighting books to explore and connecting fandoms.</p>
-				<h4 className='h4-primary margins-small'>Implementation</h4>
-				<p className='p-primary margins-small'>The UX/UI development of this app featured robust user testing & prototyping, competitive analysis, persona creation, and wireframing. During UX/UI development, I also researched visual design ideas and was ready to implement the final design once the UI was finished.</p>
+				<h4 className='h4-primary'>Problem</h4>
+				<p className='p-primary'>In the age of technology, book publishers have moved from print books to e-Books. Various mediums have been developed to facilitate the reader-book matching process. But there are infinitely many good books to read, and readers just aren’t finding them.</p>
+				<h4 className='h4-primary'>Solution</h4>
+				<p className='p-primary'>An app that combines various aspects of different social media & forum platforms in addition to book review features. BookVerse draws users away from other platforms while splotlighting books to explore and connecting fandoms.</p>
+				<h4 className='h4-primary'>Implementation</h4>
+				<p className='p-primary'>The UX/UI development of this app featured robust user testing & prototyping, competitive analysis, persona creation, and wireframing. During UX/UI development, I also researched visual design ideas and was ready to implement the final design once the UI was finished.</p>
 			</div>
 		</div>
 
@@ -296,26 +296,21 @@ function BookVerse() {
 		<div className='bottom-border'>
 			<h3 className='h3-primary'>04 Persona</h3>
 		</div>
-		<div className='flexbox margins-medium'>
-			<div className='flex1 box center-align'>
-				<img className='book-persona-img mobile' src={ imgPersona } width="100%"></img>
-				<h4 className='h4-primary'>Nadia, 23, Full-time student</h4>
-			</div>
-			<div className='flex1 box'>
-				<p className='p-primary'>Nadia is an undergraduate student. In her spare time, she either likes spending time with family or holing up with a good book or videogame. Social media tends to be a fun distraction from daily work, but she seeks more enriching fulfilment from books.</p> 
-				<div>
-					<h4 className='h4-primary'>Goals</h4>
-					<p className='p-primary'>• To feel more productive</p>
-					<p className='p-primary'>• To use social media less and read more </p>
-					<p className='p-primary'>• To explore more books that aren’t in her immediate radar</p>
+				<div className='flexbox top-small margins-small'>
+				<div className='flex1 box'>
+					<div className='center-align'>
+						<img className='book-persona-img mobile' src={ imgPersona } width="100%"></img>
+						<h2 className='h4-primary'>Nadia, 23</h2>
+						<h2 className='h4-primary'>Full-Time Student</h2>
+					</div>
 				</div>
-				<div>
-					<h4 className='h4-primary'>Frustrations</h4>
-					<p className='p-primary'>• Book vendors aren’t always reliable in matching</p>
-					<p className='p-primary'>• Gets pushed toward social media </p>
-					<p className='p-primary'>• Searching for new books is an unenjoyable time and effort commitment</p>
+				<div className='flex1 box mobile'>
+					<p className='p-primary'>Nadia is an undergraduate student. In her spare time, she either likes spending time with family or holing up with a good book or videogame. Social media tends to be a fun distraction from daily work, but she seeks more enriching fulfilment from books.</p> 
+					<h3 className='h4-primary'>Goals</h3>
+					<p className='p-primary'>To feel more productive and explore more books that aren’t on her immediate radar</p>
+					<h3 className='h4-primary'>Frustrations</h3>
+					<p className='p-primary'>Book vendros aren't always reliable in matching, the search for new books is an unenjoyable time commitment.</p>
 				</div>
-			</div>
 		</div>
 
 

@@ -260,21 +260,19 @@ function Bestiary() {
 					</div>		
 				</div>
 
-				<h1 className='h1-primary center-align top-small'>The Bestiary</h1>
-				<p className='p-primary center-align margins-extra'>An interactive game design I conceptualized, researched, and designed with the intention of creating a more immersive gaming experience.</p>
-				<div className='flex1 center-align margins-small'>
+				<h1 className='h1-primary center-align top-medium'>The Bestiary</h1>
+			
+				<div className='flex1 center-align margins-small top-small'>
 					<a href= {projBestiary}>
 						<button className='best-case-study padding-ultra-s mobile-margins'>View Full Process</button>
 					</a>		
 				</div>	
 		
-
-
-				<div className='bottom-border'>
-					<h3 className='h3-primary mobile'>01 Overview</h3>
+				<div className='other-border margins-small'>
+					<h3 className='h3-primary mobile top-small'>01 Overview</h3>
 				</div>
 				<div className='margins-small'>
-					<h3 className='h3-primary top-small'>The Bestiary - what is it?</h3>
+					<h3 className='h3-primary top-medium'>The Bestiary - what is it?</h3>
 					<p className='p-primary'>The Bestiary is an interactive database designed to be a component of a mobile fantasy game in which a player encounters different monsters. Each level’s monsters are more challenging than the last, and it is up to the player to study them (their weaknesses, strengths, etc.). As they advance, they will build a reference guide - the Bestiary - of what they have learned.</p>
 				</div>
 
@@ -284,24 +282,24 @@ function Bestiary() {
 				</div>
 				<div className='flexbox margins-small'>
 					<div className='flex1 box center-align top-medium bottom-medium'>
-						<img className='img-big-swords' src= { imgSwords } width="100%"></img>
+						<img className='img-big-swords margins-tiny' src= { imgSwords } width="100%"></img>
 					</div>
 					<div className='flex2 box'>
 						<div>
-							<h3 className='h3-primary margins-small'>Hypothesis</h3>
-							<p className='p-primary margins-small'>The more immersive a gaming experience, the more likely a gamer is to consume and retain information from the interface conveying it.</p>
+							<h3 className='h3-primary'>Hypothesis</h3>
+							<p className='p-primary'>The more immersive a gaming experience, the more likely a gamer is to consume and retain information from the interface conveying it.</p>
 						</div>
 						<div>
-							<h3 className='h3-primary margins-small'>Demographic</h3>
-							<p className='p-primary margins-small'>Adults 20-35, videogame enthusiasts, college students/recent grads</p>
+							<h3 className='h3-primary'>Demographic</h3>
+							<p className='p-primary'>Adults 20-35, videogame enthusiasts, college students/recent grads</p>
 						</div>
 						<div>
-							<h3 className='h3-primary margins-small'>Research Objective</h3>
-							<p className='p-primary margins-small'>Determining whether immersion outweighs utility in the importance of interface design.</p>
+							<h3 className='h3-primary'>Research Objective</h3>
+							<p className='p-primary'>Determining whether immersion outweighs utility in the importance of interface design.</p>
 						</div>
 						<div>
-							<h3 className='h3-primary margins-small'>User Needs</h3>
-							<p className='p-primary margins-small'>A game interface that is simple yet immersive, with clear relaying of information without blocks of text, with high entertainment value.</p>
+							<h3 className='h3-primary'>User Needs</h3>
+							<p className='p-primary'>A game interface that is simple yet immersive, with clear relaying of information without blocks of text, with high entertainment value.</p>
 						</div>				
 					</div>
 				</div>

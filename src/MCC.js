@@ -120,21 +120,16 @@ function MCC() {
 				</div>	
 			</div>
 
-			<div className='margins-large top-small'>
+			<div className='margins-large top-medium'>
 				<h1 className='h1-primary center-align'>Moraga Country Club</h1>
-				<p className='p-primary margins-extra center-align'>A case study project featuring a complete brand reconstruction of logos, online & social media presence, letterhead, and advertising.</p>
-				<div className='flex1 center-align margins-small'>
+				<div className='flex1 center-align top-small margins-small'>
 					<a href= {projMCC}>
 						<button className='best-case-study padding-ultra-s mobile-margins'>View Full Case Study</button>
 					</a>		
 				</div>
 
-				<div className='mobile'>
-					<div className='bottom-border'>
-						<h3 className='h3-primary'>About the Club</h3>
-					</div>
-				</div>	
-				<div className='margins-small'>
+				<div className='other-border mobile margins-small bottom-small'></div>
+				<div className='margins-small top-medium'>
 					<p className='p-primary'>The new Moraga Country Club clubhouse opened in 2012 and was the final piece of an elaborate puzzle, making Moraga Country Club the outstanding facility it is today. The architecture of the building replicates the early Californian Mission Style with stucco exterior, tile roof and decorative iron and woodwork. The interior and exterior designs are one with its surroundings and is the jewel of the club. </p>
 				</div>
 
