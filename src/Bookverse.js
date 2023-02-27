@@ -206,7 +206,7 @@ function BookVerse() {
 		<div className='other-border margins-small'>
 			<h3 className='h3-primary mobile top-small'>01 Overview</h3>
 		</div>
-		<div className='flexbox margins-medium mobile'>
+		<div className='flexbox margins-medium top-medium'>
 			<div className='box center-align'>
 				<img className='book-logo margins-tiny' src={ imgLogo } width="100%"></img>
 			</div>
