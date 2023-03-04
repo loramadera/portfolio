@@ -22,6 +22,8 @@ import { ProductDemoCheckout } from './productDemo/ProductDemoCheckout.js';
 import { ProductDemoHome } from './productDemo/ProductDemoHome.js';
 import { ProductDemoFooter } from './productDemo/ProductDemoFooter.js';
 
+import { NatureItems } from './natureItems/NatureItems.js';
+
 import { Wedding } from './wedding/Wedding.js';
 
 
@@ -47,6 +49,8 @@ function App() {
         <Route path="/product-demo-checkout" element={<ProductDemoCheckout />} />
         <Route path="/product-demo-home" element={<ProductDemoHome />} />
         <Route path="/product-demo-footer" element={<ProductDemoFooter />} />
+
+        <Route path="/nature-items" element={<NatureItems />} />
 
         <Route path="/wedding" element={<Wedding />} />
       </Routes>

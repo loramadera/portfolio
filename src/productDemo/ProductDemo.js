@@ -126,11 +126,11 @@ function ProductDemo() {
 
       <div className='product-creation margins-extra'>
         <h2 className='product-primary center-align blue top-medium'>Product & Creation Instructions</h2>
-        <p className='product-secondary margins-extra blue bottom-medium'>In the "Products" section, view the pre-added products. In the "Add Your Own" section below it, add one of your own! Be sure to include a terrarium example that inspires you. State your price when you add your item, then add to your cart to send your order to us.</p>
+        <p className='product-secondary margins-small blue bottom-medium'>In the "Products" section, view the pre-added products. In the "Add Your Own" section below it, add one of your own! Be sure to include a terrarium example that inspires you. State your price when you add your item, then add to your cart to send your order to us.</p>
       </div>
 
        <div className='margins-large'>
-        <h2 className='product-primary-2 center-align blue top-medium'>Products</h2>
+        <h2 className='product-primary center-align blue top-medium'>Products</h2>
       </div>
 
       <div className='center-align'>
@@ -142,7 +142,7 @@ function ProductDemo() {
       </div>
       
        <div className='margins-extra'>
-        <h2 className='product-primary-2 center-align blue top-medium'>Add Your Own</h2>
+        <h2 className='product-primary center-align blue top-medium'>Add Your Own</h2>
       </div>
 
       <div className='product-form center-align margins-extra'>
