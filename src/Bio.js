@@ -101,7 +101,7 @@ function Bio() {
     <div className='mobile'>
     <link rel="stylesheet" href="https://use.typekit.net/sxc8zwt.css"></link>
     <Navigation />
-      <h1 className="h1-primary center-align top-large bottom-medium">Lora Galoyan</h1>
+      <h1 className="h1-primary center-align top-large bottom-medium">Lora Madera</h1>
 
       <div className='bio-content'>
         <div>
@@ -112,8 +112,8 @@ function Bio() {
           <a href={ projLora } className='a-none flex1 box'>
             <p className='p-primary center-align'>PDF Resume</p>
           </a>
-          <p className='p-primary center-align'>Lora Galoyan</p>
-          <p className='p-primary center-align'>Email: lkgaloyan@gmail.com</p>
+          <p className='p-primary center-align'>Lora Madera</p>
+          <p className='p-primary center-align'>Email: lora.k.madera@gmail.com</p>
         </div>
       </div>
     <div className=''>

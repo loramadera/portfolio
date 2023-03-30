@@ -13,7 +13,7 @@ function ProductDemoFooter() {
       <link rel="stylesheet" href="https://use.typekit.net/guv2awx.css"></link>
         <div className='product-demo-nav-background'>
           <div className='center-align top-small padding-large'>   
-            <p className='product-primary top-large blue'>Copyright designed & coded by Lora Galoyan 2022</p>
+            <p className='product-primary top-large blue'>Copyright designed & coded by Madera 2023</p>
           </div>
         </div> 
 
