@@ -68,8 +68,8 @@ function Navigation() {
         </div>
         <div className="flex1">&nbsp;</div>
         <div className='navigation-menu'>   
-          <a href="/" className='h4-primary nav-link'>Portfolio</a>
-          <a href="/about" className='h4-primary nav-link'>About</a>
+          <a href="/" className='p-primary nav-link'>Portfolio</a>
+          <a href="/about" className='p-primary nav-link'>About</a>
         </div>
       </div>
     )
