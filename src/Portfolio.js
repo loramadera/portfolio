@@ -29,8 +29,8 @@ function debounce(fn, ms) {
 
 function Portfolio() {
   const contentItems = [
-    {'title': 'UX/UI & Design', 'text': 'UX/UI & Visual Design, Branding', 'image': imgVaca, 'link': '/uxui' },
-    {'title': 'Coding', 'text': 'Web/mobile projects in React & Flutter, Python, HTML, CSS.', 'image': imgCode, 'link': '/code' },
+    {'title': 'UX/UI Design', 'text': 'UX/UI, Visual Design, Branding', 'image': imgVaca, 'link': '/uxui' },
+    {'title': 'Coding', 'text': 'Web/mobile projects in React & Flutter, HTML, CSS.', 'image': imgCode, 'link': '/code' },
     {'title': '3D-Modeling', 'text': '3D art projects created in Blender.', 'image': imgModel, 'link': '/modeling' },
     {'title': 'Illustration', 'text': 'Portraits & other.', 'image': imgESO, 'link': '/digitalart'},
   ];
@@ -59,8 +59,9 @@ function Portfolio() {
           <img className='bub-mobile' src= {imgMobile} width="100%"></img>
             <h2 className='h3-primary top-small center-align'>Hi, I'm Lora!</h2>
             <p className='p-primary center-align'>UX/UI Designer</p>
-            <p className='p-primary center-align'>Full-Stack Engineer</p>
+            <p className='p-primary center-align'>Frontend Developer</p>
             <p className='p-primary center-align'>Visual Designer</p>
+            <p className='p-primary center-align'>Digital Artist</p>
         </div>
       );
     }
