@@ -9,7 +9,7 @@ import imgMe from './images/bio/me.png';
 import imgSki from './images/bio/snow.png';
 import imgFantasy from './images/bio/fantasy.png';
 
-import projLora from './images/bio/Galoyan_Resume.pdf';
+import projLora from './images/bio/MaderaResume.pdf';
 
 function debounce(fn, ms) {
   let timer
