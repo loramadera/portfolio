@@ -24,7 +24,7 @@ function debounce(fn, ms) {
 
 function Bio() {
   const contentItems = [
-    { 'title': 'About Me', 'text': 'After graduating with a degree in economics from UC San Diego, I stumbled into UX/UI design and fell in love (my favorite story to tell). I love working on projects that are innovative and intellectually stimulating, and UX/UI intersects my fascination (both personal and professional) with people and psychology, with an artistic bent.', 'image': imgMe },
+    { 'title': 'About Me', 'text': 'After graduating with a degree in economics from UC San Diego, I stumbled into UX/UI design and fell in love (my favorite story to tell). I love working on projects that are innovative and intellectually stimulating, especially ones that make the world better. UX/UI intersects my fascination (both personal and professional) with people and psychology, with an artistic bent - I am lucky to be doing what I love!', 'image': imgMe },
     { 'title': 'My Hobbies', 'text': 'I love skiing and pride myself on my ability to teach anyone to ski in a day (bunnies to blues). Disc golf, tennis, fitness training and hiking are also some favorite pastimes. I also love books and writing and am a published fantasy author!', 'image': imgSki },
     { 'title': 'Lets Call Them Quirks', 'text': 'I am a voracious consumer of fantasy and art. If I find a book series I love, it’ll be hard to tear away and crawl out of my cave for sunlight.', 'image': imgFantasy },
  ];
